@@ -2,20 +2,25 @@
 <head><title>Inception v2</title></head>
 <body>
 <h1>What is Inception-v2?</h1>
+  
+  <h2>It's Inception plus Batch Normalization and some 5x5 factoring</h2>
+  
+  <p>In <a href="https://arxiv.org/abs/1602.07261">Inception-v4</a>, Szegedy et al. describe Inception-v2:</p>
+  <blockquote>"Later the Inception architecture was refined in various ways, first by the introduction of batch normalization
+  (Inception-v2) by Ioffe et al."</blockquote>
 
-  <p>Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning says:</p>
+  <p>That paper by <a href="">Ioffe et al.</a> describes their model like this:</p>
 
-<p>"Later the Inception architecture was refined in various ways, first by the introduction of batch normalization
-  (Inception-v2) by Ioffe et al." (citing Ioffe and Szegedy's Batch Normalization Paper).</p>
-
-  <p>That paper describes its network like this:</p>
-
-<p>"The main difference to [Inception-v1] is that the 5 × 5
+<blockquote>"The main difference to [Inception-v1] is that the 5 × 5
 convolutional layers are replaced by two consecutive layers
-  of 3 × 3 convolutions with up to 128 filters."</p>
+  of 3 × 3 convolutions with up to 128 filters."</blockquote>
 
-<p>Rethinking the Inception Architecture for Computer Vision has a section (Section 6) titled "Inception-v2". It 
-describes a network with many more changes than the Batch Normalization paper listed compared to Inception-v1. It
+  <h2>It's an intermediate variant of Inception before -v3, and different than batch-normalized Inception</h2>
+  
+  <p><a href="https://arxiv.org/abs/1512.00567">Rethinking the Inception Architecture for Computer Vision</a> has a section (Section 6) titled "Inception-v2". It 
+describes a network with many more changes than the Batch Normalization paper listed compared to Inception-v1.</p>
+  
+  <p>It
 also includes a table that has separate entries for "BN-GoogLeNet", "BN-Inception", and "Inception-v2". (This introduces an
   new question: Is GoogLeNet different than Inception?)</p>
 
