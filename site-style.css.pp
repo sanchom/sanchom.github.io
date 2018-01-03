@@ -4,7 +4,7 @@
 ◊(define width-for-max-font 920)
 ◊(define size-steps 6)
 ◊(define max-font-size 18)
-◊(define font-size-on-small-screens 12)
+◊(define font-size-on-small-screens 14)
 ◊(define small-screen-trigger (- width-for-max-font (* (- size-steps 1) 40)))
 
 ◊(define link-color "#3f75a2")
@@ -19,7 +19,7 @@ body {font-family: "Quattrocento", serif; margin-top: 5em; margin-bottom: 5em; m
 @media all and (max-width:◊|small-screen-trigger|px){body {margin-top: 1em; margin-left: 1em; margin-right: 1em; max-width: initial;}}
 
 h1 {margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}
-h1, h2, h3, h4, h5, h6 {font-family: "Josefin Sans", sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-family: "Josefin Sans", sans-serif; clear: left;}
 h1 {font-size: 1.6em;}
 h2 {font-size: 1.5em;}
 h3 {font-size: 1.4em;}
@@ -36,7 +36,13 @@ ul {list-style: circle outside;}
 p, li {line-height: 1.5;}
 li {padding-left: 1em;}
 
-img {display:block; margin: auto; width:85%;}
+img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
+img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em;}
+
+.external-link-logos {
+  display:flex;
+  justify-content:center;
+}
 
 div.aside p, div.aside a, div.aside li, div.aside div {
 font-family: Raleway;

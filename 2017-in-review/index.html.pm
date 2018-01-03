@@ -127,7 +127,7 @@ I find useful for VFR flying in the British Columbia lower mainland. I'm not sat
 I display the NOTAMs though. They have structure (locations,
 times, categories), but I'm not using any of that to help pilots quickly determine what's important to them.
 
-I've been trying to learn how to use a publishing tool called ◊a[#:href "http://docs.racket-lang.org/pollen/"]{Pollen}. I used it to 
+I've been trying to learn how to use a publishing tool called ◊a[#:href "http://docs.racket-lang.org/pollen/"]{Pollen}. I used it to
 lay out the text you're reading right now. I was looking for something that let me write in plain text, but would still turn that text into
 a nice-to-read website, or PDF, or whatever. I found some alternatives (Markdown, LaTeX2HTML, Pandoc), but have decided to start with
 Pollen.

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -11,51 +12,17 @@
     </script>
     <meta name="google-site-verification" content="ApapaNT3CEd0OdSE-X9Xy4xF3r_gjtWDR05XS6FANu4" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Sancho McCann</title>
     <link href="https://fonts.googleapis.com/css?family=Quattrocento|Josefin+Sans" rel="stylesheet">
-    <style>
-@media all {html {font-size: 18px;}}
-@media all and (max-width:920px){html {font-size:18px;}}
-@media all and (max-width:880px){html {font-size:17px;}}
-@media all and (max-width:840px){html {font-size:16px;}}
-@media all and (max-width:800px){html {font-size:15px;}}
-@media all and (max-width:760px){html {font-size:14px;}}
-@media all and (max-width:720px){html {font-size:13px;}}
-
-@media all and (max-width:720px){html {font-size:12px;}}
-
-body {font-family: "Quattrocento", serif; margin-top: 5em; margin-bottom: 5em; margin-left: auto; margin-right: auto; max-width: 45em;}
-@media all and (max-width:720px){body {margin-top: 1em; margin-left: 1em; margin-right: 1em; max-width: initial;}}
-
-h1 {margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}
-h1, h2, h3, h4, h5, h6 {font-family: "Josefin Sans", sans-serif; clear:left;}
-h1 {font-size: 1.6em;}
-h2 {font-size: 1.5em;}
-h3 {font-size: 1.4em;}
-h4 {font-size: 1.3em;}
-h5 {font-size: 1.2em;}
-h6 {font-size: 1.1em;}
-
-a:link {text-decoration: none; color: #3f75a2;}
-a:visited {text-decoration: none; color: #3f75a2;}
-a:hover {text-decoration: underline; color: #3f75a2;}
-
-p, li {line-height: 1.5;}
-
-      img { float: left; margin-right: 1em; margin-bottom: 1em;}
-
-      .external-links {
-      display:flex;
-      justify-content:center;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="site-style.css">
   </head>
   <body>
     <p>I am a computer scientist interested in object recognition, machine learning, and applications of deep neural networks. I finished my Ph.D. at the University of British Columbia in April 2014 and was supervised by <a rel="nofollow" href="http://www.cs.ubc.ca/~lowe/">David Lowe</a>. </p>
-    <p><a href="http://sanchom.github.io/2017-in-review/index.html">Here's what I've been up to and have been thinking about in 2017</a>.</p>
-    <div class="external-links">
-      <a href="https://sanchom.wordpress.com"><img src="assets/wordpress-logo-notext-rgb.png" width="30px" /></a>
-      <a href="https://twitter.com/sanchom"><img src="assets/Twitter_Social_Icon_Circle_Color.png" width="30px" /></a>
+    <p><a href="2017-in-review/index.html">Here's what I've been up to and have been thinking about in 2017</a>.</p>
+    <div class="external-link-logos">
+      <a href="https://sanchom.wordpress.com"><img class="little-logo" src="assets/wordpress-logo-notext-rgb.png" width="30px" /></a>
+      <a href="https://twitter.com/sanchom"><img class="little-logo" src="assets/Twitter_Social_Icon_Circle_Color.png" width="30px" /></a>
     </div>
 
     <h2>Selected Publications</h2>
@@ -69,23 +36,23 @@ p, li {line-height: 1.5;}
     
     <h2>Projects</h2>
     <h4>Spatially local coding</h4>
-    <p><a href="assets/toptens.png"><img src="assets/toptens-150x150.png" alt="Visualization of features" title="Spatially local coding visualization" width="150" height="150" /></a> This method for classifying images takes features that have been extracted from a training dataset and groups them into clusters that are similar in appearance and location.</p>
+    <p><a href="assets/toptens.png"><img class="thumbnail" src="assets/toptens-150x150.png" alt="Visualization of features" title="Spatially local coding visualization" width="150" height="150" /></a> This method for classifying images takes features that have been extracted from a training dataset and groups them into clusters that are similar in appearance and location.</p>
     <p>More details, code: [<a href="http://www.cs.ubc.ca/projects/spatially-local-coding">Project page</a>]</p>
 
     <h4>Local Naive Bayes Nearest Neighbor</h4>
-    <p><a href="assets/Manifold-e1333591359916.png"><img src="assets/Manifold-e1333591359916-150x150.png" alt="" title="Local Naive Bayes Nearest Neighbor" width="150" height="150" /></a> Local Naive Bayes Nearest Neighbor improves upon the NBNN image classification algorithm. Local NBNN gives higher classification accuracy and runs 100 times faster than NBNN on the Caltech 256 dataset.</p>
+    <p><a href="assets/Manifold-e1333591359916.png"><img class="thumbnail" src="assets/Manifold-e1333591359916-150x150.png" alt="" title="Local Naive Bayes Nearest Neighbor" width="150" height="150" /></a> Local Naive Bayes Nearest Neighbor improves upon the NBNN image classification algorithm. Local NBNN gives higher classification accuracy and runs 100 times faster than NBNN on the Caltech 256 dataset.</p>
     <p>More details, code: [<a href="http://www.cs.ubc.ca/projects/local-nbnn">Project page</a>]</p>
             
     <h4>Humanoid Robot</h4>
-    <p><a href="assets/abarenbou.png"><img title="abarenbou" src="assets/abarenbou-225x300.png" alt="" width="150" height="200" /></a>I worked with <a href="http://www.cs.umanitoba.ca/~jacky/">Dr. Jacky Baltes</a> to build a small-size humanoid robot. I coded in C and cross compiled for the ARM processor on a Sony Clie. I programmed it to walk and to find and kick a ball. This was our entry in the 2005 FIRA RoboWorld Cup.</p>
+    <p><a href="assets/abarenbou.png"><img class="thumbnail" title="abarenbou" src="assets/abarenbou-225x300.png" alt="" width="150" height="200" /></a>I worked with <a href="http://www.cs.umanitoba.ca/~jacky/">Dr. Jacky Baltes</a> to build a small-size humanoid robot. I coded in C and cross compiled for the ARM processor on a Sony Clie. I programmed it to walk and to find and kick a ball. This was our entry in the 2005 FIRA RoboWorld Cup.</p>
     <p>Sancho McCann and Jacky Baltes. &ldquo;Abarenbou – A Small Vision-Based Humanoid Robotic Research platform.&rdquo; In <em>Proc. of the Third International Conference on Computational Intelligence, Robotics, and Autonomous Systems (CIRAS), </em>2005. [<a title="McCannBaltes - Abarenbou.pdf" href="assets/McCannBaltes-Abarenbou.pdf">pdf</a>]</p>
 
     <h4>Robot Airplane</h4>
-    <p><a href="assets/airplane.png"><img title="airplane" src="assets/airplane.png" alt="" width="150" /></a>At the University of Manitoba, I was part of a team that built a robot airplane that could take-off, fly a search pattern, and land&mdash;all autonomously. The airplane sent a video feed and telemetry to a ground station, where one of our teammates could mark targets of interest and report their coordinates. We placed first out of seventeen teams in a competition that included BYU, University of Texas, Cornell, MIT, and UCSD. I wrote much of the computer vision code, which transformed the video feed&rsquo;s pixel coordinates into GPS coordinates, and presented that information to our ground station&rsquo;s operator.</p>
+    <p><a href="assets/airplane.png"><img class="thumbnail" title="airplane" src="assets/airplane.png" alt="" width="150" /></a>At the University of Manitoba, I was part of a team that built a robot airplane that could take-off, fly a search pattern, and land&mdash;all autonomously. The airplane sent a video feed and telemetry to a ground station, where one of our teammates could mark targets of interest and report their coordinates. We placed first out of seventeen teams in a competition that included BYU, University of Texas, Cornell, MIT, and UCSD. I wrote much of the computer vision code, which transformed the video feed&rsquo;s pixel coordinates into GPS coordinates, and presented that information to our ground station&rsquo;s operator.</p>
     <p>Paul Furgale, Sancho McCann, Jim Majewski, Andrew Bugera, and Kory Zelickson. &ldquo;Team Manitoba 2006 AUVSI Student Competition Project Description.&rdquo; <em>AUVSI: 4th Annual Student Unmanned Aerial Vehicle Competition,</em> 2006 [<a title="TeamManitoba - AUVSI 2006.pdf" href="assets/TeamManitoba2006.pdf">pdf</a>]</p>
             
     <h4>AtmosView: Visualization Redesign</h4>
-    <p><a href="assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"><img title="atmosview" src="assets/Screen-shot-2011-08-07-at-9.22.51-AM.png" alt="" width="150" /></a>I created AtmosView, a new visualization for atmospheric sounding data (vertical profiles of the atmosphere&rsquo;s temperature and humidity). People use this data to predict soaring conditions, atmospheric stability, and the likelihood of severe weather. Previous diagrams have been called the most difficult atmospheric diagrams to read. AtmosView helps readers see this information on individual charts, and allows them to more easily compare between multiple charts.</p>
+    <p><a href="assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"><img class="thumbnail" title="atmosview" src="assets/Screen-shot-2011-08-07-at-9.22.51-AM.png" alt="" width="150" /></a>I created AtmosView, a new visualization for atmospheric sounding data (vertical profiles of the atmosphere&rsquo;s temperature and humidity). People use this data to predict soaring conditions, atmospheric stability, and the likelihood of severe weather. Previous diagrams have been called the most difficult atmospheric diagrams to read. AtmosView helps readers see this information on individual charts, and allows them to more easily compare between multiple charts.</p>
     <p>Sancho McCann. &ldquo;Atmospheric Sounding Visualization.&rdquo; Project report. [<a href="assets/McCann-AtmosView.pdf">pdf</a>]</p>
 
     <h2 name="publications">Résumé</h2>
