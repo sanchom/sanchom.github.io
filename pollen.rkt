@@ -39,4 +39,15 @@
 (define (aside . content)
   (txexpr 'div '((class "aside")) content))
 
+; Defines a little tiny social media logo
+(define (little-logo #:href href . source)
+  (txexpr 'a `((href ,href)) (list (txexpr 'img `((class "little-logo") (width "30px") (src ,@source)) empty))))
+
+; Defines a little bracketed link
+(define (b-link #:word [word "pdf"]. url)
+  (txexpr 'span empty (list "[" (txexpr 'a `((href ,@url)) (list word)) "]")))
+
+(define (thumbnail #:big big-url #:small [small-url big-url] #:width [width "150"])
+  (txexpr 'a `((href ,big-url)) (list (txexpr 'img `((class "thumbnail") (src ,small-url) (width ,width)) empty))))
+
 (provide (all-defined-out))
