@@ -1,14 +1,19 @@
 <html>
   <head>
     <title>Towards Optimal Naive Bayes Nearest Neighbor</title>
-    <link href="onbnn.css" rel="stylesheet" type="text/css" />
+    <style>
+      body { margin-left: 15%; margin-right: 15%; margin-top: 5em; margin-bottom: 5em; line-height: 1.35;}
+      p, li { font-size: 120%; }
+      h1, h2, h3, h4, h5, h6 { border-top: 0.5px solid black; margin-top: 2em; padding-top: 0.5em; font-family: sans-serif;}
+      p.indent { margin-left: 5em; margin-right: 5em;}
+    </style>
   </head>
   <body>
     <p>This page outlines my attempt to reproduce the results of Behmo et al.'s
       paper, 'Towards Optimal Naive Bayes Nearest Neighbor'.</p>
-    <h4>Discussion</h4>
+    <h3>Discussion</h3>
     <p>Behmo et al. presented the following results in their paper:</p>
-    <img src="assets/onbnn-result.png" height="100px" />
+    <img src="assets/onbnn-result.png" height="140px" />
     <p>This suggested that the original NBNN method performed poorly when
       run on this 5 class subset of the Caltech 101 dataset. When I attempted
       to reproduce these poor results using the code in experiment_7 below, I
@@ -87,7 +92,7 @@ c101_Motorbikes: 0.949333 &plusmn; 0.037854
 Overall: 0.933067 &plusmn; 0.044768</pre>
     <p>This actually is better than the optimal NBNN results that Behmo
       reported on this dataset.</p>
-    <h4>Code and data</h4>
+    <h3>Code and data</h3>
     <p>The 5-class Caltech 101
       subset: <a href="assets/onbnn-data.tgz">onbnn-data.tgz</a></p>
     <p class="indent">This contains the resized images, the extraction program that Behmo et
@@ -100,7 +105,7 @@ Overall: 0.933067 &plusmn; 0.044768</pre>
       method: <a href="assets/experiment_7.tgz">experiment_7.tgz</a></p>
     <p>Behmo et al's version of the original NBNN
       method: <a href="assets/experiment_8.tgz">experiment_8.tgz</a></p>
-    <h4>References</h4>
+    <h3>References</h3>
     <ul>
       <li>oNBNN source
         code: <a href="http://code.google.com/p/optimal-nbnn/">optimal-nbnn</a></li>
