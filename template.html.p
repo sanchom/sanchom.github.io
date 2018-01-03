@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<!--
+◊|template-message|
+-->
 <html>
   <head>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
