@@ -7,11 +7,15 @@ learning, and applications of deep neural networks.  I finished my
 Ph.D. at the University of British Columbia in April 2014 and was
 supervised by ◊a[#:href "http://www.cs.ubc.ca/~lowe/"]{David Lowe}.
 
-◊a[#:href "2017-in-review/index.html"]{Here's what I've been up to and thinking about in 2017}.
-
 ◊div[#:class "external-link-logos"]{
 ◊little-logo[#:href "https://sanchom.wordpress.com"]{assets/wordpress-logo-notext-rgb.png}
 ◊little-logo[#:href "https://twitter.com/sanchom"]{assets/Twitter_Social_Icon_Circle_Color.png}
+}
+◊aside{
+◊a[#:href "2017-in-review/index.html"]{What I was up to and thinking about in 2017}.
+}
+◊aside{
+◊a[#:href "resume.html"]{A résumé}.
 }
 
 ◊h1{Selected Publications}
