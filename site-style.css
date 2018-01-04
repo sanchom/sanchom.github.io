@@ -30,7 +30,7 @@ p, li {line-height: 1.5;}
 li {padding-left: 1em;}
 
 img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
-img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em;}
+img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 0.5em;}
 
 .external-link-logos {
   display:flex;

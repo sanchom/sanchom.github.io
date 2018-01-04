@@ -4,7 +4,7 @@
 
 (define template-message "This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.")
 (define site-author "Sancho McCann")
-(define site-title "2017")
+(define site-title "Sancho McCann")
 
 ; Ignores single line breaks in paragraph interpretation. They are
 ; converted to spaces.

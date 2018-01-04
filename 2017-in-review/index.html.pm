@@ -1,5 +1,7 @@
 #lang pollen
 
+◊define-meta[page-title]{2017 in review}
+
 ◊h1{Work}
 Shelfie, the startup I had worked at since 2014,
 ◊a[#:href "https://publishingperspectives.com/2017/01/canada-shelfie-bitlit-closing-service/"]{shut down in January}. I took
