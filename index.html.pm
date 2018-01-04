@@ -14,7 +14,7 @@ supervised by ◊a[#:href "http://www.cs.ubc.ca/~lowe/"]{David Lowe}.
 ◊little-logo[#:href "https://twitter.com/sanchom"]{assets/Twitter_Social_Icon_Circle_Color.png}
 }
 
-◊h2{Selected Publications}
+◊h1{Selected Publications}
 
 Sancho McCann. "Object classification and localization using spatially
 localized features". Ph.D. Dissertation. UBC Department of Computer
@@ -53,7 +53,7 @@ Autonomous Systems (CIRAS)}, 2005.
 
 A more complete list is at my ◊a[#:href "https://scholar.google.com/citations?user=6C-udIUAAAAJ"]{Google Scholar profile}.
 
-◊h2{Projects}
+◊h1{Projects}
 
 ◊h4{Spatially local coding}
 ◊thumbnail[#:big "assets/toptens.png" #:small "assets/toptens-150x150.png"]{}

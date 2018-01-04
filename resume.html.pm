@@ -2,9 +2,7 @@
 
 ◊define-meta[page-title]{Résumé}
 
-◊h2{Résumé}
-
-◊h4{Languages, libraries, and tools}
+◊h1{Languages, libraries, and tools}
 Python 2/3, NumPy, OpenCV, Caffe, Tensorflow, Tensorflow Serving, C++11/14, Boost, Google Test, Protocol Buffers, Apache Thrift,
 Scala, Play 2.x, Slick, Docker, Heroku, AWS.
 
@@ -12,6 +10,7 @@ Convolutional and recurrent neural networks.
 
 Custom algorithm research, design, implementation, evaluation.
 
+◊h1{Work}
 ◊h4{Research Assistant, University of Manitoba — 2005}
 I worked with Dr. Jacky Baltes in the Autonomous Agents Laboratory on a small, humanoid robot. I wrote vision algorithms and developed a stable walking gait for the robot.
 
@@ -28,7 +27,7 @@ Shelfie was an app that automatically identified books in photos
 that our users took of their bookshelves. I wrote most of the automatic recognition system, including feature-based nearest-neighbor matching,
 text-recognition, and convolutional neural networks. I created custom validation datasets and tools for quality control. I managed our SRED and IRAP projects, drafted patent applications, and mentored teammates when they helped with this research. The tech and team is now part of Kobo.
 
-◊h4{Leadership, volunteering, hobbies}
+◊h1{Leadership, volunteering, hobbies}
 
 I have a Commercial Pilot Licence and a Class 1 Flight Instructor
 Rating. I got most of my flight experience as a flight instructor at
