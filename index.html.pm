@@ -44,45 +44,25 @@ for Image Classification." ◊em{CVPR}, 2012.
 ◊b-link{assets/McCannLowe_CVPR2012_1925.pdf} ◊b-link[#:word "project
 page"]{http://www.cs.ubc.ca/projects/local-nbnn}
 
-David Meger, Per-Erik. Forssén, Kevin Lai, Scott Helmer, Sancho
-McCann, Tristram Southey, Matthew Baumann, James J. Little, and David
-G. Lowe. "Curious George: An Attentive Semantic Robot". In
-◊em{Robotics and Autonomous Systems Journal}, Volume 56, Number 6,
-pp. 503–511. June 2008.
-◊b-link{http://www.cs.ubc.ca/labs/lci/curious_george/pubs/UBC_RAS_FSHSC.pdf}
+A more complete list is at my ◊a[#:href
+"https://scholar.google.com/citations?user=6C-udIUAAAAJ"]{Google
+Scholar profile}.
 
-Sancho McCann and Jacky Baltes. "Towards Automatic Image Modification
-as an Empirical Test of Image Segmentation." In ◊em{Proc. 9th
-International Conference on Control, Automation, Robotics and Vision
-(ICARCV)}, 2006.
-◊b-link{assets/McCannBaltes_-_Towards_Automatic_Image_Modification.pdf}
+◊h1{Selected Projects}
 
-Sancho McCann and Jacky Baltes. "Abarenbou – A Small Vision-Based
-Humanoid Robotic Research platform." In ◊em{Proc. of the Third
-International Conference on Computational Intelligence, Robotics, and
-Autonomous Systems (CIRAS)}, 2005.
-◊b-link{assets/McCannBaltes-Abarenbou.pdf}
+◊h4{AtmosView: Visualization Redesign}
+◊thumbnail[#:big "assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"]
+I created AtmosView, a new visualization for atmospheric sounding data
+(vertical profiles of the atmosphere's temperature and
+humidity). People use this data to predict soaring conditions,
+atmospheric stability, and the likelihood of severe weather. Previous
+diagrams have been called the most difficult atmospheric diagrams to
+read. AtmosView helps readers see this information on individual
+charts, and allows them to more easily compare between multiple
+charts.
 
-A more complete list is at my ◊a[#:href "https://scholar.google.com/citations?user=6C-udIUAAAAJ"]{Google Scholar profile}.
-
-◊h1{Projects}
-
-◊h4{Spatially local coding}
-◊thumbnail[#:big "assets/toptens.png" #:small "assets/toptens-150x150.png"]{}
-This method for classifying images takes features that have been
-extracted from a training dataset and groups them into clusters that
-are similar in appearance and location.
-
-More details, code: ◊b-link[#:word "project-page"]{http://www.cs.ubc.ca/projects/spatially-local-coding}
-
-◊h4{Local Naive Bayes Nearest Neighbor}
-Local Naive Bayes Nearest Neighbor improves upon the NBNN image
-classification algorithm. Local NBNN gives higher classification
-accuracy and runs 100 times faster than NBNN on the Caltech 256
-dataset.
-
-More details, code: ◊b-link[#:word "project
-page"]{http://www.cs.ubc.ca/projects/local-nbnn}
+Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
+"project report"]{assets/McCann-AtmosView.pdf"}
 
 ◊h4{Humanoid Robot}
 ◊thumbnail[#:big "assets/abarenbou.png" #:small "assets/abarenbou-225x300.png"]{}
@@ -114,17 +94,3 @@ Paul Furgale, Sancho McCann, Jim Majewski, Andrew Bugera, and Kory
 Zelickson. "Team Manitoba 2006 AUVSI Student Competition Project
 Description." ◊em{AUVSI: 4th Annual Student Unmanned Aerial Vehicle
 Competition}, 2006. ◊b-link{assets/TeamManitoba2006.pdf}
-
-◊h4{AtmosView: Visualization Redesign}
-◊thumbnail[#:big "assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"]
-I created AtmosView, a new visualization for atmospheric sounding data
-(vertical profiles of the atmosphere's temperature and
-humidity). People use this data to predict soaring conditions,
-atmospheric stability, and the likelihood of severe weather. Previous
-diagrams have been called the most difficult atmospheric diagrams to
-read. AtmosView helps readers see this information on individual
-charts, and allows them to more easily compare between multiple
-charts.
-
-Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
-"project report"]{assets/McCann-AtmosView.pdf"}
