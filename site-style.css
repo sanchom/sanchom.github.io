@@ -6,7 +6,7 @@
 @media all and (max-width:760px){html {font-size:14px;}}
 @media all and (max-width:720px){html {font-size:13px;}}
 
-@media all and (max-width:720px){html {font-size:14px;}}
+@media all and (max-width:720px){html {font-size:16px;}}
 
 body {font-family: "Quattrocento", serif; margin-top: 5em; margin-bottom: 5em; margin-left: 15%; margin-right: 16.0rem; max-width: 45em;}
 @media all and (max-width:720px){body {margin-top: 1em; margin-left: 1em; margin-right: 1em; max-width: initial;}}
