@@ -37,7 +37,7 @@ img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 
   justify-content:center;
 }
 
-div.aside p, div.aside a, div.aside li, div.aside div {
+div.aside, div.aside p, div.aside a, div.aside li, div.aside div {
 font-family: Raleway;
 }
 
