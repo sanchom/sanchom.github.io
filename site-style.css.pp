@@ -33,7 +33,7 @@ a:hover {text-decoration: underline; color: ◊|link-color|;}
 
 ul {list-style: circle outside;}
 
-p, li {line-height: 1.5;}
+p, li, blockquote {line-height: 1.5;}
 li {padding-left: 1em;}
 
 img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
@@ -54,6 +54,12 @@ padding-left: 0.5em;
 }
 div.aside ul {
 padding-left: 1em;
+}
+
+blockquote {
+    border-left: 10px solid gainsboro;
+    padding-left: 1em;
+    margin-right: 5em;
 }
 
 div.aside {

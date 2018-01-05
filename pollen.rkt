@@ -51,4 +51,7 @@
 (define (thumbnail #:big big-url #:small [small-url big-url] #:width [width "150"])
   (txexpr 'a `((href ,big-url)) (list (txexpr 'img `((class "thumbnail") (src ,small-url) (width ,width)) empty))))
 
+(define (q . content)
+  (txexpr 'blockquote empty content))
+
 (provide (all-defined-out))
