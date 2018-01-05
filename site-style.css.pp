@@ -48,6 +48,7 @@ div.aside, div.aside p, div.aside a, div.aside li, div.aside div {
 font-family: Raleway;
 }
 
+◊; Tighter lists within an aside
 div.aside li {
 padding-left: 0.5em;
 }
@@ -74,16 +75,6 @@ div.aside {
 
 @media all and (max-width:◊|small-screen-trigger|px){
 div.aside {
-    border-left: 10px solid gainsboro;
-    border-bottom: 0.5px solid gainsboro;
-    border-top: 0.5px solid gainsboro;
-    border-right: 0.5px solid gainsboro;
-    background-color: whitesmoke;
-    padding-left: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-right: 1em;
-    font-size: 0.75rem;
     margin: 1rem auto 0 auto;
     float: none;
     clear: none;
