@@ -52,14 +52,13 @@ Scholar profile}.
 
 ◊h4{AtmosView: Visualization Redesign}
 ◊thumbnail[#:big "assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"]
-I created AtmosView, a new visualization for atmospheric sounding data
+I created AtmosView, a new visualization of atmospheric sounding data
 (vertical profiles of the atmosphere's temperature and
 humidity). People use this data to predict soaring conditions,
 atmospheric stability, and the likelihood of severe weather. Previous
 diagrams have been called the most difficult atmospheric diagrams to
-read. AtmosView helps readers see this information on individual
-charts, and allows them to more easily compare between multiple
-charts.
+read. AtmosView helps people to see better the information they're interested
+in and allows for easier comparisons between multiple charts.
 
 Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
 "project report"]{assets/McCann-AtmosView.pdf"}
