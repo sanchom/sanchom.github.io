@@ -5,11 +5,6 @@
 I am a computer scientist interested in object recognition, machine
 learning, and applications of deep neural networks.
 
-◊aside{
-Python 2/3, NumPy, OpenCV, Caffe, Tensorflow, Tensorflow Serving,
-C++11/14, Boost, Protocol Buffers, Apache Thrift, Scala,
-Play 2.x, Slick, Docker, Heroku, AWS}
-
 Currently: data scientist at Kobo, webmaster for the Webster Memorial Trophy
 Competition, ◊a[#:href
 "http://athletics.ca/wp-content/themes/default-bs3/popups/athlete-rankings.php?id=8218097&year=0"]{amateur
