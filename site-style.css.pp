@@ -80,6 +80,18 @@ div.aside {
 }
 
 @media all and (max-width:◊|small-screen-trigger|px){
+img {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote {
+    margin-right: 2em;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
 div.aside {
     margin: 1rem auto 0 auto;
     float: none;
