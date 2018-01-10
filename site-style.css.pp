@@ -99,4 +99,7 @@ div.aside {
     width: 30rem;
     max-width: 80%;
 }
+
+li { padding-left: 0.5em; }
+ul { padding-left: 1em; }
 }
