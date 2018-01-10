@@ -100,6 +100,6 @@ div.aside {
     max-width: 80%;
 }
 
-li { padding-left: 0.5em; }
-ul { padding-left: 1em; }
+li { margin-left: 1em; padding-left: 1em; }
+ul { margin-left: 0; padding-left: 0; }
 }
