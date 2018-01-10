@@ -10,8 +10,8 @@ Competition, ◊a[#:href
 "http://athletics.ca/wp-content/themes/default-bs3/popups/athlete-rankings.php?id=8218097&year=0"]{amateur
 sprinter}, Class 1 Flight Instructor (not active).
 
-Formerly: 2× Google Intern, Head of R&D for Shelfie, Canadian Forces Officer
-(Cadet Instructor Cadre), student government at UBC.
+Formerly: Head of R&D for Shelfie, Canadian Forces Officer
+(Cadet Instructor Cadre), student government at UBC, 2× Google Intern.
 
 ◊div[#:class "external-link-logos"]{
 ◊little-logo[#:href "https://sanchom.wordpress.com"]{assets/wordpress-logo-notext-rgb.png}

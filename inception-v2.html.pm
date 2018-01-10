@@ -50,6 +50,8 @@ I can't find this model.txt file anywhere on the internet, but they present this
 
 ◊itemize{
 BN-GoogLeNet
+
 BN-Inception
+
 Inception-v2
 }

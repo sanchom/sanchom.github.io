@@ -18,16 +18,22 @@ These are some of the things that I enjoyed or that have influenced my thinking 
 ◊itemize{
 ◊div{
 ◊work[#:author "Rebecca Solnit" #:year 2004 #:url "https://www.haymarketbooks.org/books/791-hope-in-the-dark"]{Hope in the Dark}
+
 Rebecca Solnit wrote this book near the end of George W. Bush's first term as president. She presents
 an outlook of hope in the face of uncertainty.
 }
+
 ◊work[#:author "Carrie Brownstein" #:year 2015 #:url "https://www.penguinrandomhouse.com/books/312793/hunger-makes-me-a-modern-girl-by-carrie-brownstein/9780399184765/"]{Hunger Makes Me a Modern Girl}
+
 ◊div{
 ◊work[#:author "Isabel Wilkerson" #:year 2010 #:url "https://www.penguinrandomhouse.com/books/190696/the-warmth-of-other-suns-by-isabel-wilkerson/9780679763888/"]{The Warmth of Other Suns}
+
 The story of the Great Migration, told through the lives of three people who left the American south to pursue better lives.
 }
+
 ◊div{
 ◊work[#:author "H. L. A. Hart" #:year 1961 #:url "https://global.oup.com/academic/product/the-concept-of-law-9780199644698"]{The Concept of Law}
+
 Hart's concept of law comprises primary rules that tell us
 what to do and secondary rules of recognition, adjudication, and change. He contrasts
 this with Austin's theory that law is just a
@@ -48,11 +54,14 @@ or description captures those things properly thought of as law and excludes thi
 is somewhat circular, but Hart takes a pragmatic approach: what distinctions are
 useful for the kinds of analyses we tend to do?
 }
+
 ◊div{
 ◊work[#:author "Louise Rosenblatt" #:year 1933 #:url "https://www.mla.org/Publications/Bookstore/Nonseries/Literature-as-Exploration-5th-edition"]{Literature as Exploration}
+
 ◊aside{◊em{Democracy implies a society of people who, no matter how much they differ
 from one another, recognize their common interests, their common goals, and their
 dependence on mutually honored freedoms and responsibilities.} --- Louise Rosenblatt}
+
 This book changed the way I think about reading, and art in general.
 I've long held the view that you simply "like what you like", and  that once an author's words
 are out on the page, all that matters is the interpretation that you as a reader
@@ -65,10 +74,13 @@ reflection on the causes of your reaction can help you learn more about yourself
 others. An ancillary theme is how literature can help develop the empathy necessary for a strong
 and representative democracy.
 }
+
 ◊div{
 ◊work[#:author "Ruth Bader Ginsburg" #:year 2016 #:url "http://www.simonandschuster.ca/books/My-Own-Words/Ruth-Bader-Ginsburg/9781501145247"]{My Own Words}
+
 The highlights for me were Justice Ginsburg's early writing, her thoughts on comparative law, and the role of dissent.
 }
+
 ◊div{
 ◊work[#:author "John Hodgman" #:year 2017 #:url "https://www.penguinrandomhouse.com/books/557020/vacationland-by-john-hodgman/9780735224803/"]{Vacationland}
 }
@@ -79,6 +91,7 @@ The highlights for me were Justice Ginsburg's early writing, her thoughts on com
 ◊div{
 ◊work[#:author "Barton Beebe" #:year 2017 #:url "http://columbialawreview.org/content/bleistein-the-problem-of-aesthetic-progress-and-the-making-of-american-copyright-law/"]{
 Bleistein, the Problem of Aesthetic Progress, and the Making of American Copyright Law}
+
 Beebe argues that, with respect to copyright, courts should recognize that aesthetic progress can happen
 when there is simply more art and more people that have made art
 (Beebe refers to John Dewey's ◊em{Art as Experience} in describing this view).
@@ -87,17 +100,23 @@ a more expansive fair use exception, allowing more things to be made, even if cl
 }
 ◊div{
 ◊work[#:author "Jennifer Leitch" #:year 2016 #:url "http://digitalcommons.osgoode.yorku.ca/phd/23/"]{Having a Say: Democracy, Access to Justice and Self-Represented Litigants}
-It is difficult to get meaningful access to justice as a self-represented litigant. The extent to which a person succeeds at
-  that can affect their participation in other aspects of democracy.
+
+It is difficult to get meaningful access to justice as a
+self-represented litigant. The extent to which a person succeeds at
+that can affect their participation in other aspects of democracy.
 }
+
 ◊work[#:author "The Atlantic" #:year 2017 #:url "https://www.theatlantic.com/projects/inside-jobs/"]{Inside Jobs: Hear what American workers have to say about their jobs}
+
 ◊div{
 ◊work[#:author "Zahr Said" #:year 2017 #:url "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2902765"]{A Transactional Theory of the Reader in Copyright Law}
+
 How an acceptance of Rosenblatt's transactional theory of reading would change the questions that we
 ask jurors and the evidence we give them in copyright cases.
 }
 ◊div{
 ◊work[#:author "Tim Parks" #:year 2017 #:url "http://www.nybooks.com/daily/2017/12/09/gained-in-translation/"]{Gained in Translation}
+
 This article put into words the way I've come to think
 about reading.
 
@@ -112,13 +131,18 @@ But it’s also true that when preferences shift they do so for a reason, if
 
 ◊h2{Short stories}
 ◊itemize{
+
 ◊work[#:author "F. Scott Fitzgerald" #:year 1920 #:url "https://www.newyorker.com/magazine/2017/03/20/the-i-o-u"]{The I.O.U.}
+
 ◊work[#:author "Kristen Roupenian" #:year 2017 #:url "https://www.newyorker.com/magazine/2017/12/11/cat-person"]{Cat Person}
+
 }
 
 ◊h2{Twitter}
 ◊itemize{
- ◊work[#:author "Jason Steed" #:year 2016 #:url "https://twitter.com/5thcircappeals/status/763098172633657344"]{◊string->symbol{hellip}and here's the thing about "just joking"}
+
+◊work[#:author "Jason Steed" #:year 2016 #:url "https://twitter.com/5thcircappeals/status/763098172633657344"]{◊string->symbol{hellip}and here's the thing about "just joking"}
+
 ◊work[#:author "Noah Berlatsky" #:year 2017 #:url "https://twitter.com/nberlat/status/891104372654043136"]{quality [is a] genre designation}
 }
 
@@ -146,16 +170,19 @@ and visited the Library of Congress, the Capitol Building, and National Public R
 I thought that because I wasn't on Earth when the Chief Justice and the PRESIDENT-ELECT recited the magic words,
 my universe might split in two and I would land on ALT-EARTH where everything was fine.
 I landed on normal Earth.}
+
 ◊div{◊a[#:href "https://sanchom.wordpress.com/2017/09/06/trip-report-cortes-island-cci9/"]{Cortes Island}:
  Alison and I flew to Cortes Island to visit some friends who work on a small
- teaching farm.}
+teaching farm.}
+
 ◊div{I visited Winnipeg twice this year: once in the spring for my mom's birthday and again in the fall
  for my Air Cadet squadron's reunion. It was good to see friends that
- were part of the most influential experiences of my life. I've been thinking a lot about ambition, privilege,
+were part of the most influential experiences of my life. I've been thinking a lot about ambition, privilege,
  and finding meaning in work; this was a perfect chance to talk with a bunch of people that I consider
  peers and mentors about how they think about those things. I also have a small group of friends that I've kept in touch with
 since high school that I get to see whenever I'm back in Winnipeg. Some have even made little babies and are raising them
- to be curious, thoughtful people.}
+to be curious, thoughtful people.}
+
 ◊div{I attended ◊a[#:href "https://con.racket-lang.org/"]{RacketCon} in Seattle.
 A lot of interesting projects, and a lot of people thinking about languages and
 functional programming.}
