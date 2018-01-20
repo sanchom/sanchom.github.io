@@ -62,4 +62,7 @@
 (define (q . content)
   (txexpr 'blockquote empty content))
 
+(define (bem . content)
+  (txexpr 'b empty (list (txexpr 'em empty content))))
+
 (provide (all-defined-out))
