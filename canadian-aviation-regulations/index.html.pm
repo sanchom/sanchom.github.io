@@ -95,7 +95,7 @@ material for the Private Pilot licence.
 The basic unit of regulation is a ◊em{Section}. For example, this is
 section 602.01:
 
-◊q{◊car[#:sec 602.01]}
+◊q{◊reg[#:sec 602.01]}
 
 The number, 602.01, indicates that this is the first section in
 Subpart 2 of Part VI of the CARs.
@@ -115,7 +115,7 @@ Let's continue with this example and search for the definition of
 aircraft. The section itself doesn't define "aircraft".
 ◊aside{Only five sections in the CARs have section-specific definitions. Here's one:
 
-◊car[#:sec 602.11 #:subsec 1]
+◊reg[#:sec 602.11 #:subsec 1]
 
 }
 

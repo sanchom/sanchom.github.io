@@ -44,6 +44,10 @@ img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 
   justify-content:center;
 }
 
+div.para, div.subpara, div.clause, div.subclause {
+margin-left: 2rem;
+}
+
 div.aside, div.aside p, div.aside a, div.aside li, div.aside div {
 font-family: Raleway;
 }
