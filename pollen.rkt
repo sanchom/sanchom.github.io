@@ -45,8 +45,11 @@
       (txexpr 'span empty (list (txexpr 'em empty (list (txexpr 'a `((href ,url)) title-or-description))) (format ", ~a (~a)" a y)))))
 
 ; Defines a little sidebar box
-(define (aside . content)
-  (txexpr 'div '((class "aside")) content))
+(define (mnote . content)
+  (define refid (number->string (random 4294967087)))
+  `(span (label [[for ,refid] [class "margin-toggle"]] "⊕")
+         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]] )
+         (span [(class "margin-note")] ,@content)))
 
 ; Defines a little tiny social media logo
 (define (little-logo #:href href . source)

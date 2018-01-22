@@ -2,7 +2,7 @@
 
 ◊(define-meta template "cars-template.html")
 
-◊h1{About this book}
+◊h2{About this book}
 
 This book will help prepare you for Canada's Private Pilot written
 exam (aeroplane). It will not present all the material you need to
@@ -26,7 +26,7 @@ in the appendix, but 99% of the material comes straight from the
 ◊em{Canadian Aviation Regulations} and the ◊em{Aeronautical
 Information Manual}.
 
-◊h1{How to study the Canadian Aviation Regulations}
+◊h2{How to study the Canadian Aviation Regulations}
 
 One way to study for this section of the written exam is to just look
 at each section listed in the Study and Reference Guide and memorize
@@ -56,9 +56,9 @@ perspective is a chance to better learn the material.
 
 This book will also give you those chances.
 
-◊h1{Structure of the Canadian Aviation Regulations}
+◊h2{Structure of the Canadian Aviation Regulations}
 
-◊h2{Parts}
+◊h3{Parts}
 The CARs are organized into eight parts, but only five are relevant
 for your private pilot written examination:
 
@@ -78,19 +78,17 @@ etc.
 
 }
 
-◊h2{Subparts and divisions}
+◊h3{Subparts and divisions}
 
-◊aside{Subparts ◊em{are} an useful distinction in Part VII, where
+Each part is further broken down into subparts and divisions, but I
+never found those distinctions useful for helping me understand the
+material for the Private Pilot licence. ◊mnote{Subparts ◊em{are} an useful distinction in Part VII, where
 Subpart 2 (702.xxx) is about aerial work, Subpart 3
 (703.xxx) is about air taxi operations, Subpart 4
 (704.xxx) is about commuter operations, and Subpart
 5 (705.xxx) is about airline operations.}
 
-Each part is further broken down into subparts and divisions, but I
-never found those distinctions useful for helping me understand the
-material for the Private Pilot licence.
-
-◊h2{Sections}
+◊h3{Sections}
 
 The basic unit of regulation is a ◊em{Section}. For example, this is
 section 602.01:
@@ -100,7 +98,7 @@ section 602.01:
 The number, 602.01, indicates that this is the first section in
 Subpart 2 of Part VI of the CARs.
 
-◊h2{Definitions}
+◊h3{Definitions}
 
 602.01 refers to "aircraft". What things are considered "aircraft"?
 You can probably guess that Cessnas are aircraft. But what about
@@ -113,11 +111,6 @@ Part, and then 101.01 (the CARs-wide definitions).
 
 Let's continue with this example and search for the definition of
 aircraft. The section itself doesn't define "aircraft".
-◊aside{Only five sections in the CARs have section-specific definitions. Here's one:
-
-◊reg[#:sec 602.11 #:subsec 1]
-
-}
 
 So, let's move to the enclosing division (Part VI, Subpart 2, Division
 1). There are no definitions there.
@@ -163,10 +156,10 @@ It looks like the CARs defines "aeroplane", but not
 "aircraft". Transport Canada uses the term "aircraft" throughout the
 CARs, but doesn't actually define it. This can't be right.
 
-◊aside{◊em{◊a[#:href
+I've misled you. There is one more place
+where a definition might be found: the ◊em{Aeronautics Act}. ◊mnote{◊em{◊a[#:href
 "http://laws-lois.justice.gc.ca/eng/acts/A-2/FullText.html"]{Aeronautics
-Act}}. R.S.C., 1985, c. A-2} I've misled you. There is one more place
-where a definition might be found: the ◊em{Aeronautics Act}. It's what
+Act}}. R.S.C., 1985, c.◊string->symbol{nbsp}A◊string->number{8209}2} It's what
 gives Transport Canada the authority to create the CARs and it also
 has a few definitions. In the ◊em{Aeronautics Act}, we learn what an aircraft is:
 
@@ -178,13 +171,13 @@ in the atmosphere from reactions of the air, and includes a rocket;
 It turns out "aircraft" is a very broad concept. Gliders are
 aircraft. Drones are aircraft. Rockets are aircraft.
 
-◊h1{Case Study 1}
+◊h2{Case Study 1}
 
-◊h1{Enforcement Actions}
+◊h2{Enforcement Actions}
 
-◊h1{Regulations vs. Standards}
+◊h2{Regulations vs. Standards}
 
-◊h1{Airport Procedures}
+◊h2{Airport Procedures}
 
-◊h1{Table-top Scenarios}
+◊h2{Table-top Scenarios}
 
