@@ -123,10 +123,10 @@ label.margin-toggle { display: inline; }
 font-size: 1rem;
 display: block;
 float: left;
-left: 1rem;
+left: 0rem;
 clear: both;
-width: 95%;
-margin: 1rem 2.5%;
+width: 85%;
+margin: 1rem 7.5%;
 vertical-align: baseline;
 position: relative;
 }
