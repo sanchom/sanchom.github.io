@@ -2,8 +2,8 @@
 
 ◊define-meta[page-title]{What is Inception-V2?}
 
-◊h1{What is Inception-v2?}  
-◊h2{It's Inception plus Batch Normalization and some 5x5 factoring}
+◊title{What is Inception-v2?}  
+◊heading{It's Inception plus Batch Normalization and some 5x5 factoring}
   
 In ◊a[#:href "https://arxiv.org/abs/1602.07261"]{Inception-v4}, Szegedy et al. describe Inception-v2:
 
@@ -17,7 +17,7 @@ That paper by Ioffe et al. describes their model like this:
 convolutional layers are replaced by two consecutive layers
 of 3 × 3 convolutions with up to 128 filters."}
 
-◊h2{It's an intermediate variant of Inception before -v3, and different than batch-normalized Inception}
+◊heading{It's an intermediate variant of Inception before -v3, and different than batch-normalized Inception}
   
 ◊a[#:href "https://arxiv.org/abs/1512.00567"]{Rethinking the Inception
 Architecture for Computer Vision} has a section (Section 6) titled

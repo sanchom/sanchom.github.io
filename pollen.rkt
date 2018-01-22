@@ -68,4 +68,13 @@
 (define (bem . content)
   (txexpr 'b empty (list (txexpr 'em empty content))))
 
+(define (title . content)
+  `(h1 ,@content))
+
+(define (heading . content)
+  `(h2 ,@content))
+
+(define (sub-heading . content)
+  `(h3 ,@content))
+
 (provide (all-defined-out))

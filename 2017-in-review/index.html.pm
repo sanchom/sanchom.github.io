@@ -2,18 +2,18 @@
 
 ◊define-meta[page-title]{2017 in review}
 
-◊h2{Work}
+◊heading{Work}
 Shelfie, the startup I had worked at since 2014,
 ◊a[#:href "https://publishingperspectives.com/2017/01/canada-shelfie-bitlit-closing-service/"]{shut down in January}. I took
 a couple of months off and by the time I was ready to start looking for work,
 ◊a[#:href "https://www.theverge.com/2017/4/9/15235686/kobo-acquired-shelfie-app-readers-discounted-ebooks"]{Kobo decided to buy our tech and hire us}.
 Kobo's main office is in Toronto, but we still work from Vancouver.
 
-◊h2{Reading}
+◊heading{Reading}
 
 These are some of the things that I enjoyed or that have influenced my thinking in 2017.
 
-◊h3{Books}
+◊sub-heading{Books}
 
 ◊itemize{
 ◊div{
@@ -84,7 +84,7 @@ The highlights for me were Justice Ginsburg's early writing, her thoughts on com
 }
 }
 
-◊h3{Articles}
+◊sub-heading{Articles}
 ◊itemize{
 ◊div{
 ◊work[#:author "Barton Beebe" #:year 2017 #:url "http://columbialawreview.org/content/bleistein-the-problem-of-aesthetic-progress-and-the-making-of-american-copyright-law/"]{
@@ -127,7 +127,7 @@ But it’s also true that when preferences shift they do so for a reason, if
 }
 }
 
-◊h3{Short stories}
+◊sub-heading{Short stories}
 ◊itemize{
 
 ◊work[#:author "F. Scott Fitzgerald" #:year 1920 #:url "https://www.newyorker.com/magazine/2017/03/20/the-i-o-u"]{The I.O.U.}
@@ -136,7 +136,7 @@ But it’s also true that when preferences shift they do so for a reason, if
 
 }
 
-◊h3{Twitter}
+◊sub-heading{Twitter}
 ◊itemize{
 
 ◊work[#:author "Jason Steed" #:year 2016 #:url "https://twitter.com/5thcircappeals/status/763098172633657344"]{◊string->symbol{hellip}and here's the thing about "just joking"}
@@ -144,7 +144,7 @@ But it’s also true that when preferences shift they do so for a reason, if
 ◊work[#:author "Noah Berlatsky" #:year 2017 #:url "https://twitter.com/nberlat/status/891104372654043136"]{quality [is a] genre designation}
 }
 
-◊h2{Computer things}
+◊heading{Computer things}
 I wrote a web app that presents some flight planning information taken from navcanada.ca that
 I find useful for VFR flying in the British Columbia lower mainland. ◊mnote{◊a[#:href "http://www.lower-mainland-flight-planning.ca/"]{Flight Planning Page}}
 I'm not satisfied with how I display the NOTAMs though. They have structure (locations,
@@ -159,7 +159,7 @@ Because I was trying to learn how to use Pollen, I also learned a bit about Rack
 ◊mnote{◊work[#:author "Matthew Butterick" #:year 2016 #:url "https://beautifulracket.com/"]{Beautiful Racket}} I
 like the things I get to think about while writing in Racket, at least as a beginner Racket programmer.
 
-◊h2{Travel}
+◊heading{Travel}
 ◊itemize{
 ◊div{◊a[#:href "https://sanchom.wordpress.com/2017/01/27/washington-d-c/"]{Washington, D.C.}: On the week
 of THE INAUGURATION, I saw Gladys Knight perform at the Kennedy Centre for Martin Luther King Jr. Day, watched two cases argued at the Supreme Court,
@@ -185,7 +185,7 @@ A lot of interesting projects, and a lot of people thinking about languages and
 functional programming.}
 }
 
-◊h2{Track}
+◊heading{Track}
 The last time I played a game of ultimate was in the spring of 2016, but I hadn't decided to focus
 exclusively on track until this year. I like the structured training and predictable progress that I find
 in track. We pay much more attention to training variables like volume, intensity, and rest periods in track than
@@ -193,12 +193,12 @@ in ultimate. For me, that makes it more conducive to athletic development and I 
 to compete in for decades. My ◊a[#:href "http://athletics.ca/wp-content/themes/default-bs3/popups/athlete-rankings.php?id=8218097&year=0"]{season bests}
 were 7.51◊string->symbol{nbsp}s in the 60◊string->symbol{nbsp}m and 11.77◊string->symbol{nbsp}s in the 100◊string->symbol{nbsp}m.
 
-◊h2{Games}
+◊heading{Games}
 
 I've been playing Overwatch and I'm objectively bad (like bottom 5%), but it's fun. My mains are
 Soldier◊string->symbol{nbsp}76, Junkrat, Orisa, and Mercy.
 
-◊h2{2018}
+◊heading{2018}
 I made a resolution in 2017 to not read breaking news. It's just speculation
 and guessing games. If I wait for the journalism to sort itself out, I get less worked up about
 stuff that's not truly significant and actually understand the significance of the stuff that is.

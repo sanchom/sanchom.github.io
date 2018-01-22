@@ -21,7 +21,7 @@ Formerly: Head of R&D for Shelfie, Canadian Forces Officer
 ◊little-logo[#:href "https://twitter.com/sanchom"]{assets/Twitter_Social_Icon_Circle_Color.png}
 }
 
-◊h2{Selected Publications}
+◊heading{Selected Publications}
 
 Sancho McCann. "Object classification and localization using spatially
 localized features". Ph.D. Dissertation. UBC Department of Computer
@@ -43,9 +43,9 @@ A more complete list is at my ◊a[#:href
 "https://scholar.google.com/citations?user=6C-udIUAAAAJ"]{Google
 Scholar profile}.
 
-◊h2{Selected Projects}
+◊heading{Selected Projects}
 
-◊h3{AtmosView: Visualization Redesign}
+◊sub-heading{AtmosView: Visualization Redesign}
 ◊thumbnail[#:big "assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"]
 I created AtmosView, a new visualization of atmospheric sounding data
 (vertical profiles of the atmosphere's temperature and
@@ -58,7 +58,7 @@ in and allows for easier comparisons between multiple charts.
 Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
 "project report"]{assets/McCann-AtmosView.pdf"}
 
-◊h3{Humanoid Robot}
+◊sub-heading{Humanoid Robot}
 ◊thumbnail[#:big "assets/abarenbou.png" #:small "assets/abarenbou-225x300.png"]{}
 I worked with ◊a[#:href
 "http://www.cs.umanitoba.ca/~jacky/"]{Dr. Jacky Baltes} to build a
@@ -72,7 +72,7 @@ International Conference on Computational Intelligence, Robotics, and
 Autonomous Systems (CIRAS)},
 2005. ◊b-link{assets/McCannBaltes-Abarenbou.pdf}
 
-◊h3{Robot Airplane}
+◊sub-heading{Robot Airplane}
 ◊thumbnail[#:big "assets/airplane.png"]{}
 At the University of Manitoba, I was part of a team that built a robot
 airplane that could take-off, fly a search pattern, and land---all

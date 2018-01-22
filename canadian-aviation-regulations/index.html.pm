@@ -2,7 +2,8 @@
 
 ◊(define-meta template "cars-template.html")
 
-◊h2{About this book}
+◊title{Canadian Aviation Regulations}
+◊heading{About this book}
 
 This book will help prepare you for Canada's Private Pilot written
 exam (aeroplane). It will not present all the material you need to
@@ -26,7 +27,7 @@ in the appendix, but 99% of the material comes straight from the
 ◊em{Canadian Aviation Regulations} and the ◊em{Aeronautical
 Information Manual}.
 
-◊h2{How to study the Canadian Aviation Regulations}
+◊heading{How to study the Canadian Aviation Regulations}
 
 One way to study for this section of the written exam is to just look
 at each section listed in the Study and Reference Guide and memorize
@@ -56,9 +57,9 @@ perspective is a chance to better learn the material.
 
 This book will also give you those chances.
 
-◊h2{Structure of the Canadian Aviation Regulations}
+◊heading{Structure of the Canadian Aviation Regulations}
 
-◊h3{Parts}
+◊sub-heading{Parts}
 The CARs are organized into eight parts, but only five are relevant
 for your private pilot written examination:
 
@@ -78,7 +79,7 @@ etc.
 
 }
 
-◊h3{Subparts and divisions}
+◊sub-heading{Subparts and divisions}
 
 Each part is further broken down into subparts and divisions, but I
 never found those distinctions useful for helping me understand the
@@ -88,7 +89,7 @@ Subpart 2 (702.xxx) is about aerial work, Subpart 3
 (704.xxx) is about commuter operations, and Subpart
 5 (705.xxx) is about airline operations.}
 
-◊h3{Sections}
+◊sub-heading{Sections}
 
 The basic unit of regulation is a ◊em{Section}. For example, this is
 section 602.01:
@@ -98,7 +99,7 @@ section 602.01:
 The number, 602.01, indicates that this is the first section in
 Subpart 2 of Part VI of the CARs.
 
-◊h3{Definitions}
+◊sub-heading{Definitions}
 
 602.01 refers to "aircraft". What things are considered "aircraft"?
 You can probably guess that Cessnas are aircraft. But what about
@@ -171,13 +172,13 @@ in the atmosphere from reactions of the air, and includes a rocket;
 It turns out "aircraft" is a very broad concept. Gliders are
 aircraft. Drones are aircraft. Rockets are aircraft.
 
-◊h2{Case Study 1}
+◊heading{Case Study 1}
 
-◊h2{Enforcement Actions}
+◊heading{Enforcement Actions}
 
-◊h2{Regulations vs. Standards}
+◊heading{Regulations vs. Standards}
 
-◊h2{Airport Procedures}
+◊heading{Airport Procedures}
 
-◊h2{Table-top Scenarios}
+◊heading{Table-top Scenarios}
 
