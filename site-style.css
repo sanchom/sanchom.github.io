@@ -34,8 +34,8 @@
 
 body {
 font-family: et-book, "Book Antiqua", serif;
-margin-top: 5em; margin-bottom: 5em; margin-left: 10%; margin-right: 20.0rem;
-max-width: 45em;
+margin-top: 5em; margin-bottom: 5em; margin-left: 10%; margin-right: 33%;
+max-width: 40em;
 background-color: #fffff8;
 color: #111;
 }
@@ -94,8 +94,8 @@ label.margin-toggle { display: none; }
 .margin-note {
 float: right;
 clear: right;
-margin-right: -16em;
-width: 14em;
+margin-right: -45%;
+width: 40%;
 margin-top: 0;
 margin-bottom: 0;
 font-size: 0.8rem;
