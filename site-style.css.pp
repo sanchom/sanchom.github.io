@@ -4,7 +4,7 @@
 ◊(define width-for-max-font 920)
 ◊(define size-steps 6)
 ◊(define max-font-size 22)
-◊(define font-size-on-small-screens 16)
+◊(define font-size-on-small-screens 18)
 ◊(define small-screen-trigger (- width-for-max-font (* (- size-steps 1) 40)))
 
 @font-face { font-family: "et-book";
