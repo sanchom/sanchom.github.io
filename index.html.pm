@@ -11,7 +11,7 @@ Competition, ◊a[#:href
 sprinter}, Class 1 Flight Instructor (not active).
 
 Formerly: Head of R&D for Shelfie, Canadian Forces Officer
-(Cadet Instructor Cadre), student government at UBC, 2× Google Intern.
+(Cadet Instructor Cadre), 2× Google Intern.
 ◊mnote{
 ◊a[#:href "2017-in-review/index.html"]{What I was up to and thinking about in 2017}.
 }

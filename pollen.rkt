@@ -2,6 +2,7 @@
 
 (require pollen/decode txexpr)
 (require pollen/setup)
+(require (submod hyphenate safe))
 
 (define template-message "This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.")
 (define site-author "Sancho McCann")
@@ -13,12 +14,29 @@
   (decode-paragraphs elements
                      #:linebreak-proc (λ (x) (decode-linebreaks x '" "))))
 
+(define capitalized? (λ (word) (let ([letter (substring word 0 1)])
+  (equal? letter (string-upcase letter)))))
+
+(define (ligs? word)
+    (ormap (λ (lig) (regexp-match lig word))
+           '("ff" "fi" "fl" "ffi" "ffl")))
+
+(define hyphenation-exceptions
+  '("navcanada"
+    "auto-nom-ous-ly"))
+
+; Custom hyphenation that doesn't break URLs.
+(define (custom-hyphenation x)
+  (hyphenate x
+             #:exceptions hyphenation-exceptions
+             #:omit-word (λ (x) (or (capitalized? x) (ligs? x)))))
+
 ; Double line breaks create new paragraphs. Single line breaks are ignored.
 (define (root . elements)
   (txexpr 'root empty (decode-elements
                        elements
                        #:txexpr-elements-proc decode-double-breaks-into-paras
-                       #:string-proc (compose1 smart-quotes smart-dashes))))
+                       #:string-proc (compose1 custom-hyphenation smart-quotes smart-dashes))))
 
 ; Surrounds every top-level element in this list with a list tag, but
 ; replaces naked p tags with li directly to avoid (li (p "text")).

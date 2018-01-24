@@ -43,10 +43,11 @@ margin-top: 5em; margin-bottom: 5em; margin-left: 10%; margin-right: 33%;
 max-width: 40em;
 background-color: #fffff8;
 color: #111;
+text-align: justify;
 }
 @media all and (max-width:◊|small-screen-trigger|px){body {margin-top: 1em; margin-left: 1em; margin-right: 1em; max-width: initial;}}
 
-h1, h2, h3, h4, h5, h6 {clear: left; font-style: italic; font-weight: 400;}
+h1, h2, h3, h4, h5, h6 {clear: left; font-style: italic; font-weight: 400; text-align: left;}
 h1 {font-size: 2.2em; font-style: normal;}  ◊; Reserved for titles
 h2 {font-size: 1.5em; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
 h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
