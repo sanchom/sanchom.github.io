@@ -87,16 +87,12 @@ outside help for their position.
 The Supreme Court of Canada is getting more input from third party
 interveners than ever before. This is potentially a good thing, but
 that depends on which theory regarding the role of interveners is
-true.◊sidenote{There are various theories regarding the nature of
-amici in the U.S.: interest-group lobbyists, genuine friends of the
-court or of the parties, or a group of Supreme Court experts who have
-learned what information the justices crave and who are part of a
-managed strategy by the parties to win their cases. Interveners in
-Canada have been described as: genuine friends of the court who are
-trying to help the court make more accurate decisions, interest-groups
-presenting the best partisan arguments with which the justices can
-align, or interested third parties that the court listens to in order
-to increase the legitimacy of its decisions.}
+true.◊sidenote{Interveners in Canada have been described as: genuine
+friends of the court who are trying to help the court make more
+accurate decisions, interest-groups presenting the best partisan
+arguments with which the justices can align, or interested third
+parties that the court listens to in order to increase the legitimacy
+of its decisions.}
 
 The "Amicus Machine" in the U.S. was built over a period of about
 15-20 years, largely undirected, and not necessarily best designed to
