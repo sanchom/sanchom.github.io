@@ -21,6 +21,14 @@
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
 </head>
   <body>
+<div class="header">
+◊(define (grab-title page) (define x (select 'short-title page)) (if (not x) (select 'page-title page) x))
+◊(define prev-page (previous here))
+◊when/splice[prev-page]{<p class="left-header">◄ <a href="◊|prev-page|">◊(grab-title prev-page)</a></p>}
+◊(define next-page (next here))
+◊when/splice[next-page]{<p class="right-header"><a href="◊|next-page|">◊(grab-title next-page)</a> ►</p>}
+</div>
+<div style="clear: both;"></div>
     ◊(->html doc)
   </body>
 </html>

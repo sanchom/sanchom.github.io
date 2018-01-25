@@ -1,6 +1,7 @@
 #lang pollen
 
 ◊define-meta[page-title]{Interveners at the Supreme Court of Canada}
+◊define-meta[short-title]{Interveners}
 
 ◊title{Interveners at the Supreme Court of Canada}
 ◊subtitle{Sancho McCann}◊margin-note{This is a repost of an article I originally wrote ◊a[#:href "https://sanchom.wordpress.com/2017/08/08/interveners/"]{here}, with some minor editorial changes.}

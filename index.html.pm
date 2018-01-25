@@ -12,9 +12,6 @@ sprinter}, Class 1 Flight Instructor (not active).
 
 Formerly: Head of R&D for Shelfie, Canadian Forces Officer
 (Cadet Instructor Cadre), 2× Google Intern.
-◊margin-note{
-◊a[#:href "2017-in-review/index.html"]{What I was up to and thinking about in 2017}.
-}
 
 ◊div[#:class "external-link-logos"]{
 ◊little-logo[#:href "https://sanchom.wordpress.com"]{assets/wordpress-logo-notext-rgb.png}

@@ -53,6 +53,9 @@ h1 {font-size: 2.2em; font-style: normal;}  ◊; Reserved for titles
 h2 {font-size: 1.5em; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
 h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
 p.subtitle {font-size: 1.2em; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
+div.header {clear:both; font-size: 0.7rem;}
+.left-header {float:left;}
+.right-header {float:right;}
 
 /* Links: replicate underline that clears descenders */
 a:link, a:visited { color: inherit; }
@@ -145,7 +148,7 @@ label.margin-toggle:not(.sidenote-number) { display: inline; }
 .margin-note, .sidenote { display: none; }
 .margin-toggle:checked + .sidenote,
 .margin-toggle:checked + .margin-note {
-font-size: 1rem;
+font-size: 0.8rem;
 display: block;
 float: left;
 left: 0rem;
