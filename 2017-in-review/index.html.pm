@@ -45,7 +45,7 @@ at its strongest, acknowledging its merits and addressing criticisms that had ar
 against his own viewpoint over the years.
 
 This book made me think about questions that I hadn't thought about before.
-◊mnote{In baseball, when a runner touches home, their team is awarded a point. Is that just a
+◊margin-note{In baseball, when a runner touches home, their team is awarded a point. Is that just a
 habit, or is that a rule? Assuming it's a rule, is it also a moral rule? These are the kinds of questions that Hart
 gets into.} Much of this book
 is about demarcating law from non-law (and likewise, rules from habits, and legal rules from moral rules).
@@ -68,7 +68,7 @@ immediate reaction, but also describes how to evaluate
 that reaction by looking at how much of it is grounded in the text. This
 reflection on the causes of your reaction can help you learn more about yourself and
 others. An ancillary theme is how literature can help develop the empathy necessary for a strong
-and representative democracy. ◊mnote{◊em{Democracy implies a society of people who, no matter how much they differ
+and representative democracy. ◊margin-note{◊em{Democracy implies a society of people who, no matter how much they differ
 from one another, recognize their common interests, their common goals, and their
 dependence on mutually honored freedoms and responsibilities.} --- Louise Rosenblatt}
 }
@@ -146,7 +146,7 @@ But it’s also true that when preferences shift they do so for a reason, if
 
 ◊heading{Computer things}
 I wrote a web app that presents some flight planning information taken from navcanada.ca that
-I find useful for VFR flying in the British Columbia lower mainland. ◊mnote{◊a[#:href "http://www.lower-mainland-flight-planning.ca/"]{Flight Planning Page}}
+I find useful for VFR flying in the British Columbia lower mainland. ◊margin-note{◊a[#:href "http://www.lower-mainland-flight-planning.ca/"]{Flight Planning Page}}
 I'm not satisfied with how I display the NOTAMs though. They have structure (locations,
 times, categories), but I'm not using any of that to help pilots quickly determine what's important to them.
 
@@ -156,7 +156,7 @@ a nice-to-read website, or PDF, or whatever. I found some alternatives (Markdown
 Pollen.
 
 Because I was trying to learn how to use Pollen, I also learned a bit about Racket, following the book, ◊em{Beautiful Racket}.
-◊mnote{◊work[#:author "Matthew Butterick" #:year 2016 #:url "https://beautifulracket.com/"]{Beautiful Racket}} I
+◊margin-note{◊work[#:author "Matthew Butterick" #:year 2016 #:url "https://beautifulracket.com/"]{Beautiful Racket}} I
 like the things I get to think about while writing in Racket, at least as a beginner Racket programmer.
 
 ◊heading{Travel}

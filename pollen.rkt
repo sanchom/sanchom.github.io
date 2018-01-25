@@ -8,6 +8,8 @@
 (define site-author "Sancho McCann")
 (define site-title "Sancho McCann")
 
+(define elide "[…]")
+
 ; Ignores single line breaks in paragraph interpretation. They are
 ; converted to spaces.
 (define (decode-double-breaks-into-paras elements)
@@ -63,11 +65,17 @@
       (txexpr 'span empty (list (txexpr 'em empty (list (txexpr 'a `((href ,url)) title-or-description))) (format ", ~a (~a)" a y)))))
 
 ; Defines a little sidebar box
-(define (mnote . content)
+(define (margin-note . content)
   (define refid (number->string (random 4294967087)))
   `(span (label [[for ,refid] [class "margin-toggle"]] "⊕")
          (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]] )
          (span [(class "margin-note")] ,@content)))
+
+(define (sidenote . content)
+  (define refid (number->string (random 4294967087)))
+  `(span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
+         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]] )
+         (span [(class "sidenote")] ,@content)))
 
 ; Defines a little tiny social media logo
 (define (little-logo #:href href . source)
@@ -88,6 +96,9 @@
 
 (define (title . content)
   `(h1 ,@content))
+
+(define (subtitle . content)
+  `(p ((class "subtitle")) ,@content))
 
 (define (heading . content)
   `(h2 ,@content))

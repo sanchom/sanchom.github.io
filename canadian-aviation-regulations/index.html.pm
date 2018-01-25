@@ -83,7 +83,7 @@ etc.
 
 Each part is further broken down into subparts and divisions, but I
 never found those distinctions useful for helping me understand the
-material for the Private Pilot licence. ◊mnote{Subparts ◊em{are} an useful distinction in Part VII, where
+material for the Private Pilot licence. ◊margin-note{Subparts ◊em{are} an useful distinction in Part VII, where
 Subpart 2 (702.xxx) is about aerial work, Subpart 3
 (703.xxx) is about air taxi operations, Subpart 4
 (704.xxx) is about commuter operations, and Subpart
@@ -158,7 +158,7 @@ It looks like the CARs defines "aeroplane", but not
 CARs, but doesn't actually define it. This can't be right.
 
 I've misled you. There is one more place
-where a definition might be found: the ◊em{Aeronautics Act}. ◊mnote{◊em{◊a[#:href
+where a definition might be found: the ◊em{Aeronautics Act}. ◊margin-note{◊em{◊a[#:href
 "http://laws-lois.justice.gc.ca/eng/acts/A-2/FullText.html"]{Aeronautics
 Act}}. R.S.C., 1985, c.◊string->symbol{nbsp}A◊string->number{8209}2} It's what
 gives Transport Canada the authority to create the CARs and it also

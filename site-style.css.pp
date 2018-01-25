@@ -44,6 +44,7 @@ max-width: 40em;
 background-color: #fffff8;
 color: #111;
 text-align: justify;
+counter-reset: sidenote-counter;
 }
 @media all and (max-width:◊|small-screen-trigger|px){body {margin-top: 1em; margin-left: 1em; margin-right: 1em; max-width: initial;}}
 
@@ -51,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {clear: left; font-style: italic; font-weight: 400; text-
 h1 {font-size: 2.2em; font-style: normal;}  ◊; Reserved for titles
 h2 {font-size: 1.5em; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
 h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
+p.subtitle {font-size: 1.2em; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
 
 /* Links: replicate underline that clears descenders */
 a:link, a:visited { color: inherit; }
@@ -85,6 +87,7 @@ li {padding-left: 1em;}
 
 img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
 img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 0.5em;}
+img:not(.little-logo):not(.thumbnail) { width: 100%; }
 
 .external-link-logos {
   display:flex;
@@ -97,25 +100,37 @@ blockquote {
     margin-right: 5em;
 }
 
-input.margin-toggle { display: none; }
-label.margin-toggle { display: none; }
-
-.margin-note {
+.sidenote, .margin-note {
 float: right;
 clear: right;
 margin-right: -45%;
 width: 40%;
 margin-top: 0;
-margin-bottom: 0;
-font-size: 0.8rem;
+margin-bottom: 0.5rem;
+font-size: 0.7rem;
 line-height: 1.3;
 vertical-align: baseline;
 position: relative;
 }
+.sidenote-number { counter-increment: sidenote-counter; }
+.sidenote-number:after, .sidenote:before { font-family: et-book-roman-old-style;
+                                           position: relative;
+                                           vertical-align: baseline; }
+.sidenote-number:after { content: counter(sidenote-counter);
+                         font-size: 0.7rem;
+                         top: -0.5rem;
+                         left: 0.1rem; }
+.sidenote:before { content: counter(sidenote-counter) " ";
+                   top: -0.5rem; }
+
+input.margin-toggle { display: none; }
+label.sidenote-number { display: inline; }
+label.margin-toggle:not(.sidenote-number) { display: none; color: #8A0707;}
+
 
 @media all and (max-width:◊|small-screen-trigger|px){
 img {
-    max-width: 95%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -126,8 +141,9 @@ blockquote {
     margin-left: 1em;
 }
 
-label.margin-toggle { display: inline; }
-.margin-note { display: none; }
+label.margin-toggle:not(.sidenote-number) { display: inline; }
+.margin-note, .sidenote { display: none; }
+.margin-toggle:checked + .sidenote,
 .margin-toggle:checked + .margin-note {
 font-size: 1rem;
 display: block;
@@ -139,6 +155,7 @@ margin: 1rem 7.5%;
 vertical-align: baseline;
 position: relative; 
 }
+label { cursor: pointer; }
 
 li { margin-left: 1em; padding-left: 1em; }
 ul { margin-left: 0; padding-left: 0; }

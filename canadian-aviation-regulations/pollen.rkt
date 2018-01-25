@@ -7,7 +7,6 @@
 (require xexpr-path)
 
 (define site-title "Canadian Aviation Regulations")
-(define elide "[…]")
 
 (define cars-xml
   (xexpr-path-first '(Body) (xml->xexpr (document-element
