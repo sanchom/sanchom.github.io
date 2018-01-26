@@ -19,8 +19,7 @@ Machine}} ◊sidenote{◊work[#:author "Anthony J. Franze and R. Reeves Anderson
 Breaking Term for Amicus Curiae in Supreme Court Reflects New Norm}}
 
 Canada's closest analogue to the U.S.’s amici are called
-"interveners".◊sidenote{Interveners are Canada’s analogue of the
-U.S.’s amicus curiae. Canada also has a role called an amicus curiae,
+"interveners".◊sidenote{Canada also has a role called an amicus curiae,
 but this is a person appointed by the court, not simply an interested
 third party.} From 2000--2008, interveners participated in only about
 50% of cases at the Supreme Court of Canada, averaging 2.4 interveners

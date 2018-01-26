@@ -35,10 +35,9 @@
 
 ; Double line breaks create new paragraphs. Single line breaks are ignored.
 (define (root . elements)
-  (txexpr 'root empty (decode-elements
-                       elements
-                       #:txexpr-elements-proc decode-double-breaks-into-paras
-                       #:string-proc (compose1 custom-hyphenation smart-quotes smart-dashes))))
+  (decode (txexpr 'root empty elements)
+          #:txexpr-elements-proc decode-double-breaks-into-paras
+          #:string-proc (compose1 custom-hyphenation smart-quotes smart-dashes)))
 
 ; Surrounds every top-level element in this list with a list tag, but
 ; replaces naked p tags with li directly to avoid (li (p "text")).

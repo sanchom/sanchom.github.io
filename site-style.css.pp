@@ -104,10 +104,11 @@ blockquote {
 }
 
 .sidenote, .margin-note {
+color: #555;
 float: right;
 clear: right;
-margin-right: -45%;
-width: 40%;
+margin-right: -40%;
+width: 30%;
 margin-top: 0;
 margin-bottom: 0.5rem;
 font-size: 0.7rem;
@@ -148,6 +149,7 @@ label.margin-toggle:not(.sidenote-number) { display: inline; }
 .margin-note, .sidenote { display: none; }
 .margin-toggle:checked + .sidenote,
 .margin-toggle:checked + .margin-note {
+color: #111;
 font-size: 0.8rem;
 display: block;
 float: left;
