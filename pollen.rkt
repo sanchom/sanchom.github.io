@@ -27,17 +27,23 @@
   '("navcanada"
     "auto-nom-ous-ly"))
 
+(define (omission-test tx)
+  (and (attrs-have-key? tx 'hyphens)
+                       (equal? (attr-ref tx 'hyphens) "none")))
+  
 ; Custom hyphenation that doesn't break URLs.
 (define (custom-hyphenation x)
   (hyphenate x
              #:exceptions hyphenation-exceptions
+             #:omit-txexpr omission-test
              #:omit-word (λ (x) (or (capitalized? x) (ligs? x)))))
 
 ; Double line breaks create new paragraphs. Single line breaks are ignored.
 (define (root . elements)
   (decode (txexpr 'root empty elements)
+          #:txexpr-proc custom-hyphenation
           #:txexpr-elements-proc decode-double-breaks-into-paras
-          #:string-proc (compose1 custom-hyphenation smart-quotes smart-dashes)))
+          #:string-proc (compose1 smart-quotes smart-dashes)))
 
 ; Surrounds every top-level element in this list with a list tag, but
 ; replaces naked p tags with li directly to avoid (li (p "text")).
@@ -68,13 +74,13 @@
   (define refid (number->string (random 4294967087)))
   `(span (label [[for ,refid] [class "margin-toggle"]] "⊕")
          (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]] )
-         (span [(class "margin-note")] ,@content)))
+         (span [(class "margin-note") (hyphens "none")] ,@content)))
 
 (define (sidenote . content)
   (define refid (number->string (random 4294967087)))
   `(span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
          (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]] )
-         (span [(class "sidenote")] ,@content)))
+         (span [(class "sidenote") (hyphens "none")] ,@content)))
 
 ; Defines a little tiny social media logo
 (define (little-logo #:href href . source)

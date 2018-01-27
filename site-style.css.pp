@@ -104,6 +104,7 @@ blockquote {
 }
 
 .sidenote, .margin-note {
+text-align: left;
 color: #555;
 float: right;
 clear: right;
@@ -124,8 +125,8 @@ position: relative;
                          font-size: 0.7rem;
                          top: -0.5rem;
                          left: 0.1rem; }
-.sidenote:before { content: counter(sidenote-counter) " ";
-                   top: -0.5rem; }
+.sidenote:before { content: counter(sidenote-counter) ". ";
+                   top: 0rem; }
 
 input.margin-toggle { display: none; }
 label.sidenote-number { display: inline; }
