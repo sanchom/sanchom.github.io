@@ -12,16 +12,16 @@
 (define elide "[…]")
 
 (define (title . content)
-  `(h1 ,@content))
+  `(h1 ((hyphens "none")) ,@content))
 
 (define (subtitle . content)
-  `(p ((class "subtitle")) ,@content))
+  `(p ((class "subtitle") (hyphens "none")) ,@content))
 
 (define (heading . content)
-  `(h2 ,@content))
+  `(h2 ((hyphens "none")) ,@content))
 
 (define (sub-heading . content)
-  `(h3 ,@content))
+  `(h3 ((hyphens "none")) ,@content))
 
 ; Quotation
 (define (q . content)
@@ -87,8 +87,11 @@
   
 ; Custom hyphenation that doesn't break URLs.
 (define (custom-hyphenation x)
-  (define capitalized? (λ (word) (let ([letter (substring word 0 1)])
-                                   (equal? letter (string-upcase letter)))))
+  (define allowed-capitalized-hyphenations
+    (list "Atmos-View"))
+  (define non-breakable-capitalized? (λ (word) (let ([letter (substring word 0 1)])
+                                                 (and (equal? letter (string-upcase letter))
+                                                      (not (ormap (λ (hy) (equal? (string-replace hy "-" "") word)) allowed-capitalized-hyphenations))))))
   (define (ligs? word)
     (ormap (λ (lig) (regexp-match lig word))
            '("ff" "fi" "fl" "ffi" "ffl")))
@@ -96,12 +99,13 @@
     (and (attrs-have-key? tx 'hyphens)
          (equal? (attr-ref tx 'hyphens) "none")))
   (define hyphenation-exceptions
-    '("navcanada"
-      "auto-nom-ous-ly"))
+    `("navcanada"
+      "auto-nom-ous-ly"
+      ,@allowed-capitalized-hyphenations))
   (hyphenate x
              #:exceptions hyphenation-exceptions
              #:omit-txexpr omission-test
-             #:omit-word (λ (x) (or (capitalized? x) (ligs? x)))))
+             #:omit-word (λ (x) (or (non-breakable-capitalized? x) (ligs? x)))))
 
 ; Double line breaks create new paragraphs. Single line breaks are ignored.
 (define (root . elements)
