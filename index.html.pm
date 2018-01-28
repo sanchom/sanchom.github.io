@@ -14,8 +14,8 @@ Formerly: Head of R&D for Shelfie, Canadian Forces Officer
 (Cadet Instructor Cadre), 2× Google Intern.
 
 ◊div[#:class "external-link-logos"]{
-◊little-logo[#:href "https://sanchom.wordpress.com"]{assets/wordpress-logo-notext-rgb.png}
-◊little-logo[#:href "https://twitter.com/sanchom"]{assets/Twitter_Social_Icon_Circle_Color.png}
+◊little-logo[#:href "https://sanchom.wordpress.com" #:img "assets/wordpress-logo-notext-rgb.png"]
+◊little-logo[#:href "https://twitter.com/sanchom" #:img "assets/Twitter_Social_Icon_Circle_Color.png"]
 }
 
 ◊heading{Selected Publications}
@@ -23,18 +23,18 @@ Formerly: Head of R&D for Shelfie, Canadian Forces Officer
 Sancho McCann. "Object classification and localization using spatially
 localized features". Ph.D. Dissertation. UBC Department of Computer
 Science. 2014.
-◊b-link{https://open.library.ubc.ca/media/download/pdf/24/1.0167312/1}
+◊b-link[#:url "https://open.library.ubc.ca/media/download/pdf/24/1.0167312/1"]
 
 Sancho McCann and David G. Lowe. "Spatially Local Coding for Object
 Recognition." ◊em{ACCV}, 2012.
-◊b-link{assets/McCannLowe_ACCV2012_0851.pdf} ◊b-link[#:word
-"poster"]{assets/McCannLowe_ACCV2012_0851_poster.pdf} ◊b-link[#:word
-"project page"]{http://www.cs.ubc.ca/projects/spatially-local-coding}
+◊b-link[#:url "assets/McCannLowe_ACCV2012_0851.pdf"] ◊b-link[#:word
+"poster" #:url "assets/McCannLowe_ACCV2012_0851_poster.pdf"] ◊b-link[#:word
+"project page" #:url "http://www.cs.ubc.ca/projects/spatially-local-coding"]
 
 Sancho McCann and David G. Lowe. "Local Naive Bayes Nearest Neighbor
 for Image Classification." ◊em{CVPR}, 2012.
-◊b-link{assets/McCannLowe_CVPR2012_1925.pdf} ◊b-link[#:word "project
-page"]{http://www.cs.ubc.ca/projects/local-nbnn}
+◊b-link[#:url "assets/McCannLowe_CVPR2012_1925.pdf"] ◊b-link[#:word "project
+page" #:url "http://www.cs.ubc.ca/projects/local-nbnn"]
 
 A more complete list is at my ◊a[#:href
 "https://scholar.google.com/citations?user=6C-udIUAAAAJ"]{Google
@@ -53,7 +53,7 @@ read. AtmosView helps people to see better the information they're interested
 in and allows for easier comparisons between multiple charts.
 
 Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
-"project report"]{assets/McCann-AtmosView.pdf"}
+"project report" #:url "assets/McCann-AtmosView.pdf"]
 
 ◊sub-heading{Humanoid Robot}
 ◊thumbnail[#:big "assets/abarenbou.png" #:small "assets/abarenbou-225x300.png"]{}
@@ -67,7 +67,7 @@ Sancho McCann and Jacky Baltes. "Abarenbou – A Small Vision-Based
 Humanoid Robotic Research platform." In ◊em{Proc. of the Third
 International Conference on Computational Intelligence, Robotics, and
 Autonomous Systems (CIRAS)},
-2005. ◊b-link{assets/McCannBaltes-Abarenbou.pdf}
+2005. ◊b-link[#:url "assets/McCannBaltes-Abarenbou.pdf"]
 
 ◊sub-heading{Robot Airplane}
 ◊thumbnail[#:big "assets/airplane.png"]{}
@@ -84,4 +84,4 @@ that information to our ground station's operator.
 Paul Furgale, Sancho McCann, Jim Majewski, Andrew Bugera, and Kory
 Zelickson. "Team Manitoba 2006 AUVSI Student Competition Project
 Description." ◊em{AUVSI: 4th Annual Student Unmanned Aerial Vehicle
-Competition}, 2006. ◊b-link{assets/TeamManitoba2006.pdf}
+Competition}, 2006. ◊b-link[#:url "assets/TeamManitoba2006.pdf"]
