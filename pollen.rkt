@@ -72,18 +72,25 @@
       (txexpr 'span empty (list (txexpr 'em empty title-or-description) (format ", ~a (~a)" a y)))
       (txexpr 'span empty (list (txexpr 'em empty (list (txexpr 'a `((href ,url)) title-or-description))) (format ", ~a (~a)" a y)))))
 
-; Defines a little sidebar box
-(define (margin-note . content)
+; Defines a little sidebar box, not numbered, and by default
+; not collapsed at all.
+(define (margin-note #:expanded [expanded #t] . content)
   (define refid (number->string (random 4294967087)))
+  (define subrefid (number->string (random 4294967087)))
   `(span (label [[for ,refid] [class "margin-toggle"]] "⊕")
-         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]] )
-         (span [(class "margin-note") (hyphens "none")] ,@content)))
+         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
+         (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
+         (label [[for ,subrefid] [class ,(if expanded "margin-note expanded" "margin-note")] [hyphens "none"]] ,@content)))
 
-(define (sidenote . content)
+; Defines a little sidenote, numbered, and by default collapsed
+; to a small height.
+(define (sidenote #:expanded [expanded #f] . content)
   (define refid (number->string (random 4294967087)))
+  (define subrefid (number->string (random 4294967087)))
   `(span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
-         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]] )
-         (span [(class "sidenote") (hyphens "none")] ,@content)))
+         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
+         (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
+         (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@content)))
   
 ; Custom hyphenation that doesn't break URLs.
 (define (custom-hyphenation x)

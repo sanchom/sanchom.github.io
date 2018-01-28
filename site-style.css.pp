@@ -123,6 +123,16 @@ font-size: 0.7rem;
 line-height: 1.3;
 vertical-align: baseline;
 position: relative;
+
+text-overflow: ellipsis;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+
+.sidenote.expanded, .margin-note.expanded {
+-webkit-line-clamp: 300;
 }
 
 .sidenote-number { counter-increment: sidenote-counter; }
@@ -143,8 +153,18 @@ left: 0.1rem;
 .sidenote:before { content: counter(sidenote-counter) ". "; top: 0rem; }
 
 input.margin-toggle { display: none; }
+input.margin-expand { display: none; }
 label.sidenote-number { display: inline; }
 label.margin-toggle:not(.sidenote-number) { display: none; color: #8A0707;}
+
+.margin-expand:checked + .margin-note,
+.margin-expand:checked + .sidenote {
+text-overflow: ellipsis;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 300;
+-webkit-box-orient: vertical;
+}
 
 ◊; On small screens, do things a bit differently.
 @media all and (max-width:◊|small-screen-trigger|px){
@@ -171,8 +191,8 @@ margin-left: 1em;
 
 label.margin-toggle:not(.sidenote-number) { display: inline; }
 .margin-note, .sidenote { display: none; }
-.margin-toggle:checked + .sidenote,
-.margin-toggle:checked + .margin-note {
+.margin-toggle:checked ~ .sidenote,
+.margin-toggle:checked ~ .margin-note {
 color: #111;
 font-size: 0.8rem;
 display: block;
