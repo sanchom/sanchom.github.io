@@ -1,5 +1,6 @@
 #lang racket
 
+(require pollen/core)
 (require pollen/decode txexpr)
 (require pollen/setup)
 (require (submod hyphenate safe))
@@ -7,6 +8,14 @@
 (define template-message "This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.")
 (define site-author "Sancho McCann")
 (define site-title "Sancho McCann")
+
+(define note-mode "sidenotes")
+(define footnote-list empty)
+
+(define (use-footnotes)
+  (set! note-mode "footnotes"))
+(define (use-sidenotes)
+  (set! note-mode "sidenotes"))
 
 ; Simple replacements or re-tags.
 (define elide "[…]")
@@ -33,7 +42,7 @@
 
 ; A tiny social media logo.
 (define (little-logo #:href href #:img img)
-  `(a ((href ,href)) (img ((class "little-logo") (width "30px") (src ,img)))))
+  `(a ((href ,href) (class "undecorated")) (img ((class "little-logo") (width "30px") (src ,img)))))
 
 ; A bracketed link.
 (define (b-link #:word [word "pdf"] #:url url)
@@ -73,7 +82,8 @@
       (txexpr 'span empty (list (txexpr 'em empty (list (txexpr 'a `((href ,url)) title-or-description))) (format ", ~a (~a)" a y)))))
 
 ; Defines a little sidebar box, not numbered, and by default
-; not collapsed at all.
+; not collapsed at all. This will stick close beside the anchor,
+; on the web and in print.
 (define (margin-note #:expanded [expanded #t] . content)
   (define refid (number->string (random 4294967087)))
   (define subrefid (number->string (random 4294967087)))
@@ -82,15 +92,21 @@
          (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
          (label [[for ,subrefid] [class ,(if expanded "margin-note expanded" "margin-note")] [hyphens "none"]] ,@content)))
 
-; Defines a little sidenote, numbered, and by default collapsed
-; to a small height.
-(define (sidenote #:expanded [expanded #f] . content)
+; Defines a little sidenote or footnote (depending on the mode), numbered, and by default collapsed
+; to a small height. In print, these are all footnotes.
+(define (note #:expanded [expanded #f] . content)
+  (define footnote-number (+ 1 (length footnote-list)))
+  (set! footnote-list
+        (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
+                                        ,(format "~a. " footnote-number) (a [[href ,(format "#fn-source-~a" footnote-number)] [class "backlink undecorated"]] " ⌃ ") ,@content))))
   (define refid (number->string (random 4294967087)))
   (define subrefid (number->string (random 4294967087)))
-  `(span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
-         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
-         (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
-         (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@content)))
+  (if (equal? note-mode "sidenotes")
+    `(span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
+           (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
+           (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
+           (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@content))
+    `(a [[href ,(format "#fn-~a" footnote-number)] [class "undecorated"]] (span [[class "sidenote-number"] [id ,(format "fn-source-~a" footnote-number)]]))))
   
 ; Custom hyphenation that doesn't break URLs.
 (define (custom-hyphenation x)
@@ -114,11 +130,18 @@
              #:omit-txexpr omission-test
              #:omit-word (λ (x) (or (non-breakable-capitalized? x) (ligs? x)))))
 
+(define (add-footnotes tx)
+  (display footnote-list)
+  (define footnote-class
+    (if (equal? note-mode "sidenotes") "endnotes print-only" "endnotes"))
+  (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
+
 ; Double line breaks create new paragraphs. Single line breaks are ignored.
 (define (root . elements)
-  (decode (txexpr 'root empty elements)
-          #:txexpr-proc custom-hyphenation
-          #:txexpr-elements-proc decode-double-breaks-into-paras
-          #:string-proc (compose1 smart-quotes smart-dashes)))
+  (add-footnotes
+   (decode (txexpr 'root empty elements)
+           #:txexpr-proc custom-hyphenation
+           #:txexpr-elements-proc decode-double-breaks-into-paras
+           #:string-proc (compose1 smart-quotes smart-dashes))))
 
 (provide (all-defined-out))

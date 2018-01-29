@@ -64,9 +64,10 @@ div.header {clear:both; font-size: 0.7rem;}
 ◊; Styles used for some little external links to Twitter, Wordpress.
 ◊; Line them up left-to-right, but centered. Don't style them as links.
 div.external-link-logos { clear:left; display: flex; justify-content: center; }
-div.external-link-logos a:link {text-decoration: none; background: none;}
-div.external-link-logos a:visited {text-decoration: none; background: none;}
-div.external-link-logos a:hover {text-decoration: none; background: none;}
+
+a.undecorated:link {text-decoration: none; background: none;}
+a.undecorated:visited {text-decoration: none; background: none;}
+a.undecorated:hover {text-decoration: none; background: none;}
 
 img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
 
@@ -131,6 +132,13 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 }
 
+.footnote {
+text-align: left;
+color: #111;
+font-size: 0.7rem;
+line-height: 1.3;
+}
+
 .sidenote.expanded, .margin-note.expanded {
 -webkit-line-clamp: 300;
 }
@@ -166,8 +174,40 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 }
 
+@media all {
+.print-only { display: none; }
+}
+
+@media print {
+.sidenote, .backlink, .header { display: none; }
+.endnotes { display: block; }
+html { font-size: 13px; }
+body { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
+@page {
+margin-top: 1.5in;
+margin-bottom: 1.5in;
+margin-left: 1.5in;
+margin-right: 1.5in;
+}
+.margin-note {
+text-align: left;
+color: #555;
+float: right;
+clear: right;
+margin-right: -30%;
+width: 25%;
+margin-top: 0;
+margin-bottom: 0.5rem;
+font-size: 0.7rem;
+line-height: 1.3;
+vertical-align: baseline;
+position: relative;
+-webkit-line-clamp: 3000;
+}
+}
+
 ◊; On small screens, do things a bit differently.
-@media all and (max-width:◊|small-screen-trigger|px){
+@media screen and (max-width:◊|small-screen-trigger|px){
 html { font-size:◊|font-size-on-small-screens|px; }
 
 body {
