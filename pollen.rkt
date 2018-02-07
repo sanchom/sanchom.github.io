@@ -89,6 +89,41 @@
   (decode-paragraphs elements
                      #:linebreak-proc (λ (x) (decode-linebreaks x '" "))))
 
+; Insert commas between successive sidenotes.
+(define (insert-sidenote-commas tx)
+  (define elements (get-elements tx))
+  (display elements)
+  (txexpr (get-tag tx) (get-attrs tx)
+          (let loop ([result empty]
+                     [elements elements])
+            (if (empty? elements) ; If only zero items.
+                result
+                (if (empty? (cdr elements)) ; If only one item in elements.
+                    (append result elements)
+                    (let ([x (car elements)]
+                          [y (cadr elements)])
+                      (if (empty? (cddr elements)) ; If only two items in elements.
+                          ; If they're both span.sidenote-wrapper, put the first one plus a comma into
+                          ; results, then recurse, otherwise, just put the first one into results and
+                          ; recurse.
+                          (if (and (attrs-have-key? x 'class)
+                                   (equal? (attr-ref x 'class) "sidenote-wrapper")
+                                   (attrs-have-key? y 'class)
+                                   (equal? (attr-ref y 'class) "sidenote-wrapper"))
+                              (loop (append result (list x ",")) (cdr elements))
+                              (loop (append result (list x)) (cdr elements)))
+                          ; Otherwise, there are three items in elements, and we check whether this is
+                          ; (span.sidenote-wrapper whitespace span.sidenote-wrapper)
+                          (let ([z (caddr elements)])
+                            (if (and (attrs-have-key? x 'class)
+                                     (equal? (attr-ref x 'class) "sidenote-wrapper")
+                                     (string? y)
+                                     (equal? (string-trim y) "")
+                                     (attrs-have-key? z 'class)
+                                     (equal? (attr-ref z 'class) "sidenote-wrapper"))
+                                (loop (append result (list x ",")) (cddr elements))
+                                (loop (append result (list x)) (cdr elements)))))))))))
+
 ; Explicit list annotation. First, detects double-line-breaks to
 ; create top-level block elements, then turns top-level elements
 ; within the itemize tag into list items. Excludes block-tags to avoid
@@ -104,7 +139,6 @@
                            #:txexpr-elements-proc decode-double-breaks-into-paras)
                           #:txexpr-elements-proc turn-elements-into-list-items
                           #:exclude-tags (setup:block-tags))))
-
 
 ; Defines the formatting for a "work" that has an author and year.
 (define (work #:author a #:year y #:url [url #f] . title-or-description)
@@ -134,11 +168,13 @@
   (define refid (format "fn-~a" footnote-number))
   (define subrefid (format "fn-~a-expand" footnote-number))
   (if (equal? note-mode "sidenotes")
-    `(span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
-           (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
-           (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
-           (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@content))
-    `(a [[href ,(format "#fn-~a" footnote-number)] [class "undecorated"]] (span [[class "sidenote-number"] [id ,(format "fn-source-~a" footnote-number)]]))))
+      `(span [[class "sidenote-wrapper"]]
+             (span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
+                   (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
+                   (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
+                   (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@content)))
+      `(span [[class "sidenote-wrapper"]]
+             (a [[href ,(format "#fn-~a" footnote-number)] [class "undecorated"]] (span [[class "sidenote-number"] [id ,(format "fn-source-~a" footnote-number)]])))))
 
 ; Custom hyphenation that doesn't break URLs.
 (define (custom-hyphenation x)
@@ -172,7 +208,7 @@
   (add-footnotes
    (decode (txexpr 'root empty elements)
            #:exclude-tags '(pre)
-           #:txexpr-proc custom-hyphenation
+           #:txexpr-proc (compose1 custom-hyphenation insert-sidenote-commas)
            #:txexpr-elements-proc decode-double-breaks-into-paras
            #:string-proc (compose1 smart-quotes smart-dashes))))
 
