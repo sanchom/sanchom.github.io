@@ -72,7 +72,7 @@ a.undecorated:hover {text-decoration: none; background: none;}
 img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
 
 ◊; Other image styles.
-img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 0.5em;}
+img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 0.5em; width: 150px;}
 img:not(.little-logo):not(.thumbnail) { width: 100%; }
 
 ◊; Taken from Tufte-css. Plain, underlined links without cutting
@@ -222,6 +222,10 @@ max-width: 100%;
 margin-left: auto;
 margin-right: auto;
 }
+
+div.thumbnail { background-color: white; }
+img.thumbnail { float: none; display: block; margin-bottom: 1em; max-height: 225px; width: auto; margin-left: auto; margin-right: auto; }
+div.clear { clear: both; }
 
 blockquote {
 margin-right: 2em;

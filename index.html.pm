@@ -44,11 +44,9 @@ Scholar profile}.
 
 ◊sub-heading{AtmosView: Visualization Redesign}
 
-◊margin-note{Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
-"project report" #:url "assets/McCann-AtmosView.pdf"]}
-
 ◊thumbnail[#:big "assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"]
-I created AtmosView, a new visualization of atmospheric sounding data
+◊margin-note{Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
+"project report" #:url "assets/McCann-AtmosView.pdf"]} I created AtmosView, a new visualization of atmospheric sounding data
 (vertical profiles of the atmosphere's temperature and
 humidity). People use this data to predict soaring conditions,
 atmospheric stability, and the likelihood of severe weather. Previous
@@ -58,14 +56,12 @@ in and allows for easier comparisons between multiple charts.
 
 ◊sub-heading{Humanoid Robot}
 
+◊thumbnail[#:big "assets/abarenbou.png" #:small "assets/abarenbou-225x300.png"]{}
 ◊margin-note{Sancho McCann and Jacky Baltes. "Abarenbou – A Small Vision-Based
 Humanoid Robotic Research platform." In ◊em{Proc. of the Third
 International Conference on Computational Intelligence, Robotics, and
 Autonomous Systems (CIRAS)},
-2005. ◊b-link[#:url "assets/McCannBaltes-Abarenbou.pdf"]}
-
-◊thumbnail[#:big "assets/abarenbou.png" #:small "assets/abarenbou-225x300.png"]{}
-I worked with ◊a[#:href
+2005. ◊b-link[#:url "assets/McCannBaltes-Abarenbou.pdf"]} I worked with ◊a[#:href
 "http://www.cs.umanitoba.ca/~jacky/"]{Dr. Jacky Baltes} to build a
 small-size humanoid robot. I coded in C and cross compiled for the ARM
 processor on a Sony Clie. I programmed it to walk and to find and kick
@@ -73,13 +69,11 @@ a ball. This was our entry in the 2005 FIRA RoboWorld Cup.
 
 ◊sub-heading{Robot Airplane}
 
+◊thumbnail[#:big "assets/airplane.png"]{}
 ◊margin-note{Paul Furgale, Sancho McCann, Jim Majewski, Andrew Bugera, and Kory
 Zelickson. "Team Manitoba 2006 AUVSI Student Competition Project
 Description." ◊em{AUVSI: 4th Annual Student Unmanned Aerial Vehicle
-Competition}, 2006. ◊b-link[#:url "assets/TeamManitoba2006.pdf"]}
-
-◊thumbnail[#:big "assets/airplane.png"]{}
-At the University of Manitoba, I was part of a team that built a robot
+Competition}, 2006. ◊b-link[#:url "assets/TeamManitoba2006.pdf"]} At the University of Manitoba, I was part of a team that built a robot
 airplane that could take-off, fly a search pattern, and land---all
 autonomously. The airplane sent a video feed and telemetry to a ground
 station, where one of our teammates could mark targets of interest and

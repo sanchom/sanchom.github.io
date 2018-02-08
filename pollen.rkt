@@ -49,8 +49,8 @@
   `(span "[" (a ((href ,url)) ,word) "]"))
 
 ; A thumbnail.
-(define (thumbnail #:big big-url #:small [small-url big-url] #:width [width "150"])
-  `(a ((href ,big-url)) (img ((class "thumbnail") (src ,small-url) (width ,width)))))
+(define (thumbnail #:big big-url #:small [small-url big-url])
+  `(div [[class "thumbnail"]] (a ((href ,big-url) (class "undecorated")) (img ((class "thumbnail") (src ,small-url)))) (div [[class "clear"]])))
 
 ; Ignores single line breaks in paragraph interpretation. They are
 ; converted to spaces. But, double-breaks demarcate paragraphs.
