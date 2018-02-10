@@ -1,5 +1,6 @@
 #lang racket
 
+(require racket/path)
 (require pollen/core)
 (require pollen/decode txexpr)
 (require pollen/setup)
@@ -131,7 +132,6 @@
              #:omit-word (λ (x) (or (non-breakable-capitalized? x) (ligs? x)))))
 
 (define (add-footnotes tx)
-  (display footnote-list)
   (define footnote-class
     (if (equal? note-mode "sidenotes") "endnotes print-only" "endnotes"))
   (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
@@ -145,3 +145,13 @@
            #:string-proc (compose1 smart-quotes smart-dashes))))
 
 (provide (all-defined-out))
+
+(module setup racket/base
+  (require racket/path)
+  (require racket/string)
+  (define (omitted-path? path)
+    (or (path-has-extension? path ".yml")
+        (equal? (path->string (file-name-from-path path)) "cars.xml")
+        (string-suffix? (path->string (file-name-from-path path)) "template.html")
+        (string-suffix? (path->string (file-name-from-path path)) "~")))
+  (provide (all-defined-out)))
