@@ -12,6 +12,7 @@
 
 (define note-mode "sidenotes")
 (define footnote-list empty)
+(define margin-note-number 0)
 
 (define (use-footnotes)
   (set! note-mode "footnotes"))
@@ -86,8 +87,9 @@
 ; not collapsed at all. This will stick close beside the anchor,
 ; on the web and in print.
 (define (margin-note #:expanded [expanded #t] . content)
-  (define refid (number->string (random 4294967087)))
-  (define subrefid (number->string (random 4294967087)))
+  (set! margin-note-number (+ 1 margin-note-number))
+  (define refid (format "mn-~a" margin-note-number))
+  (define subrefid (format "mn-~a-expand" margin-note-number))
   `(span (label [[for ,refid] [class "margin-toggle"]] "⊕")
          (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
          (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
@@ -100,8 +102,8 @@
   (set! footnote-list
         (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
                                         ,(format "~a. " footnote-number) (a [[href ,(format "#fn-source-~a" footnote-number)] [class "backlink undecorated"]] " ⌃ ") ,@content))))
-  (define refid (number->string (random 4294967087)))
-  (define subrefid (number->string (random 4294967087)))
+  (define refid (format "fn-~a" footnote-number))
+  (define subrefid (format "fn-~a-expand" footnote-number))
   (if (equal? note-mode "sidenotes")
     `(span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
            (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
