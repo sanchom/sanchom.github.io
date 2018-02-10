@@ -1,5 +1,9 @@
 sudo: required
 
+branches:
+  only:
+  - master-source
+
 services:
   - docker
 
@@ -23,3 +27,15 @@ after_success: skip
 after_failure: skip
 
 after_script: skip
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  local-dir: published
+  target-branch: master
+  committer-from-gh: true
+  verbose: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: master-source
