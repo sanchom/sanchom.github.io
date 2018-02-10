@@ -4,8 +4,10 @@ services:
   - docker
 
 before_install:
+  - cd ../
   - docker pull sanchom/pollen
-  - docker run --rm sanchom/pollen ls
+  - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen render -r sanchom.github.io
+  - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen publish sanchom.github.io published
 
 install: skip
 
@@ -13,6 +15,8 @@ before_script: skip
 
 script:
   - ls ../
+  - ls
+  - ls published
 
 after_success: skip
 
