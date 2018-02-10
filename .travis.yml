@@ -9,24 +9,11 @@ branches:
 services:
   - docker
 
-before_install:
+script:
   - cd ../
   - docker pull sanchom/pollen
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen render -r sanchom.github.io
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen publish sanchom.github.io published
-
-install: skip
-
-before_script: skip
-
-script:
-  - ls ../
-  - ls
-  - ls published
-
-after_success: skip
-
-after_failure: skip
 
 deploy:
   provider: pages
@@ -35,8 +22,7 @@ deploy:
   local-dir: published
   target-branch: master
   committer-from-gh: true
-  verbose: true
   github-token: $GITHUB_TOKEN
-
-after_script: skip
+  on:
+    branch: master-source
 
