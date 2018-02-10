@@ -15,6 +15,9 @@ script:
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen render -r sanchom.github.io
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen publish sanchom.github.io published
 
+before_deploy:
+  - cd ../
+
 deploy:
   provider: pages
   skip-cleanup: true
@@ -25,4 +28,3 @@ deploy:
   github-token: $GITHUB_TOKEN
   on:
     branch: master-source
-
