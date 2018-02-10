@@ -37,5 +37,3 @@ deploy:
   committer-from-gh: true
   verbose: true
   github-token: $GITHUB_TOKEN
-  on:
-    branch: master-source
