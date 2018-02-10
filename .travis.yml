@@ -6,3 +6,16 @@ services:
 before_install:
   - docker pull sanchom/pollen
   - docker run --rm sanchom/pollen ls
+
+install: skip
+
+before_script: skip
+
+script:
+  - ls ../
+
+after_success: skip
+
+after_failure: skip
+
+after_script: skip
