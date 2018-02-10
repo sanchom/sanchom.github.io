@@ -26,8 +26,6 @@ after_success: skip
 
 after_failure: skip
 
-after_script: skip
-
 deploy:
   provider: pages
   skip-cleanup: true
@@ -37,3 +35,6 @@ deploy:
   committer-from-gh: true
   verbose: true
   github-token: $GITHUB_TOKEN
+
+after_script: skip
+
