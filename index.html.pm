@@ -5,12 +5,12 @@
 I am a computer scientist interested in object recognition, machine
 learning, and applications of deep neural networks.
 
-Currently: data scientist at Kobo, webmaster for the Webster Memorial Trophy
+Currently: data scientist at Kobo, volunteer with the ◊a[#:href "http://bccla.org/"]{BCCLA}, webmaster for the Webster Memorial Trophy
 Competition, ◊a[#:href
 "http://athletics.ca/wp-content/themes/default-bs3/popups/athlete-rankings.php?id=8218097&year=0"]{amateur
-sprinter}, Class 1 Flight Instructor (not active).
+sprinter}.
 
-Formerly: Head of R&D for Shelfie, Canadian Forces Officer
+Formerly: Head of R&D for Shelfie, Class 1 Flight Instructor (still current but not active), Canadian Forces Officer
 (Cadet Instructor Cadre), 2× Google Intern.
 
 ◊div[#:class "external-link-logos"]{
