@@ -91,8 +91,28 @@
 
 ; Insert commas between successive sidenotes.
 (define (insert-sidenote-commas tx)
+  (define (is-trigger-triple? x y z)
+    (define result (and (is-sidenote-wrapper? x)
+                        (string? y)
+                        (equal? (string-trim y) "")
+                        (is-sidenote-wrapper? z)))
+    (if result
+        (begin
+          (display "----- trigger triple -----\n")
+          (display (format "~a\n" x))
+          (display (format "~a\n" y))
+          (display (format "~a\n" z)))
+        (begin
+          (display "-----               ------\n")
+          (display (format "~a\n" x))
+          (display (format "~a\n" y))
+          (display (format "~a\n" z))))
+    result)
+  (define (is-sidenote-wrapper? tx)
+    (and (txexpr? tx)
+         (attrs-have-key? tx 'class)
+         (equal? (attr-ref tx 'class) "sidenote-wrapper")))
   (define elements (get-elements tx))
-  (display elements)
   (txexpr (get-tag tx) (get-attrs tx)
           (let loop ([result empty]
                      [elements elements])
@@ -106,21 +126,14 @@
                           ; If they're both span.sidenote-wrapper, put the first one plus a comma into
                           ; results, then recurse, otherwise, just put the first one into results and
                           ; recurse.
-                          (if (and (attrs-have-key? x 'class)
-                                   (equal? (attr-ref x 'class) "sidenote-wrapper")
-                                   (attrs-have-key? y 'class)
-                                   (equal? (attr-ref y 'class) "sidenote-wrapper"))
+                          (if (and (is-sidenote-wrapper? x)
+                                   (is-sidenote-wrapper? y))
                               (loop (append result (list x ",")) (cdr elements))
                               (loop (append result (list x)) (cdr elements)))
                           ; Otherwise, there are three items in elements, and we check whether this is
                           ; (span.sidenote-wrapper whitespace span.sidenote-wrapper)
                           (let ([z (caddr elements)])
-                            (if (and (attrs-have-key? x 'class)
-                                     (equal? (attr-ref x 'class) "sidenote-wrapper")
-                                     (string? y)
-                                     (equal? (string-trim y) "")
-                                     (attrs-have-key? z 'class)
-                                     (equal? (attr-ref z 'class) "sidenote-wrapper"))
+                            (if (is-trigger-triple? x y z)
                                 (loop (append result (list x ",")) (cddr elements))
                                 (loop (append result (list x)) (cdr elements)))))))))))
 
