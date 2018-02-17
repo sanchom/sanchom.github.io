@@ -22,6 +22,12 @@
 ; Simple replacements or re-tags.
 (define elide "[…]")
 
+(define (fig #:src src . content)
+  `(figure
+    (img ((src ,src)))
+    (figcaption ,@content)
+   ))
+
 (define (title . content)
   `(h1 ((hyphens "none")) ,@content))
 

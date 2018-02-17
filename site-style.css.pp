@@ -61,6 +61,11 @@ div.header {clear:both; font-size: 0.7rem;}
 .left-header {float:left;}
 .right-header {float:right;}
 
+◊; Figure styles
+figure { text-align: center; padding: 0; margin: 0;}
+figure > p { margin-bottom: 0.25rem; }
+figcaption { font-size:0.7rem; margin-top: 0.25rem;}
+
 ◊; Styles used for some little external links to Twitter, Wordpress.
 ◊; Line them up left-to-right, but centered. Don't style them as links.
 div.external-link-logos { clear:left; display: flex; justify-content: center; }
@@ -108,7 +113,7 @@ p, li, blockquote {line-height: 1.5;}
 ul {list-style: circle outside;}
 li {padding-left: 1em;}
 
-blockquote { border-left: 10px solid gainsboro; padding-left: 1em; margin-right: 5em; }
+blockquote { border-left: 10px solid gainsboro; padding-left: 1em; margin-right: 3em; }
 
 ◊; Styles for sidenotes and margin-notes. Taken from Tufte-css.
 .sidenote, .margin-note {
