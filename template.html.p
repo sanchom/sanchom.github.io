@@ -22,7 +22,8 @@
     </script>
     <meta name="google-site-verification" content="ApapaNT3CEd0OdSE-X9Xy4xF3r_gjtWDR05XS6FANu4" />
 
-    <meta name="twitter:card" content="summary" />
+    ◊when/splice[featured-image-url]{<meta name="twitter:card" content="summary_large_image" />}
+    ◊when/splice[(not featured-image-url)]{<meta name="twitter:card" content="summary" />}
     <meta name="twitter:site" content="@sanchom" />
     <meta property="og:title" content="◊(select 'page-title here)" />
     ◊when/splice[snippet]{<meta property="og:description" content="◊|snippet|" />}
