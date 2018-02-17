@@ -2,6 +2,13 @@
 <!--
 ◊|template-message|
 -->
+
+◊(define (grab-optionally-shortened-title page) (define x (select 'short-title page)) (if (not x) (select 'page-title page) x))
+◊(define prev-page (previous here))
+◊(define next-page (next here))
+◊(define featured-image-url (select 'featured-image-url metas))
+◊(define snippet (select 'snippet metas))
+
 <html>
   <head>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -15,6 +22,12 @@
     </script>
     <meta name="google-site-verification" content="ApapaNT3CEd0OdSE-X9Xy4xF3r_gjtWDR05XS6FANu4" />
 
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sanchom" />
+    <meta property="og:title" content="◊(select 'page-title here)" />
+    ◊when/splice[snippet]{<meta property="og:description" content="◊|snippet|" />}
+    ◊when/splice[featured-image-url]{<meta property="og:image" content="◊|featured-image-url|" />}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>◊|site-title|—◊(select 'page-title metas)</title>
@@ -22,11 +35,8 @@
 </head>
   <body>
 <div class="header">
-◊(define (grab-title page) (define x (select 'short-title page)) (if (not x) (select 'page-title page) x))
-◊(define prev-page (previous here))
-◊when/splice[prev-page]{<p class="left-header">◄ <a href="◊|prev-page|">◊(grab-title prev-page)</a></p>}
-◊(define next-page (next here))
-◊when/splice[next-page]{<p class="right-header"><a href="◊|next-page|">◊(grab-title next-page)</a> ►</p>}
+◊when/splice[prev-page]{<p class="left-header">◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a></p>}
+◊when/splice[next-page]{<p class="right-header"><a href="◊|next-page|">◊(grab-optionally-shortened-title next-page)</a> ►</p>}
 </div>
 <div style="clear: both;"></div>
     ◊(->html doc)

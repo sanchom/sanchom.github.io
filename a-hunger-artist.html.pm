@@ -1,6 +1,8 @@
 #lang pollen
 
 ◊define-meta[page-title]{A Hunger Artist}
+◊define-meta[featured-image-url]{assets/panther_patrick_bouquet.jpg}
+◊define-meta[snippet]{THE PANTHER from Kafka's A Hunger Artist has stuck with me ever since I first read the short story.}
 
 ◊fig[#:src "assets/panther_patrick_bouquet.jpg"]{◊margin-note{Photo by ◊a[#:href
 "https://www.flickr.com/photos/pattoise/3731006773/"]{Patrick

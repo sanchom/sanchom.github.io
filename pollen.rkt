@@ -22,10 +22,10 @@
 ; Simple replacements or re-tags.
 (define elide "[…]")
 
-(define (fig #:src src . content)
+(define (fig #:src src . caption)
   `(figure
-    (img ((src ,src)))
-    (figcaption ,@content)
+    (img ([src ,src]))
+    (figcaption ,@caption)
    ))
 
 (define (title . content)
