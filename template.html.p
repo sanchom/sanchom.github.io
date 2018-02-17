@@ -27,7 +27,7 @@
     <meta name="twitter:site" content="@sanchom" />
     <meta property="og:title" content="◊(select 'page-title here)" />
     ◊when/splice[snippet]{<meta property="og:description" content="◊|snippet|" />}
-    ◊when/splice[featured-image-url]{<meta property="og:image" content="◊|featured-image-url|" />}
+    ◊when/splice[featured-image-url]{<meta property="og:image" content="http://sanchom.github.io/◊|featured-image-url|" />}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
