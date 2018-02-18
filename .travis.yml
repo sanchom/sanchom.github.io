@@ -19,6 +19,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
+  allow-empty-commit: true
   local-dir: ../published
   target-branch: master
   committer-from-gh: true

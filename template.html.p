@@ -6,7 +6,10 @@
 ◊(define (grab-optionally-shortened-title page) (define x (select 'short-title page)) (if (not x) (select 'page-title page) x))
 ◊(define prev-page (previous here))
 ◊(define next-page (next here))
-◊(define featured-image-url (select 'featured-image-url metas))
+◊(define featured-image-url
+   (if (select 'featured-image-url metas)
+       (select 'featured-image-url metas)
+       (get-featured-image-url doc)))
 ◊(define snippet (select 'snippet metas))
 
 <html>
@@ -27,7 +30,7 @@
     <meta name="twitter:site" content="@sanchom" />
     <meta property="og:title" content="◊(select 'page-title here)" />
     ◊when/splice[snippet]{<meta property="og:description" content="◊|snippet|" />}
-    ◊when/splice[featured-image-url]{<meta property="og:image" content="http://sanchom.github.io/◊|featured-image-url|" />}
+    ◊when/splice[featured-image-url]{<meta property="og:image" content="◊|site-root|/◊|featured-image-url|" />}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -9,6 +9,7 @@
 (define template-message "This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.")
 (define site-author "Sancho McCann")
 (define site-title "Sancho McCann")
+(define site-root "http://sanchom.github.io")
 
 (define note-mode "sidenotes")
 (define footnote-list empty)
@@ -19,12 +20,21 @@
 (define (use-sidenotes)
   (set! note-mode "sidenotes"))
 
+(define (get-featured-image-url doc)
+  (define (is-featured-img? tx)
+    (and (txexpr? tx)
+         (attrs-have-key? tx 'potential-feature)))
+  (define featured-image (findf-txexpr doc is-featured-img?))
+  (if featured-image
+      (attr-ref featured-image 'src)
+      #f))
+
 ; Simple replacements or re-tags.
 (define elide "[…]")
 
 (define (fig #:src src . caption)
   `(figure
-    (img ([src ,src]))
+    (img ([potential-feature "potential-feature"][src ,src]))
     (figcaption ,@caption)
    ))
 
