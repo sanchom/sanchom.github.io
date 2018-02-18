@@ -114,6 +114,14 @@ ul {list-style: circle outside;}
 li {padding-left: 1em;}
 
 blockquote { border-left: 10px solid gainsboro; padding-left: 1em; margin-right: 3em; }
+.code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+span.code {font-size: 0.8rem;}
+blockquote.code {
+border-left: 10px solid gainsboro;
+margin-left: 0;
+margin-right: 0;
+overflow-x: auto;
+font-size: 0.7rem;}
 
 ◊; Styles for sidenotes and margin-notes. Taken from Tufte-css.
 .sidenote, .margin-note {

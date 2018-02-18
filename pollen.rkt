@@ -60,6 +60,12 @@
 (define (thumbnail #:big big-url #:small [small-url big-url])
   `(div [[class "thumbnail"]] (a ((href ,big-url) (class "undecorated")) (img ((class "thumbnail") (src ,small-url)))) (div [[class "clear"]])))
 
+(define (code . content)
+  `(blockquote [[class "code"]] (pre [[class "code"]] ,@content)))
+
+(define (tt . content)
+  `(span [[class "code"]] ,@content))
+
 ; Ignores single line breaks in paragraph interpretation. They are
 ; converted to spaces. But, double-breaks demarcate paragraphs.
 (define (decode-double-breaks-into-paras elements)
@@ -116,7 +122,7 @@
            (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
            (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@content))
     `(a [[href ,(format "#fn-~a" footnote-number)] [class "undecorated"]] (span [[class "sidenote-number"] [id ,(format "fn-source-~a" footnote-number)]]))))
-  
+
 ; Custom hyphenation that doesn't break URLs.
 (define (custom-hyphenation x)
   (define allowed-capitalized-hyphenations
@@ -148,6 +154,7 @@
 (define (root . elements)
   (add-footnotes
    (decode (txexpr 'root empty elements)
+           #:exclude-tags '(pre)
            #:txexpr-proc custom-hyphenation
            #:txexpr-elements-proc decode-double-breaks-into-paras
            #:string-proc (compose1 smart-quotes smart-dashes))))
