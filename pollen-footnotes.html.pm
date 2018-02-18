@@ -11,7 +11,7 @@ In unspecialized ◊a[#:href
 "https://docs.racket-lang.org/pollen/third-tutorial.html"]{Pollen
 markup}, tags are converted directly into associated html
 elements. Most authors will end up adding to this default behaviour by
-implementing custom tags that do more. I've started to do add features
+implementing custom tags that do more. I've started to add features
 as I need them, and I've enjoyed thinking about how to keep my
 customizations simple.
 
@@ -33,8 +33,8 @@ particular article should use sidenotes or footnotes.
 I also want the print view to use footnotes even if the web view used
 sidenotes. Sidenotes cram the limited width that is available on a
 printed page. And, sidenotes can be quite long. Unless they are
-collapseable, like they can be in the web view, they will push
-subsequent sidenotes far from their anchor in the main text.
+collapseable, like they are in the web view, they will push subsequent
+sidenotes far from their anchor in the main text.
 
 I want sidenotes to look nice on small screens. They can't just stay
 in the margin; there just isn't enough width.
@@ -111,18 +111,18 @@ rendered html ends up looking like:
 
 CSS controls how these are all displayed. On a wide screen, the note
 is rendered in the right margin. On a narrow screen, the main content
-takes the full width of the screen and the note is hidden, but can be
-toggled by the reader by clicking the note's number and then the note
-gets displayed in between lines of main text.◊note{If you're not
-already reading this on a small screen, you can preview this behaviour
-by narrowing this browser window.} Long notes are truncated until they
-are clicked on. The note text itself acts as a checkbox that triggers
-some CSS selectors that toggle whether the content is
-truncated.◊note{When you have many sidenotes in quick succession, if
-they aren't truncated, the later sidenotes end up being placed far
-from their anchors.} I can disable truncation for individual footnotes
-like this: ◊tt{◊"◊"note[#:expanded #t]{This sidenote content will
-never be truncated.}} I did that for sidenote 2 up there.
+takes the full width of the screen and the note get's hidden. It can
+be displayed between lines of the main text by clicking the note's
+number.◊note{If you're not already reading this on a small screen, you
+can preview this behaviour by narrowing this browser window.} Long
+notes are truncated until they are clicked on. The note text itself
+acts as a checkbox that triggers some CSS selectors that toggle
+whether the content is truncated.◊note{When you have many sidenotes in
+quick succession, if they aren't truncated, the later sidenotes end up
+being placed far from their anchors.} I can disable truncation for
+individual footnotes like this: ◊tt{◊"◊"note[#:expanded #t]{This
+sidenote content will never be truncated.}} I did that for sidenote 2
+up there.
 
 What about that list of footnotes that I built up? After the
 ◊tt{decode} of the ◊tt{root} element, the list of footnotes is
