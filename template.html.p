@@ -37,7 +37,7 @@
     <title>◊|site-title|—◊(select 'page-title metas)</title>
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
 </head>
-  <body>
+  <body ◊when/splice[(need-right-margin? doc)]{class="print-with-right-margin"}>
 <div class="header">
 ◊when/splice[prev-page]{<p class="left-header">◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a></p>}
 ◊when/splice[next-page]{<p class="right-header"><a href="◊|next-page|">◊(grab-optionally-shortened-title next-page)</a> ►</p>}

@@ -3,10 +3,10 @@
 ◊define-meta[page-title]{A Hunger Artist}
 ◊define-meta[snippet]{THE PANTHER from Kafka's A Hunger Artist has stuck with me ever since I first read the short story.}
 
-◊fig[#:src "assets/panther_patrick_bouquet.jpg"]{◊margin-note{Photo by ◊a[#:href
+◊fig[#:src "assets/panther_patrick_bouquet.jpg"]{Photo by ◊a[#:href
 "https://www.flickr.com/photos/pattoise/3731006773/"]{Patrick
 Bouquet}. (◊a[#:href
-"https://creativecommons.org/licenses/by-nc-nd/2.0/"]{CC◊string->symbol{nbsp}BY◊string->number{8209}NC◊string->number{8209}ND◊string->symbol{nbsp}2.0})}}
+"https://creativecommons.org/licenses/by-nc-nd/2.0/"]{CC◊string->symbol{nbsp}BY◊string->number{8209}NC◊string->number{8209}ND◊string->symbol{nbsp}2.0})}
 
 THE PANTHER from Franz Kafka's ◊a[#:href
 "http://johnstoniatexts.x10host.com/kafka/hungerartisthtml.html"]{◊em{A

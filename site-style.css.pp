@@ -195,7 +195,8 @@ display: -webkit-box;
 .sidenote, .backlink, .header { display: none; }
 .endnotes { display: block; }
 html { font-size: 13px; }
-body { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
+body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; }
+body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
 @page {
 margin-top: 1.5in;
 margin-bottom: 1.5in;

@@ -29,6 +29,13 @@
       (attr-ref featured-image 'src)
       #f))
 
+(define (need-right-margin? doc)
+  (define (is-margin-note? tx)
+    (and (txexpr? tx)
+         (attrs-have-key? tx 'class)
+         (ormap (λ (a) (equal? "margin-note" a)) (string-split (attr-ref tx 'class)))))
+  (findf-txexpr doc is-margin-note?))
+
 ; Simple replacements or re-tags.
 (define elide "[…]")
 
