@@ -92,11 +92,10 @@
 ; Insert commas between successive sidenotes.
 (define (insert-sidenote-commas tx)
   (define (is-trigger-triple? x y z)
-    (define result (and (is-sidenote-wrapper? x)
-                        (string? y)
-                        (equal? (string-trim y) "")
-                        (is-sidenote-wrapper? z)))
-    result)
+    (and (is-sidenote-wrapper? x)
+         (string? y)
+         (equal? (string-trim y) "")
+         (is-sidenote-wrapper? z)))
   (define (is-trigger-double? x y)
     (and (is-sidenote-wrapper? x)
                         (is-sidenote-wrapper? y)))
@@ -121,8 +120,9 @@
                           (if (is-trigger-double? x y)
                               (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cdr elements))
                               (loop (append result (list x)) (cdr elements)))
-                          ; Otherwise, there are three items in elements, and we check whether this is
-                          ; (span.sidenote-wrapper whitespace span.sidenote-wrapper)
+                          ; Otherwise, there are at least three items in elements; check whether the first two
+                          ; are successive sidenotes, or whether the three together are a sequence like:
+                          ; (sidenote whitespace sidenote).
                           (let ([z (caddr elements)])
                             (if (is-trigger-double? x y)
                                 (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cdr elements))

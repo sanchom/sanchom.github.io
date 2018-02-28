@@ -265,6 +265,72 @@ label.sidenote-number { display: inline; }
 }
 }
 
+◊heading{Commas}
+
+I also wanted to have Pollen automatically detect series of
+consecutive ◊tt{◊"◊"note} tags and insert commas in between
+them.◊note{Like} ◊note{this.} My solution was to wrap the entire set
+of tags that get inserted due to a ◊tt{◊"◊"note} tag with a
+◊tt{<span class="sidenote-wrapper">◊|elide|</span>}. So, whether it's
+a link to a footnote, or a quadruple of elements that enable the
+sidenote behaviour, it gets wrapped with that tag. This gives the
+Pollen decoder something to look for---something to insert commas
+between.
+
+I implemented this as a ◊tt{txexpr-proc} that runs during the decode
+of the root element.
+
+◊code{
+(define (insert-sidenote-commas tx) ; Will run on every txexpr.
+  ; Just defining some helper functions.
+  (define (is-trigger-triple? x y z)
+    (and (is-sidenote-wrapper? x)
+         (string? y)
+         (equal? (string-trim y) "")
+         (is-sidenote-wrapper? z)))
+  (define (is-trigger-double? x y)
+    (and (is-sidenote-wrapper? x)
+                        (is-sidenote-wrapper? y)))
+  (define (is-sidenote-wrapper? tx)
+    (and (txexpr? tx)
+         (attrs-have-key? tx 'class)
+         (equal? (attr-ref tx 'class) "sidenote-wrapper")))
+  ; The function will pass over the elements (children)
+  ; of the txexpr, looking for successive sidenote elements
+  ; between which to put a comma.
+  (define elements (get-elements tx))
+  (txexpr (get-tag tx) (get-attrs tx)
+          (let loop ([result empty]
+                     [elements elements])
+            (if (empty? elements) ; If only zero items.
+                result
+                (if (empty? (cdr elements)) ; If only one item in elements.
+                    (append result elements)
+                    (let ([x (car elements)]
+                          [y (cadr elements)])
+                      (if (empty? (cddr elements)) ; If only two items in elements.
+                          ; If they're both span.sidenote-wrapper, put the first one plus a comma into
+                          ; results, then recurse, otherwise, just put the first one into results and
+                          ; recurse.
+                          (if (is-trigger-double? x y)
+                              (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cdr elements))
+                              (loop (append result (list x)) (cdr elements)))
+                          ; Otherwise, there are at least three items in elements; check whether the first two
+                          ; are successive sidenotes, or whether the three together are a sequence like:
+                          ; (sidenote whitespace sidenote).
+                          (let ([z (caddr elements)])
+                            (if (is-trigger-double? x y)
+                                (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cdr elements))
+                                (if (is-trigger-triple? x y z)
+                                    (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cddr elements))
+                                    (loop (append result (list x)) (cdr elements))))))))))))
+}
+
+The nesting got a little crazy there, but this was fun to think about
+and write. The ◊a[#:href
+"https://docs.racket-lang.org/guide/let.html#%28part._.Named_let%29"]{◊tt{named-let}}
+is a way to do tail-recursion.
+
 ◊heading{Not done yet}
 
 This will probably never be done, but next, I want to make better use
