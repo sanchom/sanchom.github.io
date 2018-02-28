@@ -96,18 +96,10 @@
                         (string? y)
                         (equal? (string-trim y) "")
                         (is-sidenote-wrapper? z)))
-    (if result
-        (begin
-          (display "----- trigger triple -----\n")
-          (display (format "~a\n" x))
-          (display (format "~a\n" y))
-          (display (format "~a\n" z)))
-        (begin
-          (display "-----               ------\n")
-          (display (format "~a\n" x))
-          (display (format "~a\n" y))
-          (display (format "~a\n" z))))
     result)
+  (define (is-trigger-double? x y)
+    (and (is-sidenote-wrapper? x)
+                        (is-sidenote-wrapper? y)))
   (define (is-sidenote-wrapper? tx)
     (and (txexpr? tx)
          (attrs-have-key? tx 'class)
@@ -126,16 +118,17 @@
                           ; If they're both span.sidenote-wrapper, put the first one plus a comma into
                           ; results, then recurse, otherwise, just put the first one into results and
                           ; recurse.
-                          (if (and (is-sidenote-wrapper? x)
-                                   (is-sidenote-wrapper? y))
-                              (loop (append result (list x ",")) (cdr elements))
+                          (if (is-trigger-double? x y)
+                              (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cdr elements))
                               (loop (append result (list x)) (cdr elements)))
                           ; Otherwise, there are three items in elements, and we check whether this is
                           ; (span.sidenote-wrapper whitespace span.sidenote-wrapper)
                           (let ([z (caddr elements)])
-                            (if (is-trigger-triple? x y z)
-                                (loop (append result (list x ",")) (cddr elements))
-                                (loop (append result (list x)) (cdr elements)))))))))))
+                            (if (is-trigger-double? x y)
+                                (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cdr elements))
+                                (if (is-trigger-triple? x y z)
+                                    (loop (append result (list x '(span [[class "sidenote-comma"]] ","))) (cddr elements))
+                                    (loop (append result (list x)) (cdr elements))))))))))))
 
 ; Explicit list annotation. First, detects double-line-breaks to
 ; create top-level block elements, then turns top-level elements
@@ -216,14 +209,23 @@
     (if (equal? note-mode "sidenotes") "endnotes print-only" "endnotes"))
   (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
 
-; Double line breaks create new paragraphs. Single line breaks are ignored.
 (define (root . elements)
   (add-footnotes
-   (decode (txexpr 'root empty elements)
+   ; TODO: Remove the need for this nested-decode. I need it now because the insert-sidenote-commas
+   ; function works on txexprs, and searches for sequences of child elements that constitute
+   ; successive side/footnotes. If these are at the main text level, they don't appear as children
+   ; of anything until after paragraphs are formed. (Well, they're children of root, but then they're
+   ; just elements. I think I could refactor this by making insert-sidenote-commas work on txexpr-elements
+   ; instead of txexprs.
+   (decode (txexpr 'root empty (get-elements
+                                (decode (txexpr 'root empty elements)
+                                        #:exclude-tags '(pre)
+                                        #:txexpr-proc custom-hyphenation
+                                        ; Double line breaks create new paragraphs. Single line breaks are ignored.
+                                        #:txexpr-elements-proc decode-double-breaks-into-paras
+                                        #:string-proc (compose1 smart-quotes smart-dashes))))
            #:exclude-tags '(pre)
-           #:txexpr-proc (compose1 custom-hyphenation insert-sidenote-commas)
-           #:txexpr-elements-proc decode-double-breaks-into-paras
-           #:string-proc (compose1 smart-quotes smart-dashes))))
+           #:txexpr-proc insert-sidenote-commas)))
 
 (provide (all-defined-out))
 

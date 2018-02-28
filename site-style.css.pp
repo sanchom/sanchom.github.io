@@ -175,6 +175,13 @@ top: -0.5rem;
 left: 0.1rem;
 }
 
+.sidenote-comma {
+position: relative;
+font-size: 0.7rem;
+top: -0.5rem;
+left: 0.1rem;
+}
+
 .sidenote:before { content: counter(sidenote-counter) ". "; top: 0rem; }
 
 input.margin-toggle { display: none; }
