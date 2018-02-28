@@ -31,6 +31,10 @@
 ◊(define max-font-size 22)
 ◊(define font-size-on-small-screens 18)
 ◊(define small-screen-trigger (- width-for-max-font (* (- size-steps 1) 40)))
+◊(define background-color "#fdfaf3")
+◊(define dark-text-color "#111")
+◊(define light-text-color "#373737")
+◊(define blockquote-border-color "#a9a9a9")
 
 @media all {html {font-size: ◊|max-font-size|px;}}
 ◊(apply string-append (map (lambda (x)
@@ -41,8 +45,8 @@ body {
 font-family: et-book, "Book Antiqua", serif;
 margin-top: 5em; margin-bottom: 5em; margin-left: 10%; margin-right: 33%;
 max-width: 40em;
-background-color: #fffff8;
-color: #111;
+background-color: ◊|background-color|;
+color: ◊|dark-text-color|;
 text-align: justify;
 counter-reset: sidenote-counter;
 }
@@ -86,13 +90,13 @@ a:link, a:visited { color: inherit; }
 
 a:link {
 text-decoration: none;
-background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
-background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
+background: -webkit-linear-gradient(◊|background-color|, ◊|background-color|), -webkit-linear-gradient(◊|background-color|, ◊|background-color|), -webkit-linear-gradient(#333, #333);
+background: linear-gradient(◊|background-color|, ◊|background-color|), linear-gradient(◊|background-color|, ◊|background-color|), linear-gradient(#333, #333);
 -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
 -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
 background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
 background-repeat: no-repeat, no-repeat, repeat-x;
-text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+text-shadow: 0.03em 0 ◊|background-color|, -0.03em 0 ◊|background-color|, 0 0.03em ◊|background-color|, 0 -0.03em ◊|background-color|, 0.06em 0 ◊|background-color|, -0.06em 0 ◊|background-color|, 0.09em 0 ◊|background-color|, -0.09em 0 ◊|background-color|, 0.12em 0 ◊|background-color|, -0.12em 0 ◊|background-color|, 0.15em 0 ◊|background-color|, -0.15em 0 ◊|background-color|;
 background-position: 0% 93%, 100% 93%, 0% 93%;
 }
 
@@ -113,11 +117,11 @@ p, li, blockquote {line-height: 1.5;}
 ul {list-style: circle outside;}
 li {padding-left: 1em;}
 
-blockquote { border-left: 10px solid gainsboro; padding-left: 1em; margin-right: 3em; }
+blockquote { border-left: 10px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
 .code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 span.code {font-size: 0.8rem;}
 blockquote.code {
-border-left: 10px solid gainsboro;
+border-left: 10px solid ◊|blockquote-border-color|;
 margin-left: 0;
 margin-right: 0;
 overflow-x: auto;
@@ -126,7 +130,7 @@ font-size: 0.7rem;}
 ◊; Styles for sidenotes and margin-notes. Taken from Tufte-css.
 .sidenote, .margin-note {
 text-align: left;
-color: #555;
+color: ◊|light-text-color|;
 float: right;
 clear: right;
 margin-right: -40%;
@@ -147,7 +151,7 @@ display: -webkit-box;
 
 .footnote {
 text-align: left;
-color: #111;
+color: ◊|dark-text-color|;
 font-size: 0.7rem;
 line-height: 1.3;
 }
@@ -205,7 +209,7 @@ margin-right: 1.5in;
 }
 .margin-note {
 text-align: left;
-color: #555;
+color: ◊|light-text-color|;
 float: right;
 clear: right;
 margin-right: -30%;
@@ -251,7 +255,7 @@ label.margin-toggle:not(.sidenote-number) { display: inline; }
 .margin-note, .sidenote { display: none; }
 .margin-toggle:checked ~ .sidenote,
 .margin-toggle:checked ~ .margin-note {
-color: #111;
+color: ◊|dark-text-color|;
 font-size: 0.8rem;
 display: block;
 float: left;
