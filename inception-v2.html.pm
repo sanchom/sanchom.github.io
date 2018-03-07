@@ -44,7 +44,7 @@ the ◊em{model.txt} that is in the tar-file of this submission."}
   
 I can't find this model.txt file anywhere on the internet, but they present this table describing Inception-v2:
 
-◊img[#:src "assets/possibly-inception-v2.png" #:width "350"]{}
+◊fig[#:src "assets/possibly-inception-v2.png"]{}
 
 "Rethinking Inception" also includes a table that has separate entries for:
 

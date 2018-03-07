@@ -2,6 +2,7 @@
 
 (require racket/path)
 (require pollen/core)
+(require pollen/tag)
 (require pollen/decode txexpr)
 (require pollen/setup)
 (require (submod hyphenate safe))
@@ -40,48 +41,100 @@
 (define elide "[…]")
 
 (define (fig #:src src . caption)
-  `(figure
-    (img ([potential-feature "potential-feature"][src ,src]))
-    (figcaption ,@caption)
-   ))
+  (case (current-poly-target)
+    [(md) `(txt "![" ,@(if (not (empty? caption)) caption `("Missing image: `" ,src "`")) "](" ,src ")")]
+    [else `(figure
+            (img ([potential-feature "potential-feature"][src ,src]))
+            (figcaption ,@caption)
+            )]))
 
 (define (title . content)
-  `(h1 ((hyphens "none")) ,@content))
+  (case (current-poly-target)
+    [(md) `(txt "# " ,@content)]
+    [else `(h1 ((hyphens "none")) ,@content)]))
 
 (define (subtitle . content)
-  `(p ((class "subtitle") (hyphens "none")) ,@content))
+  (case (current-poly-target)
+    [(md) `(txt "#### " ,@content)]
+    [else `(p ((class "subtitle") (hyphens "none")) ,@content)]))
 
 (define (heading . content)
-  `(h2 ((hyphens "none")) ,@content))
+  (case (current-poly-target)
+    [(md) `(txt "## " ,@content)]
+    [else `(h2 ((hyphens "none")) ,@content)]))
 
 (define (sub-heading . content)
-  `(h3 ((hyphens "none")) ,@content))
+  (case (current-poly-target)
+    [(md) `(txt "### " ,@content)]
+    [else `(h3 ((hyphens "none")) ,@content)]))
+
+(define (poly-string->symbol . string)
+  (case (current-poly-target)
+    [(md) `(txt "&" ,@string ";")]
+    [else (string->symbol (car string))]))
 
 ; Quotation
 (define (q . content)
-  `(blockquote ,@content))
+  (case (current-poly-target)
+    [(md) `(txt "> " ,@(map (λ (x) (if (equal? x "\n") "\n> " x)) content))]
+    [else `(blockquote ,@content)]))
 
 ; Bold+emphasis
 (define (bem . content)
-  `(b (em ,@content)))
+  (b (em content)))
+
+(define (em . content)
+  (case (current-poly-target)
+    [(md) `(txt "_" ,@content "_")]
+    [else `(em ,@content)]))
+
+(define (b . content)
+  (case (current-poly-target)
+    [(md) `(txt "**" ,@content "**")]
+    [else `(b ,@content)]))
+
+(define (a #:href href . content)
+  (case (current-poly-target)
+    [(md) `(txt "[" ,@content "](" ,href ")")]
+    [else `(a [[href ,href]] ,@content)]))
+
+(define-tag-function (div attrs elems)
+  (case (current-poly-target)
+    [(md) `(txt ,@elems)]
+    [else `(div ,attrs ,@elems)]))
 
 ; A tiny social media logo.
 (define (little-logo #:href href #:img img)
-  `(a ((href ,href) (class "undecorated")) (img ((class "little-logo") (width "30px") (src ,img)))))
+  (case (current-poly-target)
+    [(md) `(txt "<a href=" "\"" ,href "\"" "><img width=32 src=" "\"" ,img "\"" " /></a>")]
+    [else `(a ((href ,href) (class "undecorated")) (img ((class "little-logo") (width "30px") (src ,img))))]))
 
 ; A bracketed link.
-(define (b-link #:word [word "pdf"] #:url url)
-  `(span "[" (a ((href ,url)) ,word) "]"))
+(define (bracketed-link #:word [word "pdf"] #:url url)
+  (case (current-poly-target)
+    [(md) `(txt "[" ,(a #:href url word) "]")]
+    [else `(span "[" (a ((href ,url)) ,word) "]")]))
 
 ; A thumbnail.
 (define (thumbnail #:big big-url #:small [small-url big-url])
-  `(div [[class "thumbnail"]] (a ((href ,big-url) (class "undecorated")) (img ((class "thumbnail") (src ,small-url)))) (div [[class "clear"]])))
+  (case (current-poly-target)
+    [(md) `(txt "<img align=" "\"" "left" "\"" " width=150 src=" "\"" ,small-url "\"" " />")]
+    [else `(div [[class "thumbnail"]] (a ((href ,big-url) (class "undecorated")) (img ((class "thumbnail") (src ,small-url)))) (div [[class "clear"]]))]))
 
-(define (code . content)
-  `(blockquote [[class "code"]] (pre [[class "code"]] ,@content)))
+(define (codeblock . content)
+  (case (current-poly-target)
+    [(md) `(txt "```\n" ,@content "\n```")]
+    [else `(blockquote [[class "code"]] (pre [[class "code"]] ,@content))]))
+
+(define (hr)
+  (case (current-poly-target)
+    [(md) `(txt "\n___________\n")]
+    [else `(hr)]))
 
 (define (tt . content)
-  `(span [[class "code"]] ,@content))
+  (case (current-poly-target)
+    [(md) `(txt "`" ,@content "`")]
+    [else `(span [[class "code"]] ,@content)])) ; TODO: Use <code> instead.
 
 ; Ignores single line breaks in paragraph interpretation. They are
 ; converted to spaces. But, double-breaks demarcate paragraphs.
@@ -148,6 +201,16 @@
 
 ; Defines the formatting for a "work" that has an author and year.
 (define (work #:author a #:year y #:url [url #f] . title-or-description)
+  (case (current-poly-target)
+    [(md) (render-md-work a y url title-or-description)]
+    [else (render-html-work a y url title-or-description)]))
+
+(define (render-md-work a y url title-or-description)
+  (if (not url)
+      `(txt "_" ,@title-or-description "_, " ,a " (" ,y ")")
+      `(txt "_[" ,@title-or-description "](" ,url ")_, " ,a " (" ,y ")")))
+
+(define (render-html-work a y url title-or-description)
   (if (not url)
       (txexpr 'span empty (list (txexpr 'em empty title-or-description) (format ", ~a (~a)" a y)))
       (txexpr 'span empty (list (txexpr 'em empty (list (txexpr 'a `((href ,url)) title-or-description))) (format ", ~a (~a)" a y)))))
@@ -156,17 +219,31 @@
 ; not collapsed at all. This will stick close beside the anchor,
 ; on the web and in print.
 (define (margin-note #:expanded [expanded #t] . content)
-  (set! margin-note-number (+ 1 margin-note-number))
-  (define refid (format "mn-~a" margin-note-number))
-  (define subrefid (format "mn-~a-expand" margin-note-number))
-  `(span (label [[for ,refid] [class "margin-toggle"]] "⊕")
-         (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
-         (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
-         (label [[for ,subrefid] [class ,(if expanded "margin-note expanded" "margin-note")] [hyphens "none"]] ,@content)))
+  (case (current-poly-target)
+    [(md) (note content)]
+    [else (begin
+            (set! margin-note-number (+ 1 margin-note-number))
+            (define refid (format "mn-~a" margin-note-number))
+            (define subrefid (format "mn-~a-expand" margin-note-number))
+            `(span (label [[for ,refid] [class "margin-toggle"]] "⊕")
+                   (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
+                   (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
+                   (label [[for ,subrefid] [class ,(if expanded "margin-note expanded" "margin-note")] [hyphens "none"]] ,@content)))]))
 
 ; Defines a little sidenote or footnote (depending on the mode), numbered, and by default collapsed
 ; to a small height. In print, these are all footnotes.
 (define (note #:expanded [expanded #f] . content)
+  (case (current-poly-target)
+    [(md) (make-md-note content)]
+    [else (make-html-note expanded content)]))
+
+(define (make-md-note content)
+  (define footnote-number (+ 1 (length footnote-list)))
+  (set! footnote-list
+        (append footnote-list (list `(txt ,(format "[~a]" footnote-number) " " ,@content))))
+  `(txt ,(format "[~a]" footnote-number)))
+
+(define (make-html-note expanded content)
   (define footnote-number (+ 1 (length footnote-list)))
   (set! footnote-list
         (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
@@ -204,13 +281,29 @@
              #:omit-txexpr omission-test
              #:omit-word (λ (x) (or (non-breakable-capitalized? x) (ligs? x)))))
 
-(define (add-footnotes tx)
+(define (add-html-footnotes tx)
   (define footnote-class
     (if (equal? note-mode "sidenotes") "endnotes print-only" "endnotes"))
   (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
 
+(define (add-md-footnotes elements)
+  `(,@elements ,(when/splice (not (empty? footnote-list)) '(txt "\n" "## Notes")) "\n" ,@(map (λ x `(txt ,x "\n\n")) footnote-list)))
+
 (define (root . elements)
-  (add-footnotes
+  (case (current-poly-target)
+    [(md) (decode-md root elements)]
+    [else (decode-html root elements)]))
+
+; TODO: Replace non-breaking spaces with normal spaces in markdown. No string->symbol directly in authoring markup.
+; TODO: Add footnote anchors and backlinks to markdown.
+; TODO: No raw "img" tags in authoring markup; turn the new tag into images that break nicely in markdown.
+; TODO: Check that all my articles render nicely in html-wide, html-narrow, html-print, and markdown.
+(define (decode-md root elements)
+  (add-md-footnotes (decode-elements elements
+                                     #:string-proc (compose1 smart-quotes smart-dashes))))
+
+(define (decode-html root elements)
+  (add-html-footnotes
    ; TODO: Remove the need for this nested-decode. I need it now because the insert-sidenote-commas
    ; function works on txexprs, and searches for sequences of child elements that constitute
    ; successive side/footnotes. If these are at the main text level, they don't appear as children
@@ -237,4 +330,5 @@
         (equal? (path->string (file-name-from-path path)) "cars.xml")
         (string-suffix? (path->string (file-name-from-path path)) "template.html")
         (string-suffix? (path->string (file-name-from-path path)) "~")))
+  (define poly-targets '(html md))
   (provide (all-defined-out)))

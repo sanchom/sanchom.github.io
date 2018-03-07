@@ -32,7 +32,7 @@ interveners participated in appeals more frequently than they did from
 2000--2008, but still at nowhere near the rate of amici at the
 U.S. Supreme Court.
 
-◊img[#:src "assets/interveners_2010-2016.png"]
+◊fig[#:src "assets/interveners_2010-2016.png"]{}
 
 To give a sense of who these interveners are, here are the parties
 that intervened at least five times over this seven-year
@@ -43,7 +43,7 @@ treated as different from the "Attorney General for Saskatchewan". I
 also didn’t separate the interveners when a group of them filed
 together.}
 
-◊img[#:src "assets/intervener_list.png"]
+◊fig[#:src "assets/intervener_list.png"]{}
 
 Attorneys general dominate the top of the list, as they always
 have. Together, they accounted for 25% of all interventions from
@@ -67,7 +67,7 @@ court disagreed with their court's decision.◊note{◊em{◊a[#:href
 Code}}, RSC◊string->symbol{nbsp}1985, ss.◊string->symbol{nbsp}691-693.} In 2016, only two of the fourteen
 appeals in that category attracted any interveners.
 
-◊img[#:src "assets/interventions_discretionary_v_as-of-right.png"]
+◊fig[#:src "assets/interventions_discretionary_v_as-of-right.png"]{}
 
 I can think of two reasons why these cases are getting less help from
 interveners.
