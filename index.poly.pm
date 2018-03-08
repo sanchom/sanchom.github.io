@@ -23,17 +23,17 @@ Formerly: Head of R&D for Shelfie, Class 1 Flight Instructor (still current but 
 Sancho McCann. "Object classification and localization using spatially
 localized features". Ph.D. Dissertation. UBC Department of Computer
 Science. 2014.
-◊b-link[#:url "https://open.library.ubc.ca/media/download/pdf/24/1.0167312/1"]
+◊bracketed-link[#:url "https://open.library.ubc.ca/media/download/pdf/24/1.0167312/1"]
 
 Sancho McCann and David G. Lowe. "Spatially Local Coding for Object
 Recognition." ◊em{ACCV}, 2012.
-◊b-link[#:url "assets/McCannLowe_ACCV2012_0851.pdf"] ◊b-link[#:word
-"poster" #:url "assets/McCannLowe_ACCV2012_0851_poster.pdf"] ◊b-link[#:word
+◊bracketed-link[#:url "assets/McCannLowe_ACCV2012_0851.pdf"] ◊bracketed-link[#:word
+"poster" #:url "assets/McCannLowe_ACCV2012_0851_poster.pdf"] ◊bracketed-link[#:word
 "project page" #:url "http://www.cs.ubc.ca/projects/spatially-local-coding"]
 
 Sancho McCann and David G. Lowe. "Local Naive Bayes Nearest Neighbor
 for Image Classification." ◊em{CVPR}, 2012.
-◊b-link[#:url "assets/McCannLowe_CVPR2012_1925.pdf"] ◊b-link[#:word "project
+◊bracketed-link[#:url "assets/McCannLowe_CVPR2012_1925.pdf"] ◊bracketed-link[#:word "project
 page" #:url "http://www.cs.ubc.ca/projects/local-nbnn"]
 
 A more complete list is at my ◊a[#:href
@@ -45,35 +45,39 @@ Scholar profile}.
 ◊sub-heading{AtmosView: Visualization Redesign}
 
 ◊thumbnail[#:big "assets/Screen-shot-2011-08-07-at-9.22.51-AM.png"]
-◊margin-note{Sancho McCann. "Atmospheric Sounding Visualization." ◊b-link[#:word
-"project report" #:url "assets/McCann-AtmosView.pdf"]} I created AtmosView, a new visualization of atmospheric sounding data
-(vertical profiles of the atmosphere's temperature and
-humidity). People use this data to predict soaring conditions,
-atmospheric stability, and the likelihood of severe weather. Previous
-diagrams have been called the most difficult atmospheric diagrams to
-read. AtmosView helps people to see better the information they're interested
-in and allows for easier comparisons between multiple charts.
+◊margin-note{Sancho McCann. "Atmospheric Sounding Visualization."
+◊bracketed-link[#:word "project report" #:url
+"assets/McCann-AtmosView.pdf"]} I created AtmosView, a new
+visualization of atmospheric sounding data (vertical profiles of the
+atmosphere's temperature and humidity). People use this data to
+predict soaring conditions, atmospheric stability, and the likelihood
+of severe weather. Previous diagrams have been called the most
+difficult atmospheric diagrams to read. AtmosView helps people to see
+better the information they're interested in and allows for easier
+comparisons between multiple charts.
 
 ◊sub-heading{Humanoid Robot}
 
-◊thumbnail[#:big "assets/abarenbou.png" #:small "assets/abarenbou-225x300.png"]{}
-◊margin-note{Sancho McCann and Jacky Baltes. "Abarenbou – A Small Vision-Based
-Humanoid Robotic Research platform." In ◊em{Proc. of the Third
-International Conference on Computational Intelligence, Robotics, and
-Autonomous Systems (CIRAS)},
-2005. ◊b-link[#:url "assets/McCannBaltes-Abarenbou.pdf"]} I worked with ◊a[#:href
-"http://www.cs.umanitoba.ca/~jacky/"]{Dr. Jacky Baltes} to build a
-small-size humanoid robot. I coded in C and cross compiled for the ARM
-processor on a Sony Clie. I programmed it to walk and to find and kick
-a ball. This was our entry in the 2005 FIRA RoboWorld Cup.
+◊thumbnail[#:big "assets/abarenbou.png" #:small
+"assets/abarenbou-225x300.png"]{} ◊margin-note{Sancho McCann and Jacky
+Baltes. "Abarenbou – A Small Vision-Based Humanoid Robotic Research
+platform." In ◊em{Proc. of the Third International Conference on
+Computational Intelligence, Robotics, and Autonomous Systems (CIRAS)},
+2005. ◊bracketed-link[#:url "assets/McCannBaltes-Abarenbou.pdf"]} I
+worked with ◊a[#:href "http://www.cs.umanitoba.ca/~jacky/"]{Dr. Jacky
+Baltes} to build a small-size humanoid robot. I coded in C and cross
+compiled for the ARM processor on a Sonqy Clie. I programmed it to
+walk and to find and kick a ball. This was our entry in the 2005 FIRA
+RoboWorld Cup.
 
 ◊sub-heading{Robot Airplane}
 
-◊thumbnail[#:big "assets/airplane.png"]{}
-◊margin-note{Paul Furgale, Sancho McCann, Jim Majewski, Andrew Bugera, and Kory
-Zelickson. "Team Manitoba 2006 AUVSI Student Competition Project
-Description." ◊em{AUVSI: 4th Annual Student Unmanned Aerial Vehicle
-Competition}, 2006. ◊b-link[#:url "assets/TeamManitoba2006.pdf"]} At the University of Manitoba, I was part of a team that built a robot
+◊thumbnail[#:big "assets/airplane.png"]{} ◊margin-note{Paul Furgale,
+Sancho McCann, Jim Majewski, Andrew Bugera, and Kory Zelickson. "Team
+Manitoba 2006 AUVSI Student Competition Project Description."
+◊em{AUVSI: 4th Annual Student Unmanned Aerial Vehicle Competition},
+2006. ◊bracketed-link[#:url "assets/TeamManitoba2006.pdf"]} At the
+University of Manitoba, I was part of a team that built a robot
 airplane that could take-off, fly a search pattern, and land---all
 autonomously. The airplane sent a video feed and telemetry to a ground
 station, where one of our teammates could mark targets of interest and
