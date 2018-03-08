@@ -64,8 +64,9 @@ right"---automatically. As-of-right appeals generally involve
 indictable criminal offenses where one of the judges at the lower
 court disagreed with their court's decision.◊note{◊em{◊a[#:href
 "http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html"]{Criminal
-Code}}, RSC◊string->symbol{nbsp}1985, ss.◊string->symbol{nbsp}691-693.} In 2016, only two of the fourteen
-appeals in that category attracted any interveners.
+Code}}, RSC◊poly-string->symbol{nbsp}1985,
+ss.◊poly-string->symbol{nbsp}691-693.} In 2016, only two of the
+fourteen appeals in that category attracted any interveners.
 
 ◊fig[#:src "assets/interventions_discretionary_v_as-of-right.png"]{}
 

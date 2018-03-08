@@ -73,6 +73,11 @@
     [(md) `(txt "&" ,@string ";")]
     [else (string->symbol (car string))]))
 
+(define (poly-string->number . string)
+  (case (current-poly-target)
+    [(md) `(txt "&" ,@string ";")]
+    (else (string->number (car string)))))
+
 ; Quotation
 (define (q . content)
   (case (current-poly-target)
@@ -81,7 +86,9 @@
 
 ; Bold+emphasis
 (define (bem . content)
-  (b (em content)))
+  (case (current-poly-target)
+    [(md) `(txt "**_" ,@content "_**")]
+    [else `(b (em ,@content))]))
 
 (define (em . content)
   (case (current-poly-target)
@@ -188,6 +195,23 @@
 ; within the itemize tag into list items. Excludes block-tags to avoid
 ; decending recursively into these and adding spurious list tags.
 (define (itemize . elements)
+  (case (current-poly-target)
+    [(md) (itemize-to-md elements)]
+    [else (itemize-to-html elements)]))
+
+(define (itemize-to-md elements)
+  ; Surrounds every top-level element in this list with a list tag, but
+  ; replaces naked p tags with li directly to avoid (li (p "text")).
+  (define (turn-elements-into-list-items elements)
+    (map (λ (x) (if (equal? (get-tag x) 'p) `(txt "\n* " ,@(get-elements x)) `(txt "\n* " ,x)))
+         elements))
+  `(txt ,@(decode-elements (decode-elements
+                           elements
+                           #:txexpr-elements-proc decode-double-breaks-into-paras)
+                          #:txexpr-elements-proc turn-elements-into-list-items
+                          #:exclude-tags (setup:block-tags))))
+
+(define (itemize-to-html elements)
   ; Surrounds every top-level element in this list with a list tag, but
   ; replaces naked p tags with li directly to avoid (li (p "text")).
   (define (turn-elements-into-list-items elements)
@@ -240,8 +264,8 @@
 (define (make-md-note content)
   (define footnote-number (+ 1 (length footnote-list)))
   (set! footnote-list
-        (append footnote-list (list `(txt ,(format "[~a]" footnote-number) " " ,@content))))
-  `(txt ,(format "[~a]" footnote-number)))
+        (append footnote-list (list `(txt "<a name=" "\"" ,(format "fn-~a" footnote-number) "\"" "></a>" ,(format "[~a]" footnote-number) " " ,@content " [↵](#fn-source-" ,(format "~a" footnote-number) ")"))))
+  `(txt "[<a name=" "\"" "fn-source-" ,(format "~a" footnote-number) "\"" " href=" "\"" "#fn-" ,(format "~a" footnote-number) "\"" ">" ,(format "~a" footnote-number) "</a>]"))
 
 (define (make-html-note expanded content)
   (define footnote-number (+ 1 (length footnote-list)))
@@ -294,10 +318,6 @@
     [(md) (decode-md root elements)]
     [else (decode-html root elements)]))
 
-; TODO: Replace non-breaking spaces with normal spaces in markdown. No string->symbol directly in authoring markup.
-; TODO: Add footnote anchors and backlinks to markdown.
-; TODO: No raw "img" tags in authoring markup; turn the new tag into images that break nicely in markdown.
-; TODO: Check that all my articles render nicely in html-wide, html-narrow, html-print, and markdown.
 (define (decode-md root elements)
   (add-md-footnotes (decode-elements elements
                                      #:string-proc (compose1 smart-quotes smart-dashes))))
