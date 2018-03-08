@@ -64,7 +64,7 @@ include back-links from the endnote to the anchor in the main text.
 I implemented a custom tag: ◊tt{◊"◊"note}. Here's its implementation
 in ◊tt{pollen.rkt}.
 
-◊code{
+◊codeblock{
 (define (note #:expanded [expanded #f] . content)
   (define footnote-number (+ 1 (length footnote-list)))
   (set! footnote-list
@@ -96,7 +96,7 @@ children, but that's alright. If I'm inserting block elements into a
 note, it probably shouldn't be a note.} Here's what the
 rendered html ends up looking like:
   
-◊code{
+◊codeblock{
 <span>
   <label for="fn-1" class="margin-toggle sidenote-number"></label>
   <input type="checkbox" id="fn-1" class="margin-toggle"/>
@@ -128,14 +128,14 @@ What about that list of footnotes that I built up? After the
 ◊tt{decode} of the ◊tt{root} element, the list of footnotes is
 inserted the end of the document:
 
-◊code{
+◊codeblock{
 (define (add-footnotes tx)
   (define footnote-class
     (if (equal? note-mode "sidenotes") "endnotes print-only" "endnotes"))
   (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
 }
 
-◊code{
+◊codeblock{
 (define (root . elements)
   (add-footnotes
    (decode (txexpr 'root empty elements)
@@ -156,7 +156,7 @@ point of insertion: just a link that jumps to the footnote at the
 bottom of the article. And the ◊tt{id} in the ◊tt{span} gives the
 footnote a reference to link back to.
 
-◊code{
+◊codeblock{
 <a href="#fn-1" class="undecorated">
   <span class="sidenote-number" id="fn-source-1"></span>
 </a>
@@ -177,7 +177,7 @@ before the first ◊tt{◊"◊"note} tag.
 Pollen is responsible for rendering the necessary tags, classes, and
 IDs, but the CSS is also doing a lot of work.
 
-◊code{
+◊codeblock{
 .sidenote {
   text-align: left;
   color: #555;
@@ -280,7 +280,7 @@ between.
 I implemented this as a ◊tt{txexpr-proc} that runs during the decode
 of the root element.
 
-◊code{
+◊codeblock{
 (define (insert-sidenote-commas tx) ; Will run on every txexpr.
   ; Just defining some helper functions.
   (define (is-trigger-triple? x y z)
