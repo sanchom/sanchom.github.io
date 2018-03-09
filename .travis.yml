@@ -24,5 +24,6 @@ deploy:
   target-branch: master
   committer-from-gh: true
   github-token: $GITHUB_TOKEN
+  verbose: true
   on:
     branch: master-source
