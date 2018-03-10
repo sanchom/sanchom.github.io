@@ -16,6 +16,8 @@ script:
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen publish sanchom.github.io published
 
 deploy:
+  edge:
+    branch: v1.8.47
   provider: pages
   skip-cleanup: true
   keep-history: true
@@ -24,5 +26,6 @@ deploy:
   target-branch: master
   committer-from-gh: true
   github-token: $GITHUB_TOKEN
+  verbose: true
   on:
     branch: master-source
