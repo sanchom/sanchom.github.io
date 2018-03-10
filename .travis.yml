@@ -9,11 +9,16 @@ branches:
 services:
   - docker
 
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y tree
+
 script:
   - cd ../
   - docker pull sanchom/pollen
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen render -r sanchom.github.io
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen publish sanchom.github.io published
+  - tree published
 
 deploy:
   edge:
