@@ -6,7 +6,7 @@
 ◊fig[#:src "assets/panther_patrick_bouquet.jpg"]{Photo by ◊a[#:href
 "https://www.flickr.com/photos/pattoise/3731006773/"]{Patrick
 Bouquet}. (◊a[#:href
-"https://creativecommons.org/licenses/by-nc-nd/2.0/"]{CC◊poly-string->symbol{nbsp}BY◊poly-string->number{8209}NC◊poly-string->number{8209}ND◊poly-string->symbol{nbsp}2.0})}
+"https://creativecommons.org/licenses/by-nc-nd/2.0/"]{CC◊nbsp[]BY◊non-breaking-hyphen[]NC◊non-breaking-hyphen[]ND◊nbsp[]2.0})}
 
 THE PANTHER from Franz Kafka's ◊a[#:href
 "http://johnstoniatexts.x10host.com/kafka/hungerartisthtml.html"]{◊em{A

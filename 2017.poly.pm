@@ -4,66 +4,82 @@
 
 ◊title{My 2017}
 ◊heading{Work}
-Shelfie, the startup I had worked at since 2014,
-◊a[#:href "https://publishingperspectives.com/2017/01/canada-shelfie-bitlit-closing-service/"]{shut down in January}. I took
-a couple of months off and by the time I was ready to start looking for work,
-◊a[#:href "https://www.theverge.com/2017/4/9/15235686/kobo-acquired-shelfie-app-readers-discounted-ebooks"]{Kobo decided to buy our tech and hire us}.
-Kobo's main office is in Toronto, but we still work from Vancouver.
+
+Shelfie, the startup I had worked at since 2014, ◊a[#:href
+"https://publishingperspectives.com/2017/01/canada-shelfie-bitlit-closing-service/"]{shut
+down in January}. I took a couple of months off and by the time I was
+ready to start looking for work, ◊a[#:href
+"https://www.theverge.com/2017/4/9/15235686/kobo-acquired-shelfie-app-readers-discounted-ebooks"]{Kobo
+decided to buy our tech and hire us}.  Kobo's main office is in
+Toronto, but we still work from Vancouver.
 
 ◊heading{Reading}
 
-These are some of the things that I enjoyed or that have influenced my thinking in 2017.
+These are some of the things that I enjoyed or that have influenced my
+thinking in 2017.
 
 ◊sub-heading{Books}
 
-◊work[#:author "Rebecca Solnit" #:year "2004" #:url "https://www.haymarketbooks.org/books/791-hope-in-the-dark"]{Hope in the Dark}
+◊work[#:author "Rebecca Solnit" #:year "2004" #:url
+"https://www.haymarketbooks.org/books/791-hope-in-the-dark"]{Hope in
+the Dark}
 
-Rebecca Solnit wrote this book near the end of George W. Bush's first term as president. She presents
-an outlook of hope in the face of uncertainty.
+Rebecca Solnit wrote this book near the end of George W. Bush's first
+term as president. She presents an outlook of hope in the face of
+uncertainty.
 
 ◊work[#:author "Carrie Brownstein" #:year "2015" #:url "https://www.penguinrandomhouse.com/books/312793/hunger-makes-me-a-modern-girl-by-carrie-brownstein/9780399184765/"]{Hunger Makes Me a Modern Girl}
 
 ◊work[#:author "Isabel Wilkerson" #:year "2010" #:url "https://www.penguinrandomhouse.com/books/190696/the-warmth-of-other-suns-by-isabel-wilkerson/9780679763888/"]{The Warmth of Other Suns}
 
-The story of the Great Migration, told through the lives of three people who left the American south to pursue better lives.
+The story of the Great Migration, told through the lives of three
+people who left the American south to pursue better lives.
 
 ◊work[#:author "H. L. A. Hart" #:year "1961" #:url "https://global.oup.com/academic/product/the-concept-of-law-9780199644698"]{The Concept of Law}
 
-Hart's concept of law comprises primary rules that tell us
-what to do and secondary rules of recognition, adjudication, and change. He contrasts
-this with Austin's theory that law is just a
-bunch of orders backed by threats.
+Hart's concept of law comprises primary rules that tell us what to do
+and secondary rules of recognition, adjudication, and change. He
+contrasts this with Austin's theory that law is just a bunch of orders
+backed by threats.
 
-I liked Hart's writing. It was precise and concise: every word mattered.
-I also liked that Hart seemed to take Austin's theory
-at its strongest, acknowledging its merits and addressing criticisms that had arisen
-against his own viewpoint over the years.
+I liked Hart's writing. It was precise and concise: every word
+mattered.  I also liked that Hart seemed to take Austin's theory at
+its strongest, acknowledging its merits and addressing criticisms that
+had arisen against his own viewpoint over the years.
 
-This book made me think about questions that I hadn't thought about before.
-◊margin-note{In baseball, when a runner touches home, their team is awarded a point. Is that just a
-habit, or is that a rule? Assuming it's a rule, is it also a moral rule? These are the kinds of questions that Hart
-gets into.} Much of this book
-is about demarcating law from non-law (and likewise, rules from habits, and legal rules from moral rules).
-In the search for a concept of law, you end up needing to check whether a particular definition
-or description captures those things properly thought of as law and excludes things that aren't. This
-is somewhat circular, but Hart takes a pragmatic approach: what distinctions are
-useful for the kinds of analyses we tend to do?
+This book made me think about questions that I hadn't thought about
+before. ◊margin-note{In baseball, when a runner touches home, their
+team is awarded a point. Is that just a habit, or is that a rule?
+Assuming it's a rule, is it also a moral rule? These are the kinds of
+questions that Hart gets into.} Much of this book is about demarcating
+law from non-law (and likewise, rules from habits, and legal rules
+from moral rules). In the search for a concept of law, you end up
+needing to check whether a particular definition or description
+captures those things properly thought of as law and excludes things
+that aren't. This is somewhat circular, but Hart takes a pragmatic
+approach: what distinctions are useful for the kinds of analyses we
+tend to do?
 
 ◊work[#:author "Louise Rosenblatt" #:year "1933" #:url "https://www.mla.org/Publications/Bookstore/Nonseries/Literature-as-Exploration-5th-edition"]{Literature as Exploration}
 
 This book changed the way I think about reading, and art in general.
-I've long held the view that you simply "like what you like", and  that once an author's words
-are out on the page, all that matters is the interpretation that you as a reader
-bring to the work (FYI, in ◊em{In Home Alone}, ◊a[#:href "https://www.thedailybeast.com/home-alone-is-so-much-better-if-kevin-mccallister-is-dead"]{Kevin is dead}).
-Rosenblatt's transactional theory of reading is one of many
-reader-response theories (of which my view was an extreme). She emphasizes the primacy of your own
-immediate reaction, but also describes how to evaluate
-that reaction by looking at how much of it is grounded in the text. This
-reflection on the causes of your reaction can help you learn more about yourself and
-others. An ancillary theme is how literature can help develop the empathy necessary for a strong
-and representative democracy. ◊margin-note{◊em{Democracy implies a society of people who, no matter how much they differ
-from one another, recognize their common interests, their common goals, and their
-dependence on mutually honored freedoms and responsibilities.} --- Louise Rosenblatt}
+I've long held the view that you simply "like what you like", and that
+once an author's words are out on the page, all that matters is the
+interpretation that you as a reader bring to the work (FYI, in ◊em{In
+Home Alone}, ◊a[#:href
+"https://www.thedailybeast.com/home-alone-is-so-much-better-if-kevin-mccallister-is-dead"]{Kevin
+is dead}). Rosenblatt's transactional theory of reading is one of many
+reader-response theories (of which my view was an extreme). She
+emphasizes the primacy of your own immediate reaction, but also
+describes how to evaluate that reaction by looking at how much of it
+is grounded in the text. This reflection on the causes of your
+reaction can help you learn more about yourself and others. An
+ancillary theme is how literature can help develop the empathy
+necessary for a strong and representative
+democracy. ◊margin-note{◊em{Democracy implies a society of people who,
+no matter how much they differ from one another, recognize their
+common interests, their common goals, and their dependence on mutually
+honored freedoms and responsibilities.} --- Louise Rosenblatt}
 
 ◊work[#:author "Ruth Bader Ginsburg" #:year "2016" #:url "http://www.simonandschuster.ca/books/My-Own-Words/Ruth-Bader-Ginsburg/9781501145247"]{My Own Words}
 
@@ -168,12 +184,12 @@ exclusively on track until this year. I like the structured training and predict
 in track. We pay much more attention to training variables like volume, intensity, and rest periods in track than
 in ultimate. For me, that makes it more conducive to athletic development and I see it being a sport that I'll be able
 to compete in for decades. My ◊a[#:href "http://athletics.ca/wp-content/themes/default-bs3/popups/athlete-rankings.php?id=8218097&year=0"]{season bests}
-were 7.51◊poly-string->symbol{nbsp}s in the 60◊poly-string->symbol{nbsp}m and 11.77◊poly-string->symbol{nbsp}s in the 100◊poly-string->symbol{nbsp}m.
+were 7.51◊nbsp[]s in the 60◊nbsp[]m and 11.77◊nbsp[]s in the 100◊nbsp[]m.
 
 ◊heading{Games}
 
 I've been playing Overwatch and I'm objectively bad (like bottom 5%), but it's fun. My mains are
-Soldier◊poly-string->symbol{nbsp}76, Junkrat, Orisa, and Mercy.
+Soldier◊nbsp[]76, Junkrat, Orisa, and Mercy.
 
 ◊heading{2018}
 I made a resolution in 2017 to not read breaking news. It's just speculation
@@ -185,4 +201,4 @@ Starting in January, I'll be volunteering one day per week with the ◊a[#:href 
 and Development" position. (I have no idea how much of my actual role is conveyed by that title.) I am excited and nervous about starting
 this work and I feel privileged to be able to help them with the important work that they do.
 
-I want to share more of what I write. And I hope that I might also be changed by your thoughts, so do◊poly-string->symbol{nbsp}@◊poly-string->symbol{nbsp}me!
+I want to share more of what I write. And I hope that I might also be changed by your thoughts, so do◊nbsp[]@◊nbsp[]me!

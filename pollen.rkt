@@ -40,6 +40,12 @@
 ; Simple replacements or re-tags.
 (define elide "[…]")
 
+(define (nbsp)
+  (poly-string->symbol "nbsp"))
+
+(define (non-breaking-hyphen)
+  (poly-string->number "8209"))
+
 (define (fig #:src src . caption)
   (case (current-poly-target)
     [(md) `(txt "![" ,@(if (not (empty? caption)) caption `("Missing image: `" ,src "`")) "](" ,src ")")]
