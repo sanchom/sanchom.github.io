@@ -160,7 +160,7 @@ CARs, but doesn't actually define it. This can't be right.
 I've misled you. There is one more place
 where a definition might be found: the ◊em{Aeronautics Act}. ◊margin-note{◊em{◊a[#:href
 "http://laws-lois.justice.gc.ca/eng/acts/A-2/FullText.html"]{Aeronautics
-Act}}. R.S.C., 1985, c.◊poly-string->symbol{nbsp}A◊poly-string->number{8209}2} It's what
+Act}}. R.S.C., 1985, c.◊nbsp[]A◊non-breaking-hyphen[]2} It's what
 gives Transport Canada the authority to create the CARs and it also
 has a few definitions. In the ◊em{Aeronautics Act}, we learn what an aircraft is:
 

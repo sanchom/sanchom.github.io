@@ -41,10 +41,10 @@
 (define elide "[…]")
 
 (define (nbsp)
-  (poly-string->symbol "nbsp"))
+  (string->symbol "nbsp"))
 
 (define (non-breaking-hyphen)
-  (poly-string->number "8209"))
+  (string->number "8209"))
 
 (define (fig #:src src . caption)
   `(figure
@@ -63,12 +63,6 @@
 
 (define (sub-heading . content)
   `(h3 ((hyphens "none")) ,@content))
-
-(define (poly-string->symbol . string)
-  (string->symbol (car string)))
-
-(define (poly-string->number . string)
-  (string->number (car string)))
 
 ; Quotation
 (define (q . content)
