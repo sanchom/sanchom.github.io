@@ -202,35 +202,6 @@ display: -webkit-box;
 .print-only { display: none; }
 }
 
-@media print {
-.sidenote, .backlink, .header { display: none; }
-.endnotes { display: block; }
-html { font-size: 13px; }
-body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; }
-body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
-@page {
-margin-top: 1.5in;
-margin-bottom: 1.5in;
-margin-left: 1.5in;
-margin-right: 1.5in;
-}
-.margin-note {
-text-align: left;
-color: ◊|light-text-color|;
-float: right;
-clear: right;
-margin-right: -30%;
-width: 25%;
-margin-top: 0;
-margin-bottom: 0.5rem;
-font-size: 0.7rem;
-line-height: 1.3;
-vertical-align: baseline;
-position: relative;
--webkit-line-clamp: 3000;
-}
-}
-
 ◊; On small screens, do things a bit differently.
 @media screen and (max-width:◊|small-screen-trigger|px){
 html { font-size:◊|font-size-on-small-screens|px; }
@@ -277,4 +248,33 @@ label { cursor: pointer; }
 
 li { margin-left: 1em; padding-left: 1em; }
 ul { margin-left: 0; padding-left: 0; }
+}
+
+@media print {
+.sidenote, .margin-expand:checked + .sidenote, .backlink, .header { display: none; }
+.endnotes { display: block; }
+html { font-size: 13px; }
+body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; }
+body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
+@page {
+margin-top: 1.5in;
+margin-bottom: 1.5in;
+margin-left: 1.5in;
+margin-right: 1.5in;
+}
+.margin-note {
+text-align: left;
+color: ◊|light-text-color|;
+float: right;
+clear: right;
+margin-right: -30%;
+width: 25%;
+margin-top: 0;
+margin-bottom: 0.5rem;
+font-size: 0.7rem;
+line-height: 1.3;
+vertical-align: baseline;
+position: relative;
+-webkit-line-clamp: 3000;
+}
 }
