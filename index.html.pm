@@ -15,7 +15,7 @@ Formerly: Head of R&D for Shelfie, Class 1 Flight Instructor (still current but 
 
 ◊div[#:class "external-link-logos"]{
 ◊little-logo[#:href "https://sanchom.wordpress.com" #:img "assets/wordpress-logo-notext-rgb.png"]
-◊little-logo[#:href "https://twitter.com/sanchom" #:img "assets/Twitter_Social_Icon_Circle_Color.png"]
+◊little-logo[#:href "https://twitter.com/sanchom" #:img "assets/tw_ico.png"]
 }
 
 ◊heading{Selected Publications}

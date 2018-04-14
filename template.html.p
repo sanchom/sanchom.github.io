@@ -38,11 +38,17 @@
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
 </head>
   <body ◊when/splice[(need-right-margin? doc)]{class="print-with-right-margin"}>
+<header>
+<nav>
 <div class="header">
 ◊when/splice[prev-page]{<p class="left-header">◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a></p>}
 ◊when/splice[next-page]{<p class="right-header"><a href="◊|next-page|">◊(grab-optionally-shortened-title next-page)</a> ►</p>}
 </div>
+</nav>
+</header>
 <div style="clear: both;"></div>
+<article>
     ◊(->html doc)
+</article>
   </body>
 </html>

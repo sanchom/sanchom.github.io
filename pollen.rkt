@@ -48,9 +48,9 @@
 
 (define (fig #:src src . caption)
   `(figure
-            (img ([potential-feature "potential-feature"][src ,src]))
-            (figcaption ,@caption)
-            ))
+    (img ([potential-feature "potential-feature"][src ,src]))
+    (figcaption ,@caption)
+    ))
 
 (define (title . content)
   `(h1 ((hyphens "none")) ,@content))
