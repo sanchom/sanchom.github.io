@@ -66,7 +66,7 @@ div.header {clear:both; font-size: 0.7rem;}
 .right-header {float:right;}
 
 ◊; Figure styles
-figure { text-align: center; padding: 0; margin: 0;}
+figure { text-align: center; padding: 0; margin: 0; margin-top: 1em;}
 figure > p { margin-bottom: 0.25rem; }
 figcaption { font-size:0.7rem; margin-top: 0.25rem;}
 
@@ -82,7 +82,9 @@ img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
 
 ◊; Other image styles.
 img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 0.5em; width: 150px;}
-img:not(.little-logo):not(.thumbnail) { width: 100%; }
+img:not(.little-logo):not(.thumbnail):not(.specified-width) { width: 100%; }
+img { max-width: 100%; }
+.gfy-wrapper { margin-left: auto; margin-right: auto; max-width: 100%; }
 
 ◊; Taken from Tufte-css. Plain, underlined links without cutting
 ◊; through descenders.

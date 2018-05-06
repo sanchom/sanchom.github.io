@@ -46,9 +46,15 @@
 (define (non-breaking-hyphen)
   (string->number "8209"))
 
-(define (fig #:src src . caption)
+(define (fig #:src src #:width [width #f] . caption)
   `(figure
-    (img ([potential-feature "potential-feature"][src ,src]))
+    (img (,(when/splice width `[class "specified-width"]) ,(when/splice width `[width ,width])[potential-feature "potential-feature"][src ,src]))
+    (figcaption ,@caption)
+    ))
+
+(define (gfyfig #:gfy gfy #:width [width #f] . caption)
+  `(figure
+    (div [[class "gfy-wrapper"] ,(when/splice width `[style ,(format "width: ~a;" width)])] (div ([class "gfyitem"][data-id ,gfy][data-autoplay "false"][data-responsive "true"])))
     (figcaption ,@caption)
     ))
 
