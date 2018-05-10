@@ -13,13 +13,14 @@ decision-making processes.
 I am trained as a computer scientist; in that field, I've focused on visual object recognition,
 machine learning, and applications of deep neural networks.
 
-Currently: data scientist at Kobo, volunteer with the ◊a[#:href "http://bccla.org/"]{BCCLA}, webmaster for the Webster Memorial Trophy
-Competition, ◊a[#:href
+Currently: data scientist at Kobo, volunteer with the ◊a[#:href
+"http://bccla.org/"]{BCCLA}, ◊a[#:href
 "http://athletics.ca/wp-content/themes/default-bs3/popups/athlete-rankings.php?id=8218097&year=0"]{amateur
 sprinter}.
 
-Formerly: Head of R&D for Shelfie, Class 1 Flight Instructor (still current but not active), Canadian Forces Officer
-(Cadet Instructor Cadre), 2× Google Intern.
+Formerly: Head of R&D for Shelfie, Class 1 Flight Instructor (still
+current but not active), Canadian Forces Officer (Cadet Instructor
+Cadre), 2× Google Intern.
 
 ◊div[#:class "external-link-logos"]{
 ◊little-logo[#:href "https://sanchom.wordpress.com" #:img "assets/wordpress-logo-notext-rgb.png"]
