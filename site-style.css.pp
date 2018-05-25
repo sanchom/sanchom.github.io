@@ -78,6 +78,9 @@ a.undecorated:link {text-decoration: none; background: none;}
 a.undecorated:visited {text-decoration: none; background: none;}
 a.undecorated:hover {text-decoration: none; background: none;}
 
+◊; Citation decorations
+span.bibliography-entry::before { position: absolute; content: "📃"; margin-left: -2.5rem; padding-top: 0.2em; font-size: 0.75rem;}
+
 img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
 
 ◊; Other image styles.

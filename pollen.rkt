@@ -168,11 +168,38 @@
                           #:txexpr-elements-proc turn-elements-into-list-items
                           #:exclude-tags (setup:block-tags))))
 
-; Defines the formatting for a "work" that has an author and year.
-(define (work #:author a #:year y #:url [url #f] . title-or-description)
-  (if (not url)
-      (txexpr 'span empty (list (txexpr 'em empty title-or-description) (format ", ~a (~a)" a y)))
-      (txexpr 'span empty (list (txexpr 'em empty (list (txexpr 'a `((href ,url)) title-or-description))) (format ", ~a (~a)" a y)))))
+; Citation system. For now, only renders Chicago style bibliography entries. These aren't
+; quite Chicago-style because I don't invert the name order of the first author. I'm
+; counting this as defensible variation permissible under 14.4.
+; ----------------------------------
+
+; TODO: Sort out capitalization.
+; TODO: Make look like notes if found in a note, like bibliography entries elsewhere.
+
+(define (cite-book #:author [author ""] #:title [title #f] #:publisher [publisher #f] #:location [location #f] #:year [year #f] #:url [url #f])
+  ; Chicago Manual of Style, bibliography form.
+  `(span [[class "bibliography-entry"]] ,author ,(when/splice (> (string-length author) 0) ". ") ,(if url `(em (a [[href ,url]] ,title)) `(em ,title)) ". " ,(when/splice location (format "~a: " location)) ,publisher ", " ,year "."))
+
+(define (cite-article #:author [author #f] #:title [title #f] #:journal [journal #f] #:year [year #f] #:volume [volume #f] #:issue [issue #f] #:pages [pages #f] #:url [url #f])
+  ; Chicago Manual of Style, bibliography form.
+  `(span [[class "bibliography-entry"]] ,author ". “" ,(if url `(a [[href ,url]] ,title) title) ".” " (em ,journal) " " ,volume ", no. " ,issue " (" ,year "): " ,pages "."))
+
+(define (cite-news #:author [author #f] #:title [title #f] #:publication [publication #f] #:date [date #f] #:url [url #f])
+  ; Chicago Manual of Style, bibliography form.
+  `(span [[class "bibliography-entry"]] ,(if author author `(em ,publication)) ". “" ,(if url `(a [[href ,url]] ,title) title) ".” " ,(when/splice author `(em ,publication)) ,(when/splice author ", ") ,date "."))
+
+; This is a an alias for cite-news.
+(define cite-magazine cite-news)
+
+(define (cite-proceedings #:author [author #f] #:title [title #f] #:proceedings [proceedings #f] #:year [year #f] #:publisher [publisher #f] #:pages [pages #f] #:url [url #f])
+  ; Chicago Manual of Style, bibliography form. Citing papers in proceedings (14.217) like book chapters (14.120).
+  `(span [[class "bibliography-entry"]] ,author ". “" ,(if url `(a [[href ,url]] ,title) title) ".” in " (em ,proceedings) ,(if pages (format ", ~a. " pages) ". ") ,(if publisher (format "~a, " publisher) "") ,year "."))
+
+(define (cite-thesis #:author [author #f] #:title [title #f] #:description [description #f] #:pages [pages #f] #:url [url #f] #:institution [institution #f] #:year [year #f])
+  ; Chicago Manual of Style, bibliography form.
+  `(span [[class "bibliography-entry"]] ,author ". “" ,(if url `(a [[href ,url]] ,title) title) ".” " ,description ", " ,institution ", " ,year "."))
+
+(define cite-unpublished cite-thesis)
 
 ; Defines a little sidebar box, not numbered, and by default
 ; not collapsed at all. This will stick close beside the anchor,

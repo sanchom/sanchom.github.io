@@ -83,11 +83,11 @@ cue to reliably identify this species.}
 
 ◊heading{Reading}
 
-Jim Pojar and Andy MacKinnon. ◊em{Plants of Coastal British
-Columbia}. B.C. Ministry of Forests and Lone Pine Publishing, 1994.
+◊cite-book[#:author "Jim Pojar and Andy MacKinnon" #:title "Plants of Coastal British
+Columbia" #:publisher "B.C. Ministry of Forests and Lone Pine Publishing" #:year "1994"]
 
-◊em{National Audubon Society Field Guide to North American Trees:
-Western Region}. National Audobon Society, 1980.
+◊cite-book[#:title "National Audubon Society Field Guide to North American Trees:
+Western Region" #:publisher "National Audubon Society" #:year "1980" #:author ""]
 
 The first (Pojar) has a very narrow scope and tells much more about a
 species's significance to the region's ecology and people, both today
@@ -95,8 +95,8 @@ and historically. The second (Audubon Society) is much broader but
 helps you to see what things really make a species distinctive, not
 just distinctive within a region. Both are well-written. ◊a[#:href
 "http://classicprose.com/csguide.html"]{Thomas and Turner} actually
-point to the Audubon field guides as examples of classic style: ◊em{La
+point to the Audubon field guides as examples of classic style: ◊em{"La
 Rochefoucauld, Thomas Jefferson, A. J. Liebling, and the authors of
 the Audubon Guide to North American Birds are all distinct and
 well-formed individuals, but they are all prototypical classic
-stylists.}
+stylists."}
