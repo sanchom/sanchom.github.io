@@ -2,16 +2,19 @@
 
 ◊define-meta[page-title]{Home}
 
-In September, I will be starting a law degree at UBC's Allard School of Law. My interests
-in this area are broad, and I expect they may change, but at the outset, I want to focus
-on the parts of law that help give the weakest of us a voice, in the justice system and in
-society in general. This includes defendant rights, free expression, and in some respects,
-copyright. I also want to help with public legal education and access-to-justice initiatives,
-to help give more of us more confidence in the outcomes of the justice system and other government
-decision-making processes.
+In September, I start a law degree at UBC's Allard School of Law. I
+expect these interests may change, but at the outset, I want to focus
+on the parts of law that help give the weakest of us a voice, in the
+justice system and in society in general. This includes civil
+liberties, especially free expression and defendents' rights. I want
+to help with public legal education and access-to-justice initiatives,
+to give more of us more confidence in the outcomes of the justice
+system and other government decision-making processes. I'm also
+interested in copyright law.
 
-I'm trained as a computer scientist and in that field, I've focused on visual object recognition,
-machine learning, and applications of deep neural networks.
+I'm trained as a computer scientist and in that field, I've focused on
+visual object recognition, machine learning, and applications of deep
+neural networks.
 
 Currently: data scientist at Kobo, volunteer with the ◊a[#:href
 "http://bccla.org/"]{BCCLA}, ◊a[#:href
