@@ -2,28 +2,24 @@
 
 ◊define-meta[page-title]{Home}
 
-In September, I start a law degree at UBC's Allard School of Law. I
-expect these interests may change, but at the outset, I want to focus
-on the parts of law that help give the weakest of us a voice, in the
-justice system and in society in general. This includes civil
-liberties, especially free expression and defendents' rights. I want
-to help with public legal education and access-to-justice initiatives,
-to give more of us more confidence in the outcomes of the justice
-system and other government decision-making processes. I'm also
-interested in copyright law.
+In September, I begin a law degree at UBC's Allard School of Law. I
+want to focus on the parts of law that help give the weakest of us a
+voice, in the justice system and in society in general. This includes
+civil liberties, especially free expression and defendents' rights. I
+want to help with public legal education and access-to-justice
+initiatives, to give more of us more confidence in the outcomes of the
+justice system and other government decision-making processes. I'm
+also interested in copyright law.
 
 I'm trained as a computer scientist and in that field, I've focused on
 visual object recognition, machine learning, and applications of deep
 neural networks.
 
-Currently: data scientist at Kobo, volunteer with the ◊a[#:href
-"http://bccla.org/"]{BCCLA}, ◊a[#:href
-"http://athletics.ca/wp-content/themes/default-bs3/popups/athlete-rankings.php?id=8218097&year=0"]{amateur
-sprinter}.
-
-Formerly: Head of R&D for Shelfie, Class 1 Flight Instructor (current
-but not active), Canadian Forces Officer (Cadet Instructor Cadre), 2×
-Google Intern.
+Formerly: data scientist at Kobo, head of R&D at Shelfie,
+communications-and-development volunteer at the ◊a[#:href
+"http://bccla.org/"]{BCCLA}, class 1 flight instructor (current but
+not active), Canadian Forces officer (Cadet Instructor Cadre), 2×
+Google intern.
 
 ◊div[#:class "external-link-logos"]{
 ◊little-logo[#:href "https://sanchom.wordpress.com" #:img "assets/wordpress-logo-notext-rgb.png"]
