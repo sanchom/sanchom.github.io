@@ -220,7 +220,7 @@
   (define footnote-number (+ 1 (length footnote-list)))
   (set! footnote-list
         (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
-                                        ,(format "~a. " footnote-number) (a [[href ,(format "#fn-source-~a" footnote-number)] [class "backlink undecorated"]] " ⌃ ") ,@content))))
+                                        ,(format "~a. " footnote-number) (a [[href ,(format "#fn-source-~a" footnote-number)] [class "backlink undecorated"]] " ↑ ") ,@content))))
   (define refid (format "fn-~a" footnote-number))
   (define subrefid (format "fn-~a-expand" footnote-number))
   (if (equal? note-mode "sidenotes")

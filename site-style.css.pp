@@ -60,6 +60,8 @@ h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
 
 p.subtitle {font-size: 1.2em; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
 
+.backlink {font-size: 0.8em; font-weight: bold; position: relative; bottom: 0.2em;}
+
 ◊; Space for navigation links.
 div.header {clear:both; font-size: 0.7rem;}
 .left-header {float:left;}
@@ -122,7 +124,7 @@ p, li, blockquote {line-height: 1.5;}
 ul {list-style: circle outside;}
 li {padding-left: 1em;}
 
-blockquote { border-left: 10px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
+blockquote { border-left: 5px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
 .code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 span.code {font-size: 0.8rem;}
 blockquote.code {
@@ -229,9 +231,9 @@ img.thumbnail { float: none; display: block; margin-bottom: 1em; max-height: 225
 div.clear { clear: both; }
 
 blockquote {
-margin-right: 2em;
-padding-left: 1em;
-margin-left: 1em;
+margin-right: 0.5em;
+padding-left: 0.5em;
+margin-left: 0em;
 }
 
 label.margin-toggle:not(.sidenote-number) { display: inline; }
@@ -281,5 +283,10 @@ line-height: 1.3;
 vertical-align: baseline;
 position: relative;
 -webkit-line-clamp: 3000;
+}
+blockquote {
+margin-right: 2em;
+padding-left: 1em;
+margin-left: 1em;
 }
 }
