@@ -60,6 +60,8 @@ h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
 
 p.subtitle {font-size: 1.2em; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
 
+div#disqus_thread {margin-top: 3rem;}
+
 .backlink {font-size: 0.8em; font-weight: bold; position: relative; bottom: 0.2em;}
 
 ◊; Space for navigation links.

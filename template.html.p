@@ -11,6 +11,8 @@
        (select 'featured-image-url metas)
        (get-featured-image-url doc)))
 ◊(define snippet (select 'snippet metas))
+◊(define include-disqus (not (or (eq? here 'index.html)
+                                 (eq? here 'colophon.html))))
 
 <html>
   <head>
@@ -59,5 +61,26 @@
 <article>
     ◊(->html doc)
 </article>
+
+◊when/splice[include-disqus]{
+<div id="disqus_thread"></div>
+<script>
+
+
+var disqus_config = function () {
+this.page.url = "http://sanchom.github.io/◊|here|"
+this.page.identifier = "◊|here|"
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sanchom.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+}
+
   </body>
 </html>
