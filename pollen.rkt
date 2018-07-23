@@ -54,7 +54,7 @@
 
 (define (gfyfig #:gfy gfy #:width [width #f] . caption)
   `(figure
-    (div [[class "gfy-wrapper"] ,(when/splice width `[style ,(format "width: ~a;" width)])] (div ([class "gfyitem"][data-id ,gfy][data-autoplay "false"][data-responsive "true"])))
+    (div [[class "gfy-wrapper"] ,(when/splice width `[style ,(format "width: ~a;" width)])] (div ([class "gfyitem"][data-id ,gfy][data-autoplay "true"][data-responsive "true"])))
     (figcaption ,@caption)
     ))
 
