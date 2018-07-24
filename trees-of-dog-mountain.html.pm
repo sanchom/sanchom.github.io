@@ -57,7 +57,7 @@ lower surfaces of the needles are the same color; this tree's stomata
 are spread fairly uniformly on both sides of the needle and they don't
 have as distinct a wax bloom.}
 
-◊gfyfig[#:gfy "WetPlaintiveEyra" #:width "450px"]{Moutain hemlock}
+◊gfyfig[#:gfy "WetPlaintiveEyra" #:width "450px"]{Mountain hemlock}
 
 ◊heading{Western hemlock (◊em{Tsuga heterophylla})}
 
