@@ -18,7 +18,6 @@ script:
   - docker pull sanchom/pollen
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen render -r sanchom.github.io
   - docker run --rm -v `pwd`:/work -w /work sanchom/pollen raco pollen publish sanchom.github.io published
-  - tree published
 
 deploy:
   provider: pages

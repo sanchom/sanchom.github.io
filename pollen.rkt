@@ -283,7 +283,7 @@
   (require racket/path)
   (require racket/string)
   (define (omitted-path? path)
-    (or (path-has-extension? path ".yml")
+    (or (equal? (path->string (file-name-from-path path)) ".travis.yml")
         (equal? (path->string (file-name-from-path path)) "cars.xml")
         (string-suffix? (path->string (file-name-from-path path)) "template.html")
         (string-suffix? (path->string (file-name-from-path path)) "~")))
