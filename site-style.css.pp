@@ -58,6 +58,8 @@ h1 {font-size: 2.2em; font-style: normal;}  ◊; Reserved for titles
 h2 {font-size: 1.5em; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
 h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
 
+p.date {font-size: 0.8em; font-style: italic; text-align: right;}
+
 p.subtitle {font-size: 1.2em; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
 
 div#disqus_thread {margin-top: 3rem;}
@@ -137,7 +139,7 @@ overflow-x: auto;
 font-size: 0.7rem;}
 
 ◊; Styles for sidenotes and margin-notes. Taken from Tufte-css.
-.sidenote, .margin-note {
+.sidenote, .margin-note, p.date {
 text-align: left;
 color: ◊|light-text-color|;
 float: right;
@@ -238,6 +240,17 @@ padding-left: 0.5em;
 margin-left: 0em;
 }
 
+p.date {
+text-align: right;
+margin-top: 1.5rem;
+width: 100%;
+float: none;
+clear: none;
+color: ◊|light-text-color|;
+position: static;
+font-size: 0.7rem;
+}
+
 label.margin-toggle:not(.sidenote-number) { display: inline; }
 .margin-note, .sidenote { display: none; }
 .margin-toggle:checked ~ .sidenote,
@@ -262,6 +275,17 @@ ul { margin-left: 0; padding-left: 0; }
 @media print {
 .sidenote, .margin-expand:checked + .sidenote, .backlink, .header { display: none; }
 .endnotes { display: block; }
+div#disqus_thread{ display: none; }
+p.date{
+text-align: right;
+margin-top: 1.5rem;
+width: 100%;
+float: none;
+clear: none;
+color: ◊|light-text-color|;
+position: static;
+font-size: 0.7rem;
+}
 html { font-size: 13px; }
 body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; }
 body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }

@@ -2,6 +2,8 @@
 
 ◊define-meta[page-title]{A Hunger Artist}
 ◊define-meta[snippet]{THE PANTHER from Kafka's A Hunger Artist has stuck with me ever since I first read the short story.}
+◊define-meta[original-date]{2018-02-16}
+◊define-meta[edited-date]{2018-05-24}
 
 ◊fig[#:src "assets/panther_patrick_bouquet.jpg"]{Photo by ◊a[#:href
 "https://www.flickr.com/photos/pattoise/3731006773/"]{Patrick

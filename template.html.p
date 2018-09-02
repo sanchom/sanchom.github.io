@@ -6,6 +6,8 @@
 ◊(define (grab-optionally-shortened-title page) (define x (select 'short-title page)) (if (not x) (select 'page-title page) x))
 ◊(define prev-page (previous here))
 ◊(define next-page (next here))
+◊(define original-date (select 'original-date metas))
+◊(define edited-date (select 'edited-date metas))
 ◊(define featured-image-url
    (if (select 'featured-image-url metas)
        (select 'featured-image-url metas)
@@ -59,6 +61,9 @@
 </header>
 <div style="clear: both;"></div>
 <article>
+<p class="date">
+◊when/splice[original-date]{<time datetime="◊|original-date|">◊|original-date|</time>}◊when/splice[edited-date]{, edited: <time datetime="◊|edited-date|">◊|edited-date|</time>}
+</p>
     ◊(->html doc)
 </article>
 

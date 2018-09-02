@@ -1,6 +1,8 @@
 #lang pollen
 
 ◊define-meta[page-title]{The trees of Dog Mountain}
+◊define-meta[original-date]{2018-05-26}
+◊define-meta[edited-date]{2018-07-24}
 
 ◊title{The trees of Dog Mountain}
 
