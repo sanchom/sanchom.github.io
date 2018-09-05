@@ -1,10 +1,6 @@
 #lang pollen
 
 ◊define-meta[page-title]{Art as Experience}
-◊define-meta[snippet]{Prose becomes art when the sentence and
-paragraph structures, connectives, and word choices reflect not just
-the logical truth being presented, but also the experience, the
-feeling, that the author is trying to share.}
 ◊define-meta[original-date]{2018-09-04}
 
 ◊title{Art as Experience}
