@@ -2,6 +2,7 @@
 
 ◊define-meta[page-title]{Art as Experience}
 ◊define-meta[original-date]{2018-09-04}
+◊define-meta[edited-date]{2018-09-05}
 
 ◊title{Art as Experience}
 
@@ -10,7 +11,7 @@ I've been reading ◊em{Art as Experience}◊note{◊cite-book[#:author
 "Minton Balch & Co." #:location "New York"]} a few pages at a time
 over the past year. I've needed to read it like this because of how
 much is in every paragraph and how much it pulls at ideas from
-elsewhere. Here, I want to share a couple of themes that have come up
+elsewhere. Here, I want to share some of themes that have come up
 throughout the book.
 
 Every medium is unique. When you practice using a medium, you learn
@@ -20,6 +21,12 @@ experience an artist has chosen to express. What objects,
 characteristics, and relationships has the artist selected and
 emphasized? Those decisions work their way into expression differently
 with every medium.
+
+◊q{
+For art is a selection of what is significant, with rejection by the
+very same impulse of what is irrelevant, and thereby the significant
+is compressed and intensified.
+}
 
 One common writing exercise is to read a piece of prose, hide it, then
 try to reproduce it.◊note{◊a[#:href
@@ -71,3 +78,14 @@ feeling, that the author is trying to share.
 that has gone before it; the beginning of the sentence exists for the
 end, and the sentence is constructed so that we can anticipate
 arriving at such a conclusion.}
+
+A third theme, related to the previous one, is the satisfaction that
+comes from bringing order to a medium, and the value in doing that
+work.
+
+◊q{
+The work takes place when a human being cooperates with the product so
+that the outcome is an experience that is enjoyed because of its
+liberating and ordered properties.
+}
+
