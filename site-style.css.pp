@@ -67,9 +67,9 @@ div#disqus_thread {margin-top: 3rem;}
 .backlink {font-size: 0.8em; font-weight: bold; position: relative; bottom: 0.2em;}
 
 ◊; Space for navigation links.
-div.header {clear:both; font-size: 0.7rem;}
-.left-header {float:left;}
-.right-header {float:right;}
+div.header {clear:both; font-size: 0.7rem; display:flex; justify-content: space-between; width: 100%;}
+div.left-header {width: 40%;}
+div.right-header {width: 40%; text-align: right;}
 
 ◊; Figure styles
 figure { text-align: center; padding: 0; margin: 0; margin-top: 1em;}
@@ -83,9 +83,6 @@ div.external-link-logos { clear:left; display: flex; justify-content: center; }
 a.undecorated:link {text-decoration: none; background: none;}
 a.undecorated:visited {text-decoration: none; background: none;}
 a.undecorated:hover {text-decoration: none; background: none;}
-
-◊; Citation decorations
-span.bibliography-entry::before { position: absolute; content: "📃"; margin-left: -2.5rem; padding-top: 0.2em; font-size: 0.75rem;}
 
 img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
 

@@ -6,6 +6,8 @@
 ◊(define (grab-optionally-shortened-title page) (define x (select 'short-title page)) (if (not x) (select 'page-title page) x))
 ◊(define prev-page (previous here))
 ◊(define next-page (next here))
+◊(define prev-is-home (eq? prev-page 'index.html))
+◊(define am-home (eq? here 'index.html))
 ◊(define original-date (select 'original-date metas))
 ◊(define edited-date (select 'edited-date metas))
 ◊(define featured-image-url
@@ -54,8 +56,9 @@
 <header>
 <nav>
 <div class="header">
-◊when/splice[prev-page]{<p class="left-header">◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a></p>}
-◊when/splice[next-page]{<p class="right-header"><a href="◊|next-page|">◊(grab-optionally-shortened-title next-page)</a> ►</p>}
+  <div class="left-header">◊when/splice[prev-page]{◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a>}</div>
+  <div class="center-header">◊when/splice[(and (not prev-is-home)(not am-home))]{<a href="index.html">Home</a>}</div>
+  <div class="right-header">◊when/splice[next-page]{<a href="◊|next-page|">◊(grab-optionally-shortened-title next-page)</a> ►}</div>
 </div>
 </nav>
 </header>

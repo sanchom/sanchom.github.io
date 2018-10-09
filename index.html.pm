@@ -21,6 +21,7 @@ communications-and-development volunteer at the ◊a[#:href
 not active), Canadian Forces officer (Cadet Instructor Cadre), 2×
 Google intern.
 
+Here's where you can find me elsewhere online:
 ◊div[#:class "external-link-logos"]{
 ◊little-logo[#:href "https://sanchom.wordpress.com" #:img "assets/wordpress-logo-notext-rgb.png"]
 ◊little-logo[#:href "https://twitter.com/sanchom" #:img "assets/tw_ico.png"]
