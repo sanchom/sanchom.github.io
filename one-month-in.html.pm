@@ -29,7 +29,7 @@ thing I'm doing is displacing some old things: no more ◊em{Overwatch}, no
 more ◊em{Hearthstone}, less reading for pure leisure, no binge-watching
 ◊em{The Office}. It's also super engaging and stimulating. So, when I
 wake up in the middle of the night, instead of falling right back to
-sleeep, my mind jumps to a topic we've been talking about in class or
+sleep, my mind jumps to a topic we've been talking about in class or
 to a reading I just completed. I also moved to a new apartment at the
 beginning of October---another change and more work that I had to fit
 everything else around.
@@ -47,7 +47,7 @@ like this:
 
 Things I like about taking notes in org-mode:
 ◊ul{
-◊li{The automatic indentation, lists, and collapsable sections}
+◊li{The automatic indentation, lists, and collapsible sections}
 ◊li{Tags, although I'm barely using them right now}
 ◊li{Super simple markup for marking things italic or underlined or for making block quotations}
 }
@@ -68,16 +68,16 @@ school? How are you going to use your computer science background?"
 At the outset, I'm interested in civil liberties, public-interest law
 generally, defendant rights, and copyright. I'm not sure whether I'll
 use my computer science background (other than tangentially, like my
-note-taking system, or factum-authoring tool), but there are
-certaintly topics where my interests seem to intersect. I've thought
-about some of these more than others, but here are a few examples:
-copyright in AI-generated art, protections against search and seizure
-of digital and network evidence, anonymity and privacy rights in
-general, algorithmic decision-making in law, and copyright/fair use of
-code, APIs, and program outputs. These are not things that I'll get to
-think a lot about in first year, but I'm enjoying the foundational
-topics that we're focusing on in the meantime. They're certainly
-complex and interesting enough.
+note-taking system, or factum-authoring tool), but there are some
+topics where my interests seem to intersect. I've thought about some
+of these more than others, but here are a few examples: copyright in
+AI-generated art, protections against search and seizure of digital
+and network evidence, anonymity and privacy rights in general,
+algorithmic decision-making in law, and copyright/fair use of code,
+APIs, and program outputs. These are not things that I'll get to think
+a lot about in first year, but I'm enjoying the foundational topics
+that we're focusing on in the meantime. They're certainly complex and
+interesting enough.
 
 ◊sub-heading{Favourite things from each class}
 ◊ul{
@@ -116,7 +116,7 @@ exact situation as in ◊em{Victoria (City) v Adams}: there are more homeless
 people than shelter spaces, but sleeping outdoors on public property is
 illegal. Sleeping would be illegal for at least some of those without
 private space. The challenge to the law was successful.} Also, the economic analysis of law that is so
-prominant in property law today.}
+prominent in property law today.}
 
 ◊li{◊b{Torts}: Implied consent to battery in sports settings. What
 harms are really just part of the game?◊note{◊cite-news[#:author "Michael McCann" #:publication "Sports Illustrated" #:date "May 6, 2018" #:url "https://www.si.com/nhl/2018/05/06/brad-marchand-licking-discipline-rulebook-legal" #:title "A Look at the Possible Consequences of Brad Marchand's Tactic of Licking Opponents"]}}
@@ -129,7 +129,7 @@ harms are really just part of the game?◊note{◊cite-news[#:author "Michael Mc
 
 ◊li{◊cite-article[#:url
 "https://www.law.uchicago.edu/files/file/coase-problem.pdf" #:author
-"RH Coase" #:journal "Law and Ecomonics" #:year "1960" #:volume "3"
+"RH Coase" #:journal "Law and Economics" #:year "1960" #:volume "3"
 #:pages "1--44" #:title "The Problem of Social Cost"]}
 
 ◊li{◊cite-article[#:author "Aaron Mills" #:journal "McGill Law
