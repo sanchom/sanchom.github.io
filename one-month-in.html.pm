@@ -67,15 +67,15 @@ At the outset, I'm interested in civil liberties, public-interest law
 generally, defendant rights, and copyright. I'm not sure whether I'll
 use my computer science background (other than tangentially, like my
 note-taking system, or factum-authoring tool), but there are
-certaintly topics where my interests seem to intersect
-substantively. I've thought about some of these more than others, but
-here are a few examples: copyright in AI-generated art, protections
-against search and seizure of digital and network evidence, anonymity
-and privacy rights in general, algorithmic decision-making in law, and
-copyright/fair use of code, APIs, and program outputs. These are not
-things that I'll get to think a lot about in first year, but I'm
-enjoying the foundational topics that we're focusing on in the
-meantime. They're certainly complex and interesting enough.
+certaintly topics where my interests seem to intersect. I've thought
+about some of these more than others, but here are a few examples:
+copyright in AI-generated art, protections against search and seizure
+of digital and network evidence, anonymity and privacy rights in
+general, algorithmic decision-making in law, and copyright/fair use of
+code, APIs, and program outputs. These are not things that I'll get to
+think a lot about in first year, but I'm enjoying the foundational
+topics that we're focusing on in the meantime. They're certainly
+complex and interesting enough.
 
 ◊sub-heading{Favourite things from each class}
 ◊ul{
