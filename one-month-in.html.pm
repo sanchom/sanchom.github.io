@@ -3,7 +3,7 @@
 ◊define-meta[page-title]{One month in}
 ◊define-meta[short-title]{One month in}
 ◊define-meta[original-date]{2018-10-10}
-◊define-meta[featured-image-url]{https://thumbs.gfycat.com/GrouchyNeatBronco-size_restricted.gif}
+◊define-meta[featured-image-url]{assets/neo.gif}
 
 ◊title{One month in}
 
