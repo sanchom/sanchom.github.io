@@ -182,7 +182,7 @@
 
 (define (cite-article #:author [author #f] #:title [title #f] #:journal [journal #f] #:year [year #f] #:volume [volume #f] #:issue [issue #f] #:pages [pages #f] #:url [url #f])
   ; Chicago Manual of Style, bibliography form.
-  `(span [[class "bibliography-entry"]] ,author ". “" ,(if url `(a [[href ,url]] ,title) title) ".” " (em ,journal) " " ,volume ", no. " ,issue " (" ,year "): " ,pages "."))
+  `(span [[class "bibliography-entry"]] ,author ". “" ,(if url `(a [[href ,url]] ,title) title) ".” " (em ,journal) " " ,volume ,(when/splice issue ", no. " issue) " (" ,year "): " ,pages "."))
 
 (define (cite-news #:author [author #f] #:title [title #f] #:publication [publication #f] #:date [date #f] #:url [url #f])
   ; Chicago Manual of Style, bibliography form.

@@ -272,7 +272,7 @@ ul { margin-left: 0; padding-left: 0; }
 }
 
 @media print {
-.sidenote, .margin-expand:checked + .sidenote, .backlink, .header { display: none; }
+.sidenote, .margin-expand:checked + .sidenote, .backlink, div.header { display: none; }
 .endnotes { display: block; }
 div#disqus_thread{ display: none; }
 p.date{
