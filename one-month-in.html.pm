@@ -23,8 +23,8 @@ stressful. It's also been really good.
 
 I think the stress has more to do with the stress inherent in any
 change rather than due to something specific to law school. This new
-thing I'm doing is displacing some old things: no more Overwatch, no
-more Hearthstone, less reading for pure leisure, no binge-watching
+thing I'm doing is displacing some old things: no more ◊em{Overwatch}, no
+more ◊em{Hearthstone}, less reading for pure leisure, no binge-watching
 ◊em{The Office}. It's also super engaging and stimulating. So, when I
 wake up in the middle of the night, instead of falling right back to
 sleeep, my mind jumps to a topic we've been talking about in class or
