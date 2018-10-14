@@ -13,8 +13,9 @@ jacked into the information pipe. But, as you might remember from the
 next scene, he was far from ready for the Matrix. That's the level
 that we're learning things at right now---a basic literacy of broad
 areas of law, so we will know how to understand new cases, what
-questions to ask, and what arguments are valid---and, quite unprepared
-to apply anything just yet. Maybe it will always feel like this!
+questions to ask, and what arguments are valid. I also feel quite
+unprepared to apply anything just yet. Maybe it will always feel like
+this!
 
 The most common question I'm asked is: "How has your first month
 been?" I keep saying that it's been manageable. It's also been
