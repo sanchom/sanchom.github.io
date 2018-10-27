@@ -119,10 +119,10 @@ justifications in their decisions.
 Economic-efficiency arguments are tricky. You have to (at least
 implicitly) choose a "welfare" function: an accounting of things that
 you want to see increase and things that you want to see decreases. A
-paper by Dharmpala and Pitchford actually works through the effect
+paper by Dharmapala and Pitchford actually works through the effect
 that the majority's rule and Livingstone's rule would have on the
 number of foxes killed.◊note{◊cite-article[#:author "Dhammika
-Dharmpala and Rohan Pitchford" #:year "2002" #:volume "18" #:issue "1"
+Dharmapala and Rohan Pitchford" #:year "2002" #:volume "18" #:issue "1"
 #:pages "39--66" #:title "An Economic Analysis of Riding to Hounds:
 Pierson v Post Revisited" #:journal "Journal of Law, Economics, &
 Organization" #:url "https://www.jstor.org/stable/pdf/3555069.pdf"]}
@@ -133,12 +133,12 @@ even if you ignore every equation.
 Thinking about property allocation from this economic perspective is
 only a tool for expressing reasons; it doesn't provide reasons on its
 own. What you choose to capture in the welfare function can nearly
-answer the question for you. In Dharmpala and Pitchford's article,
+answer the question for you. In Dharmapala and Pitchford's article,
 they included the price per pelt, enjoyment of the hunt, damage
 averted to farm animals, investment by the hunter, and investment by
 the saucy intruder. What about other externalities?
 Enforcement/litigation costs might be significantly different under
-each of the rules. In fact, the majority argues this, and Dharmpala
+each of the rules. In fact, the majority argues this, and Dharmapala
 and Pitchford expand their welfare function to include enforcement
 costs later in the paper. This just highlights how the definition of
 the social welfare function is a political question. And, the
@@ -190,9 +190,9 @@ value for quite some time, leaving room for a "saucy intruder" to cut
 in and freeload or hold hostage the value desired by the person who
 undertook the initial investment of effort.
 
-Dharmpala and Pitchford argue that ◊a[#:href
+Dharmapala and Pitchford argue that ◊a[#:href
 "https://en.wikipedia.org/wiki/Cybersquatting"]{cybersquatting}
-matches this scenario.◊note{Dharmpala and Pitchford, ◊em{supra}, note
+matches this scenario.◊note{Dharmapala and Pitchford, ◊em{supra}, note
 5.} Should a domain name be given to the first person to register it
 without regard to whether another has already developed a brand around
 that name? Or should a person who has put in the "honour and labour"
