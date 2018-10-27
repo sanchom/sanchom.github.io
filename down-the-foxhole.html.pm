@@ -19,7 +19,7 @@ week.
 
 ◊sub-heading{The facts}
 
-Lodowick Post was in pursuit of a fox. Another person, Pierson, shot
+Lodowick Post was in pursuit of a fox. Another person, Pierson, killed
 the fox and took it for himself. The issue is whether Post has any
 property right in the fox that he was hunting.◊note{These are the
 scant facts as outlined in the case. Much more has been learned about
