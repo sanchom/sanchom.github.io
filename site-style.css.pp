@@ -82,6 +82,8 @@ figcaption { font-size:0.7rem; margin-top: 0.25rem;}
 ◊; Line them up left-to-right, but centered. Don't style them as links.
 div.external-link-logos { clear:left; display: flex; justify-content: center; }
 
+a {pointer-events: auto;}
+
 a.undecorated:link {text-decoration: none; background: none;}
 a.undecorated:visited {text-decoration: none; background: none;}
 a.undecorated:hover {text-decoration: none; background: none;}
@@ -263,7 +265,8 @@ clear: both;
 width: 85%;
 margin: 1rem 7.5%;
 vertical-align: baseline;
-position: relative; 
+position: relative;
+pointer-events: none;
 }
 label { cursor: pointer; }
 
