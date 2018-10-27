@@ -58,7 +58,7 @@ assumptions about the role of the fox hunt in New York in 1805.
 First, the Livingstone says the court should have just asked the
 "sportsmen" (the fox hunters) what would rule would have made sense in
 the context of their activity. ◊note{This contextual approach to
-possession has actually been embraced in the common law. See ◊em{Popov
+possession has been embraced in the common law. See ◊em{Popov
 v Hayashi}, 2002 WL 31833731 (Cal Super Ct): "These rules are
 contextual in nature. The are crafted in response to the unique nature
 of the conduct they seek to regulate. Moreover, they are influenced by
@@ -150,7 +150,7 @@ intruder gets the fox, why does it cancel perfectly to zero?
 
 It turns out that hunters found pleasure in the hunt even if they
 didn't end up catching a fox. They also may have sought to maintain
-the fox population. A "bagged" (live) fox was actually worth more than
+the fox population. A "bagged" (live) fox was worth more than
 a dead fox.◊note{◊cite-article[#:title "Legal Fictions in Pierson v
 Post" #:author "Andrea McDowell" #:year "2007" #:journal "Michigan Law
 Review" #:volume "105" #:issue "4" #:pages "735--778" #:url
@@ -164,10 +164,10 @@ How would the Coase theorem apply here?◊note{◊cite-article[#:url
 #:pages "1--44" #:title "The Problem of Social Cost"]} Perhaps the
 hunters would pay people to stay clear of their hunt. The hunters
 would have to pay the intruders as much money as they'd otherwise be
-able to fetch by freeloading. But this actually seems untenable,
+able to fetch by freeloading. But this seems untenable,
 because more and more people could show up demanding payment to stay
 out of the way of the hunt. Historically, though, it seems that rather
-than the intruders being mere freeloaders, they were actually farmers
+than the intruders being mere freeloaders, they were farmers
 just trying to ensure the foxes got killed, to prevent injury to their
 own animals.◊note{McDowell, ◊em{supra} note 6.} If the only people
 that were intruding were farmers at risk of losing animals to foxes,
@@ -250,16 +250,16 @@ But, what if we allocate rights too early? What if the original
 inventor gets rights while they are still in "mere pursuit" of the
 invention? As per Livingstone's analysis, this will discourage the
 saucy intruder. Here, though, the saucy intruder is a would-be
-inventor, a would-be improver. We don't actually want to discourage
-this activity. That would actually work against the goals of the patent
+inventor, a would-be improver. We don't want to discourage
+this activity. That would work against the goals of the patent
 system.
 
 Oullette argues that this happens when we give people patents that are
 too speculative and that require undue experimentation on the part of
-anyone wanting to use the patent. These patents don't actually do much
+anyone wanting to use the patent. These patents don't do much
 to lower the barrier to further improvement, but they reward the
-original "inventor" with an unearned right to exclude. This actually
-does discourage the flurry of improvement patents that one might
+original "inventor" with an unearned right to exclude. This
+discourages the flurry of improvement patents that one might
 normally see after a sufficiently disclosed invention is
 patented.◊note{Oullette, ◊em{supra} note 11.} She argues that this
 is a defect in the examination process.
@@ -272,9 +272,9 @@ I found an article by Luke Meier on ◊a[#:href
 almost a transcript of how he would teach his first few classes.
 
 It seems that it's common to use this as the first case in a property
-law course. We didn't look at this case first. We actually started by
+law course. We didn't look at this case first. We started by
 thinking about what rights are part of the bundle of rights called
 property, how those are contextual, and the different roles that
 property rights fill in our society. Only now, seven weeks in, are we
 starting to look at what is required, or what should be required, to
-gain "possession" of a thing.
+gain possession of a thing.
