@@ -53,7 +53,16 @@ The dissent (Judge ◊a[#:href
 "https://en.wikipedia.org/wiki/Henry_Brockholst_Livingston"]{Henry
 Livingstone}) disagrees and gives an argument based on judicial
 deference, labour, economic efficiency, and some interesting
-assumptions about the role of the fox hunt in New York in 1805.
+assumptions about the role of the fox hunt in New York in
+1805.◊note{While I treat this dissent at face value, there is another
+dimension at play here that resists "straightforward
+interpretation". Angela Fernandez sees this dissent as an example of a
+genre she calls "solemn foolery". See ◊cite-article[#:title "The
+Ancient and Honorable Court of Dover: Serious Mock, Solemn Foolery,
+and Sporting Wit in Nineteenth-Century New York State" #:author
+"Angela Fernandez" #:year "2012" #:journal "Australian & New Zealand
+Law and History E-Journal" #:volume "7" #:pages "194" #:url
+"http://www.austlii.edu.au/au/journals/ANZLawHisteJl/2012/7.pdf"]}
 
 First, Livingstone says the court should have just asked the
 "sportsmen" (the fox hunters) what would rule would have made sense in
@@ -169,7 +178,7 @@ because more and more people could show up demanding payment to stay
 out of the way of the hunt. Historically, though, it seems that rather
 than the intruders being mere freeloaders, they were farmers
 just trying to ensure the foxes got killed, to prevent injury to their
-own animals.◊note{McDowell, ◊em{supra} note 6.} If the only people
+own animals.◊note{McDowell, ◊em{supra} note 7.} If the only people
 that were intruding were farmers at risk of losing animals to foxes,
 then a Coasian solution could actually play out. The hunters would pay
 the farmers for damage that happens to come to their farms due to
@@ -193,7 +202,7 @@ undertook the initial investment of effort.
 Dharmapala and Pitchford argue that ◊a[#:href
 "https://en.wikipedia.org/wiki/Cybersquatting"]{cybersquatting}
 matches this scenario.◊note{Dharmapala and Pitchford, ◊em{supra}, note
-5.} Should a domain name be given to the first person to register it
+6.} Should a domain name be given to the first person to register it
 without regard to whether another has already developed a brand around
 that name? Or should a person who has put in the "honour and labour"
 of developing a company and brand have rights to the associated domain
@@ -261,7 +270,7 @@ to lower the barrier to further improvement, but they reward the
 original "inventor" with an unearned right to exclude. This
 discourages the flurry of improvement patents that one might
 normally see after a sufficiently disclosed invention is
-patented.◊note{Oullette, ◊em{supra} note 11.} She argues that this
+patented.◊note{Oullette, ◊em{supra} note 12.} She argues that this
 is a defect in the examination process.
 
 ◊sub-heading{How people use this case}
