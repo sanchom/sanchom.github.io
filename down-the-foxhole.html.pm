@@ -44,7 +44,7 @@ his natural liberty, and brought him within his certain control}
 (emphasis mine)}
 
 They also give a justification from enforcement efficiency: "for the
-sake of certainty, and preserving peace and order in society". They
+sake of certainty, and preserving peace and order in society." They
 predict that if they were to rule that mere pursuit gives rise to a
 property right, "it would prove a fertile source of quarrels and
 litigation."
@@ -55,7 +55,7 @@ Livingstone}) disagrees and gives an argument based on judicial
 deference, labour, economic efficiency, and some interesting
 assumptions about the role of the fox hunt in New York in 1805.
 
-First, the Livingstone says the court should have just asked the
+First, Livingstone says the court should have just asked the
 "sportsmen" (the fox hunters) what would rule would have made sense in
 the context of their activity. ◊note{This contextual approach to
 possession has been embraced in the common law. See ◊em{Popov
