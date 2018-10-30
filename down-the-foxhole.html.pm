@@ -19,9 +19,9 @@ week.
 
 ◊sub-heading{The facts}
 
-Lodowick Post was in pursuit of a fox. Another person, Pierson, killed
-the fox and took it for himself. The issue is whether Post has any
-property right in the fox that he was hunting.◊note{These are the
+Lodowick Post was in pursuit of a fox. Another person, Jesse Pierson,
+killed the fox and took it for himself. The issue is whether Post has
+any property right in the fox that he was hunting.◊note{These are the
 scant facts as outlined in the case. Much more has been learned about
 this case since then. See Angela Fernandez, “◊a[#:href
 "https://www.jstor.org/stable/27641649"]{The Lost Record of Pierson
