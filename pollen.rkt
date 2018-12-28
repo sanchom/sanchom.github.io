@@ -1,6 +1,7 @@
 #lang racket
 
 (require racket/path)
+(require racket/string)
 (require pollen/core)
 (require pollen/tag)
 (require pollen/decode txexpr)
@@ -168,25 +169,46 @@
                           #:txexpr-elements-proc turn-elements-into-list-items
                           #:exclude-tags (setup:block-tags))))
 
-; Citation system. For now, only renders Chicago style bibliography entries. These aren't
+; Citation system. For now, only renders Chicago style note entries. These aren't
 ; quite Chicago-style because I don't invert the name order of the first author. I'm
-; counting this as defensible variation permissible under 14.4.
+; counting this as defensible variation permissible under 14.4. Case citation, though follows the McGill Guide.
 ; ----------------------------------
 
 ; TODO: Sort out capitalization.
 ; TODO: Make look like notes if found in a note, like bibliography entries elsewhere.
+; TODO: Handle subsequent references, back-references (supra, ibid).
 
-(define (cite-book #:author [author ""] #:title [title #f] #:publisher [publisher #f] #:location [location #f] #:year [year #f] #:url [url #f])
-  ; Chicago Manual of Style, bibliography form.
-  `(span [[class "bibliography-entry"]] ,author ,(when/splice (> (string-length author) 0) ", ") ,(if url `(em (a [[href ,url]] ,title)) `(em ,title)) ", " ,(when/splice location (format "~a: " location)) ,publisher ", " ,year "."))
+(define (pinpoint-is-pages? str) (or (string-prefix? str "p ")
+                                     (string-prefix? str "pp ")
+                                     (string-prefix? str "page ")
+                                     (string-prefix? str "pages ")
+                                     (regexp-match-exact? #rx"(-[0-9]*)" str)))
+(define (pinpoint-requires-at? str) (or (string-prefix? str "para") (pinpoint-is-pages? str)))
+(define (pinpoint-requires-comma? str) (not (pinpoint-requires-at? str)))
+(define (normalize-pinpoint pinpoint) pinpoint)
+
+(define (render-pinpoint pinpoint)
+  (if pinpoint
+      (if pinpoint-requires-at? (format " at ~a" (normalize-pinpoint pinpoint)) (format ", ~a" (normalize-pinpoint pinpoint)))
+      ""))
+
+(define (cite-book #:author [author ""] #:title [title #f] #:publisher [publisher #f] #:location [location #f] #:year [year #f] #:url [url #f] #:pinpoint [pinpoint #f])
+  ; Chicago Manual of Style, note form.
+  `(span [[class "bibliography-entry"]] ,author ,(when/splice (> (string-length author) 0) ", ") ,(if url `(em (a [[href ,url]] ,title)) `(em ,title)) " ("
+         ,(when/splice location (format "~a: " location)) ,publisher ", " ,year ")" ,(render-pinpoint pinpoint) "."))
 
 (define (cite-article #:author [author #f] #:title [title #f] #:journal [journal #f] #:year [year #f] #:volume [volume #f] #:issue [issue #f] #:pages [pages #f] #:url [url #f])
-  ; Chicago Manual of Style, bibliography form.
+  ; Chicago Manual of Style, note form.
   `(span [[class "bibliography-entry"]] ,author ", “" ,(if url `(a [[href ,url]] ,title) title) ",” " (em ,journal) " " ,volume ,(when/splice issue ", no. " issue) " (" ,year "): " ,pages "."))
 
 (define (cite-news #:author [author #f] #:title [title #f] #:publication [publication #f] #:date [date #f] #:url [url #f])
   ; Chicago Manual of Style, bibliography form.
   `(span [[class "bibliography-entry"]] ,(if author author `(em ,publication)) ", “" ,(if url `(a [[href ,url]] ,title) title) ",” " ,(when/splice author `(em ,publication)) ,(when/splice author ", ") ,date "."))
+
+(define (cite-case #:title [title #f] #:citation [citation #f] #:pinpoint [pinpoint #f] #:url [url #f] . details)
+  ; McGill Guide
+  `(span [[class "bibliography-entry"]] ,(if url `(a [[href ,url]] (em ,title)) (em title)) ", " ,citation
+         ,(render-pinpoint pinpoint) ,(when/splice details " ") ,@details "."))
 
 ; This is a an alias for cite-news.
 (define cite-magazine cite-news)
@@ -260,22 +282,21 @@
   (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
 
 (define (root . elements)
-  (add-html-footnotes
-   ; TODO: Remove the need for this nested-decode. I need it now because the insert-sidenote-commas
-   ; function works on txexprs, and searches for sequences of child elements that constitute
-   ; successive side/footnotes. If these are at the main text level, they don't appear as children
-   ; of anything until after paragraphs are formed. (Well, they're children of root, but then they're
-   ; just elements. I think I could refactor this by making insert-sidenote-commas work on txexpr-elements
-   ; instead of txexprs.
-   (decode (txexpr 'root empty (get-elements
-                                (decode (txexpr 'root empty elements)
-                                        #:exclude-tags '(pre)
-                                        #:txexpr-proc custom-hyphenation
-                                        ; Double line breaks create new paragraphs. Single line breaks are ignored.
-                                        #:txexpr-elements-proc decode-double-breaks-into-paras
-                                        #:string-proc (compose1 smart-quotes smart-dashes))))
-           #:exclude-tags '(pre)
-           #:txexpr-proc insert-sidenote-commas)))
+  ; TODO: Remove the need for this nested-decode. I need it now because the insert-sidenote-commas
+  ; function works on txexprs, and searches for sequences of child elements that constitute
+  ; successive side/footnotes. If these are at the main text level, they don't appear as children
+  ; of anything until after paragraphs are formed. (Well, they're children of root, but then they're
+  ; just elements. I think I could refactor this by making insert-sidenote-commas work on txexpr-elements
+  ; instead of txexprs.
+  (decode (txexpr 'root empty (get-elements
+                               (decode (add-html-footnotes (txexpr 'root empty elements))
+                                       #:exclude-tags '(pre)
+                                       #:txexpr-proc custom-hyphenation
+                                       ; Double line breaks create new paragraphs. Single line breaks are ignored.
+                                       #:txexpr-elements-proc decode-double-breaks-into-paras
+                                       #:string-proc (compose1 smart-quotes smart-dashes))))
+          #:exclude-tags '(pre)
+          #:txexpr-proc insert-sidenote-commas))
 
 (provide (all-defined-out))
 
