@@ -205,10 +205,10 @@
   ; Chicago Manual of Style, bibliography form.
   `(span [[class "bibliography-entry"]] ,(if author author `(em ,publication)) ", “" ,(if url `(a [[href ,url]] ,title) title) ",” " ,(when/splice author `(em ,publication)) ,(when/splice author ", ") ,date "."))
 
-(define (cite-case #:title [title #f] #:citation [citation #f] #:pinpoint [pinpoint #f] #:url [url #f] . details)
+(define (cite-case #:title [title #f] #:citation [citation #f] #:pinpoint [pinpoint #f] #:url [url #f])
   ; McGill Guide
   `(span [[class "bibliography-entry"]] ,(if url `(a [[href ,url]] (em ,title)) (em title)) ", " ,citation
-         ,(render-pinpoint pinpoint) ,(when/splice details " ") ,@details "."))
+         ,(render-pinpoint pinpoint) "."))
 
 ; This is a an alias for cite-news.
 (define cite-magazine cite-news)
