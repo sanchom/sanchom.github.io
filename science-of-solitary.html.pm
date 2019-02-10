@@ -42,10 +42,10 @@ presentation of the evidence by Justice Leask in his written
 decision. In the following, I assume that he has given a fair
 presentation of that evidence. I am not a psychologist, but I am a
 scientist. I understand evidence, experiments, statistical tests and
-power, causation, and the strengths and weaknesses of meta-analyses,
-systematic reviews, and the Bradford Hill criteria.
+power, causation, and the strengths and weaknesses of meta-analyses
+and systematic reviews.
 
-◊heading{Nature of the evidence, as summarized by Justice Leask}
+◊heading{My take on the evidence as presented}
 ◊sub-heading{Plaintiff's experts}
 
 Evidence points towards the existence of a harmful effect caused by
