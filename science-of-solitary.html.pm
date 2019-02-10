@@ -222,10 +222,9 @@ exists. That is, the study should be high powered. Failure to find an
 effect in a high power study can be very compelling evidence.
 
 That is a tricky distinction and I am impressed that Justice Leask saw
-it. In this case, the evidence that was obtained by methods that are,
-in general, less robust, should actually be given more weight than
-what would otherwise be more robust methods due to methodological
-weaknesses in how the latter were applied.◊note{◊em{BCCLA v Canada} at
+it. In this case, evidence that was obtained by methods that are
+generally less robust was owed more weight than evidence obtained by
+methods that are generally more robust.◊note{◊em{BCCLA v Canada} at
 para 254.}
 
 In a Section 7 challenge◊note{That is, when a plaintiff challenges a
