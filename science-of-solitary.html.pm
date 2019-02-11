@@ -232,13 +232,13 @@ In a Section 7 challenge◊note{That is, when a plaintiff challenges a
 government law or act on the basis that it infringes upon their
 ◊a[#:href
 "https://www.justice.gc.ca/eng/csj-sjc/rfc-dlc/ccrf-ccdl/check/art7.html"]{Section
-7} right to life, liberty, or security of the person.}, the
-plaintiff's only need to show a "sufficient causal connection" between
-the government action and the harm. They don't need to show that
-solitary confinement is "the only or the dominant cause" of the
-harms. And, they only need to establish "a reasonable inference, drawn
-on a balance of probabilities."◊note{◊cite-case[#:title "Canada
-(Attorney General) v Bedford" #:citation "2013 SCC 72" #:url
+7} right to life, liberty, or security of the person.}, the plaintiffs
+only need to show a "sufficient causal connection" between the
+government action and the harm. They don't need to show that solitary
+confinement is "the only or the dominant cause" of the harms. And,
+they only need to establish "a reasonable inference, drawn on a
+balance of probabilities."◊note{◊cite-case[#:title "Canada (Attorney
+General) v Bedford" #:citation "2013 SCC 72" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/13389/index.do"
 #:pinpoint "para 76"]} Justice Leask found that the plaintiffs met
 that burden.
