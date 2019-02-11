@@ -264,3 +264,8 @@ Solitary Confinement" #:journal "Annual Review of Criminology"
 #:volume "1" #:pages "285--310" #:url
 "https://www.annualreviews.org/doi/10.1146/annurev-criminol-032317-092326"
 #:year "2017"]
+
+◊cite-news[#:author "Treacy Ziegler" #:title "Memory of Space"
+#:publication "The Prison Arts Coalition" #:date "October 15, 2014"
+#:url
+"https://theprisonartscoalition.com/2014/10/15/memory-of-space/"]
