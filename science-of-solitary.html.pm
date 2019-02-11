@@ -2,6 +2,7 @@
 
 ◊define-meta[page-title]{The science of solitary confinement}
 ◊define-meta[original-date]{2019-02-09}
+◊define-meta[edited-date]{2019-02-10}
 
 ◊title{The science of solitary confinement}
 ◊subtitle{Sancho McCann}
@@ -242,11 +243,24 @@ on a balance of probabilities."◊note{◊cite-case[#:title "Canada
 #:pinpoint "para 76"]} Justice Leask found that the plaintiffs met
 that burden.
 
-◊heading{Some reading}
+◊heading{Related media}
 
-◊cite-book[#:author "Susan Haack" #:title "Defending Science -- within Reason" #:publisher "Prometheus Books" #:year "2007" #:location "Amherst, New York"]
+◊cite-news[#:publication "BC Civil Liberties Association" #:title "End
+Solitary Confinement -- BobbyLee's Story" #:date "May 26, 2016" #:url
+"https://www.youtube.com/watch?v=lfnDpXHgZio"]
+
+◊cite-book[#:author "Susan Haack" #:title "Defending Science -- within
+Reason" #:publisher "Prometheus Books" #:year "2007" #:location
+"Amherst, New York"]
 
 ◊cite-article[#:author "Susan Haack" #:title "Of Truth, in Science and
 in Law" #:journal "Brooklyn Law Review" #:volume "73" #:issue "3"
 #:year "2008" #:url
-"https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=1315&context=blr" #:pages "985--1008"]
+"https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=1315&context=blr"
+#:pages "985--1008"]
+
+◊cite-article[#:author "Craig Haney" #:title "Restricting the Use of
+Solitary Confinement" #:journal "Annual Review of Criminology"
+#:volume "1" #:pages "285--310" #:url
+"https://www.annualreviews.org/doi/10.1146/annurev-criminol-032317-092326"
+#:year "2017"]
