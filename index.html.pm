@@ -17,9 +17,8 @@ neural networks.
 
 Formerly: data scientist at Kobo, head of R&D at Shelfie,
 communications-and-development volunteer at the ◊a[#:href
-"http://bccla.org/"]{BCCLA}, class 1 flight instructor (current but
-not active), Canadian Forces officer (Cadet Instructor Cadre), 2×
-Google intern.
+"http://bccla.org/"]{BCCLA}, class 1 flight instructor, Canadian
+Forces officer (Cadet Instructor Cadre), 2× Google intern.
 
 If you'd like to get updates from me whenever I write something,
 ◊a[#:href "https://tinyletter.com/sanchom"]{sign up for my tinyletter

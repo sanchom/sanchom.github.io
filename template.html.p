@@ -57,8 +57,8 @@
   ◊when/splice[am-home]{<h1 class="center">Sancho McCann</h1><h3 class="center">Where I share what I’m thinking about.</h3>}
   <nav>
     <div class="header">
-      <div class="left-header">◊when/splice[prev-page]{◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a>}</div>
-      <div class="center-header">◊when/splice[(and (not prev-is-home)(not am-home))]{<a href="index.html">Home</a>}</div>
+      <div class="left-header">◊when/splice[prev-page]{◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a>}◊when/splice[(not prev-page)]{<a href="site-index.html">Index</a>}</div>
+      <div class="center-header">◊when/splice[(and (not prev-is-home)(not am-home))]{<a href="index.html">Home</a>/<a href="site-index.html">Index</a>}◊when/splice[prev-is-home]{<a href="site-index.html">Index</a>}</div>
       <div class="right-header">◊when/splice[next-page]{<a href="◊|next-page|">◊(grab-optionally-shortened-title next-page)</a> ►}</div>
     </div>
   </nav>
