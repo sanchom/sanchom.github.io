@@ -48,9 +48,9 @@
 ◊(define exclude-from-list '(index.html))
 ◊(apply string-append (map (lambda (x)
                              (if (select 'original-date x)
-                                 (format "<li><a href=\"https://sanchom.github.io/~a\">~a</a> [~a]</li>\n"
+                                 (format "<li style=\"margin-bottom: 1rem; text-align: left;\"><a href=\"https://sanchom.github.io/~a\">~a</a> [~a]</li>\n"
                                          x (select 'page-title x) (select 'original-date x))
-                                 (format "<li><a href=\"https://sanchom.github.io/~a\">~a</a></li>\n"
+                                 (format "<li style=\"margin-bottom: 1rem; text-align: left;\"><a href=\"https://sanchom.github.io/~a\">~a</a></li>\n"
                                          x (select 'page-title x))))
                            (remove* exclude-from-list pagelist)))
 </ul>

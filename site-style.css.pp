@@ -70,8 +70,9 @@ div#disqus_thread {margin-top: 3rem;}
 
 ◊; Space for navigation links.
 div.header {clear:both; font-size: 0.7rem; display:flex; justify-content: space-between; width: 100%;}
-div.left-header {width: 40%;}
-div.right-header {width: 40%; text-align: right;}
+div.left-header {width: 35%; text-align:left;}
+div.center-header {text-align:center;}
+div.right-header {width: 35%; text-align: right;}
 
 ◊; Figure styles
 figure { text-align: center; padding: 0; margin: 0; margin-top: 1em;}
@@ -132,6 +133,7 @@ li {padding-left: 1em;}
 blockquote { border-left: 5px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
 .code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 span.code {font-size: 0.8rem;}
+span.outline {outline: 1px dotted ◊|blockquote-border-color|;}
 blockquote.code {
 border-left: 10px solid ◊|blockquote-border-color|;
 margin-left: 0;

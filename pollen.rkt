@@ -96,6 +96,10 @@
 (define (bracketed-link #:word [word "pdf"] #:url url)
   `(span "[" (a ((href ,url)) ,word) "]"))
 
+; An outline around some text to give a bit of visual emphasis.
+(define (outline . content)
+  `(span [[class "outline"]] ,@content))
+
 ; A thumbnail.
 (define (thumbnail #:big big-url #:small [small-url big-url])
   `(div [[class "thumbnail"]] (a ((href ,big-url) (class "undecorated")) (img ((class "thumbnail") (src ,small-url)))) (div [[class "clear"]])))

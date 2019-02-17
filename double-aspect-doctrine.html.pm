@@ -147,9 +147,10 @@ However, the double-aspect doctrine is not so narrow. In 1883, the
 Privy Council characterized it broadly: "subjects which in one aspect
 and for one purpose fall within section 92, may in another aspect and
 for another purpose fall within section 91."◊note{◊cite-case[#:title
-"Hodge v The Queen" #:citation "[1883] UKPC 59"]} Some notes in
-◊em{Canadian Constitutional Law} try to explain this, but it's easy to
-miss.◊note{◊cite-book[#:author "Patrick Macklem et al" #:title
+"Hodge v The Queen" #:citation "[1883] UKPC 59" #:url
+"http://www.bailii.org/uk/cases/UKPC/1883/1883_59.html"]} Some notes
+in ◊em{Canadian Constitutional Law} try to explain this, but it's easy
+to miss.◊note{◊cite-book[#:author "Patrick Macklem et al" #:title
 "Canadian Constitutional Law" #:publisher "Emond" #:location "Toronto"
 #:year "2016" #:pinpoint "233"]} In its broadest conception, the
 double-aspect doctrine explains any scenario where the courts allow
@@ -172,8 +173,9 @@ the doctrine:
 normative perspectives, one relating to a federal power and the other
 to a provincial power. Where this is the case, the double aspect
 doctrine is engaged.◊note{◊cite-case[#:title "Reference re Assisted
-Human Reproduction Act" #:citation "2010 SCC 61" #:pinpoint "para
-185"]} }
+Human Reproduction Act" #:citation "2010 SCC 61" #:pinpoint "para 185"
+#:url
+"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/7905/index.do"]} }
 
 ◊q{ "Double occupancy" of a field of endeavour, such as health, is a
 permanent feature of the Canadian constitutional order. It leads to a
@@ -184,4 +186,5 @@ side by side.◊note{◊em{Ibid} at para 67.}  }
 doctrine.  Accordingly, gaming can be subject to legislation by both
 the federal and provincial governments.◊note{◊cite-case[#:title
 "Siemens v Manitoba (Attorney General)" #:citation "2003 SCC 3"
-#:pinpoint "para 22"]}}
+#:pinpoint "para 22" #:url
+"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/2033/index.do"]}}

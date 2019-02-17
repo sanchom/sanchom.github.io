@@ -21,8 +21,8 @@ communications-and-development volunteer at the ◊a[#:href
 Forces officer (Cadet Instructor Cadre), 2× Google intern.
 
 If you'd like to get updates from me whenever I write something,
-◊a[#:href "https://tinyletter.com/sanchom"]{sign up for my tinyletter
-here}.
+◊outline{◊a[#:href "https://tinyletter.com/sanchom"]{sign up for my tinyletter
+here}}.
 
 Here's where you can find me elsewhere online:
 ◊div[#:class "external-link-logos"]{
