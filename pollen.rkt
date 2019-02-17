@@ -306,7 +306,6 @@
   (define (omitted-path? path)
     (or (equal? (path->string (file-name-from-path path)) ".travis.yml")
         (equal? (path->string (file-name-from-path path)) "cars.xml")
-        (equal? (path->string (file-name-from-path path)) "_config.yml")
         (string-suffix? (path->string (file-name-from-path path)) "template.html")
         (string-suffix? (path->string (file-name-from-path path)) "~")))
   (provide (all-defined-out)))
