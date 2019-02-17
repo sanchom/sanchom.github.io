@@ -2,6 +2,7 @@
 
 ◊define-meta[page-title]{The double-aspect doctrine}
 ◊define-meta[original-date]{2018-12-26}
+◊define-meta[edited-date]{2019-02-17}
 ◊define-meta[snippet]{Teasing apart the ways in which the double-aspect doctrine is used.}
 ◊use-footnotes[]
 
@@ -53,38 +54,39 @@ the ways in which the doctrine is used.
 
 ◊em{Multiple Access} concerned legislation enacted by the federal and
 Ontario governments with provisions that overlapped significantly both
-in their expression and in the people and conduct covered. Exemplary
-of that duplication are s 100.4 of the ◊em{Canada Corporations
-Act}◊note{◊em{Canada Corporations act}, RSC 1970, c C-32 (as amended
-by RSC 1970 (1st Supp.), c 10, s 7), s 100.4(1) ("Every insider of a
-company, every person employed or retained by the company, the auditor
-of the company and every associate of the insider and affiliate of the
-insider within the meaning of subsection 125(3) who, in connection
-with a transaction relating to the securities of the company, makes
-use of any specific confidential information for his own benefit or
-advantage that, if generally known, might reasonably be expected to
-affect materially the value of the securities of the company, is
-liable to compensate any person for any direct loss suffered by that
-person as a result of the transaction, unless the information was
-known or ought reasonably to have been known to that person at the
-time of such transaction, and is also accountable to the company for
-any direct benefit or advantage received or receivable by such
-insider, employed or retained person, auditor, associate or affiliate,
-as the case may be, as a result of the transaction").} and s 113 of
-Ontario's ◊em{Securities Act}◊note{◊em{The Securities Act}, RSO 1970,
-c 426, s 113(1) ("Every insider of a corporation or associate or
-affiliate of such insider, who, in connection with a transaction
-relating to the capital securities of the corporation, makes use of
-any specific confidential information for his own benefit or advantage
-that, if generally known, might reasonably be expected to affect
-materially the value of such securities, is liable to compensate any
-person or company for any direct loss suffered by such person or
-company as a result of such transaction, unless such information was
-known or ought reasonably to have been known to such person or company
-at the time of such transaction, and is also accountable to the
-corporation for any direct benefit or advantage received or receivable
-by such insider, associate or affiliate, as the case may be, as a
-result of such transaction").}.
+in their expression and in the people and conduct covered. Look at
+section 100.4 of the ◊em{Canada Corporations Act}◊note{◊em{Canada
+Corporations act}, RSC 1970, c C-32 (as amended by RSC 1970 (1st
+Supp.), c 10, s 7), s 100.4(1) ("Every insider of a company, every
+person employed or retained by the company, the auditor of the company
+and every associate of the insider and affiliate of the insider within
+the meaning of subsection 125(3) who, in connection with a transaction
+relating to the securities of the company, makes use of any specific
+confidential information for his own benefit or advantage that, if
+generally known, might reasonably be expected to affect materially the
+value of the securities of the company, is liable to compensate any
+person for any direct loss suffered by that person as a result of the
+transaction, unless the information was known or ought reasonably to
+have been known to that person at the time of such transaction, and is
+also accountable to the company for any direct benefit or advantage
+received or receivable by such insider, employed or retained person,
+auditor, associate or affiliate, as the case may be, as a result of
+the transaction").} and section 113 of Ontario's ◊em{Securities
+Act}◊note{◊em{The Securities Act}, RSO 1970, c 426, s 113(1) ("Every
+insider of a corporation or associate or affiliate of such insider,
+who, in connection with a transaction relating to the capital
+securities of the corporation, makes use of any specific confidential
+information for his own benefit or advantage that, if generally known,
+might reasonably be expected to affect materially the value of such
+securities, is liable to compensate any person or company for any
+direct loss suffered by such person or company as a result of such
+transaction, unless such information was known or ought reasonably to
+have been known to such person or company at the time of such
+transaction, and is also accountable to the corporation for any direct
+benefit or advantage received or receivable by such insider, associate
+or affiliate, as the case may be, as a result of such transaction").}
+to see how similar the provisions were: they prohibited the exact same
+activities.
 
 Multiple Access Ltd was a federally incorporated company, so was
 within scope of the ◊em{Canada Corporations Act}. It also had its public
@@ -93,34 +95,39 @@ within the scope of Ontario's ◊em{Securities Act}.
 
 Multiple Access's shareholders got Ontario's Securities Commission to
 commence insider-trading enforcement against the company under the
-Ontario act. That shareholders could have equally sought
-enforcementunder the federal act, but the limitations period under the
+Ontario act. Those shareholders could have equally sought
+enforcement under the federal act, but the limitations period under the
 federal act had expired. This was the only material difference between
 the two acts as they applied to this company.
 
-Multiple Access asked the court to deem the federal act (with the
-already-expired limitations period) to be valid and thus render the
-provincial law invalid. That implication would follow if the validity
-of a federal provision precludes the validity of a provincial law in
-substantially the same form given the division of powers set out in
-ss 91 and 92 of the ◊em{Constitution Act, 1867}. Multiple Access was
-aruging that a particular provision could only be valid as either
-federal or provincial legislation.
+Multiple Access asked the court to declare that the federal act (with
+the already-expired limitations period) was valid and thus render the
+provincial law invalid. That second step (rendering the provincial law
+invalid) would only follow if the validity of a federal provision
+precludes the validity of a nearly-identical provincial law given the
+division of powers set out in sections 91 and 92 of the
+◊em{Constitution Act, 1867}. Multiple Access argued that a particular
+provision could only be valid as either federal or provincial
+legislation and that the court had to choose.
 
 The court used the double-aspect doctrine to avoid this choice. It
 explained the doctrine using material from an article by William
 Lederman, "Classification of Laws and the British North America Act."
 Lederman's article and ◊em{Multiple Access} contemplate one kind of
-scenario in which the double-aspect doctrine can arise (choosing which
-of the federal or provincial governments gets to pass a particular
-law), but in this scenario, two kinds of doubleness are conflated.
+scenario in which the double-aspect doctrine can arise (when the court
+is asked to choose which of the federal or provincial governments gets
+to pass a particular law), but in this scenario, two kinds of
+doubleness are conflated.
 
 ◊em{Multiple Access} and Lederman's article talk about the
 double-aspect doctrine as if the federal and provincial governments
 are playing tug-of-war over one particular law, asking, "who gets to
 enact it?" Double-aspect enters when the answer is, "both of you."
-This is the setting where we look for a 50/50 pull between the
-provincial and federal features of a law.
+This is the setting where we look for a 50/50 split between the
+provincial and federal features of a law. If a law has a roughly 50/50
+split between its provincial and federal features, then the court will
+find both the provincial and federal provisions valid. This is what
+happened in ◊em{Multiple Access}.
 
 ◊q{
 ◊elide some overlapping inevitably remains. Where this occurs, either
@@ -143,11 +150,12 @@ challenged rule} could be enacted by either the federal Parliament or
 a provincial legislature. [emphasis added]
 }
 
-However, the double-aspect doctrine is not so narrow. In 1883, the
-Privy Council characterized it broadly: "subjects which in one aspect
-and for one purpose fall within section 92, may in another aspect and
-for another purpose fall within section 91."◊note{◊cite-case[#:title
-"Hodge v The Queen" #:citation "[1883] UKPC 59" #:url
+However, the double-aspect doctrine is not so narrow: it is used even
+when duplication is not an issue. In 1883, the Privy Council
+characterized it broadly: "subjects which in one aspect and for one
+purpose fall within section 92, may in another aspect and for another
+purpose fall within section 91."◊note{◊cite-case[#:title "Hodge v The
+Queen" #:citation "[1883] UKPC 59" #:url
 "http://www.bailii.org/uk/cases/UKPC/1883/1883_59.html"]} Some notes
 in ◊em{Canadian Constitutional Law} try to explain this, but it's easy
 to miss.◊note{◊cite-book[#:author "Patrick Macklem et al" #:title
