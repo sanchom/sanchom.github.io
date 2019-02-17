@@ -2,7 +2,7 @@
 
 ◊define-meta[page-title]{The science of solitary confinement}
 ◊define-meta[original-date]{2019-02-09}
-◊define-meta[edited-date]{2019-02-10}
+◊define-meta[edited-date]{2019-02-17}
 
 ◊title{The science of solitary confinement}
 ◊subtitle{Sancho McCann}
@@ -49,19 +49,19 @@ and systematic reviews.
 ◊heading{My take on the evidence as presented}
 ◊sub-heading{Plaintiff's experts}
 
-Evidence points towards the existence of a harmful effect caused by
-solitary confinement.◊note{◊em{BCCLA v Canada} at paras 163--194.}
-There is a large body of clinical and experimental research
-establishing that when you restrict a person's environmental and
-social stimulation, they suffer. Dr. Grassian has observed, in
-prisoners in solitary confinement, a rare confluence of psychiatric
-symptoms which we already know can be caused by restricting
-environmental and social stimulation. There is a correlation with the
-onset of the intervention: introduction of solitary confinement
-predictably shifts EEG patterns towards that characteristic of stupor
-and delirium. Psychiatric disturbances spring up anew when prisoners
-are segregated. When the segregated confinement is prolonged, there is
-a higher incidence of psychosis.
+The evidence supports a claim that solitary confinement causes various
+harmful effects.◊note{◊em{BCCLA v Canada} at paras 163--194.} There is
+a large body of clinical and experimental research establishing that
+when you restrict a person's environmental and social stimulation,
+they suffer. Dr. Grassian has observed, in prisoners in solitary
+confinement, a rare confluence of psychiatric symptoms which we
+already know can be caused by restricting environmental and social
+stimulation. There is a correlation with the onset of the
+intervention: introduction of solitary confinement predictably shifts
+EEG patterns towards that characteristic of stupor and
+delirium. Psychiatric disturbances spring up anew when prisoners are
+segregated. When the segregated confinement is prolonged, there is a
+higher incidence of psychosis.
 
 Further (and this relates to how we should view the government's
 evidence), the nature of solitary confinement and the psychiatric
@@ -117,16 +117,16 @@ failure to find evidence for the effect, not positive evidence against
 the effect.
 
 The government experts pushed the court to rely on longitudinal
-studies, which come the close to an experiment in that they test the
-effect of onset of an intervention. They believe the "Zinger study" to
-be worth significant weight.◊note{◊em{BCCLA v Canada} at paras
-203--204.} The population for this study was 83 segregated plus 53
-general-population prisoners. The segregated population initially
-reported more depressive symptoms, but not on a measure of
-hopelessness. Both segregated and non-segregated prisoners improved
-over the 60 days of the study on measures of depression, anxiety,
-hopelessness, and psychological adjustment. The fact that both
-populations improved over the 60-day study is interesting
+studies, which are more like an experiment in that they observe what
+happens before and after the onset of an intervention. They believe
+the "Zinger study" to be worth significant weight.◊note{◊em{BCCLA v
+Canada} at paras 203--204.} The population for this study was 83
+segregated plus 53 general-population prisoners. The segregated
+population initially reported more depressive symptoms, but not on a
+measure of hopelessness. Both segregated and non-segregated prisoners
+improved over the 60 days of the study on measures of depression,
+anxiety, hopelessness, and psychological adjustment. The fact that
+both populations improved over the 60-day study is interesting
 scientifically. It puts into question whether the fact of observation
 ◊u{on its own} had an effect on the population or on their
 reporting. Perhaps when prisoners receive increased attention from
