@@ -91,7 +91,7 @@ of Canada, ◊a[#:href
 "https://www.ulcc.ca/images/stories/2016_pdf_en/2016ulcc0031.pdf"]{◊em{Uniform
 Protection of Public Participation Act}}, 2017.}, and Ontario's
 Act. This is because the ◊em{BC PPPA} is based on the Uniform Act
-which is in turn based on the Ontario Act.◊note{British Colubia,
+which is in turn based on the Ontario Act.◊note{British Columbia,
 Legislative Assembly, ◊a[#:href
 "https://www.leg.bc.ca/documents-data/debate-transcripts/41st-parliament/3rd-session/20180515am-Hansard-n137?timestamp=20180515101523"]{◊em{Hansard},
 41st Sess, No 137 (15 May 2018)}; or, ◊a[#:href
@@ -105,18 +105,18 @@ PPPA}}, cl 4(2)(b).} It requires the anti-SLAPP applicant (the
 defendant) to establish first that the proceedings relate to
 expression made by the applicant that relates to a matter of public
 interest. If the applicant shows this, then the burden shifts to the
-anti-SLAPP respondant (the plaintiff) to convince the judge that the
+anti-SLAPP respondent (the plaintiff) to convince the judge that the
 case has sufficient merit and that the public interest weighs in
 favour of allowing the proceedings to continue.
 
 Another essential piece is how costs are handled. If the anti-SLAPP
 applicant successfully gets the litigation dismissed, they are
-entitled, as a starting ponit, to full costs in the anti-SLAPP motion
+entitled, as a starting point, to full costs in the anti-SLAPP motion
 and in the underlying proceeding. And if the court finds that the
 plaintiff brought the original proceeding on bad faith, they can award
 damages to the anti-SLAPP applicant. On the other hand, if the
 anti-SLAPP motion is not successful, and the proceeding is not
-dismissed, the anti-SLAPP respondant (the plaintiff) is not entitled
+dismissed, the anti-SLAPP respondent (the plaintiff) is not entitled
 to costs. This is a very defendant-friendly costs regime.◊note{◊a[#:href
 "https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{BC
 PPPA}}, cls 7, 8.}
@@ -217,7 +217,7 @@ Protection Association" #:url
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0685.pdf"
 #:citation "2018 ONCA 685"]} Because this is an Ontario court's
 decision, it doesn't control what BC courts will do, but the Ontario
-Court of Appeal's decision will be highly pursuasive.
+Court of Appeal's decision will be highly persuasive.
 
 This decision starts with some nice context about SLAPPs and
 anti-SLAPP legislation before getting into the details of the
@@ -278,7 +278,7 @@ communication. An expression might have more than one matter. If one
 of those matters is a "matter of public interest", that is enough. It
 is enough that "some segment of the community has a genuine interest"
 in the matter of the expression. But, that must be more than
-curiousity or prurient interest. This also isn't about assessing the
+curiosity or prurient interest. This also isn't about assessing the
 impact on the issue to which it is directed. The judge is not to ask
 whether the expression has a beneficial impact on the issue.
 
@@ -368,7 +368,7 @@ meaning than in a "matter of public interest" in the threshold stage
 "public interest" means something more like "public benefit". At this
 stage, it is recognized that some forms of speech are less deserving
 of a shield against full litigation: "deliberate falsehoods,
-gratuitious personal attacks, vulgar or offensive language" might
+gratuitous personal attacks, vulgar or offensive language" might
 attract less protection from litigation than "the same message without
 the lies, vitriol, and obscenities." The court also considers evidence
 of actual libel chill in this part of the balancing: if allowing the
