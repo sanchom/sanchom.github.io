@@ -1,4 +1,5 @@
 #lang pollen
+◊(require racket/string)
 
 ◊(define pagelist (pagetree->list (get-pagetree "index.ptree")))
 
@@ -10,6 +11,13 @@
 <changefreq>weekly</changefreq>
 </url>
 
-◊(apply string-append (map (lambda (x) (format "<url>\n<loc>https://sanchom.github.io/~a</loc>\n<changefreq>weekly</changefreq>\n</url>\n\n" x)) pagelist))
+◊(apply string-append (map (lambda (x)
+                             (string-join `(,(format "<url>\n<loc>https://sanchom.github.io/~a</loc>\n" x)
+                                            ,(if (select 'edited-date x) (format "<lastmod>~a</lastmod>\n" (select 'edited-date x))
+                                                 (if (select 'original-date x) (format "<lastmod>~a</lastmod>\n" (select 'original-date x)) ""))
+                                            "<changefreq>weekly</changefreq>\n</url>\n\n")
+                                          ""
+                                          ))
+                           pagelist))
 
 </urlset>
