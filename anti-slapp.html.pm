@@ -2,6 +2,7 @@
 
 ◊define-meta[page-title]{BC's anti-SLAPP legislation}
 ◊define-meta[original-date]{2019-02-20}
+◊define-meta[edited-date]{2019-03-08}
 ◊define-meta[featured-image-url]{assets/anti-slapp.png}
 ◊define-meta[snippet]{BC's forthcoming anti-SLAPP legislation: a review}
 
@@ -10,9 +11,11 @@
 
 ◊heading{What is anti-SLAPP legislation?}
 
-The BC government just reintroduced their anti-SLAPP bill. SLAPP
-stands for "strategic litigation against public participation." These
-are generally defamation lawsuits that suppress somebody's speech.
+The BC government just reintroduced their anti-SLAPP
+bill.◊note{Update: the BC Legislature unanimously passed the bill on
+March 7, 2019.} SLAPP stands for "strategic litigation against public
+participation." These are generally defamation lawsuits that suppress
+somebody's speech.
 
 Consider a doctor who writes a blog post that is critical of another
 doctor's puffed-up claims regarding the effectiveness of a drug. That
@@ -384,6 +387,36 @@ dismissed and the litigation can continue.
 This is all a qualitative balance. The judge needs to give full
 reasons for their evaluations in this step and appeals courts must
 defer to those balancing decisions.
+
+◊heading{Charter challenges}
+
+The Ontario Court of Appeal also dismissed two ◊em{Charter} challenges
+to the Ontario Act in ◊a[#:href
+"http://www.ontariocourts.ca/decisions/2018/2018ONCA0687.pdf"]{◊em{Platnick
+v Bent}}.◊note{◊cite-case[#:title "Platnick v Bent" #:citation "2018
+ONCA 687" #:url
+"http://www.ontariocourts.ca/decisions/2018/2018ONCA0687.pdf"]}
+
+Platnick argued that the Act is an unconstitutional infringement on
+one's liberty because it limits, in a manner inconsistent with
+principles of fundamental justice, one's ability to defend one's
+reputation. The Ontario Court of Appeal rejected that
+claim. Reputation is not encompassed in the right to "liberty" or
+"security of the person".
+
+They also dismissed a ◊a[#:href
+"https://www.justice.gc.ca/eng/csj-sjc/rfc-dlc/ccrf-ccdl/check/art15.html"]{Section
+15 (equality rights)} claim. Platnick argued that he was part of a
+group that was analagous to the grounds listed explicitly in Section
+15 (race, national or ethnic origin, colour, religion, sex, age or
+mental or physical disability). That analagous group: "those
+protecting constitutional principles and values of superordinate
+importance." This claim was rejected because to accept such a broad
+description of an analagous group would be provide a path to challenge
+almost any legislative distinction. Second, the claim ignores Supreme
+Court precedent that requires analagous grounds to reference
+"immutable personal characteristics or personal characteristics which
+are changeable only at unacceptable cost to personal identity."
 
 ◊heading{Back in BC}
 
