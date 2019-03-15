@@ -5,7 +5,7 @@
 I'm in my first year at UBC's Allard School of Law (class of 2021). I
 want use law to help give the weakest of us a voice, in the justice
 system and in society in general. This includes civil liberties,
-especially free expression and defendents' rights. I want to help with
+especially free expression and defendants' rights. I want to help with
 public legal education and access-to-justice initiatives, to give more
 of us more confidence in the outcomes of the justice system and other
 government decision-making processes. I'm also interested in copyright
