@@ -2,10 +2,23 @@
 
 ◊define-meta[page-title]{The science of solitary confinement}
 ◊define-meta[original-date]{2019-02-09}
-◊define-meta[edited-date]{2019-02-17}
+◊define-meta[edited-date]{2019-03-24}
 
 ◊title{The science of solitary confinement}
 ◊subtitle{Sancho McCann}
+
+◊fig[#:src "assets/raymond-palmore-cell.jpg"]{Used with permission
+from Raymond Palmore. Drawn during his time at Corcoran State
+Prison.◊note{Read how art can help people in solitary confinement
+express their experiences: ◊cite-news[#:author "Treacy Ziegler"
+#:title "Memory of Space" #:publication "The Prison Arts Coalition"
+#:date "October 15, 2014" #:url
+"https://theprisonartscoalition.com/2014/10/15/memory-of-space/"
+#:omit-period? "true"]; ◊cite-news[#:author "Treacy Ziegler" #:title
+"The art of absolute lonliness" #:publication "Broad Street Review"
+#:date "June 3, 2014" #:url
+"https://www.broadstreetreview.com/art/the-art-of-absolute-lonelines"
+#:omit-period? "true"].  }}
 
 CBC's ◊em{Quirks and Quarks} had a segment this week about the
 psychology of solitary confinement.◊note{◊cite-news[#:author "Quirks
@@ -269,3 +282,8 @@ Solitary Confinement" #:journal "Annual Review of Criminology"
 #:publication "The Prison Arts Coalition" #:date "October 15, 2014"
 #:url
 "https://theprisonartscoalition.com/2014/10/15/memory-of-space/"]
+
+◊cite-news[#:author "Treacy Ziegler" #:title "The art of absolute
+lonliness" #:publication "Broad Street Review" #:date "June 3, 2014"
+#:url
+"https://www.broadstreetreview.com/art/the-art-of-absolute-lonelines"]

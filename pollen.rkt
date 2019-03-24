@@ -205,9 +205,9 @@
   ; Chicago Manual of Style, note form.
   `(span [[class "bibliography-entry"]] ,author ", “" ,(if url `(a [[href ,url]] ,title) title) ",” " (em ,journal) " " ,volume ,(when/splice issue ", no. " issue) " (" ,year "): " ,pages "."))
 
-(define (cite-news #:author [author #f] #:title [title #f] #:publication [publication #f] #:date [date #f] #:url [url #f])
+(define (cite-news #:author [author #f] #:title [title #f] #:publication [publication #f] #:date [date #f] #:url [url #f] #:omit-period? [omit-period? #f])
   ; Chicago Manual of Style, bibliography form.
-  `(span [[class "bibliography-entry"]] ,(if author author `(em ,publication)) ", “" ,(if url `(a [[href ,url]] ,title) title) ",” " ,(when/splice author `(em ,publication)) ,(when/splice author ", ") ,date "."))
+  `(span [[class "bibliography-entry"]] ,(if author author `(em ,publication)) ", “" ,(if url `(a [[href ,url]] ,title) title) ",” " ,(when/splice author `(em ,publication)) ,(when/splice author ", ") ,date ,(if (not omit-period?) "." "")))
 
 (define (cite-case #:title [title #f] #:citation [citation #f] #:pinpoint [pinpoint #f] #:url [url #f])
   ; McGill Guide
