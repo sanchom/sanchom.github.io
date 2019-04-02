@@ -33,8 +33,12 @@ Here's where you can find me elsewhere online:
 
 ◊heading{Selected publications}
 
+Sancho McCann, "Finding Harmony: ◊em{Law Society of British Columbia v
+Trinity Western University}," Case Comment, ◊em{Dalhousie Journal of
+Legal Studies} 28 (forthcoming).
+
 ◊cite-thesis[#:author "Sancho McCann" #:title "Object classification and localization using
-spatially-localized features" #:description "Ph.D. Dissertation"
+spatially-localized features" #:description "PhD Dissertation"
 #:institution "University of British Columbia" #:year "2014" #:url
 "https://open.library.ubc.ca/media/download/pdf/24/1.0167312/1"]
 
