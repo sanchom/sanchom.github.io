@@ -78,7 +78,7 @@
 
 
 var disqus_config = function () {
-this.page.url = "http://sanchom.github.io/◊|here|"
+this.page.url = "https://sanchom.github.io/◊|here|"
 this.page.identifier = "◊|here|"
 };
 

@@ -11,7 +11,7 @@
 (define template-message "This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.")
 (define site-author "Sancho McCann")
 (define site-title "Sancho McCann")
-(define site-root "http://sanchom.github.io")
+(define site-root "https://sanchom.github.io")
 
 (define note-mode "sidenotes")
 (define footnote-list empty)
