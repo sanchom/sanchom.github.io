@@ -42,6 +42,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>◊|site-title|—◊(select 'page-title metas)</title>
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
+    ◊when/splice[(not am-home)]{<link rel="canonical" href="https://sanchom.github.io/◊|here|" />}
+    ◊when/splice[am-home]{<link rel="canonical" href="https://sanchom.github.io/" />}
 </head>
   <body ◊when/splice[(need-right-margin? doc)]{class="print-with-right-margin"}>
     <script>

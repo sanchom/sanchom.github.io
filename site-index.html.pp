@@ -21,6 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>◊|site-title|—Site Index</title>
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
+    <link rel="canonical" href="https://sanchom.github.io/site-index.html" />
 </head>
   <body>
     <script>
