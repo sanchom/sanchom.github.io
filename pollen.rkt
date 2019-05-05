@@ -52,6 +52,9 @@
 (define (non-breaking-hyphen)
   (string->number "8209"))
 
+(define (lozenge)
+  (string->symbol "loz"))
+
 (define (fig #:src src #:width [width #f] . caption)
   `(figure
     (img (,(when/splice width `[class "specified-width"]) ,(when/splice width `[width ,width])[potential-feature "potential-feature"][src ,src]))
