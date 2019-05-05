@@ -6,6 +6,40 @@
 ◊define-meta[original-date]{2018-01-24}
 ◊define-meta[edited-date]{2018-05-24}
 
+◊declare-work[#:type "article" #:author-given "Alli Orr"
+#:author-family "Larsen" #:author2-given "Neal" #:author2-family
+"Devins" #:year "2016" #:url "https://ssrn.com/abstract=2741853"
+#:journal "Virginia Law Review" #:volume "102" #:issue "8"
+#:first-page "1901" #:title "The Amicus Machine" #:id "Larsen"]
+
+◊declare-work[#:type "magazine/news" #:author-given "Anthony J"
+#:author-family "Franze" #:author2-given "R Reeves" #:author2-family
+"Anderson" #:url
+"https://www.apks.com/~/media/files/perspectives/publications/2015/08/record-breaking-term-for-amicus-curiae-in-suprem__/files/publication/fileattachment/recordbreakingtermforamicuscuriaeinsupremecourtr__.pdf?"
+#:title "Record Breaking Term for Amicus Curiae in Supreme Court
+Reflects New Norm" #:publication "National Law Journal" #:year "19
+August 2015" #:id "Franze"]
+
+◊declare-work[#:type "article" #:author-given "Benjamin"
+#:author-family "Alarie" #:author2-given "Andrew James"
+#:author2-family "Green" #:year "2010" #:url
+"http://digitalcommons.osgoode.yorku.ca/ohlj/vol48/iss3/1 " #:title
+"Interventions at the Supreme Court of Canada: Accuracy, Affiliation,
+and Acceptance" #:journal "Osgoode Hall Law Journal" #:volume "48"
+#:issue "3" #:first-page "381" #:id "Alarie"]
+
+◊declare-work[#:type "thesis" #:author-given "Amanda Jane"
+#:author-family "Burgess" #:year "2000" #:url
+"http://scholar.uwindsor.ca/etd/2490" #:title "Intervenors before the
+Supreme Court of Canada, 1997--1999: A content analysis"
+#:thesis-description "MA Thesis" #:institution "University of Windsor"
+#:id "Burgess"]
+
+◊declare-work[#:type "statute" #:title "Criminal Code" #:volume "RSC"
+#:year "1985" #:chapter "C-46" #:url
+"http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html" #:id
+"Criminal Code"]
+
 ◊title{Interveners at the Supreme Court of Canada}
 ◊subtitle{Sancho McCann}◊margin-note{This is a repost of an article I originally wrote ◊a[#:href "https://sanchom.wordpress.com/2017/08/08/interveners/"]{here}, with some minor editorial changes.}
 
@@ -14,20 +48,15 @@ almost every U.S. Supreme Court case. 781 were submitted in the term
 spanning 2014--2015---an average of 12 per case---and 147 in the
 ◊a[#:href
 "http://www.scotusblog.com/case-files/cases/obergefell-v-hodges/"]{marriage
-equality} case alone.◊note{◊cite-article[#:author "Alli Orr Larsen and
-Neal Devins" #:year "2016" #:url
-"https://ssrn.com/abstract=2741853" #:journal "Virginia Law Review" #:volume "102" #:issue "8" #:pages "1901-1968" #:title "The Amicus
-Machine"]} ◊note{◊cite-news[#:author "Anthony J. Franze and R. Reeves Anderson" #:url
-"https://www.apks.com/~/media/files/perspectives/publications/2015/08/record-breaking-term-for-amicus-curiae-in-suprem__/files/publication/fileattachment/recordbreakingtermforamicuscuriaeinsupremecourtr__.pdf?" #:title "Record
-Breaking Term for Amicus Curiae in Supreme Court Reflects New Norm" #:publication "National Law Journal" #:date "August 19, 2015"]}
+equality} case alone.◊cite["Larsen"]◊cite["Franze"]
 
 Canada's closest analogue to the U.S.’s amici are called
 "interveners".◊note{Canada also has a role called an amicus curiae,
 but this is a person appointed by the court, not simply an interested
 third party.} From 2000--2008, interveners participated in only about
 50% of cases at the Supreme Court of Canada, averaging 2.4 interveners
-per case.◊note{◊cite-article[#:author "Benjamin Alarie and Andrew James Green" #:year "2010" #:url "http://digitalcommons.osgoode.yorku.ca/ohlj/vol48/iss3/1 " #:title "Interventions at the Supreme Court of Canada: Accuracy, Affiliation, and Acceptance" #:journal "Osgoode Hall Law Journal" #:volume "48" #:issue "3" #:pages "381-410"]} This was despite the court granting 94% of the requests to
-intervene.
+per case.◊cite["Alarie"] This was despite the court granting 94% of
+the requests to intervene.
 
 How has this changed since then? In the period from 2010--2016,
 interveners participated in appeals more frequently than they did from
@@ -52,9 +81,9 @@ have. Together, they accounted for 25% of all interventions from
 2010--2016. This is a noticeable decrease compared to the numbers from
 10 and 20 years ago. In the period from 2000--2008, attorneys general
 accounted for 37% of all interventions. In the period from 1997--1999,
-they accounted for 42%.◊note{◊cite-thesis[#:author "Amanda Jane Burgess" #:year "2000" #:url "http://scholar.uwindsor.ca/etd/2490" #:title "Intervenors before the Supreme Court of Canada, 1997–1999: A content analysis" #:description "M.A. Thesis" #:institution "University of Windsor (Canada)"]} Non-government interveners like public
-interest groups, trade associations, and individuals are participating
-more now than ever before.
+they accounted for 42%.◊cite["Burgess"] Non-government interveners
+like public interest groups, trade associations, and individuals are
+participating more now than ever before.
 
 In the midst of this general increase in interventions, one category
 of cases continues to lag behind. Most of the caseload at the Supreme
@@ -64,11 +93,9 @@ they will hear the case. But, about 20--25% of the caseload at the
 Supreme Court of Canada consists of appeals that are heard "as of
 right"---automatically. As-of-right appeals generally involve
 indictable criminal offenses where one of the judges at the lower
-court disagreed with their court's decision.◊note{◊em{◊a[#:href
-"http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html"]{Criminal
-Code}}, RSC◊nbsp[]1985,
-ss.◊nbsp[]691-693.} In 2016, only two of the
-fourteen appeals in that category attracted any interveners.
+court disagreed with their court's decision.◊cite["Criminal Code"
+#:pinpoint "ss 691--693"] In 2016, only two of the fourteen appeals in
+that category attracted any interveners.
 
 ◊fig[#:src "assets/interventions_discretionary_v_as-of-right.png"]{}
 

@@ -2,9 +2,32 @@
 
 ◊define-meta[page-title]{BC's anti-SLAPP legislation}
 ◊define-meta[original-date]{2019-02-20}
-◊define-meta[edited-date]{2019-03-08}
+◊define-meta[edited-date]{2019-04-29}
 ◊define-meta[featured-image-url]{assets/anti-slapp.png}
 ◊define-meta[snippet]{BC's forthcoming anti-SLAPP legislation: a review}
+
+◊declare-work[#:type "legal-case-US" #:title "Tobinick v Novella"
+#:url "https://caselaw.findlaw.com/us-11th-circuit/1780876.html"
+#:citation "No 15-14889" #:jurisdiction "11th Cir" #:year "2017" #:id
+"Tobinick"]
+
+◊declare-work[#:type "bill" #:number "Bill 2" #:title "Protection of
+Public Participation Act" #:legislative-body "4th Sess, 41st Leg,
+British Columbia" #:year "2019" #:url
+"https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"
+#:id "BC PPPA" #:short-form "BC *PPPA*"]
+
+◊declare-work[#:type "statute" #:title "Protection of Public
+Participation Act" #:volume "SO" #:year "2015" #:chapter "23" #:url
+"https://www.ontario.ca/laws/statute/S15023" #:id "ON PPPA"
+#:short-form "ON *PPPA*"]
+
+◊declare-work[#:type "debate" #:title "Bill C-32, Protection of Public
+Participation Act" #:reading "1st reading" #:jurisdiction "British
+Columbia" #:proceedings "Official Report of Debates (Hansard)"
+#:legislative-body "41-3" #:volume "No 137" #:year "15 May 2018" #:url
+"https://www.leg.bc.ca/content/hansard/41st3rd/20180515am-Hansard-n137.pdf"
+#:id "1st reading"]
 
 ◊title{BC's anti-SLAPP legislation}
 ◊subtitle{Sancho McCann}
@@ -24,9 +47,7 @@ the first doctor (the author of the critical blog post) to back
 down. Even if the first doctor would have a valid defence
 (e.g. because they've only stated the truth) it can be so costly to
 defend oneself that they might think that their only viable option is
-to take down the blog.◊note{◊cite-case[#:title "Edward Lewis Tobinick,
-et al v Steven Novella, et al" #:citation "(2017) 11th Cir" #:url
-"https://caselaw.findlaw.com/us-11th-circuit/1780876.html"]}
+to take down the blog.◊cite["Tobinick"]
 
 That is a SLAPP. You can find many other stories at ◊a[#:href
 "https://anti-slapp.org/slapp-stories"]{anti-slapp.org}.
@@ -57,18 +78,13 @@ I'll clarify some terminology that I'll use throughout the article:
 
 BC's forthcoming anti-SLAPP legislation is in the ◊a[#:href
 "https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{Protection
-of Public Participation Act}} (◊em{BC PPPA}).◊note{Bill 2, ◊a[#:href
-"https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{Protection
-of Public Participation Act}}, 4th Sess, 41st Parl, British Columbia,
-2019 (◊em{BC PPPA}).} It's a short read, and written pretty clearly.
+of Public Participation Act}} (BC ◊em{PPPA}).◊cite["BC PPPA"] It's a
+short read, and written pretty clearly.
 
 This is a re-introduction of last session's Bill 32, which stalled
 out, seemingly because of some interest in seeing how ◊a[#:href
 "https://www.ontario.ca/laws/statute/S15023"]{Ontario's very similar
-act}◊note{◊a[#:href
-"https://www.ontario.ca/laws/statute/S15023"]{◊em{Protection of Public
-Participation Act}}, SO 2015, c 23.} would play out in their
-courts.◊note{◊a[#:href
+act}◊cite["ON PPPA"] would play out in their courts.◊note{◊a[#:href
 "https://twitter.com/sobittersosweet/status/1095767698657529856"]{Shannon
 Waters}: "I poked at Bill 32 for months, trying to find out why it
 stalled. @jjhorgan said BC doesn't want run into the same issues
@@ -94,23 +110,19 @@ of Canada, ◊a[#:href
 "https://www.ulcc.ca/images/stories/2016_pdf_en/2016ulcc0031.pdf"]{◊em{Uniform
 Protection of Public Participation Act}}, 2017.}, and Ontario's
 Act. This is because the ◊em{BC PPPA} is based on the Uniform Act
-which is in turn based on the Ontario Act.◊note{British Columbia,
-Legislative Assembly, ◊a[#:href
-"https://www.leg.bc.ca/documents-data/debate-transcripts/41st-parliament/3rd-session/20180515am-Hansard-n137?timestamp=20180515101523"]{◊em{Hansard},
-41st Sess, No 137 (15 May 2018)}; or, ◊a[#:href
+which is in turn based on the Ontario Act.◊note{◊render-work["1st
+reading" #:pinpoint "4742"] Or, ◊a[#:href
 "https://videoarchive.leg.bc.ca/Harmony/en/PowerBrowser/PowerBrowserV2?viewmode=3&fk=201805151000-house&startposition=957"]{watch
 the video}!}
 
 The core provision of each of these acts is essentially
-identical.◊note{See ◊a[#:href
-"https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{BC
-PPPA}}, cl 4(2)(b).} It requires the anti-SLAPP applicant (the
-defendant) to establish first that the proceedings relate to
-expression made by the applicant that relates to a matter of public
-interest. If the applicant shows this, then the burden shifts to the
-anti-SLAPP respondent (the plaintiff) to convince the judge that the
-case has sufficient merit and that the public interest weighs in
-favour of allowing the proceedings to continue.
+identical.◊cite["BC PPPA" #:pinpoint "clause 4(2)(b)"] It requires the
+anti-SLAPP applicant (the defendant) to establish first that the
+proceedings relate to expression made by the applicant that relates to
+a matter of public interest. If the applicant shows this, then the
+burden shifts to the anti-SLAPP respondent (the plaintiff) to convince
+the judge that the case has sufficient merit and that the public
+interest weighs in favour of allowing the proceedings to continue.
 
 Another essential piece is how costs are handled. If the anti-SLAPP
 applicant successfully gets the litigation dismissed, they are
@@ -120,9 +132,8 @@ plaintiff brought the original proceeding on bad faith, they can award
 damages to the anti-SLAPP applicant. On the other hand, if the
 anti-SLAPP motion is not successful, and the proceeding is not
 dismissed, the anti-SLAPP respondent (the plaintiff) is not entitled
-to costs. This is a very defendant-friendly costs regime.◊note{◊a[#:href
-"https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{BC
-PPPA}}, cls 7, 8.}
+to costs. This is a very defendant-friendly costs regime.◊cite["BC
+PPPA" #:pinpoint "clauses 7--8"]
 
 BC and Ontario both differ from the Uniform Act regarding what
 proceedings they will apply to. The Uniform Act recommends that the
@@ -143,9 +154,8 @@ anti-SLAPP motion be heard as soon as practicable.
 An interesting piece is how anti-SLAPP motions interact with
 administrative or tribunal proceedings. Once a defendant has filed an
 anti-SLAPP motion, they can use that notice of application to put the
-administrative proceeding on hold.◊note{◊a[#:href
-"https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{BC
-PPPA}}, cl 11.} The Uniform Law Conference explains:
+administrative proceeding on hold.◊cite["BC PPPA" #:pinpoint "clause
+11"] The Uniform Law Conference explains:
 
 ◊q{ This provision aims to give a prospective plaintiff reason to
 think carefully before launching a lawsuit against its critics. Often
@@ -160,10 +170,9 @@ compared to US anti-SLAPP legislation. Canadian legislation tells the
 court to ask whether "the harm likely to have been or to be suffered
 by the respondent as a result of the applicant's expression is serious
 enough that the public interest in continuing the proceeding outweighs
-the public interest in protecting that expression."◊note{◊a[#:href
-"https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{BC
-PPPA}}, cl 4(2)(b).} In order to proceed after the defendant has
-proven their side of an anti-SLAPP motion, the plaintiff has to
+the public interest in protecting that expression."◊cite["BC PPPA"
+#:pinpoint "clause 4(2)(b)"] In order to proceed after the defendant
+has proven their side of an anti-SLAPP motion, the plaintiff has to
 convince the court (among other things) that the expression at issue
 is causing them serious enough harm to warrant putting that expression
 to the test of a full-fledged defamation litigation.
@@ -215,8 +224,8 @@ Ontario's Court of Appeal recently had a chance to clarify what all of
 this means in ◊a[#:href
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0685.pdf"]{◊em{1704604
 Ontario Ltd v Pointes Protection
-Association}}.◊note{◊cite-case[#:title "1704604 Ontario Ltd v Pointes
-Protection Association" #:url
+Association}}.◊note{◊declare-work[#:type "legal-case" #:title "1704604
+Ontario Ltd v Pointes Protection Association" #:url
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0685.pdf"
 #:citation "2018 ONCA 685"]} Because this is an Ontario court's
 decision, it doesn't control what BC courts will do, but the Ontario
@@ -273,17 +282,18 @@ The trickier part is determining whether an expression relates to a
 matter of public interest.
 
 Here, the court says that the principles from ◊em{Grant v Torstar
-Corp}◊note{◊cite-case[#:title "Grant v Torstar Corp" #:url
+Corp}◊note{◊declare-work[#:type "legal-case" #:title "Grant v Torstar
+Corp" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/7837/index.do"
 #:citation "2009 SCC 61"]} are applicable. The question is to be
 answered objectively, in context, and in the entirety of the
 communication. An expression might have more than one matter. If one
 of those matters is a "matter of public interest", that is enough. It
 is enough that "some segment of the community has a genuine interest"
-in the matter of the expression. But, that must be more than
-curiosity or prurient interest. This also isn't about assessing the
-impact on the issue to which it is directed. The judge is not to ask
-whether the expression has a beneficial impact on the issue.
+in the matter of the expression. But, that must be more than curiosity
+or prurient interest. This also isn't about assessing the impact on
+the issue to which it is directed. The judge is not to ask whether the
+expression has a beneficial impact on the issue.
 
 The defendant (the anti-SLAPP applicant) needs to show all of that:
 that the proceedings arise from their expression relating to a matter
@@ -393,8 +403,8 @@ defer to those balancing decisions.
 The Ontario Court of Appeal also dismissed two ◊em{Charter} challenges
 to the Ontario Act in ◊a[#:href
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0687.pdf"]{◊em{Platnick
-v Bent}}.◊note{◊cite-case[#:title "Platnick v Bent" #:citation "2018
-ONCA 687" #:url
+v Bent}}.◊note{◊declare-work[#:type "legal-case" #:title "Platnick v
+Bent" #:citation "2018 ONCA 687" #:url
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0687.pdf"]}
 
 Platnick argued that the Act is an unconstitutional infringement on

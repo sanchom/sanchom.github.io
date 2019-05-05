@@ -58,6 +58,8 @@ h1 {font-size: 2.2em; font-style: normal;}  ◊; Reserved for titles
 h2 {font-size: 1.5em; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
 h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
 
+.warning { color: #8A0707; }
+
 .center { text-align: center; }
 
 p.date {font-size: 0.8em; font-style: italic; text-align: right;}

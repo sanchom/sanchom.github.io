@@ -6,13 +6,13 @@
 
 ◊title{Art as Experience}
 
-I've been reading ◊em{Art as Experience}◊note{◊cite-book[#:author
-"John Dewey" #:year "1934" #:title "Art as Experience" #:publisher
-"Minton Balch & Co." #:location "New York"]} a few pages at a time
-over the past year. I've needed to read it like this because of how
-much is in every paragraph and how much it pulls at ideas from
-elsewhere. Here, I want to share some of themes that have come up
-throughout the book.
+I've been reading ◊em{Art as Experience}◊note{◊declare-work[#:type
+"book" #:author "John Dewey" #:year "1934" #:title "Art as Experience"
+#:publisher "Minton Balch & Co" #:publisher-location "New York"]} a
+few pages at a time over the past year. I've needed to read it like
+this because of how much is in every paragraph and how much it pulls
+at ideas from elsewhere. Here, I want to share some of themes that
+have come up throughout the book.
 
 Every medium is unique. When you practice using a medium, you learn
 what choices an artist is forced to make when they use that medium to
@@ -65,14 +65,15 @@ external to one another are non-esthetic. ◊elide In all ranges of
 experience, externality of means defines the mechanical. ◊elide Means
 are, then, media when they are not just preparatory or preliminary.}
 
-This also comes up in Thomas and Turner◊note{◊cite-book[#:author
-"Francis-Noël Thomas and Mark Turner" #:year "2011" #:title "Clear and
-Simple as the Truth: Writing Classic Prose" #:publisher "Princeton
-University Press"]}: how words can be used in a way that they become
-one with the expression. Prose becomes art when the sentence and
-paragraph structures, connectives, and word choices reflect not just
-the logical truth being presented, but also the experience, the
-feeling, that the author is trying to share.
+This also comes up in Thomas and Turner◊note{◊declare-work[#:type
+"book" #:author-given "Francis-Noël" #:author-family "Thomas"
+#:author2-given "Mark" #:author2-family "Turner" #:year "2011" #:title
+"Clear and Simple as the Truth: Writing Classic Prose" #:publisher
+"Princeton University Press"]}: how words can be
+used in a way that they become one with the expression. Prose becomes
+art when the sentence and paragraph structures, connectives, and word
+choices reflect not just the logical truth being presented, but also
+the experience, the feeling, that the author is trying to share.
 
 ◊q{in [a] classic sentence, the last section is the conclusion of all
 that has gone before it; the beginning of the sentence exists for the

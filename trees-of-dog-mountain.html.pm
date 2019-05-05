@@ -85,11 +85,14 @@ cue to reliably identify this species.}
 
 ◊heading{Reading}
 
-◊cite-book[#:author "Jim Pojar and Andy MacKinnon" #:title "Plants of Coastal British
-Columbia" #:publisher "B.C. Ministry of Forests and Lone Pine Publishing" #:year "1994"]
+◊declare-work[#:type "book" #:author-given "Jim" #:author-family
+"Pojar" #:author2-given "Andy" #:author2-family "MacKinnon" #:title
+"Plants of Coastal British Columbia" #:publisher "BC Ministry of
+Forests and Lone Pine Publishing" #:year "1994"]
 
-◊cite-book[#:title "National Audubon Society Field Guide to North American Trees:
-Western Region" #:publisher "National Audubon Society" #:year "1980" #:author ""]
+◊declare-work[#:type "book" #:title "National Audubon Society Field
+Guide to North American Trees: Western Region" #:publisher "National
+Audubon Society" #:year "1980"]
 
 The first (Pojar) has a very narrow scope and tells much more about a
 species's significance to the region's ecology and people, both today

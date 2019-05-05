@@ -32,8 +32,9 @@ That image is most striking in contrast to the hunger artist the
 panther replaced. "The enemies of the esthetic are neither the
 practical nor the intellectual. They are the humdrum; slackness of
 loose ends; submission to convention in practice and intellectual
-procedure."◊note{◊cite-book[#:author "John Dewey" #:year "1934" #:title "Art as
-Experience" #:publisher "Minton Balch & Co." #:location "New York"]}
+procedure."◊note{◊declare-work[#:type "book" #:author "John Dewey"
+#:year "1934" #:title "Art as Experience" #:publisher "Minton Balch &
+Co" #:publisher-location "New York"]}
 
 That was the hunger artist. ◊em{A} hunger artist, even. Just one of
 many. The panther is Dewey's "live being", "recurrently losing and

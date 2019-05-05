@@ -8,11 +8,73 @@
 
 ◊fig[#:src "assets/desportes-fox.jpg" #:width "300px"]
 
+◊declare-work[#:type "legal-case-US" #:title "Pierson v Post" #:year
+"1805" #:citation "3 Cai R 175" #:jurisdiction "NY SC" #:url
+"http://www.courts.state.ny.us/reporter/archives/pierson_post.htm"
+#:id "Pierson"]
+
+◊declare-work[#:type "article" #:author "Angela Fernandez" #:url
+"https://www.jstor.org/stable/27641649" #:title "The Lost Record of
+*Pierson v Post*, the Famous Fox Case" #:journal "Law and History
+Review" #:volume "27" #:issue "1" #:year "2009" #:first-page "149"
+#:id "Fernandez, Lost Record" #:short-form "Fernandez, \"The Lost
+Record\""]
+
+◊declare-work[#:type "article" #:title "The Ancient and Honorable
+Court of Dover: Serious Mock, Solemn Foolery, and Sporting Wit in
+Nineteenth-Century New York State" #:author "Angela Fernandez" #:year
+"2012" #:journal "Australian & New Zealand Law and History E-Journal"
+#:volume "7" #:pages "194" #:url
+"http://www.austlii.edu.au/au/journals/ANZLawHisteJl/2012/7.pdf" #:id
+"Fernandez, Serious Mock" #:short-form "Fernandez, \"Serious
+Mock\""]
+
+◊declare-work[#:type "legal-case-US" #:title "Popov v Hayashi"
+#:citation "WL 31833731" #:year "2002" #:jurisdiction "Cal Super Ct"
+#:id "Popov"]
+
+◊declare-work[#:type "article" #:author-given "Dhammika"
+#:author-family "Dharmapala" #:author2-given "Rohan" #:author2-family
+"Pitchford" #:year "2002" #:volume "18" #:issue "1" #:pages "39--66"
+#:title "An Economic Analysis of Riding to Hounds: *Pierson v Post*
+Revisited" #:journal "Journal of Law, Economics, & Organization" #:url
+"https://www.jstor.org/stable/pdf/3555069.pdf" #:id "Dharmapala"
+#:short-form "Dharmapala"]
+
+◊declare-work[#:type "article" #:title "Legal Fictions in *Pierson v
+Post*" #:author "Andrea McDowell" #:year "2007" #:journal "Michigan
+Law Review" #:volume "105" #:issue "4" #:pages "735--778" #:url
+"https://repository.law.umich.edu/cgi/viewcontent.cgi?article=1478&context=mlr"
+#:id "McDowell" #:short-form "McDowell"]
+
+◊declare-work[#:type "article" #:url
+"https://www.law.uchicago.edu/files/file/coase-problem.pdf" #:author
+"RH Coase" #:journal "Law and Economics" #:year "1960" #:volume "3"
+#:pages "1--44" #:title "The Problem of Social Cost" #:id "Coase"
+#:short-form "Coase"]
+
+◊declare-work[#:type "article" #:author-given "Lara Larrimore"
+#:author-family "Oullette" #:title "*Pierson*, Peer Review, and Patent
+Law" #:journal "Vanderbilt Law Review" #:volume "69" #:pages "1825"
+#:url "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2803479"
+#:year "2016" #:id "Oullette" #:short-form "Oullette"]
+
+◊declare-work[#:type "article" #:title "The Relationship Between Basic
+Patents and Improvement Patents" #:author "Arnold Silverman" #:journal
+"JOM" #:volume "47" #:issue "1" #:year "1995" #:url
+"https://www.tms.org/pubs/journals/JOM/matters/matters-9501.html"
+#:pages "50" #:id "Silverman"]
+
+◊declare-work[#:type "article" #:url
+"https://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?article=1124&context=chtlj"
+#:title "Patenting Improvements: The Costs of Making Patents Easily
+Available" #:author "Douglas Applegate" #:volume "8" #:issue "2"
+#:pages "429--446" #:journal "Santa Clara High Tech LJ" #:year
+"1992" #:id "Applegate"]
+
 In our Property Law course, we are now reading about possession. Our
-case book mentioned ◊em{Pierson v Post}◊note{◊em{Pierson v Post}
-(1805), 3 Cai R 175 (NY). Find the full text ◊a[#:href
-"http://www.courts.state.ny.us/reporter/archives/pierson_post.htm"]{here}. There's
-a good ◊a[#:href
+case book mentioned ◊em{Pierson v Post}◊note{◊render-work["Pierson"]
+There's a good ◊a[#:href
 "https://en.wikipedia.org/wiki/Pierson_v._Post"]{Wikipedia article}
 too.} in a note, and that led me down a trail of reading this past
 week.
@@ -21,12 +83,10 @@ week.
 
 Lodowick Post was in pursuit of a fox. Another person, Jesse Pierson,
 killed the fox and took it for himself. The issue is whether Post has
-any property right in the fox that he was hunting.◊note{These are the
-scant facts as outlined in the case. Much more has been learned about
-this case since then. See Angela Fernandez, “◊a[#:href
-"https://www.jstor.org/stable/27641649"]{The Lost Record of Pierson
-v. Post, the Famous Fox Case},” ◊em{Law and History Review} 27, no. 1
-(2009): 149–78.}
+any property right in the fox that he was hunting.◊cite["Fernandez,
+Lost Record" #:signal "See" #:content-first "yes"]{I've presented only
+the scant facts as outlined in the case. Much more has been learned
+about this case since then.}
 
 ◊sub-heading{The decision}
 
@@ -54,24 +114,19 @@ The dissent (Judge ◊a[#:href
 Livingstone}) disagrees and gives an argument based on judicial
 deference, labour, economic efficiency, and some interesting
 assumptions about the role of the fox hunt in New York in
-1805.◊note{While I treat this dissent at face value, there is another
+1805.◊cite["Fernandez, Serious Mock" #:signal "See" #:content-first
+"yes"]{While I treat this dissent at face value, there is another
 dimension at play here that resists "straightforward
 interpretation". Angela Fernandez sees this dissent as an example of a
-genre she calls "solemn foolery". See ◊cite-article[#:title "The
-Ancient and Honorable Court of Dover: Serious Mock, Solemn Foolery,
-and Sporting Wit in Nineteenth-Century New York State" #:author
-"Angela Fernandez" #:year "2012" #:journal "Australian & New Zealand
-Law and History E-Journal" #:volume "7" #:pages "194" #:url
-"http://www.austlii.edu.au/au/journals/ANZLawHisteJl/2012/7.pdf"]}
+genre she calls "solemn foolery".}
 
 First, Livingstone says the court should have just asked the
 "sportsmen" (the fox hunters) what would rule would have made sense in
-the context of their activity. ◊note{This contextual approach to
-possession has been embraced in the common law. See ◊em{Popov
-v Hayashi}, 2002 WL 31833731 (Cal Super Ct): "These rules are
-contextual in nature. The are crafted in response to the unique nature
-of the conduct they seek to regulate. Moreover, they are influenced by
-the custom and practice of each industry."}
+the context of their activity. (Today, this contextual approach has
+been embraced in the common law.◊cite["Popov" #:signal "See"]{"These
+rules are contextual in nature. They are crafted in response to the
+unique nature of the conduct they seek to regulate. Moreover, they are
+influenced by the custom and practice of each industry."})
 
 Regarding labour, economic incentives, and the role of the fox hunt,
 he says (emphasis and translations mine):
@@ -115,11 +170,12 @@ though socially contingent, ideas about what is ◊em{right} in a moral
 sense. This case makes it clear that judges sometimes ◊em{make} law,
 and they sometimes make law based on pragmatic concerns and economic
 concerns.◊note{Or maybe, they are ◊em{always} maximizing economic
-efficiency. See ◊cite-book[#:author "Richard A Posner" #:title
-"Economic Analysis of Law" #:year "1973" #:publisher "Little, Brown"]
-And, ◊cite-article[#:author "Richard A Posner" #:title "The Economic
-Approach to Law" #:year "1975" #:journal "Texas Law Review" #:volume
-"53" #:pages "757" #:url
+efficiency. See ◊declare-work[#:type "book" #:author-given "Richard A"
+#:author-family "Posner" #:title "Economic Analysis of Law" #:year
+"1973" #:publisher "Little, Brown"] And, ◊declare-work[#:type
+"article" #:author-given "Richard A" #:author-family "Posner" #:title
+"The Economic Approach to Law" #:year "1975" #:journal "Texas Law
+Review" #:volume "53" #:pages "757" #:url
 "http://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=2881&context=journal_articles"]}
 I don't know how often it was that judges considered these interests
 in 1805 or how explicitly they typically presented those
@@ -130,14 +186,10 @@ implicitly) choose a "welfare" function: an accounting of things that
 you want to see increase and things that you want to see decreases. A
 paper by Dharmapala and Pitchford actually works through the effect
 that the majority's rule and Livingstone's rule would have on the
-number of foxes killed.◊note{◊cite-article[#:author "Dhammika
-Dharmapala and Rohan Pitchford" #:year "2002" #:volume "18" #:issue "1"
-#:pages "39--66" #:title "An Economic Analysis of Riding to Hounds:
-Pierson v Post Revisited" #:journal "Journal of Law, Economics, &
-Organization" #:url "https://www.jstor.org/stable/pdf/3555069.pdf"]}
-The results under their initial assumptions roughly match
-Livingstone's intuition in his dissent. The paper is fairly readable
-even if you ignore every equation.
+number of foxes killed.◊cite["Dharmapala"] The results under their
+initial assumptions roughly match Livingstone's intuition in his
+dissent. The paper is fairly readable even if you ignore every
+equation.
 
 Thinking about property allocation from this economic perspective is
 only a tool for expressing reasons; it doesn't provide reasons on its
@@ -159,34 +211,26 @@ intruder gets the fox, why does it cancel perfectly to zero?
 
 It turns out that hunters found pleasure in the hunt even if they
 didn't end up catching a fox. They also may have sought to maintain
-the fox population. A "bagged" (live) fox was worth more than
-a dead fox.◊note{◊cite-article[#:title "Legal Fictions in Pierson v
-Post" #:author "Andrea McDowell" #:year "2007" #:journal "Michigan Law
-Review" #:volume "105" #:issue "4" #:pages "735--778" #:url
-"https://repository.law.umich.edu/cgi/viewcontent.cgi?article=1478&context=mlr"]}
-Again, this demonstrates that economic arguments are only as
-convincing as the factors they consider.
+the fox population. A "bagged" (live) fox was worth more than a dead
+fox.◊cite["McDowell"] Again, this demonstrates that economic arguments
+are only as convincing as the factors they consider.
 
-How would the Coase theorem apply here?◊note{◊cite-article[#:url
-"https://www.law.uchicago.edu/files/file/coase-problem.pdf" #:author
-"RH Coase" #:journal "Law and Economics" #:year "1960" #:volume "3"
-#:pages "1--44" #:title "The Problem of Social Cost"]} Perhaps the
+How would the Coase theorem apply here?◊cite["Coase"] Perhaps the
 hunters would pay people to stay clear of their hunt. The hunters
 would have to pay the intruders as much money as they'd otherwise be
-able to fetch by freeloading. But this seems untenable,
-because more and more people could show up demanding payment to stay
-out of the way of the hunt. Historically, though, it seems that rather
-than the intruders being mere freeloaders, they were farmers
-just trying to ensure the foxes got killed, to prevent injury to their
-own animals.◊note{McDowell, ◊em{supra} note 7.} If the only people
-that were intruding were farmers at risk of losing animals to foxes,
-then a Coasian solution could actually play out. The hunters would pay
-the farmers for damage that happens to come to their farms due to
-foxes: a kind of tax/insurance for having a pure
-hunt.◊note{◊em{Ibid.}} Another option would be payments to the
-owner(s) of the land on which the hunt takes place in exchange for the
-exclusive right to hunt. (Although, the fox in ◊em{Pierson v Post} was
-killed on a public beach.)
+able to fetch by freeloading. But this seems untenable, because more
+and more people could show up demanding payment to stay out of the way
+of the hunt. Historically, though, it seems that rather than the
+intruders being mere freeloaders, they were farmers just trying to
+ensure the foxes got killed, to prevent injury to their own
+animals.◊cite["McDowell"] If the only people that were intruding were
+farmers at risk of losing animals to foxes, then a Coasian solution
+could actually play out. The hunters would pay the farmers for damage
+that happens to come to their farms due to foxes: a kind of
+tax/insurance for having a pure hunt.◊cite["McDowell"] Another option
+would be payments to the owner(s) of the land on which the hunt takes
+place in exchange for the exclusive right to hunt. (Although, the fox
+in ◊em{Pierson v Post} was killed on a public beach.)
 
 ◊sub-heading{Application: cybersquatting}
 
@@ -201,24 +245,20 @@ undertook the initial investment of effort.
 
 Dharmapala and Pitchford argue that ◊a[#:href
 "https://en.wikipedia.org/wiki/Cybersquatting"]{cybersquatting}
-matches this scenario.◊note{Dharmapala and Pitchford, ◊em{supra}, note
-6.} Should a domain name be given to the first person to register it
-without regard to whether another has already developed a brand around
-that name? Or should a person who has put in the "honour and labour"
-of developing a company and brand have rights to the associated domain
-name? It turns out that in cases of pure cybersquatting (as opposed to
-dualing brands), the common law, and now legislation, has applied a rule
-analogous to Livingstone's rule: the company with the developed brand
-gets the domain, rather than the cybersquatter.
+matches this scenario.◊cite["Dharmapala"] Should a domain name be
+given to the first person to register it without regard to whether
+another has already developed a brand around that name? Or should a
+person who has put in the "honour and labour" of developing a company
+and brand have rights to the associated domain name? It turns out that
+in cases of pure cybersquatting (as opposed to dualing brands), the
+common law, and now legislation, has applied a rule analogous to
+Livingstone's rule: the company with the developed brand gets the
+domain, rather than the cybersquatter.
 
 ◊sub-heading{Application: patent law}
 
 This analysis has also been applied to criticize some outcomes of
-patent law.◊note{◊cite-article[#:author "Lara Larrimore Oullette"
-#:title "Pierson, Peer Review, and Patent Law" #:journal "Vanderbilt
-Law Review" #:volume "69" #:pages "1825" #:url
-"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2803479" #:year
-"2016"]}
+patent law.◊cite["Oullette"]
 
 Patent law can result in a division of rights between an initial
 inventor and subsequent inventors that improve upon the original. An
@@ -227,18 +267,9 @@ actually invented. Improvements are patentable separately by
 subsequent inventors. But a subsequent inventor having improved upon a
 previous patent could not sell the improved variant without a licence
 from the holder of the original patent when that improvement builds
-upon the original.◊note{◊cite-article[#:title "The Relationship
-Between Basic Patents and Improvement Patents" #:author "Arnold
-Silverman" #:journal "JOM" #:volume "47" #:issue "1" #:year "1995"
-#:url
-"https://www.tms.org/pubs/journals/JOM/matters/matters-9501.html"
-#:pages "50"]}◊note{◊cite-article[#:url
-"https://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?article=1124&context=chtlj"
-#:title "Patenting Improvements: The Costs of Making Patents Easily
-Available" #:author "Douglas Applegate" #:volume "8" #:issue "2"
-#:pages "429--446" #:journal "Santa Clara High Tech LJ" #:year
-"1992"]} And, the original inventor would need to get a licence from
-the improver in order to use their improvement.
+upon the original.◊cite["Silverman"]◊cite["Applegate"] And, the
+original inventor would need to get a licence from the improver in
+order to use their improvement.
 
 The current law rewards early investment. We give patents to
 inventions that might not be market-ready. Patent law does not require
@@ -265,13 +296,12 @@ system.
 
 Oullette argues that this happens when we give people patents that are
 too speculative and that require undue experimentation on the part of
-anyone wanting to use the patent. These patents don't do much
-to lower the barrier to further improvement, but they reward the
-original "inventor" with an unearned right to exclude. This
-discourages the flurry of improvement patents that one might
-normally see after a sufficiently disclosed invention is
-patented.◊note{Oullette, ◊em{supra} note 12.} She argues that this
-is a defect in the examination process.
+anyone wanting to use the patent. These patents don't do much to lower
+the barrier to further improvement, but they reward the original
+"inventor" with an unearned right to exclude. This discourages the
+flurry of improvement patents that one might normally see after a
+sufficiently disclosed invention is patented.◊cite["Oullette"] She
+argues that this is a defect in the examination process.
 
 ◊sub-heading{How people use this case}
 

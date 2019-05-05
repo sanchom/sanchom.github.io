@@ -22,19 +22,21 @@ thinking in 2017.
 
 ◊sub-heading{Books}
 
-◊cite-book[#:author "Rebecca Solnit" #:year "2004" #:url
-"https://www.haymarketbooks.org/books/791-hope-in-the-dark" #:title
-"Hope in the Dark" #:publisher "Haymarket Books"]
+◊declare-work[#:type "book" #:author "Rebecca Solnit" #:year "2004"
+#:url "https://www.haymarketbooks.org/books/791-hope-in-the-dark"
+#:title "Hope in the Dark" #:publisher "Haymarket Books"]
 
 Rebecca Solnit wrote this book near the end of George W. Bush's first
 term as president. She presents an outlook of hope in the face of
 uncertainty.
 
-◊cite-book[#:author "Carrie Brownstein" #:year "2015" #:url
+◊declare-work[#:type "book" #:author "Carrie Brownstein" #:year "2015"
+#:url
 "https://www.penguinrandomhouse.com/books/312793/hunger-makes-me-a-modern-girl-by-carrie-brownstein/9780399184765/"
 #:title "Hunger Makes Me a Modern Girl" #:publisher "Riverhead Books"]
 
-◊cite-book[#:author "Isabel Wilkerson" #:year "2010" #:url
+◊declare-work[#:type "book" #:author "Isabel Wilkerson" #:year "2010"
+#:url
 "https://www.penguinrandomhouse.com/books/190696/the-warmth-of-other-suns-by-isabel-wilkerson/9780679763888/"
 #:title "The Warmth of Other Suns" #:publisher "Knopf Doubleday
 Publishing Group"]
@@ -42,7 +44,7 @@ Publishing Group"]
 The story of the Great Migration, told through the lives of three
 people who left the American south to pursue better lives.
 
-◊cite-book[#:author "H. L. A. Hart" #:year "1961" #:url
+◊declare-work[#:type "book" #:author "HLA Hart" #:year "1961" #:url
 "https://global.oup.com/academic/product/the-concept-of-law-9780199644698"
 #:title "The Concept of Law" #:publisher "Oxford University Press"]
 
@@ -69,7 +71,8 @@ that aren't. This is somewhat circular, but Hart takes a pragmatic
 approach: what distinctions are useful for the kinds of analyses we
 tend to do?
 
-◊cite-book[#:author "Louise Rosenblatt" #:year "1933" #:url
+◊declare-work[#:type "book" #:author "Louise Rosenblatt" #:year "1933"
+#:url
 "https://www.mla.org/Publications/Bookstore/Nonseries/Literature-as-Exploration-5th-edition"
 #:title "Literature as Exploration" #:publisher "Modern Language
 Association"]
@@ -93,53 +96,63 @@ no matter how much they differ from one another, recognize their
 common interests, their common goals, and their dependence on mutually
 honored freedoms and responsibilities.} --- Louise Rosenblatt}
 
-◊cite-book[#:author "Ruth Bader Ginsburg" #:year "2016" #:url
+◊declare-work[#:type "book" #:author-given "Ruth Bader"
+#:author-family "Ginsburg" #:year "2016" #:url
 "http://www.simonandschuster.ca/books/My-Own-Words/Ruth-Bader-Ginsburg/9781501145247"
 #:title "My Own Words" #:publisher "Simon & Schuster"]
 
 The highlights for me were Justice Ginsburg's early writing, her
 thoughts on comparative law, and the role of dissent.
 
-◊cite-book[#:author "John Hodgman" #:year "2017" #:url
+◊declare-work[#:type "book" #:author "John Hodgman" #:year "2017"
+#:url
 "https://www.penguinrandomhouse.com/books/557020/vacationland-by-john-hodgman/9780735224803/"
-#:title "Vacationland" #:publisher "Viking" #:location "New York"]
+#:title "Vacationland" #:publisher "Viking" #:publisher-location "New
+York"]
 
 ◊sub-heading{Articles}
 
-◊cite-article[#:author "Barton Beebe" #:year "2017" #:url
+◊declare-work[#:type "article" #:author "Barton Beebe" #:year "2017"
+#:url
 "http://columbialawreview.org/content/bleistein-the-problem-of-aesthetic-progress-and-the-making-of-american-copyright-law/"
 #:title "Bleistein, the Problem of Aesthetic Progress, and the Making
 of American Copyright Law" #:journal "Columbia Law Review" #:volume
-"112" #:issue "2" #:pages "319-398"]
+"112" #:issue "2" #:first-page "319"]
 
-Beebe argues that, with respect to copyright, courts should recognize that aesthetic progress can happen
-when there is simply more art and more people that have made art
-(Beebe refers to John Dewey's ◊em{Art as Experience} in describing this view).
-This would lead courts to find value in more works than they do now, and would support
-a more expansive fair use exception, allowing more things to be made, even if close copies.
+Beebe argues that, with respect to copyright, courts should recognize
+that aesthetic progress can happen when there is simply more art and
+more people that have made art (Beebe refers to John Dewey's ◊em{Art
+as Experience} in describing this view).  This would lead courts to
+find value in more works than they do now, and would support a more
+expansive fair use exception, allowing more things to be made, even if
+close copies.
 
-◊cite-thesis[#:author "Jennifer Leitch" #:year "2016" #:url
-"http://digitalcommons.osgoode.yorku.ca/phd/23/" #:title "Having a
-Say: Democracy, Access to Justice and Self-Represented Litigants"
-#:description "Ph.D. Thesis" #:institution "Osgoode Hall"]
+◊declare-work[#:type "thesis" #:author "Jennifer Leitch" #:year "2016"
+#:url "http://digitalcommons.osgoode.yorku.ca/phd/23/" #:title "Having
+a Say: Democracy, Access to Justice and Self-Represented Litigants"
+#:thesis-description "PhD Thesis" #:institution "Osgoode Hall"]
 
 It is difficult to get meaningful access to justice as a
 self-represented litigant. The extent to which a person succeeds at
 that can affect their participation in other aspects of democracy.
 
-◊cite-news[#:publication "The Atlantic" #:date "2017" #:url
+◊declare-work[#:type "magazine/news" #:publication "The Atlantic"
+#:year "2017" #:url
 "https://www.theatlantic.com/projects/inside-jobs/" #:title "Inside
 Jobs: Hear what American workers have to say about their jobs"]
 
-◊cite-article[#:author "Zahr Said" #:year "2017" #:url
-"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2902765" #:title
-"A Transactional Theory of the Reader in Copyright Law" #:journal
-"Iowa Law Review" #:volume "102" #:issue "2" #:pages "605-650"]
+◊declare-work[#:type "article" #:author "Zahr Said" #:year "2017"
+#:url "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2902765"
+#:title "A Transactional Theory of the Reader in Copyright Law"
+#:journal "Iowa Law Review" #:volume "102" #:issue "2" #:first-page
+"605"]
 
-How an acceptance of Rosenblatt's transactional theory of reading would change the questions that we
-ask jurors and the evidence we give them in copyright cases.
+How an acceptance of Rosenblatt's transactional theory of reading
+would change the questions that we ask jurors and the evidence we give
+them in copyright cases.
 
-◊cite-magazine[#:author "Tim Parks" #:date "December 9, 2017" #:url
+◊declare-work[#:type "magazine/news" #:author "Tim Parks" #:year
+"December 9, 2017" #:url
 "http://www.nybooks.com/daily/2017/12/09/gained-in-translation/"
 #:title "Gained in Translation" #:publication "New York Review of
 Books"]
@@ -157,14 +170,15 @@ But it’s also true that when preferences shift they do so for a reason, if
 
 ◊sub-heading{Short stories}
 
-◊cite-magazine[#:author "F. Scott Fitzgerald" #:url
+◊declare-work[#:type "magazine/news" #:author-given "F Scott"
+#:author-family "Fitzgerald" #:url
 "https://www.newyorker.com/magazine/2017/03/20/the-i-o-u" #:title "The
-I.O.U." #:publication "The New Yorker" #:date "March 20, 2017"]
+I.O.U." #:publication "The New Yorker" #:year "20 March 2017"]
 
-◊cite-magazine[#:author "Kristen Roupenian" #:url
-"https://www.newyorker.com/magazine/2017/12/11/cat-person" #:title
-"Cat Person" #:publication "The New Yorker" #:date "December 11,
-2017"]
+◊declare-work[#:type "magazine/news" #:author "Kristen Roupenian"
+#:url "https://www.newyorker.com/magazine/2017/12/11/cat-person"
+#:title "Cat Person" #:publication "The New Yorker" #:year "11
+December 2017"]
 
 ◊heading{Computer things}
 I wrote a web app that presents some flight-planning information taken from navcanada.ca that

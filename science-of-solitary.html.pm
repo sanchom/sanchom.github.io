@@ -4,35 +4,50 @@
 ◊define-meta[original-date]{2019-02-09}
 ◊define-meta[edited-date]{2019-03-24}
 
+◊declare-work[#:type "magazine/news" #:author "Treacy Ziegler" #:title
+"Memory of Space" #:publication "The Prison Arts Coalition" #:date "15
+October 2014" #:url
+"https://theprisonartscoalition.com/2014/10/15/memory-of-space/" #:id
+"Ziegler1"]
+
+◊declare-work[#:type "magazine/news" #:author "Treacy Ziegler" #:title
+"The art of absolute lonliness" #:publication "Broad Street Review"
+#:date "3 June 2014" #:url
+"https://www.broadstreetreview.com/art/the-art-of-absolute-lonelines"
+#:id "Ziegler2"]
+
+◊declare-work[#:type "magazine/news" #:publication "Quirks and Quarks,
+CBC" #:date "8 February 2019" #:title "Months locked in a tiny box —
+how solitary confinement can erode mental health" #:url
+"https://www.cbc.ca/radio/quirks/feb-9-2019-psychology-of-solitary-confinement-mind-over-genes-genocide-and-climate-change-and-more-1.5008739/months-locked-in-a-tiny-box-how-solitary-confinement-can-erode-mental-health-1.5008744"
+#:id "Quirks"]
+
+◊declare-work[#:type "legal-case" #:title "British Columbia Civil
+Liberties Association v Canada (Attorney General)" #:citation "2018
+BCSC 62" #:url
+"https://www.canlii.org/en/bc/bcsc/doc/2018/2018bcsc62/2018bcsc62.html"
+#:id "BCCLA" #:short-form "*BCCLA v Canada*"]
+
+◊declare-work[#:type "legal-case" #:title "Canada (Attorney General) v
+Bedford" #:citation "2013 SCC 72" #:url
+"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/13389/index.do"
+#:id "Bedford"]
+
 ◊title{The science of solitary confinement}
 ◊subtitle{Sancho McCann}
 
 ◊fig[#:src "assets/raymond-palmore-cell.jpg"]{Used with permission
 from Raymond Palmore. Drawn during his time at Corcoran State
 Prison.◊note{Read how art can help people in solitary confinement
-express their experiences: ◊cite-news[#:author "Treacy Ziegler"
-#:title "Memory of Space" #:publication "The Prison Arts Coalition"
-#:date "October 15, 2014" #:url
-"https://theprisonartscoalition.com/2014/10/15/memory-of-space/"
-#:omit-period? "true"]; ◊cite-news[#:author "Treacy Ziegler" #:title
-"The art of absolute lonliness" #:publication "Broad Street Review"
-#:date "June 3, 2014" #:url
-"https://www.broadstreetreview.com/art/the-art-of-absolute-lonelines"
-#:omit-period? "true"].  }}
+express their experiences. ◊render-work["Ziegler1" #:signal "See"]
+◊render-work["Ziegler2" #:signal "See also"]}}
 
 CBC's ◊em{Quirks and Quarks} had a segment this week about the
-psychology of solitary confinement.◊note{◊cite-news[#:author "Quirks
-and Quarks" #:publication "CBC" #:date "February 8, 2019" #:title
-"Months locked in a tiny box — how solitary confinement can erode
-mental health" #:url
-"https://www.cbc.ca/radio/quirks/feb-9-2019-psychology-of-solitary-confinement-mind-over-genes-genocide-and-climate-change-and-more-1.5008739/months-locked-in-a-tiny-box-how-solitary-confinement-can-erode-mental-health-1.5008744"]}
-Bob McDonald interviewed Dr. Craig Haney, one of the expert witnesses
-in the BC Supreme Court case that resulted in portions of Canada's
+psychology of solitary confinement.◊cite["Quirks"] Bob McDonald
+interviewed Dr. Craig Haney, one of the expert witnesses in the BC
+Supreme Court case that resulted in portions of Canada's
 solitary-confinement regime being struck down as
-unconstitutional.◊note{◊cite-case[#:title "British Columbia Civil
-Liberties Association v Canada (Attorney General)" #:citation "2018
-BCSC 62" #:url
-"https://www.canlii.org/en/bc/bcsc/doc/2018/2018bcsc62/2018bcsc62.html"]}◊note{Canada
+unconstitutional.◊cite["BCCLA"]◊note{Canada
 appealed that result. The appeal was heard on November 13, 2018. The
 decision has not been announced as of February 9, 2019.}
 
@@ -48,7 +63,7 @@ evidence was essential to the judge's finding that the way that we
 currently use solitary confinement "places all Canadian federal
 inmates subject to it at significant risk of serious psychological
 harm, including mental pain and suffering, and increased incidence of
-self-harm and suicide."◊note{◊em{BCCLA v Canada} at para 247.}
+self-harm and suicide."◊cite["BCCLA" #:pinpoint "para 247"]
 
 I did not listen to or read transcripts of the testimony of the
 scientific experts in this case. This comment is based only on the
@@ -63,8 +78,8 @@ and systematic reviews.
 ◊sub-heading{Plaintiff's experts}
 
 The evidence supports a claim that solitary confinement causes various
-harmful effects.◊note{◊em{BCCLA v Canada} at paras 163--194.} There is
-a large body of clinical and experimental research establishing that
+harmful effects.◊cite["BCCLA" #:pinpoint "paras 163--194"] There is a
+large body of clinical and experimental research establishing that
 when you restrict a person's environmental and social stimulation,
 they suffer. Dr. Grassian has observed, in prisoners in solitary
 confinement, a rare confluence of psychiatric symptoms which we
@@ -118,8 +133,8 @@ by the plaintiffs' experts"), but these conclusions cannot be drawn
 from a negative results in low-powered studies.
 
 Suedfeld ◊em{et al} (1982), a study relied upon by the government,
-gives contradictory and weak evidence.◊note{◊em{BCCLA v Canada} at
-para 200.} "A relationship was found between the length of stay and
+gives contradictory and weak evidence.◊cite["BCCLA" #:pinpoint "para
+200"] "A relationship was found between the length of stay and
 measures of depression and hostility" (a dose-response relationship;
 one of the Bradford Hill criteria that points in favour of finding an
 effect). But because of the small magnitude of the observed effect,
@@ -132,8 +147,8 @@ the effect.
 The government experts pushed the court to rely on longitudinal
 studies, which are more like an experiment in that they observe what
 happens before and after the onset of an intervention. They believe
-the "Zinger study" to be worth significant weight.◊note{◊em{BCCLA v
-Canada} at paras 203--204.} The population for this study was 83
+the "Zinger study" to be worth significant weight.◊cite["BCCLA"
+#:pinpoint "paras 203--204"] The population for this study was 83
 segregated plus 53 general-population prisoners. The segregated
 population initially reported more depressive symptoms, but not on a
 measure of hopelessness. Both segregated and non-segregated prisoners
@@ -177,15 +192,15 @@ this pattern in a body of research is an indicator of a small or
 non-existent effect. But, using this move depends on an accurate
 assessment of a study's scientific rigor, and Dr. Grassian, one of the
 plaintiff's experts, criticized the selection criteria for the Morgan
-study.◊note{◊em{BCCLA v Canada} at para 234.}
+study.◊cite["BCCLA" #:pinpoint "para 234"]
 
 Regardless, the government expert concludes: "the findings do not
 support the notion that, as a group, inmates in segregation suffer
 ◊elide when compared with inmates outside of segregation."
 
 Two things are important from this conclusion. It is a conclusion "as
-a group".◊note{◊em{BCCLA v Canada} at para 207.} And again, even taken
-at face value, it is only a failure to find positive evidence for the
+a group".◊cite["BCCLA" #:pinpoint "para 207"] And again, even taken at
+face value, it is only a failure to find positive evidence for the
 effect, not positive evidence that there is no effect. With an effect
 that might vary within specialized subpopulations, and subjective
 psychological measures involving self-reporting that the participants
@@ -202,15 +217,15 @@ prisoners' self-reporting. According to the self-report scales, there
 was no deterioration within the segregated population over the course
 of 12 months. The crisis records show the opposite. Only 12 episodes
 occurred in the first six months; 25 occurred in the second six
-months.◊note{◊em{BCCLA v Canada} at para 237.}
+months.◊cite["BCCLA" #:pinpoint "para 237"]
 
 The methodological weaknesses in both the "Colorado study" and the
 "Zinger study" also affect the relevance of the Morgan and Gendreau
 meta-analysis because they were both included in the small set of
-studies meeting the selection criteria◊note{◊em{BCCLA v Canada} at
-para 234.}, and the "Colorado study" was one of the studies identified
-to be weighted as having a "stronger" quality design.◊note{◊em{BCCLA v
-Canada} at para 243.}
+studies meeting the selection criteria◊cite["BCCLA" #:pinpoint "para
+234"], and the "Colorado study" was one of the studies identified to
+be weighted as having a "stronger" quality design.◊cite["BCCLA"
+#:pinpoint "para 243"]
 
 ◊heading{Discussion}
 
@@ -238,8 +253,8 @@ effect in a high power study can be very compelling evidence.
 That is a tricky distinction and I am impressed that Justice Leask saw
 it. In this case, evidence that was obtained by methods that are
 generally less robust was owed more weight than evidence obtained by
-methods that are generally more robust.◊note{◊em{BCCLA v Canada} at
-para 254.}
+methods that are generally more robust.◊cite["BCCLA" #:pinpoint "para
+254"]
 
 In a Section 7 challenge◊note{That is, when a plaintiff challenges a
 government law or act on the basis that it infringes upon their
@@ -250,40 +265,32 @@ only need to show a "sufficient causal connection" between the
 government action and the harm. They don't need to show that solitary
 confinement is "the only or the dominant cause" of the harms. And,
 they only need to establish "a reasonable inference, drawn on a
-balance of probabilities."◊note{◊cite-case[#:title "Canada (Attorney
-General) v Bedford" #:citation "2013 SCC 72" #:url
-"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/13389/index.do"
-#:pinpoint "para 76"]} Justice Leask found that the plaintiffs met
-that burden.
+balance of probabilities."◊cite["Bedford" #:pinpoint "para 76"]
+Justice Leask found that the plaintiffs met that burden.
 
 ◊heading{Related media}
 
-◊cite-news[#:publication "BC Civil Liberties Association" #:title "End
-Solitary Confinement -- BobbyLee's Story" #:date "May 26, 2016" #:url
+◊declare-work[#:type "magazine/news" #:publication "BC Civil Liberties
+Association" #:title "End Solitary Confinement -- BobbyLee's Story"
+#:date "26 May 2016" #:url
 "https://www.youtube.com/watch?v=lfnDpXHgZio"]
 
-◊cite-book[#:author "Susan Haack" #:title "Defending Science -- within
-Reason" #:publisher "Prometheus Books" #:year "2007" #:location
-"Amherst, New York"]
+◊declare-work[#:type "book" #:author "Susan Haack" #:title "Defending
+Science -- within Reason" #:publisher "Prometheus Books" #:year "2007"
+#:publisher-location "Amherst, New York"]
 
-◊cite-article[#:author "Susan Haack" #:title "Of Truth, in Science and
-in Law" #:journal "Brooklyn Law Review" #:volume "73" #:issue "3"
-#:year "2008" #:url
+◊declare-work[#:type "article" #:author "Susan Haack" #:title "Of
+Truth, in Science and in Law" #:journal "Brooklyn Law Review" #:volume
+"73" #:issue "3" #:year "2008" #:url
 "https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=1315&context=blr"
 #:pages "985--1008"]
 
-◊cite-article[#:author "Craig Haney" #:title "Restricting the Use of
-Solitary Confinement" #:journal "Annual Review of Criminology"
-#:volume "1" #:pages "285--310" #:url
+◊declare-work[#:type "article" #:author "Craig Haney" #:title
+"Restricting the Use of Solitary Confinement" #:journal "Annual Review
+of Criminology" #:volume "1" #:pages "285--310" #:url
 "https://www.annualreviews.org/doi/10.1146/annurev-criminol-032317-092326"
 #:year "2017"]
 
-◊cite-news[#:author "Treacy Ziegler" #:title "Memory of Space"
-#:publication "The Prison Arts Coalition" #:date "October 15, 2014"
-#:url
-"https://theprisonartscoalition.com/2014/10/15/memory-of-space/"]
+◊render-work["Ziegler1"]
 
-◊cite-news[#:author "Treacy Ziegler" #:title "The art of absolute
-lonliness" #:publication "Broad Street Review" #:date "June 3, 2014"
-#:url
-"https://www.broadstreetreview.com/art/the-art-of-absolute-lonelines"]
+◊render-work["Ziegler2"]

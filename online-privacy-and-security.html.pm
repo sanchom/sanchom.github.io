@@ -151,27 +151,28 @@ Checkup}.}
 A ◊a[#:href "https://ssd.eff.org/en/glossary/vpn"]{VPN (a virtual
 private network)} lets you hide more information from your internet
 service provider (e.g. Shaw, Telus) and from the websites you
-visit.◊note{◊cite-news[#:url
+visit.◊note{◊declare-work[#:type "magazine/news" #:url
 "https://www.eff.org/deeplinks/2017/04/heres-how-protect-your-privacy-your-internet-service-provider"
 #:author "Amul Kalia" #:title "Here's How to Protect Your Privacy From
 Your Internet Service Provider" #:publication "Electronic Frontier
-Foundation" #:date "April 3, 2017"]} Your service provider would no
-longer see what websites you're connecting to. The websites you're
-connecting to would no longer see your IP address (they'd see an IP
-address of the VPN provider instead). VPN connections also encrypt
-traffic between your device and the VPN, even non-HTTPS traffic. Your
-ISP would no longer be able to see any of the traffic between you and
-the internet.
+Foundation" #:date "3 April 2017"]} Your service
+provider would no longer see what websites you're connecting to. The
+websites you're connecting to would no longer see your IP address
+(they'd see an IP address of the VPN provider instead). VPN
+connections also encrypt traffic between your device and the VPN, even
+non-HTTPS traffic. Your ISP would no longer be able to see any of the
+traffic between you and the internet.
 
 When you use a VPN, you're moving some of the trust that you would
 normally place in your internet service provider (ISP) to your VPN
 provider. Your ISP would no longer see and potentially log your
 traffic, but your VPN provider might. So, choose a VPN provider
 carefully, paying attention to their logging policy and laws in the
-country where they are based.◊note{◊cite-news[#:url
+country where they are based.◊note{◊declare-work[#:type
+"magazine/news" #:url
 "https://ssd.eff.org/en/module/choosing-vpn-thats-right-you" #:title
 "Choosing the VPN That's Right For You" #:publication "Electronic
-Frontier Foundation" #:date "June 9, 2016"]}
+Frontier Foundation" #:date "9 June 2016"]}
 
 Some caution though: it is actually tricky to set up a VPN to
 absolutely route all traffic through the VPN. There are ways that you
@@ -196,12 +197,13 @@ VPN connection directly on your router, so that all traffic in your
 home is forced through the VPN.
 
 There are other ways that a VPN might provide a false sense of
-security: it might leak DNS queries to your ISP,◊note{◊cite-news[#:url
+security: it might leak DNS queries to your
+ISP,◊note{◊declare-work[#:type "magazine/news" #:url
 "https://www.makeuseof.com/tag/dns-leaks-can-destroy-anonymity-using-vpn-stop/"
 #:title "How DNS Leaks Can Destroy Anonymity When Using a VPN, And How
-to Stop Them" #:author "Dann Albright" #:date "May 14, 2015"
-#:publication "MakeUseOf"]} it might leak IPV6 connections to your
-ISP.
+to Stop Them" #:author "Dann Albright" #:date "14 May 2015"
+#:publication "MakeUseOf"]} it might leak IPV6
+connections to your ISP.
 
 ◊sub-heading{Domain Name Servers}
 
@@ -214,10 +216,10 @@ there are ways to avoid leaking this information to your ISP. You can
 choose a VPN provider that handles DNS queries. Or, at least on the
 most recent versions of Firefox, you can ask for your DNS queries to
 get sorted out over HTTPS (they'll be encrypted, and sent to a more
-trusted DNS service).◊note{◊cite-news[#:url
+trusted DNS service).◊note{◊declare-work[#:type "magazine/news" #:url
 "https://medium.com/@nykolas.z/dns-security-and-privacy-choosing-the-right-provider-61fc6d54b986"
 #:title "DNS Security and Privacy — Choosing the right provider"
-#:author "Nykolas Z" #:date "April 18, 2018" #:publication
+#:author "Nykolas Z" #:date "18 April 2018" #:publication
 "medium.com"]}
 
 ◊fig[#:src "assets/dns-over-https.png"]{The latest version of Firefox
@@ -229,10 +231,10 @@ requests onto HTTPS and not DNS requests from other applications.}
 End-to-end encryption means that messages are encrypted the entire way
 between you and the intended recipient. Nobody other than you two can
 read the messages, not even the company running the
-service.◊note{◊cite-news[#:url
+service.◊note{◊declare-work[#:type "magazine/news" #:url
 "https://ssd.eff.org/en/module/what-should-i-know-about-encryption#3"
 #:title "Transport-Layer Encryption or End-to-End Encryption?"
-#:publication "Electronic Frontier Foundation" #:date "November 24,
+#:publication "Electronic Frontier Foundation" #:date "24 November
 2018"]} WhatsApp and Signal are two messaging services that work this
 way. They both use the same open-source encryption protocol. WhatsApp
 has an optional cloud-backup system that circumvents this encryption
