@@ -63,7 +63,8 @@
 
 (define (video-player #:src src #:width [width #f] . caption)
   `(figure
-    (video [[id "player"][playsinline ""][controls ""],(when width `[width ,width])] (source [[src ,src][type "video/mp4"]]))
+    (div [[class "vid-wrapper"] ,(when/splice width `[style ,(format "width: ~a;" width)])]
+     (video [[id "player"][playsinline ""][controls ""][width "100%"]] (source [[src ,src][type "video/mp4"]])))
     (figcaption ,@caption)
     ))
 
