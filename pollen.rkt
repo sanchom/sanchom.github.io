@@ -61,9 +61,9 @@
     (figcaption ,@caption)
     ))
 
-(define (gfyfig #:gfy gfy #:width [width #f] . caption)
+(define (video-player #:src src #:width [width #f] . caption)
   `(figure
-    (div [[class "gfy-wrapper"] ,(when/splice width `[style ,(format "width: ~a;" width)])] (div ([class "gfyitem"][data-id ,gfy][data-autoplay "true"][data-responsive "true"])))
+    (video [[id "player"][playsinline ""][controls ""],(when width `[width ,width])] (source [[src ,src][type "video/mp4"]]))
     (figcaption ,@caption)
     ))
 

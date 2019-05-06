@@ -44,7 +44,7 @@ of the branchlets, there are two layers of needles: a bottom layer
 with needles splayed out to the sides, and a top layer with needles
 more aligned with the branch itself.}
 
-◊gfyfig[#:gfy "AdeptGrimAtlanticspadefish" #:width "450px"]{Here you
+◊video-player[#:src "assets/amabilis_fir.mp4" #:width "450px"]{Here you
 can see the marked difference between the deep green upper surfaces
 and the silvery undersides of the amabilis fir's needles. And,
 you can see the two layers of needles: one splayed out and one angled
@@ -58,8 +58,6 @@ hemlock, they are not splayed out into a flat plane. The upper and
 lower surfaces of the needles are the same color; this tree's stomata
 are spread fairly uniformly on both sides of the needle and they don't
 have as distinct a wax bloom.}
-
-◊gfyfig[#:gfy "WetPlaintiveEyra" #:width "450px"]{Mountain hemlock}
 
 ◊heading{Western hemlock (◊em{Tsuga heterophylla})}
 
@@ -78,7 +76,7 @@ underside of the needles have two bright lines of stomata.}
 western hemlock's cones are small (about 2◊nbsp[]cm) compared to the
 mountain hemlock's cones (3-8◊nbsp[]cm).}
 
-◊gfyfig[#:gfy "UnpleasantInformalGangesdolphin" #:width "450px"]{One
+◊video-player[#:src "assets/western_hemlock.mp4" #:width "450px"]{One
 apparently distinctive feature of the western hemlock is its
 dropped-over top (the leader), but I've never been able to use that
 cue to reliably identify this species.}

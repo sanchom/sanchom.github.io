@@ -46,15 +46,6 @@
     ◊when/splice[am-home]{<link rel="canonical" href="https://sanchom.github.io/" />}
 </head>
   <body ◊when/splice[(need-right-margin? doc)]{class="print-with-right-margin"}>
-    <script>
-      (function(d, s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "https://assets.gfycat.com/gfycat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'gfycat-js'));
-    </script>
 <header>
   <nav>
     <div class="header">

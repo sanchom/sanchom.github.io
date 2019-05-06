@@ -8,7 +8,7 @@
 
 ◊title{One month in}
 
-◊gfyfig[#:gfy "grouchyneatbronco" #:width "360px"]{"I know kung fu."}
+◊video-player[#:src "assets/i_know_kung_fu.mp4" #:width "360px"]{"I know kung fu."}
 
 One month into law school, and I feel a little like Neo after being
 jacked into the information pipe. But, as you might remember from the
