@@ -11,6 +11,11 @@
 <changefreq>weekly</changefreq>
 </url>
 
+<url>
+<loc>https://sanchom.github.io/site-index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
 ◊(apply string-append (map (lambda (x)
                              (string-join `(,(format "<url>\n<loc>https://sanchom.github.io/~a</loc>\n" x)
                                             ,(if (select 'edited-date x) (format "<lastmod>~a</lastmod>\n" (select 'edited-date x))
