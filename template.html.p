@@ -30,6 +30,7 @@
        gtag('config', 'UA-106592360-1');
     </script>
     <meta name="google-site-verification" content="ApapaNT3CEd0OdSE-X9Xy4xF3r_gjtWDR05XS6FANu4" />
+    <meta name="msvalidate.01" content="E6A615B4A274D4C956DDF0ED5959BD59" />
 
     ◊when/splice[featured-image-url]{<meta name="twitter:card" content="summary_large_image" />}
     ◊when/splice[(not featured-image-url)]{<meta name="twitter:card" content="summary" />}
