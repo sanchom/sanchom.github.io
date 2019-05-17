@@ -372,6 +372,8 @@
                       #:author-family [author-family #f]
                       #:author2-given [author2-given #f]
                       #:author2-family [author2-family #f]
+                      #:author3-given [author3-given #f]
+                      #:author3-family [author3-family #f]
                       #:journal [journal #f]
                       #:year [year #f] ; alias for "date" --- incompatible with date
                       #:date [date #f] ; alias for "year" --- incompatible with year
@@ -410,6 +412,8 @@
                   'author-family (if author (get-family-from-author author) (clean-param author-family))
                   'author2-given (clean-param author2-given)
                   'author2-family (clean-param author2-family)
+                  'author3-given (clean-param author3-given)
+                  'author3-family (clean-param author3-family)
                   'journal (clean-param journal)
                   'publication (clean-param publication)
                   'year (if year year date)
@@ -498,9 +502,13 @@
   `(@ ,(hash-ref w 'author-given)
       " "
       ,(hash-ref w 'author-family)
-      ,(when/splice (hash-ref w 'author2-family) " & ")
+      ,(when/splice (and (hash-ref w 'author2-family) (not (hash-ref w 'author3-family))) " & ")
+      ,(when/splice (and (hash-ref w 'author2-family) (hash-ref w 'author3-family)) ", ")
       ,(when/splice (hash-ref w 'author2-given) (hash-ref w 'author2-given))
-      ,(when/splice (hash-ref w 'author2-family) " " (hash-ref w 'author2-family))
+      ,(when/splice (hash-ref w 'author2-family) (format " ~a" (hash-ref w 'author2-family)))
+      ,(when/splice (hash-ref w 'author3-family) " & ")
+      ,(when/splice (hash-ref w 'author3-given) (hash-ref w 'author3-given))
+      ,(when/splice (hash-ref w 'author3-family) (format " ~a" (hash-ref w 'author3-family)))
       ))
 
 (define (render-article w pinpoint parenthetical)
