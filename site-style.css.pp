@@ -143,6 +143,17 @@ margin-right: 0;
 overflow-x: auto;
 font-size: 0.7rem;}
 
+table.scc-stats { margin-top: 1rem; border-collapse: collapse; font-size: 0.8rem; text-align: left; hyphens: none;}
+th { border-bottom: 1px solid grey; }
+th, td { padding: 0.2rem; }
+tr:nth-child(even) { background-color: #fefefe; }
+div.full-width { width: 120%; }
+table.full-width { width: 100%; }
+td.intervener-cell { font-size: 0.6rem; }
+.as-of-right-column { padding-left: 1rem; padding-right: 1rem; }
+.intervener-cell ul { padding-left: 0.5rem; }
+.intervener-cell li { margin-left: 0rem; padding-left: 0rem;}
+
 ◊; Styles for sidenotes and margin-notes. Taken from Tufte-css.
 .sidenote, .margin-note, p.date {
 text-align: left;
@@ -216,11 +227,15 @@ display: -webkit-box;
 
 @media all {
 .print-only { display: none; }
+.small-screens-only { display: none; }
 }
 
 ◊; On small screens, do things a bit differently.
 @media screen and (max-width:◊|small-screen-trigger|px){
 html { font-size:◊|font-size-on-small-screens|px; }
+
+.small-screens-only { display: initial; }
+.drop-on-small-screens { display: none; }
 
 body {
 margin-top: 1em;
@@ -276,9 +291,21 @@ label { cursor: pointer; }
 
 li { margin-left: 1em; padding-left: 1em; }
 ul { margin-left: 0; padding-left: 0; }
+
+div.full-width { width: 100%; }
+table.full-width { width: 100%; }
 }
 
 @media print {
+.no-print { display: none; }
+div.full-width { width: 100%; }
+table.full-width { width: 100%; }
+tr { border-top: 1px solid grey; }
+
+a:link {
+text-decoration: underline;
+}
+
 .sidenote, .margin-expand:checked + .sidenote, .backlink, div.header { display: none; }
 .endnotes { display: block; }
 div#disqus_thread{ display: none; }
