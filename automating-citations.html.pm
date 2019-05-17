@@ -169,6 +169,10 @@ used.◊cite["secession"]
 
 ◊heading{No one should be spending time laying out citations}
 
+◊video-player[#:src "assets/500-times.mp4" #:width "450px"]{How many
+times did you check your citations?}
+
+
 This is one of the biggest wastes of time in law school. It is
 certainly important to be able to find the source a citation refers
 to, to know what needs to be cited, to understand what works or cases
