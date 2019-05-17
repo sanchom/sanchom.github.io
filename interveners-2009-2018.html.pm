@@ -40,10 +40,12 @@ Supreme Court of Canada decides a Charter case from the bench — again"
 ◊heading{Interveners revisited}
 
 I previously wrote about interveners at the Supreme Court of Canada
-◊a[#:href "interveners.html"]{here}. That was almost two years ago, so
-it is time for an update. This updated analysis is based on a more
-robust and complete collection of data spanning 2009--2018.◊note{Some
-of the fresh analysis was inspired by suggestions from Professor Emma
+◊a[#:href "interveners.html"]{here}. In that analysis, I observed that
+as-of-right appeals attracted many fewer interveners than did
+discretionary appeals. That was almost two years ago, so it is time
+for an update. This updated analysis is based on a more robust and
+complete collection of data spanning 2009--2018.◊note{Some of the
+fresh analysis was inspired by suggestions from Professor Emma
 Cunliffe, one of my criminal law professors. I also benefited from
 viewing an intervener dataset that she had coded but my analysis here
 is based on a fresh data acquisition and coding.}
