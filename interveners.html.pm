@@ -48,15 +48,15 @@ almost every U.S. Supreme Court case. 781 were submitted in the term
 spanning 2014--2015---an average of 12 per case---and 147 in the
 ◊a[#:href
 "http://www.scotusblog.com/case-files/cases/obergefell-v-hodges/"]{marriage
-equality} case alone.◊cite["Larsen"]◊cite["Franze"]
+equality} case alone.◊note-cite["Larsen"]◊note-cite["Franze"]
 
 Canada's closest analogue to the U.S.’s amici are called
 "interveners".◊note{Canada also has a role called an amicus curiae,
 but this is a person appointed by the court, not simply an interested
 third party.} From 2000--2008, interveners participated in only about
 50% of cases at the Supreme Court of Canada, averaging 2.4 interveners
-per case.◊cite["Alarie"] This was despite the court granting 94% of
-the requests to intervene.
+per case.◊note-cite["Alarie"] This was despite the court granting 94%
+of the requests to intervene.
 
 How has this changed since then? In the period from 2010--2016,
 interveners participated in appeals more frequently than they did from
@@ -81,9 +81,9 @@ have. Together, they accounted for 25% of all interventions from
 2010--2016. This is a noticeable decrease compared to the numbers from
 10 and 20 years ago. In the period from 2000--2008, attorneys general
 accounted for 37% of all interventions. In the period from 1997--1999,
-they accounted for 42%.◊cite["Burgess"] Non-government interveners
-like public interest groups, trade associations, and individuals are
-participating more now than ever before.
+they accounted for 42%.◊note-cite["Burgess"] Non-government
+interveners like public interest groups, trade associations, and
+individuals are participating more now than ever before.
 
 In the midst of this general increase in interventions, one category
 of cases continues to lag behind. Most of the caseload at the Supreme
@@ -93,7 +93,7 @@ they will hear the case. But, about 20--25% of the caseload at the
 Supreme Court of Canada consists of appeals that are heard "as of
 right"---automatically. As-of-right appeals generally involve
 indictable criminal offenses where one of the judges at the lower
-court disagreed with their court's decision.◊cite["Criminal Code"
+court disagreed with their court's decision.◊note-cite["Criminal Code"
 #:pinpoint "ss 691--693"] In 2016, only two of the fourteen appeals in
 that category attracted any interveners.
 

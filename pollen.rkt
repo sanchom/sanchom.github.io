@@ -408,7 +408,11 @@
     (raise-user-error "You specified both a year and a date. Use only one of these." `(,year ,date ,title)))
   (when (and pages first-page)
     (raise-user-error "You specified both pages and first-page. Use only one of these." `(,pages ,first-page)))
+  ; If id isn't specified, then just make a random one. This work will never be able to be cited.
+  (define id-to-use (if id (clean-param id) (clean-param (format "~a" (crypto-random-bytes 20)))))
+  (when (hash-has-key? work-metadata id-to-use) (raise-user-error "duplicate id" id-to-use))
   (define w (hash 'type type
+                  'id id-to-use
                   'title (clean-param title)
                   'author-given (if author (get-given-from-author author) (clean-param author-given))
                   'author-family (if author (get-family-from-author author) (clean-param author-family))
@@ -441,11 +445,8 @@
                                   `(span ,(style-title (clean-param short-form)))
                                   (make-short-form type (if author (get-family-from-author author) (clean-param author-family)) title))))
   (validate-work-or-die w)
-  ; If id isn't specified, then just make a random one. This work will never be able to be cited.
-  (define id-to-use (if id (clean-param id) (clean-param (format "~a" (crypto-random-bytes 20)))))
-  (when (hash-has-key? work-metadata id-to-use) (raise-user-error "duplicate id" id-to-use))  
   (hash-set! work-metadata id-to-use w)
-  (when (and (not id) (not (equal? and-render? "no"))) (render-work id-to-use)))
+  (when (and (not id) (not (equal? and-render? "no"))) (cite id-to-use)))
 
 (define (style-title markedup-title)
   (define italic-range (regexp-match-positions #rx"\\*.*\\*" markedup-title))
@@ -460,11 +461,26 @@
   (define stripped (strip-at pinpoint))
   `(@ ,(if (pinpoint-requires-at? stripped) " at " ", ") ,(normalize-pinpoint stripped)))
 
+(define (see id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
+  (cite id #:supra supra #:ibid ibid #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal "See"))
+
+(define (see-also id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
+  (cite id #:supra supra #:ibid ibid #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal "See also"))
+
+(define (but-see id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
+  (cite id #:supra supra #:ibid ibid #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal "But see"))
+
+(define (see-eg id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
+  (cite id #:supra supra #:ibid ibid #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal "See e.g."))
+
+(define (see-generally id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
+  (cite id #:supra supra #:ibid ibid #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal "See generally"))
+
 ; Renders a full note-form of the work.
-(define (render-work id #:in-note [in-note #f] #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f] #:signal [signal #f])
+(define (cite id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f] #:signal [signal #f])
   (define w (hash-ref work-metadata (clean-param id)))
   (if ibid
-      `(span [[class "bibliography-entry"]]
+      `(span [[class "bibliography-entry"] [data-citation-id ,id]]
              ,(when/splice signal signal " ")
              ,(if signal `(em "ibid") `(em "Ibid"))
              ,(when/splice parenthetical " (" parenthetical)
@@ -474,7 +490,7 @@
              ,(when/splice speaker " (" speaker ")") ; Only relevant for debates (TODO: consider specializing back-reference forms).
              ".")
       (if supra
-          `(span [[class "bibliography-entry"]]
+          `(span [[class "bibliography-entry"] [data-citation-id ,id]]
                  ,(when/splice signal signal " ")
                  ,(hash-ref w 'short-form) ", "
                  (em "supra") ,(format " note ~a" supra)
@@ -484,20 +500,27 @@
                  ,(when/splice parenthetical ")")
                  ,(when/splice speaker " (" speaker ")")
                  ".")
-          `(span [[class "bibliography-entry"]]
+          `(span [[class "bibliography-entry full-form-citation"]
+                  [data-citation-id ,id]
+                  [data-citation-pinpoint ,(if pinpoint pinpoint "false")]
+                  [data-citation-parenthetical ,(if parenthetical parenthetical "false")]
+                  [data-citation-judge ,(if judge judge "false")]
+                  [data-citation-speaker ,(if speaker speaker "false")]
+                  [data-citation-signal ,(if signal signal "false")]
+                  ]
                  ,(when/splice signal signal " ")
                  ,(case (hash-ref w 'type)
-                    [("article") (render-article in-note id w pinpoint parenthetical)]
-                    [("book") (render-book in-note id w pinpoint parenthetical)]
-                    [("thesis") (render-thesis in-note id w pinpoint parenthetical)]
-                    [("proceedings") (render-proceedings in-note id w pinpoint parenthetical)]
-                    [("unpublished") (render-unpublished in-note id w pinpoint parenthetical)]
-                    [("legal-case") (render-legal-case in-note id w pinpoint parenthetical judge)]
-                    [("legal-case-US") (render-legal-case-US in-note id w pinpoint parenthetical judge)]
-                    [("bill") (render-bill in-note id w pinpoint parenthetical)]
-                    [("statute") (render-statute in-note id w pinpoint parenthetical)]
-                    [("debate") (render-debate in-note id w pinpoint speaker)]
-                    [("magazine/news") (render-magazine/news in-note id w pinpoint parenthetical)]
+                    [("article") (render-article w pinpoint parenthetical)]
+                    [("book") (render-book w pinpoint parenthetical)]
+                    [("thesis") (render-thesis w pinpoint parenthetical)]
+                    [("proceedings") (render-proceedings w pinpoint parenthetical)]
+                    [("unpublished") (render-unpublished w pinpoint parenthetical)]
+                    [("legal-case") (render-legal-case w pinpoint parenthetical judge)]
+                    [("legal-case-US") (render-legal-case-US w pinpoint parenthetical judge)]
+                    [("bill") (render-bill w pinpoint parenthetical)]
+                    [("statute") (render-statute w pinpoint parenthetical)]
+                    [("debate") (render-debate w pinpoint speaker)]
+                    [("magazine/news") (render-magazine/news w pinpoint parenthetical)]
                     [else (raise-user-error "No implementation for rendering this type of citation: " (hash-ref w 'type))])))))
 
 (define (format-authors w)
@@ -513,7 +536,7 @@
       ,(when/splice (hash-ref w 'author3-family) (format " ~a" (hash-ref w 'author3-family)))
       ))
 
-(define (render-article in-note id w pinpoint parenthetical)
+(define (render-article w pinpoint parenthetical)
   (define styled-title (style-title (hash-ref w 'title)))
   `(@
     ,(format-authors w)
@@ -529,13 +552,13 @@
     " "
     ,(when/splice (hash-ref w 'forthcoming) " [forthcoming in " (hash-ref w 'forthcoming) "]")
     ,(when/splice (hash-ref w 'first-page) " " (hash-ref w 'first-page))
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
-(define (render-book in-note id w pinpoint parenthetical)
+(define (render-book w pinpoint parenthetical)
   (define styled-title (style-title (hash-ref w 'title)))
   `(@
     ,(when/splice (hash-ref w 'author-family) (format-authors w) ", ")
@@ -548,13 +571,13 @@
     ,(when/splice (or (hash-ref w 'publisher-location) (hash-ref w 'publisher)) ", ")
     ,(hash-ref w 'year)
     ")"
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
-(define (render-thesis in-note id w pinpoint parenthetical)
+(define (render-thesis w pinpoint parenthetical)
   (define styled-title (style-title (hash-ref w 'title)))
   `(@
     ,(format-authors w)
@@ -565,14 +588,14 @@
     ,(hash-ref w 'institution) ", "
     ,(hash-ref w 'year)
     ")"
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."
     ))
 
-(define (render-proceedings in-note id w pinpoint parenthetical)
+(define (render-proceedings w pinpoint parenthetical)
   (define styled-title (style-title (hash-ref w 'title)))
   `(@
     ,(format-authors w)
@@ -588,13 +611,13 @@
     ,(hash-ref w 'year)
     ")"
     ,(when/splice (hash-ref w 'first-page) " " (hash-ref w 'first-page))
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
-(define (render-unpublished in-note id w pinpoint parenthetical)
+(define (render-unpublished w pinpoint parenthetical)
   (define styled-title (style-title (hash-ref w 'title)))
   `(@
     ,(format-authors w)
@@ -604,13 +627,13 @@
     ,(when/splice (hash-ref w 'description) (hash-ref w 'description) ", ")
     ,(hash-ref w 'year)
     ")"
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
-(define (render-legal-case in-note id w pinpoint parenthetical judge)
+(define (render-legal-case w pinpoint parenthetical judge)
   (define url (hash-ref w 'url))
   (define title (hash-ref w 'title))
   `(@
@@ -619,14 +642,14 @@
     ", "
     ,(hash-ref w 'citation)
     ,(when/splice (and (not parenthetical) judge) ", " judge)
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice (and parenthetical judge) ", " judge)
     ,(when/splice parenthetical ")")
     "."))
 
-(define (render-legal-case-US in-note id w pinpoint parenthetical judge)
+(define (render-legal-case-US w pinpoint parenthetical judge)
   (define url (hash-ref w 'url))
   (define title (hash-ref w 'title))
   `(@
@@ -639,13 +662,13 @@
     ,(hash-ref w 'year)
     ")"
     ,(when/splice (and (not parenthetical) judge) ", " judge)
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice (and parenthetical judge) ", " judge)
     ,(when/splice parenthetical ")")
     "."))
 
-(define (render-bill in-note id w pinpoint parenthetical)
+(define (render-bill w pinpoint parenthetical)
   (define url (hash-ref w 'url))
   (define title (hash-ref w 'title))
   `(@
@@ -654,10 +677,10 @@
     ,(hash-ref w 'legislative-body) ", "
     ,(hash-ref w 'year)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     "."))
 
-(define (render-statute in-note id w pinpoint parenthetical)
+(define (render-statute w pinpoint parenthetical)
   (define url (hash-ref w 'url))
   (define title (hash-ref w 'title))
   `(@
@@ -668,10 +691,10 @@
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice parenthetical  ")")
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     "."))
 
-(define (render-debate in-note id w pinpoint speaker)
+(define (render-debate w pinpoint speaker)
   (define url (hash-ref w 'url))
   (define title (hash-ref w 'title))
   (define doc-string
@@ -686,10 +709,10 @@
     "(" ,(hash-ref w 'year) ")"
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice speaker " (" speaker ")")
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     "."))
 
-(define (render-magazine/news in-note id w pinpoint parenthetical)
+(define (render-magazine/news w pinpoint parenthetical)
   (define url (hash-ref w 'url))
   (define styled-title (style-title (hash-ref w 'title)))
   ; Note, title is the only required element.
@@ -698,7 +721,7 @@
     "“" ,(if url `(a [[href ,url]] ,styled-title) styled-title) "”"
     ,(when/splice (hash-ref w 'publication) ", " `(em ,(hash-ref w 'publication)))
     ,(when/splice (hash-ref w 'year) " (" (hash-ref w 'year) ")")
-    ,(when/splice in-note `(span [[id ,(format "sf-~a" id)]] " [" ,(hash-ref w 'short-form) "]"))
+    (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice pinpoint (format-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
@@ -717,29 +740,52 @@
            (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
            (label [[for ,subrefid] [class ,(if expanded "margin-note expanded" "margin-note")] [hyphens "none"]] ,@content))))
 
-(define (cite id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f] #:signal [signal #f] #:content-first [content-first #f] . content)
+(define (note-cite id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f] #:signal [signal #f])
   (define cleaned-id (clean-param id))
-  (define footnote-number (+ 1 (length footnote-list)))
-  (define first-cite
-    (if (hash-has-key? first-cites cleaned-id)
-        (hash-ref first-cites cleaned-id)
-        #f))
-  (define ibid
-    (if first-cite
-        (and (equal? (car most-recent-backref) cleaned-id) (equal? (- footnote-number 1) (cdr most-recent-backref)))
-        #f))
-  (when (and first-cite (not ibid)) (hash-set! short-form-needed cleaned-id #t))
-  (when (not (hash-has-key? first-cites cleaned-id)) (hash-set! first-cites cleaned-id footnote-number))
-  (set! most-recent-backref (cons cleaned-id footnote-number))
-  (note (when/splice content-first `(span ,@content) " ") (render-work cleaned-id #:in-note #t #:supra first-cite #:ibid ibid #:pinpoint pinpoint #:parenthetical (clean-param parenthetical) #:judge (clean-param judge) #:speaker (clean-param speaker) #:signal (clean-param signal)) (when/splice (or (equal? "no" content-first) (not content-first)) " " `(span ,@content))))
+  (note (cite cleaned-id #:supra #f #:ibid #f #:pinpoint pinpoint #:parenthetical (clean-param parenthetical) #:judge (clean-param judge) #:speaker (clean-param speaker) #:signal (clean-param signal))))
 
 ; Defines a little sidenote or footnote (depending on the mode), numbered, and by default collapsed
 ; to a small height. In print, these are all footnotes.
 (define (note #:expanded [expanded #f] . content)
   (define footnote-number (+ 1 (length footnote-list)))
+
+  ; Sweep through the content, replacing any data-short-form-pre-placeholder with data-short-form-placeholder
+  (define (transform-short-form-placeholder tx)
+    (if (attrs-have-key? tx 'data-short-form-pre-placeholder)
+        (txexpr (get-tag tx) `[[data-short-form-placeholder ,(attr-ref tx 'data-short-form-pre-placeholder)]] empty)
+        tx))
+
+  (define (extract-from-attr tx key)
+    (define value (attr-ref tx key))
+    (if (equal? value "false") #f value))
+
+  ; Collects reference-count and first-reference info and transforms subsequent references into supra/ibid forms.
+  (define (transform-full-cites-into-backrefs tx)
+    (if (and (attrs-have-key? tx 'class)
+             (string-contains? (attr-ref tx 'class) "full-form-citation"))
+        (let* ([id (attr-ref tx 'data-citation-id)]
+               [first-cite (if (hash-has-key? first-cites id) (hash-ref first-cites id) #f)]
+               [ibid (and first-cite (equal? (car most-recent-backref) id) (equal? (- footnote-number 1) (cdr most-recent-backref)))])
+          (when (and first-cite (not ibid)) (hash-set! short-form-needed id #t))
+          (when (not (hash-has-key? first-cites id)) (hash-set! first-cites id footnote-number))
+          (set! most-recent-backref (cons id footnote-number))
+          (if first-cite
+              (cite id #:supra first-cite #:ibid ibid #:pinpoint (extract-from-attr tx 'data-citation-pinpoint)
+                           #:parenthetical (extract-from-attr tx 'data-citation-parenthetical)
+                           #:judge (extract-from-attr tx 'data-citation-judge)
+                           #:speaker (extract-from-attr tx 'data-citation-speaker)
+                           #:signal (extract-from-attr tx 'data-citation-signal))
+              tx)
+         )
+        tx))
+
+  (define transformed-content
+    (decode-elements content
+                     #:txexpr-proc (compose1 transform-short-form-placeholder transform-full-cites-into-backrefs)))
+
   (set! footnote-list
         (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
-                                        ,(format "~a. " footnote-number) (a [[href ,(format "#fn-source-~a" footnote-number)] [class "backlink undecorated"]] " ↑ ") ,@content))))
+                                        ,(format "~a. " footnote-number) (a [[href ,(format "#fn-source-~a" footnote-number)] [class "backlink undecorated"]] " ↑ ") ,@transformed-content))))
   (define refid (format "fn-~a" footnote-number))
   (define subrefid (format "fn-~a-expand" footnote-number))
   (if (equal? note-mode "sidenotes")
@@ -747,7 +793,7 @@
              (span (label [[for ,refid] [class "margin-toggle sidenote-number"]])
                    (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
                    (input [[type "checkbox"] [id ,subrefid] [class "margin-expand"]])
-                   (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@content)))
+                   (label [[for ,subrefid] [class ,(if expanded "sidenote expanded" "sidenote")] [hyphens "none"]] ,@transformed-content)))
       `(span [[class "sidenote-wrapper"]]
              (a [[href ,(format "#fn-~a" footnote-number)] [class "undecorated"]] (span [[class "sidenote-number"] [id ,(format "fn-source-~a" footnote-number)]])))))
 
@@ -773,18 +819,13 @@
              #:omit-txexpr omission-test
              #:omit-word (λ (x) (or (non-breakable-capitalized? x) (ligs? x)))))
 
-; If this is a short-form span (detectable by looking at whether the id attribute starts with 'sf-'),
-; then we hide its contents unless it is needed (i.e. if it has been referred to later).
-(define (hide-unnecessary-short-forms tx)
-  (define (short-form-needed? short-form-id)
-    (define id (substring short-form-id 3))
+(define (show-necessary-short-forms tx)
+  (define (short-form-needed? id)
     (and (hash-has-key? short-form-needed id)
          (hash-ref short-form-needed id)))
-  (if (and (attrs-have-key? tx 'id)
-           (string-contains? (attr-ref tx 'id) "sf-"))
-      (if (short-form-needed? (attr-ref tx 'id))
-          tx
-          (txexpr (get-tag tx) (get-attrs tx) empty))
+  (if (and (attrs-have-key? tx 'data-short-form-placeholder)
+           (short-form-needed? (attr-ref tx 'data-short-form-placeholder)))
+      (txexpr (get-tag tx) (get-attrs tx) `(" [" ,(hash-ref (hash-ref work-metadata (attr-ref tx 'data-short-form-placeholder)) 'short-form) "]"))
       tx))
 
 (define (add-html-footnotes tx)
@@ -802,7 +843,7 @@
   (decode (txexpr 'root empty (get-elements
                                (decode (add-html-footnotes (txexpr 'root empty elements))
                                        #:exclude-tags '(pre)
-                                       #:txexpr-proc (compose1 custom-hyphenation hide-unnecessary-short-forms)
+                                       #:txexpr-proc (compose1 custom-hyphenation show-necessary-short-forms)
                                        ; Double line breaks create new paragraphs. Single line breaks are ignored.
                                        #:txexpr-elements-proc decode-double-breaks-into-paras
                                        #:string-proc (compose1 smart-quotes smart-dashes))))

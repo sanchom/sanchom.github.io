@@ -134,29 +134,29 @@ Quebec" #:citation "[1998] 2 SCR 217" #:url
 
 ◊tt{◊lozenge[]declare-work[...]} doesn't do anything except tell the
 rendering system about the work. In order to actually display that
-citation to you, I have to call ◊tt{◊lozenge[]cite["secession"]}.
+citation to you, I have to call ◊tt{◊lozenge[]note-cite["secession"]}.
 
 So, if I write this:
 
 ◊codeblock{
 
-You see a note that cites the secession reference.◊lozenge[]cite["secession"]
+You see a note that cites the secession reference.◊lozenge[]note-cite["secession"]
 
 }
 
-You see a note that cites the secession reference.◊cite["secession"]
+You see a note that cites the secession reference.◊note-cite["secession"]
 
 And if I write this:
 
 ◊codeblock{
 
 You see a second citation to the secession reference, this one with a
-pinpoint.◊lozenge[]cite["secession" #:pinpoint "paragraph 49"]
+pinpoint.◊lozenge[]note-cite["secession" #:pinpoint "paragraph 49"]
 
 }
 
 You see a second citation to the secession reference, this one with a
-pinpoint.◊cite["secession" #:pinpoint "paragraph 49"] It isn't a
+pinpoint.◊note-cite["secession" #:pinpoint "paragraph 49"] It isn't a
 mistake that the source calls for a pinpoint to "paragraph 49" but
 what you're seeing in the footnote is "para 49". The system knows that
 paragraphs are properly pinpointed using "para" in McGill style.
@@ -165,7 +165,7 @@ If there is an intervening footnote,◊note{Intervening footnote.} then
 the subsequent citation to the secession reference will use the
 short-form that was first declared in ◊tt{◊lozenge[]declare-work} and
 it will also refer back to the initial footnote in which it was first
-used.◊cite["secession"]
+used.◊note-cite["secession"]
 
 ◊heading{No one should be spending time laying out citations}
 

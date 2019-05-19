@@ -39,15 +39,15 @@ Bedford" #:citation "2013 SCC 72" #:url
 ◊fig[#:src "assets/raymond-palmore-cell.jpg"]{Used with permission
 from Raymond Palmore. Drawn during his time at Corcoran State
 Prison.◊note{Read how art can help people in solitary confinement
-express their experiences. ◊render-work["Ziegler1" #:signal "See"]
-◊render-work["Ziegler2" #:signal "See also"]}}
+express their experiences. ◊cite["Ziegler1" #:signal "See"]
+◊cite["Ziegler2" #:signal "See also"]}}
 
 CBC's ◊em{Quirks and Quarks} had a segment this week about the
-psychology of solitary confinement.◊cite["Quirks"] Bob McDonald
+psychology of solitary confinement.◊note-cite["Quirks"] Bob McDonald
 interviewed Dr. Craig Haney, one of the expert witnesses in the BC
 Supreme Court case that resulted in portions of Canada's
 solitary-confinement regime being struck down as
-unconstitutional.◊cite["BCCLA"]◊note{Canada
+unconstitutional.◊note-cite["BCCLA"]◊note{Canada
 appealed that result. The appeal was heard on November 13, 2018. The
 decision has not been announced as of February 9, 2019.}
 
@@ -63,7 +63,7 @@ evidence was essential to the judge's finding that the way that we
 currently use solitary confinement "places all Canadian federal
 inmates subject to it at significant risk of serious psychological
 harm, including mental pain and suffering, and increased incidence of
-self-harm and suicide."◊cite["BCCLA" #:pinpoint "para 247"]
+self-harm and suicide."◊note-cite["BCCLA" #:pinpoint "para 247"]
 
 I did not listen to or read transcripts of the testimony of the
 scientific experts in this case. This comment is based only on the
@@ -78,12 +78,12 @@ and systematic reviews.
 ◊sub-heading{Plaintiff's experts}
 
 The evidence supports a claim that solitary confinement causes various
-harmful effects.◊cite["BCCLA" #:pinpoint "paras 163--194"] There is a
-large body of clinical and experimental research establishing that
-when you restrict a person's environmental and social stimulation,
-they suffer. Dr. Grassian has observed, in prisoners in solitary
-confinement, a rare confluence of psychiatric symptoms which we
-already know can be caused by restricting environmental and social
+harmful effects.◊note-cite["BCCLA" #:pinpoint "paras 163--194"] There
+is a large body of clinical and experimental research establishing
+that when you restrict a person's environmental and social
+stimulation, they suffer. Dr. Grassian has observed, in prisoners in
+solitary confinement, a rare confluence of psychiatric symptoms which
+we already know can be caused by restricting environmental and social
 stimulation. There is a correlation with the onset of the
 intervention: introduction of solitary confinement predictably shifts
 EEG patterns towards that characteristic of stupor and
@@ -133,7 +133,7 @@ by the plaintiffs' experts"), but these conclusions cannot be drawn
 from a negative results in low-powered studies.
 
 Suedfeld ◊em{et al} (1982), a study relied upon by the government,
-gives contradictory and weak evidence.◊cite["BCCLA" #:pinpoint "para
+gives contradictory and weak evidence.◊note-cite["BCCLA" #:pinpoint "para
 200"] "A relationship was found between the length of stay and
 measures of depression and hostility" (a dose-response relationship;
 one of the Bradford Hill criteria that points in favour of finding an
@@ -147,7 +147,7 @@ the effect.
 The government experts pushed the court to rely on longitudinal
 studies, which are more like an experiment in that they observe what
 happens before and after the onset of an intervention. They believe
-the "Zinger study" to be worth significant weight.◊cite["BCCLA"
+the "Zinger study" to be worth significant weight.◊note-cite["BCCLA"
 #:pinpoint "paras 203--204"] The population for this study was 83
 segregated plus 53 general-population prisoners. The segregated
 population initially reported more depressive symptoms, but not on a
@@ -192,20 +192,20 @@ this pattern in a body of research is an indicator of a small or
 non-existent effect. But, using this move depends on an accurate
 assessment of a study's scientific rigor, and Dr. Grassian, one of the
 plaintiff's experts, criticized the selection criteria for the Morgan
-study.◊cite["BCCLA" #:pinpoint "para 234"]
+study.◊note-cite["BCCLA" #:pinpoint "para 234"]
 
 Regardless, the government expert concludes: "the findings do not
 support the notion that, as a group, inmates in segregation suffer
 ◊elide when compared with inmates outside of segregation."
 
 Two things are important from this conclusion. It is a conclusion "as
-a group".◊cite["BCCLA" #:pinpoint "para 207"] And again, even taken at
-face value, it is only a failure to find positive evidence for the
-effect, not positive evidence that there is no effect. With an effect
-that might vary within specialized subpopulations, and subjective
-psychological measures involving self-reporting that the participants
-may have motivations or incentives for hiding, it isn't unexpected
-that a meta-analysis would find no evidence for an effect.
+a group".◊note-cite["BCCLA" #:pinpoint "para 207"] And again, even
+taken at face value, it is only a failure to find positive evidence
+for the effect, not positive evidence that there is no effect. With an
+effect that might vary within specialized subpopulations, and
+subjective psychological measures involving self-reporting that the
+participants may have motivations or incentives for hiding, it isn't
+unexpected that a meta-analysis would find no evidence for an effect.
 
 Last, the government relies on the "Colorado Study". But, there is one
 criticism of the study that is so fatal to its relevance that I will
@@ -217,15 +217,15 @@ prisoners' self-reporting. According to the self-report scales, there
 was no deterioration within the segregated population over the course
 of 12 months. The crisis records show the opposite. Only 12 episodes
 occurred in the first six months; 25 occurred in the second six
-months.◊cite["BCCLA" #:pinpoint "para 237"]
+months.◊note-cite["BCCLA" #:pinpoint "para 237"]
 
 The methodological weaknesses in both the "Colorado study" and the
 "Zinger study" also affect the relevance of the Morgan and Gendreau
 meta-analysis because they were both included in the small set of
-studies meeting the selection criteria◊cite["BCCLA" #:pinpoint "para
-234"], and the "Colorado study" was one of the studies identified to
-be weighted as having a "stronger" quality design.◊cite["BCCLA"
-#:pinpoint "para 243"]
+studies meeting the selection criteria◊note-cite["BCCLA" #:pinpoint
+"para 234"], and the "Colorado study" was one of the studies
+identified to be weighted as having a "stronger" quality
+design.◊note-cite["BCCLA" #:pinpoint "para 243"]
 
 ◊heading{Discussion}
 
@@ -253,8 +253,8 @@ effect in a high power study can be very compelling evidence.
 That is a tricky distinction and I am impressed that Justice Leask saw
 it. In this case, evidence that was obtained by methods that are
 generally less robust was owed more weight than evidence obtained by
-methods that are generally more robust.◊cite["BCCLA" #:pinpoint "para
-254"]
+methods that are generally more robust.◊note-cite["BCCLA" #:pinpoint
+"para 254"]
 
 In a Section 7 challenge◊note{That is, when a plaintiff challenges a
 government law or act on the basis that it infringes upon their
@@ -265,7 +265,7 @@ only need to show a "sufficient causal connection" between the
 government action and the harm. They don't need to show that solitary
 confinement is "the only or the dominant cause" of the harms. And,
 they only need to establish "a reasonable inference, drawn on a
-balance of probabilities."◊cite["Bedford" #:pinpoint "para 76"]
+balance of probabilities."◊note-cite["Bedford" #:pinpoint "para 76"]
 Justice Leask found that the plaintiffs met that burden.
 
 ◊heading{Related media}
@@ -291,6 +291,6 @@ of Criminology" #:volume "1" #:pages "285--310" #:url
 "https://www.annualreviews.org/doi/10.1146/annurev-criminol-032317-092326"
 #:year "2017"]
 
-◊render-work["Ziegler1"]
+◊cite["Ziegler1"]
 
-◊render-work["Ziegler2"]
+◊cite["Ziegler2"]

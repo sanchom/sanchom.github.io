@@ -159,7 +159,7 @@ Sims" #:year "1929" #:citation "232 Ky 791" #:jurisdiction "CA" #:id
 "Edwards"]
 
 ◊li{The dissent here, which reads like something by
-Lovecraft. ◊render-work["Edwards" #:judge "Logan J, dissenting"]}
+Lovecraft. ◊cite["Edwards" #:judge "Logan J, dissenting"]}
 
 ◊li{◊declare-work[#:type "article" #:author "Jeremy Waldron" #:journal
 "UCLA Law Review" #:year "1991" #:volume "39" #:pages "295--324"

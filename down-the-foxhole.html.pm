@@ -73,7 +73,7 @@ Available" #:author "Douglas Applegate" #:volume "8" #:issue "2"
 "1992" #:id "Applegate"]
 
 In our Property Law course, we are now reading about possession. Our
-case book mentioned ◊em{Pierson v Post}◊note{◊render-work["Pierson"]
+case book mentioned ◊em{Pierson v Post}◊note{◊cite["Pierson"]
 There's a good ◊a[#:href
 "https://en.wikipedia.org/wiki/Pierson_v._Post"]{Wikipedia article}
 too.} in a note, and that led me down a trail of reading this past
@@ -83,10 +83,10 @@ week.
 
 Lodowick Post was in pursuit of a fox. Another person, Jesse Pierson,
 killed the fox and took it for himself. The issue is whether Post has
-any property right in the fox that he was hunting.◊cite["Fernandez,
-Lost Record" #:signal "See" #:content-first "yes"]{I've presented only
-the scant facts as outlined in the case. Much more has been learned
-about this case since then.}
+any property right in the fox that he was hunting.◊note{I've presented
+only the scant facts as outlined in the case. Much more has been
+learned about this case since then. ◊cite["Fernandez, Lost
+Record" #:signal "See"]}
 
 ◊sub-heading{The decision}
 
@@ -114,19 +114,19 @@ The dissent (Judge ◊a[#:href
 Livingstone}) disagrees and gives an argument based on judicial
 deference, labour, economic efficiency, and some interesting
 assumptions about the role of the fox hunt in New York in
-1805.◊cite["Fernandez, Serious Mock" #:signal "See" #:content-first
-"yes"]{While I treat this dissent at face value, there is another
+1805.◊note{While I treat this dissent at face value, there is another
 dimension at play here that resists "straightforward
 interpretation". Angela Fernandez sees this dissent as an example of a
-genre she calls "solemn foolery".}
+genre she calls "solemn foolery". ◊cite["Fernandez, Serious
+Mock" #:signal "See"]}
 
 First, Livingstone says the court should have just asked the
 "sportsmen" (the fox hunters) what would rule would have made sense in
 the context of their activity. (Today, this contextual approach has
-been embraced in the common law.◊cite["Popov" #:signal "See"]{"These
-rules are contextual in nature. They are crafted in response to the
-unique nature of the conduct they seek to regulate. Moreover, they are
-influenced by the custom and practice of each industry."})
+been embraced in the common law.◊note{"These rules are contextual in
+nature. They are crafted in response to the unique nature of the
+conduct they seek to regulate. Moreover, they are influenced by the
+custom and practice of each industry." ◊cite["Popov"]}
 
 Regarding labour, economic incentives, and the role of the fox hunt,
 he says (emphasis and translations mine):
@@ -186,8 +186,8 @@ implicitly) choose a "welfare" function: an accounting of things that
 you want to see increase and things that you want to see decreases. A
 paper by Dharmapala and Pitchford actually works through the effect
 that the majority's rule and Livingstone's rule would have on the
-number of foxes killed.◊cite["Dharmapala"] The results under their
-initial assumptions roughly match Livingstone's intuition in his
+number of foxes killed.◊note-cite["Dharmapala"] The results under
+their initial assumptions roughly match Livingstone's intuition in his
 dissent. The paper is fairly readable even if you ignore every
 equation.
 
@@ -212,10 +212,10 @@ intruder gets the fox, why does it cancel perfectly to zero?
 It turns out that hunters found pleasure in the hunt even if they
 didn't end up catching a fox. They also may have sought to maintain
 the fox population. A "bagged" (live) fox was worth more than a dead
-fox.◊cite["McDowell"] Again, this demonstrates that economic arguments
-are only as convincing as the factors they consider.
+fox.◊note-cite["McDowell"] Again, this demonstrates that economic
+arguments are only as convincing as the factors they consider.
 
-How would the Coase theorem apply here?◊cite["Coase"] Perhaps the
+How would the Coase theorem apply here?◊note-cite["Coase"] Perhaps the
 hunters would pay people to stay clear of their hunt. The hunters
 would have to pay the intruders as much money as they'd otherwise be
 able to fetch by freeloading. But this seems untenable, because more
@@ -223,14 +223,14 @@ and more people could show up demanding payment to stay out of the way
 of the hunt. Historically, though, it seems that rather than the
 intruders being mere freeloaders, they were farmers just trying to
 ensure the foxes got killed, to prevent injury to their own
-animals.◊cite["McDowell"] If the only people that were intruding were
-farmers at risk of losing animals to foxes, then a Coasian solution
-could actually play out. The hunters would pay the farmers for damage
-that happens to come to their farms due to foxes: a kind of
-tax/insurance for having a pure hunt.◊cite["McDowell"] Another option
-would be payments to the owner(s) of the land on which the hunt takes
-place in exchange for the exclusive right to hunt. (Although, the fox
-in ◊em{Pierson v Post} was killed on a public beach.)
+animals.◊note-cite["McDowell"] If the only people that were intruding
+were farmers at risk of losing animals to foxes, then a Coasian
+solution could actually play out. The hunters would pay the farmers
+for damage that happens to come to their farms due to foxes: a kind of
+tax/insurance for having a pure hunt.◊note-cite["McDowell"] Another
+option would be payments to the owner(s) of the land on which the hunt
+takes place in exchange for the exclusive right to hunt. (Although,
+the fox in ◊em{Pierson v Post} was killed on a public beach.)
 
 ◊sub-heading{Application: cybersquatting}
 
@@ -245,7 +245,7 @@ undertook the initial investment of effort.
 
 Dharmapala and Pitchford argue that ◊a[#:href
 "https://en.wikipedia.org/wiki/Cybersquatting"]{cybersquatting}
-matches this scenario.◊cite["Dharmapala"] Should a domain name be
+matches this scenario.◊note-cite["Dharmapala"] Should a domain name be
 given to the first person to register it without regard to whether
 another has already developed a brand around that name? Or should a
 person who has put in the "honour and labour" of developing a company
@@ -258,7 +258,7 @@ domain, rather than the cybersquatter.
 ◊sub-heading{Application: patent law}
 
 This analysis has also been applied to criticize some outcomes of
-patent law.◊cite["Oullette"]
+patent law.◊note-cite["Oullette"]
 
 Patent law can result in a division of rights between an initial
 inventor and subsequent inventors that improve upon the original. An
@@ -267,8 +267,8 @@ actually invented. Improvements are patentable separately by
 subsequent inventors. But a subsequent inventor having improved upon a
 previous patent could not sell the improved variant without a licence
 from the holder of the original patent when that improvement builds
-upon the original.◊cite["Silverman"]◊cite["Applegate"] And, the
-original inventor would need to get a licence from the improver in
+upon the original.◊note-cite["Silverman"]◊note-cite["Applegate"] And,
+the original inventor would need to get a licence from the improver in
 order to use their improvement.
 
 The current law rewards early investment. We give patents to
@@ -290,9 +290,8 @@ But, what if we allocate rights too early? What if the original
 inventor gets rights while they are still in "mere pursuit" of the
 invention? As per Livingstone's analysis, this will discourage the
 saucy intruder. Here, though, the saucy intruder is a would-be
-inventor, a would-be improver. We don't want to discourage
-this activity. That would work against the goals of the patent
-system.
+inventor, a would-be improver. We don't want to discourage this
+activity. That would work against the goals of the patent system.
 
 Oullette argues that this happens when we give people patents that are
 too speculative and that require undue experimentation on the part of
@@ -300,8 +299,8 @@ anyone wanting to use the patent. These patents don't do much to lower
 the barrier to further improvement, but they reward the original
 "inventor" with an unearned right to exclude. This discourages the
 flurry of improvement patents that one might normally see after a
-sufficiently disclosed invention is patented.◊cite["Oullette"] She
-argues that this is a defect in the examination process.
+sufficiently disclosed invention is patented.◊note-cite["Oullette"]
+She argues that this is a defect in the examination process.
 
 ◊sub-heading{How people use this case}
 

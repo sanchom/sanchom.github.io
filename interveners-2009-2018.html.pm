@@ -79,7 +79,7 @@ about 20--25% of the caseload at the Supreme Court of Canada consists
 of appeals that are heard "as of right"---automatically. As-of-right
 appeals generally involve indictable criminal offenses where one of
 the judges at the lower court disagreed with their court's
-decision.◊cite["Criminal Code" #:pinpoint "ss 691--693"]
+decision.◊note-cite["Criminal Code" #:pinpoint "ss 691--693"]
 
 ◊sub-heading{Overall intervention rate}
 
@@ -87,7 +87,7 @@ decision.◊cite["Criminal Code" #:pinpoint "ss 691--693"]
 of interventions has increased slightly over the past ten years: from
 about 60% to about 66%. And earlier, from 2000--2008, interveners
 participated in only about 50% of cases at the Supreme Court of
-Canada.◊cite["Alarie"]}
+Canada.◊note-cite["Alarie"]}
 
 ◊sub-heading{Keeping it short}
 
@@ -115,11 +115,12 @@ appeal should be allowed substantially for the reasons of Hoegg J.A.
 [2] Justice Côté would dismiss the appeal substantially for the
 reasons of the majority in the Court of Appeal.  }
 
-This trend has been observed and criticized elsewhere. ◊cite["Novac"
-#:parenthetical "\"[w]hile oral judgments are an efficient way for the
-SCC to dispense with straightforward appeals, too many oral judgments
-risks obscuring the reasoning behind the Court’s decisions, which in
-turn may hinder the development of jurisprudence\""]◊cite["Goldenberg"
+This trend has been observed and criticized
+elsewhere. ◊note-cite["Novac" #:parenthetical "\"[w]hile oral
+judgments are an efficient way for the SCC to dispense with
+straightforward appeals, too many oral judgments risks obscuring the
+reasoning behind the Court’s decisions, which in turn may hinder the
+development of jurisprudence\""]◊note-cite["Goldenberg"
 #:parenthetical "\"[w]hen the Court gives only brief oral reasons for
 judgment, it narrows its circle of its analysis almost to the
 vanishing point\""]

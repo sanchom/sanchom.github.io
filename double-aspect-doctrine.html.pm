@@ -69,25 +69,26 @@ spheres of jurisdiction by the ◊em{Constitution Act, 1867}. The
 federal structure of our country also facilitates democratic
 participation by distributing power to the government thought to be
 most suited to achieving the particular societal objective having
-regard to this diversity.◊cite["secession" #:pinpoint "paras 55--60"]}
+regard to this diversity.◊note-cite["secession" #:pinpoint "paras
+55--60"]}
 
 But, this division of power is not watertight. "The history of
 Canadian constitutional law has been to allow for a fair amount of
 interplay and indeed overlap between federal and provincial
-powers."◊cite["OPSEU" #:pinpoint "para 27"] One way that this overlap
-plays out is through the double-aspect doctrine.
+powers."◊note-cite["OPSEU" #:pinpoint "para 27"] One way that this
+overlap plays out is through the double-aspect doctrine.
 
-◊em{Multiple Access Ltd v McCutcheon}◊cite["Multiple Access"], the
-case generally used to introduce the double-aspect doctrine, conflates
-two kinds of doubleness and this can lead to an overly narrow
-conception of the doctrine. This article presents how I've come to
-think of the double-aspect doctrine and one way of teasing apart the
-ways in which the doctrine is used.
+◊em{Multiple Access Ltd v McCutcheon}◊note-cite["Multiple Access"],
+the case generally used to introduce the double-aspect doctrine,
+conflates two kinds of doubleness and this can lead to an overly
+narrow conception of the doctrine. This article presents how I've come
+to think of the double-aspect doctrine and one way of teasing apart
+the ways in which the doctrine is used.
 
 ◊em{Multiple Access} concerned legislation enacted by the federal and
 Ontario governments with provisions that overlapped significantly both
 in their expression and in the people and conduct covered. Look at
-section 100.4 of the ◊em{Canada Corporations Act}◊cite["CCA"
+section 100.4 of the ◊em{Canada Corporations Act}◊note-cite["CCA"
 #:pinpoint "s 100.4(1)" #:parenthetical "\"Every insider of a company,
 every person employed or retained by the company, the auditor of the
 company and every associate of the insider and affiliate of the
@@ -103,7 +104,7 @@ time of such transaction, and is also accountable to the company for
 any direct benefit or advantage received or receivable by such
 insider, employed or retained person, auditor, associate or affiliate,
 as the case may be, as a result of the transaction\""] and section 113
-of Ontario's ◊em{Securities Act}◊cite["OSA" #:pinpoint "s 113(1)"
+of Ontario's ◊em{Securities Act}◊note-cite["OSA" #:pinpoint "s 113(1)"
 #:parenthetical "\"Every insider of a corporation or associate or
 affiliate of such insider, who, in connection with a transaction
 relating to the capital securities of the corporation, makes use of
@@ -160,11 +161,10 @@ split between its provincial and federal features, then the court will
 find both the provincial and federal provisions valid. This is what
 happened in ◊em{Multiple Access}.
 
-◊q{
-◊elide some overlapping inevitably remains. Where this occurs, either
-one of two things has then been done. First, the nature of ◊u{the
-challenged law} relevant to a provincial class of powers has been
-completely ignored as only an "incidental affectation" of the
+◊q{ ◊elide some overlapping inevitably remains. Where this occurs,
+either one of two things has then been done. First, the nature of
+◊u{the challenged law} relevant to a provincial class of powers has
+been completely ignored as only an "incidental affectation" of the
 provincial sphere, and ◊u{the law} concerned has been classed only by
 that feature of it relevant to a federal class of laws. Thus, in spite
 of the logical overlap the decision is made that only the federal
@@ -185,21 +185,21 @@ However, the double-aspect doctrine is not so narrow: it is used even
 when duplication is not an issue. In 1883, the Privy Council
 characterized it broadly: "subjects which in one aspect and for one
 purpose fall within section 92, may in another aspect and for another
-purpose fall within section 91."◊cite["Hodge"] Some notes in
+purpose fall within section 91."◊note-cite["Hodge"] Some notes in
 ◊em{Canadian Constitutional Law} try to explain this, but it's easy to
-miss.◊cite["Macklem" #:pinpoint "233"] In its broadest conception, the
-double-aspect doctrine explains any scenario where the courts allow
-legislation from our two levels of government to touch a particular
-field. The double-aspect doctrine is not reserved for cases where the
-two levels of government play tug-of-war over a provision; it is also
-at play when they play tug-of-war over a field, through ◊em{different
-provisions}, through ◊em{different} law.
+miss.◊note-cite["Macklem" #:pinpoint "233"] In its broadest
+conception, the double-aspect doctrine explains any scenario where the
+courts allow legislation from our two levels of government to touch a
+particular field. The double-aspect doctrine is not reserved for cases
+where the two levels of government play tug-of-war over a provision;
+it is also at play when they play tug-of-war over a field, through
+◊em{different provisions}, through ◊em{different} law.
 
 "In most cases, application of the doctrine simply entails the court
 evidencing a willingness to apply the pith and substance doctrine
 flexibly, and to characterize similar federal and provincial
 enactments in such a manner as to permit the court to uphold both
-enactments as valid."◊cite["Macklem" #:pinpoint "233"]
+enactments as valid."◊note-cite["Macklem" #:pinpoint "233"]
 
 Here are some more recent statements that demonstrate the breadth of
 the doctrine:
@@ -207,15 +207,16 @@ the doctrine:
 ◊q{ Activities, acts or conduct can sometimes be viewed from different
 normative perspectives, one relating to a federal power and the other
 to a provincial power. Where this is the case, the double aspect
-doctrine is engaged.◊cite["Reproduction reference" #:pinpoint "para
-185"]}
+doctrine is engaged.◊note-cite["Reproduction reference" #:pinpoint
+"para 185"]}
 
 ◊q{ "Double occupancy" of a field of endeavour, such as health, is a
 permanent feature of the Canadian constitutional order. It leads to a
 standard "double aspect" analysis under which both aspects subsist
-side by side.◊cite["Reproduction reference" #:pinpoint "para 67"]}
+side by side.◊note-cite["Reproduction reference" #:pinpoint "para
+67"]}
 
 ◊q{ [G]aming is a matter that falls within the "double aspect"
 doctrine.  Accordingly, gaming can be subject to legislation by both
-the federal and provincial governments.◊cite["Siemens" #:pinpoint
+the federal and provincial governments.◊note-cite["Siemens" #:pinpoint
 "para 22"]}

@@ -47,7 +47,7 @@ the first doctor (the author of the critical blog post) to back
 down. Even if the first doctor would have a valid defence
 (e.g. because they've only stated the truth) it can be so costly to
 defend oneself that they might think that their only viable option is
-to take down the blog.◊cite["Tobinick"]
+to take down the blog.◊note-cite["Tobinick"]
 
 That is a SLAPP. You can find many other stories at ◊a[#:href
 "https://anti-slapp.org/slapp-stories"]{anti-slapp.org}.
@@ -78,13 +78,14 @@ I'll clarify some terminology that I'll use throughout the article:
 
 BC's forthcoming anti-SLAPP legislation is in the ◊a[#:href
 "https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"]{◊em{Protection
-of Public Participation Act}} (BC ◊em{PPPA}).◊cite["BC PPPA"] It's a
-short read, and written pretty clearly.
+of Public Participation Act}} (BC ◊em{PPPA}).◊note-cite["BC PPPA"]
+It's a short read, and written pretty clearly.
 
 This is a re-introduction of last session's Bill 32, which stalled
 out, seemingly because of some interest in seeing how ◊a[#:href
 "https://www.ontario.ca/laws/statute/S15023"]{Ontario's very similar
-act}◊cite["ON PPPA"] would play out in their courts.◊note{◊a[#:href
+act}◊note-cite["ON PPPA"] would play out in their
+courts.◊note{◊a[#:href
 "https://twitter.com/sobittersosweet/status/1095767698657529856"]{Shannon
 Waters}: "I poked at Bill 32 for months, trying to find out why it
 stalled. @jjhorgan said BC doesn't want run into the same issues
@@ -110,19 +111,20 @@ of Canada, ◊a[#:href
 "https://www.ulcc.ca/images/stories/2016_pdf_en/2016ulcc0031.pdf"]{◊em{Uniform
 Protection of Public Participation Act}}, 2017.}, and Ontario's
 Act. This is because the ◊em{BC PPPA} is based on the Uniform Act
-which is in turn based on the Ontario Act.◊note{◊render-work["1st
-reading" #:pinpoint "4742"] Or, ◊a[#:href
+which is in turn based on the Ontario Act.◊note{◊cite["1st reading"
+#:pinpoint "4742"] Or, ◊a[#:href
 "https://videoarchive.leg.bc.ca/Harmony/en/PowerBrowser/PowerBrowserV2?viewmode=3&fk=201805151000-house&startposition=957"]{watch
 the video}!}
 
 The core provision of each of these acts is essentially
-identical.◊cite["BC PPPA" #:pinpoint "clause 4(2)(b)"] It requires the
-anti-SLAPP applicant (the defendant) to establish first that the
-proceedings relate to expression made by the applicant that relates to
-a matter of public interest. If the applicant shows this, then the
-burden shifts to the anti-SLAPP respondent (the plaintiff) to convince
-the judge that the case has sufficient merit and that the public
-interest weighs in favour of allowing the proceedings to continue.
+identical.◊note-cite["BC PPPA" #:pinpoint "clause 4(2)(b)"] It
+requires the anti-SLAPP applicant (the defendant) to establish first
+that the proceedings relate to expression made by the applicant that
+relates to a matter of public interest. If the applicant shows this,
+then the burden shifts to the anti-SLAPP respondent (the plaintiff) to
+convince the judge that the case has sufficient merit and that the
+public interest weighs in favour of allowing the proceedings to
+continue.
 
 Another essential piece is how costs are handled. If the anti-SLAPP
 applicant successfully gets the litigation dismissed, they are
@@ -132,8 +134,8 @@ plaintiff brought the original proceeding on bad faith, they can award
 damages to the anti-SLAPP applicant. On the other hand, if the
 anti-SLAPP motion is not successful, and the proceeding is not
 dismissed, the anti-SLAPP respondent (the plaintiff) is not entitled
-to costs. This is a very defendant-friendly costs regime.◊cite["BC
-PPPA" #:pinpoint "clauses 7--8"]
+to costs. This is a very defendant-friendly costs
+regime.◊note-cite["BC PPPA" #:pinpoint "clauses 7--8"]
 
 BC and Ontario both differ from the Uniform Act regarding what
 proceedings they will apply to. The Uniform Act recommends that the
@@ -154,8 +156,8 @@ anti-SLAPP motion be heard as soon as practicable.
 An interesting piece is how anti-SLAPP motions interact with
 administrative or tribunal proceedings. Once a defendant has filed an
 anti-SLAPP motion, they can use that notice of application to put the
-administrative proceeding on hold.◊cite["BC PPPA" #:pinpoint "clause
-11"] The Uniform Law Conference explains:
+administrative proceeding on hold.◊note-cite["BC PPPA" #:pinpoint
+"clause 11"] The Uniform Law Conference explains:
 
 ◊q{ This provision aims to give a prospective plaintiff reason to
 think carefully before launching a lawsuit against its critics. Often
@@ -170,12 +172,12 @@ compared to US anti-SLAPP legislation. Canadian legislation tells the
 court to ask whether "the harm likely to have been or to be suffered
 by the respondent as a result of the applicant's expression is serious
 enough that the public interest in continuing the proceeding outweighs
-the public interest in protecting that expression."◊cite["BC PPPA"
-#:pinpoint "clause 4(2)(b)"] In order to proceed after the defendant
-has proven their side of an anti-SLAPP motion, the plaintiff has to
-convince the court (among other things) that the expression at issue
-is causing them serious enough harm to warrant putting that expression
-to the test of a full-fledged defamation litigation.
+the public interest in protecting that expression."◊note-cite["BC
+PPPA" #:pinpoint "clause 4(2)(b)"] In order to proceed after the
+defendant has proven their side of an anti-SLAPP motion, the plaintiff
+has to convince the court (among other things) that the expression at
+issue is causing them serious enough harm to warrant putting that
+expression to the test of a full-fledged defamation litigation.
 
 This kind of balancing is not found in the Institute for Justice's
 ◊a[#:href
