@@ -85,8 +85,7 @@ Lodowick Post was in pursuit of a fox. Another person, Jesse Pierson,
 killed the fox and took it for himself. The issue is whether Post has
 any property right in the fox that he was hunting.◊note{I've presented
 only the scant facts as outlined in the case. Much more has been
-learned about this case since then. ◊cite["Fernandez, Lost
-Record" #:signal "See"]}
+learned about this case since then. ◊see["Fernandez, Lost Record"]}
 
 ◊sub-heading{The decision}
 
@@ -117,8 +116,7 @@ assumptions about the role of the fox hunt in New York in
 1805.◊note{While I treat this dissent at face value, there is another
 dimension at play here that resists "straightforward
 interpretation". Angela Fernandez sees this dissent as an example of a
-genre she calls "solemn foolery". ◊cite["Fernandez, Serious
-Mock" #:signal "See"]}
+genre she calls "solemn foolery". ◊see["Fernandez, Serious Mock"]}
 
 First, Livingstone says the court should have just asked the
 "sportsmen" (the fox hunters) what would rule would have made sense in

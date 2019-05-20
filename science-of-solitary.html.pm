@@ -39,8 +39,7 @@ Bedford" #:citation "2013 SCC 72" #:url
 ◊fig[#:src "assets/raymond-palmore-cell.jpg"]{Used with permission
 from Raymond Palmore. Drawn during his time at Corcoran State
 Prison.◊note{Read how art can help people in solitary confinement
-express their experiences. ◊cite["Ziegler1" #:signal "See"]
-◊cite["Ziegler2" #:signal "See also"]}}
+express their experiences. ◊see["Ziegler1"] ◊see-also["Ziegler2"]}}
 
 CBC's ◊em{Quirks and Quarks} had a segment this week about the
 psychology of solitary confinement.◊note-cite["Quirks"] Bob McDonald
