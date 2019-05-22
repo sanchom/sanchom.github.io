@@ -4,6 +4,7 @@
 ◊define-meta[short-title]{Interveners revisited}
 ◊define-meta[snippet]{A dataset and analysis of 10 years of interventions at the Supreme Court of Canada.}
 ◊define-meta[original-date]{2019-05-16}
+◊define-meta[edited-date]{2019-05-22}
 
 
 ◊declare-work[#:type "statute" #:title "Criminal Code" #:volume "RSC"
@@ -40,7 +41,10 @@ Supreme Court of Canada decides a Charter case from the bench — again"
 ◊heading{Interveners revisited}
 
 I previously wrote about interveners at the Supreme Court of Canada
-◊a[#:href "interveners.html"]{here}. In that analysis, I observed that
+◊a[#:href "interveners.html"]{here}. (◊a[#:href
+"https://supremeadvocacy.ca/articles/intervening-in-the-supreme-court-of-canada/"]{Interveners},
+like amici curiae in the US, are third parties that provide
+supplemental arguments in a case.) In that analysis, I observed that
 as-of-right appeals attracted many fewer interveners than did
 discretionary appeals. That was almost two years ago, so it is time
 for an update. This updated analysis is based on a more robust and
