@@ -2,7 +2,7 @@
 
 ◊define-meta[page-title]{The double-aspect doctrine}
 ◊define-meta[original-date]{2018-12-26}
-◊define-meta[edited-date]{2019-02-17}
+◊define-meta[edited-date]{2019-05-24}
 ◊define-meta[snippet]{Teasing apart the ways in which the double-aspect doctrine is used.}
 ◊use-footnotes[]
 
@@ -45,6 +45,10 @@ Reproduction Act" #:citation "2010 SCC 61" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/2033/index.do" #:id
 "Siemens"]
 
+◊declare-work[#:type "legal-case" #:title "Reference re Environmental
+Management Act (British Columbia)" #:citation "2019 BCCA 181" #:url
+"https://www.courts.gov.bc.ca/jdb-txt/ca/19/01/2019BCCA0181.htm" #:id
+"Pipeline reference"]
 
 ◊title{The double-aspect doctrine}
 
@@ -56,7 +60,17 @@ Court of Appeal to decide (among other things) whether the province
 has the power to make certain amendments to the to the Environmental
 Management Act that would affect a proposed pipeline being built by
 the federal government. See the ◊a[#:href
-"https://news.gov.bc.ca/releases/2018PREM0019-000742"]{news release}.}
+"https://news.gov.bc.ca/releases/2018PREM0019-000742"]{news
+release}. Update: The BC Court of Appeal rejected the province's
+characterization that is reflected in this diagram.◊note{"Part 2.1
+does cross the line between environmental laws of general application
+and the regulation of federal undertakings. Even if it were not
+intended to 'single out' the TMX pipeline, it has the potential to
+affect (and indeed 'stop in its tracks') the entire operation of Trans
+Mountain as an interprovincial carrier and exporter of oil. It is
+legislation that in pith and substance relates to, and relates only
+to, what makes the pipeline “specifically of federal jurisdiction.”"
+◊cite["Pipeline reference" #:pinpoint "para 101"]}}
 
 Federalism is a broad subcategory within Canadian constitutional
 law. In this context, federalism refers to the division of law-making
