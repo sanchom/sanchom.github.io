@@ -458,7 +458,7 @@
       `(@ ,markedup-title)))
 
 (define (format-pinpoint pinpoint)
-  (define stripped (strip-at pinpoint))
+  (define stripped (strip-at (clean-param pinpoint)))
   `(@ ,(if (pinpoint-requires-at? stripped) " at " ", ") ,(normalize-pinpoint stripped)))
 
 ; Aliases to simplify citations that use signals.
@@ -524,7 +524,7 @@
                   [data-citation-speaker ,(if speaker speaker "false")]
                   [data-citation-signal ,(if signal signal "false")]
                   ]
-                 ,(when/splice signal signal " ")
+                 ,(when/splice signal (format "~a " signal))
                  ,(case (hash-ref w 'type)
                     [("article") (render-article w pinpoint parenthetical)]
                     [("book") (render-book w pinpoint parenthetical)]

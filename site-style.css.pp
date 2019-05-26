@@ -25,6 +25,8 @@
              font-weight: normal;
              font-style: normal; }
 
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap&subset=latin-ext');
+
 ◊; Responsive font sizes
 ◊(define width-for-max-font 920)
 ◊(define size-steps 6)
@@ -34,6 +36,7 @@
 ◊(define background-color "#fdfaf3")
 ◊(define dark-text-color "#111")
 ◊(define light-text-color "#373737")
+◊(define very-light-text-color "#888")
 ◊(define blockquote-border-color "#a9a9a9")
 
 @media all {html {font-size: ◊|max-font-size|px;}}
@@ -130,7 +133,7 @@ background: #b4d5fe;
 ◊; Core styles for commonly used elements.
 p, li, blockquote {line-height: 1.5;}
 ul {list-style: circle outside;}
-li {padding-left: 1em;}
+li {padding-left: 1em; text-align: left;}
 
 blockquote { border-left: 5px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
 .code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
@@ -271,6 +274,27 @@ position: static;
 font-size: 0.7rem;
 }
 
+.sidenote-number:after {
+font-family: et-book;
+content: counter(sidenote-counter);
+color: ◊|very-light-text-color|;
+border: 1px solid ◊|very-light-text-color|;
+font-size: 0.8em;
+top: -0.1rem;
+left: 0.1rem;
+padding-left: 0.35em;
+padding-right: 0.35em;
+border-radius: 50%;
+}
+
+.sidenote-comma {
+visibility:hidden;
+position: relative;
+font-size: 1em;
+top: 0.0rem;
+left: 0.1rem;
+}
+
 label.margin-toggle:not(.sidenote-number) { display: inline; }
 .margin-note, .sidenote { display: none; }
 .margin-toggle:checked ~ .sidenote,
@@ -320,13 +344,16 @@ position: static;
 font-size: 0.7rem;
 }
 html { font-size: 13px; }
-body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; }
+body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; font-family: 'Source Serif Pro', serif;}
 body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
 @page {
 margin-top: 1.5in;
 margin-bottom: 1.5in;
 margin-left: 1.5in;
 margin-right: 1.5in;
+}
+.sidenote-number:after, .sidenote:before {
+font-family: 'Source Serif Pro', serif;
 }
 .margin-note {
 text-align: left;

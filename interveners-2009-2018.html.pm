@@ -120,14 +120,13 @@ appeal should be allowed substantially for the reasons of Hoegg J.A.
 reasons of the majority in the Court of Appeal.  }
 
 This trend has been observed and criticized
-elsewhere. ◊note-cite["Novac" #:parenthetical "\"[w]hile oral
-judgments are an efficient way for the SCC to dispense with
-straightforward appeals, too many oral judgments risks obscuring the
-reasoning behind the Court’s decisions, which in turn may hinder the
-development of jurisprudence\""]◊note-cite["Goldenberg"
-#:parenthetical "\"[w]hen the Court gives only brief oral reasons for
-judgment, it narrows its circle of its analysis almost to the
-vanishing point\""]
+elsewhere.◊note-cite["Novac" #:parenthetical "\"[w]hile oral judgments
+are an efficient way for the SCC to dispense with straightforward
+appeals, too many oral judgments risks obscuring the reasoning behind
+the Court’s decisions, which in turn may hinder the development of
+jurisprudence\""]◊note-cite["Goldenberg" #:parenthetical "\"[w]hen the
+Court gives only brief oral reasons for judgment, it narrows its
+circle of its analysis almost to the vanishing point\""]
 
 ◊fig[#:src
 "assets/criminal-appeals-aor-with-short-judgements-intervener-or-not.png"]{As
