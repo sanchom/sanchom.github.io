@@ -118,8 +118,10 @@ The panel:
 
 Dylan Mazur, community lawyer with the BCCLA, and
 
-Michelle Cameron, a Senior Investigator with the Civilian Review and
-Complaints Commission for the RCMP.
+Michelle Cameron, former analyist and then Senior Investigator with
+the Civilian Review and Complaints Commission for the RCMP, now with
+UBC as an advisor/investigator for investigations of sexual misconduct
+on campus.
 
 }
 
