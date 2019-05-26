@@ -329,6 +329,13 @@ tr { border-top: 1px solid grey; }
 
 a:link {
 text-decoration: underline;
+background: #ffffff;
+-webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+-moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+background-repeat: no-repeat, no-repeat, repeat-x;
+text-shadow: 0.03em 0 #ffffff, -0.03em 0 #ffffff, 0 0.03em #ffffff, 0 -0.03em #ffffff, 0.06em 0 #ffffff, -0.06em 0 #ffffff, 0.09em 0 #ffffff, -0.09em 0 #ffffff, 0.12em 0 #ffffff, -0.12em 0 #ffffff, 0.15em 0 #ffffff, -0.15em 0 #ffffff;
+background-position: 0% 93%, 100% 93%, 0% 93%;
 }
 
 .sidenote, .margin-expand:checked + .sidenote, .backlink, div.header { display: none; }
