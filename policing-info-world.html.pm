@@ -157,7 +157,7 @@ The panel:
 
 Peter Edelmann, an immigration lawyer, and
 
-Meghan McDermott, BCCLA's policy staff council.
+Meghan McDermott, BCCLA's policy staff counsel.
 
 }
 
