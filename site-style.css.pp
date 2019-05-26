@@ -35,9 +35,10 @@
 ◊(define small-screen-trigger (- width-for-max-font (* (- size-steps 1) 40)))
 ◊(define background-color "#fdfaf3")
 ◊(define dark-text-color "#111")
-◊(define light-text-color "#373737")
+◊(define light-text-color "#474747")
 ◊(define very-light-text-color "#888")
 ◊(define blockquote-border-color "#a9a9a9")
+◊(define highlight-color "#8A0707")
 
 @media all {html {font-size: ◊|max-font-size|px;}}
 ◊(apply string-append (map (lambda (x)
@@ -61,7 +62,7 @@ h1 {font-size: 2.2em; font-style: normal;}  ◊; Reserved for titles
 h2 {font-size: 1.5em; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
 h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
 
-.warning { color: #8A0707; }
+.warning { color: ◊|highlight-color|; }
 
 .center { text-align: center; }
 
