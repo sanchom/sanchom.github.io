@@ -12,6 +12,10 @@
   (xexpr-path-first '(Body) (xml->xexpr (document-element
                                          (read-xml (open-input-file "cars.xml"))))))
 
+; Bold+emphasis
+(define (bem . content)
+  `(b (em ,@content)))
+
 (define (replace-definedtermen input-txexpr)
   (define content (get-elements input-txexpr))
   (if (equal? (get-tag input-txexpr) 'DefinedTermEn)

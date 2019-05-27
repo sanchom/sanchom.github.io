@@ -91,7 +91,7 @@ decision.◊note-cite["Criminal Code" #:pinpoint "ss 691--693"]
 of interventions has increased slightly over the past ten years: from
 about 60% to about 66%. And earlier, from 2000--2008, interveners
 participated in only about 50% of cases at the Supreme Court of
-Canada.◊note-cite["Alarie"]}
+Canada.◊note-see["Alarie"]}
 
 ◊sub-heading{Keeping it short}
 
@@ -120,11 +120,11 @@ appeal should be allowed substantially for the reasons of Hoegg J.A.
 reasons of the majority in the Court of Appeal.  }
 
 This trend has been observed and criticized
-elsewhere.◊note-cite["Novac" #:parenthetical "\"[w]hile oral judgments
+elsewhere.◊note-see["Novac" #:parenthetical "\"[w]hile oral judgments
 are an efficient way for the SCC to dispense with straightforward
 appeals, too many oral judgments risks obscuring the reasoning behind
 the Court’s decisions, which in turn may hinder the development of
-jurisprudence\""]◊note-cite["Goldenberg" #:parenthetical "\"[w]hen the
+jurisprudence\""]◊note-see["Goldenberg" #:parenthetical "\"[w]hen the
 Court gives only brief oral reasons for judgment, it narrows its
 circle of its analysis almost to the vanishing point\""]
 
