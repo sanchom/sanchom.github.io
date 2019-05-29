@@ -56,7 +56,7 @@
     </div>
   </nav>
   <div style="clear: both;"></div>
-  ◊when/splice[am-home]{<h1 class="center">Sancho McCann</h1><h3 class="center">Law, tech, writing, art.</h3>}
+  ◊when/splice[am-home]{<h1 class="center">Sancho McCann</h1><p class="subtitle center">Law, tech, writing, art.</h3>}
 </header>
 <div style="clear: both;"></div>
 <article>

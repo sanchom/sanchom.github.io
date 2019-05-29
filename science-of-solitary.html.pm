@@ -11,7 +11,7 @@ October 2014" #:url
 "Ziegler1"]
 
 ◊declare-work[#:type "magazine/news" #:author "Treacy Ziegler" #:title
-"The art of absolute lonliness" #:publication "Broad Street Review"
+"The art of absolute loneliness" #:publication "Broad Street Review"
 #:date "3 June 2014" #:url
 "https://www.broadstreetreview.com/art/the-art-of-absolute-lonelines"
 #:id "Ziegler2"]

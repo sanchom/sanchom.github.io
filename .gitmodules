@@ -1,3 +1,6 @@
 [submodule "et-book"]
 	path = et-book
 	url = https://github.com/edwardtufte/et-book.git
+[submodule "source-serif-pro"]
+	path = source-serif-pro
+	url = https://github.com/adobe-fonts/source-serif-pro

@@ -1,44 +1,112 @@
 #lang pollen
 ◊(require racket/list)
 
-@font-face { font-family: "et-book";
-             src: url("et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-             src: url("et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-             font-weight: normal;
-             font-style: normal; }
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500&display=swap');
 
-@font-face { font-family: "et-book";
-             src: url("et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-             src: url("et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
-             font-weight: normal;
-             font-style: italic; }
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-Light.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-Light.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-Light.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-Light.ttf') format('truetype');
+}
 
-@font-face { font-family: "et-book";
-             src: url("et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-             src: url("et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
-             font-weight: bold;
-             font-style: normal; }
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-LightIt.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-LightIt.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-LightIt.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-LightIt.ttf') format('truetype');
+}
 
-@font-face { font-family: "et-book-roman-old-style";
-             src: url("et-book/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-             src: url("et-book/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-             font-weight: normal;
-             font-style: normal; }
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-Regular.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-Regular.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-Regular.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-Regular.ttf') format('truetype');
+}
 
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap&subset=latin-ext');
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-It.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-It.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-It.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-It.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-Semibold.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-Semibold.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-Semibold.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-Semibold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-SemiboldIt.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-SemiboldIt.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-SemiboldIt.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-SemiboldIt.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-Bold.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-Bold.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-Bold.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Source Serif Pro';
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('source-serif-pro/WOFF2/TTF/SourceSerifPro-BoldIt.ttf.woff2') format('woff2'),
+         url('source-serif-pro/WOFF/OTF/SourceSerifPro-BoldIt.otf.woff') format('woff'),
+         url('source-serif-pro/OTF/SourceSerifPro-BoldIt.otf') format('opentype'),
+         url('source-serif-pro/TTF/SourceSerifPro-BoldIt.ttf') format('truetype');
+}
+
 
 ◊; Responsive font sizes
 ◊(define width-for-max-font 920)
 ◊(define size-steps 6)
-◊(define max-font-size 22)
-◊(define font-size-on-small-screens 18)
+◊(define max-font-size 21)
+◊(define font-size-on-small-screens 17)
 ◊(define small-screen-trigger (- width-for-max-font (* (- size-steps 1) 40)))
 ◊(define background-color "#fdfaf3")
 ◊(define dark-text-color "#111")
 ◊(define light-text-color "#474747")
 ◊(define very-light-text-color "#888")
 ◊(define blockquote-border-color "#a9a9a9")
+◊(define blockquote-background-color "#f6f3f3")
 ◊(define highlight-color "#8A0707")
+
+◊(define main-font "'Source Serif Pro'")
 
 @media all {html {font-size: ◊|max-font-size|px;}}
 ◊(apply string-append (map (lambda (x)
@@ -46,7 +114,7 @@
       (range 0 size-steps)))
 
 body {
-font-family: et-book, "Book Antiqua", serif;
+font-family: ◊|main-font|, serif;
 margin-top: 5em; margin-bottom: 5em; margin-left: 10%; margin-right: 33%;
 max-width: 40em;
 background-color: ◊|background-color|;
@@ -56,11 +124,13 @@ counter-reset: sidenote-counter;
 }
 
 ◊; Only h1, h2, and h3 should be used.
-h1, h2, h3, h4, h5, h6 {clear: left; font-style: italic; font-weight: 400; text-align: left;}
+h1, h2, h3, h4, h5, h6 {clear: left; text-align: left;}
 
-h1 {font-size: 2.2em; font-style: normal;}  ◊; Reserved for titles
-h2 {font-size: 1.5em; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
-h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
+h1 {font-size: 2.0em; font-weight: 400;}  ◊; Reserved for titles
+h2 {font-size: 1.3em; font-weight: 600; margin-top: 1.5em; border-top: solid 0.5px; padding-top: 0.5em;}  ◊; The main headings on a page
+h3 {font-size: 1.3em; font-weight: 600;}  ◊; Sub-headings, used sparingly
+
+b { font-weight: 600;}
 
 .warning { color: ◊|highlight-color|; }
 
@@ -68,7 +138,7 @@ h3 {font-size: 1.2em;}  ◊; Sub-headings, used sparingly
 
 p.date {font-size: 0.8em; font-style: italic; text-align: right;}
 
-p.subtitle {font-size: 1.2em; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
+p.subtitle {font-size: 1.2em; font-weight: 300; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
 
 div#disqus_thread {margin-top: 3rem;}
 
@@ -137,17 +207,19 @@ ul {list-style: circle outside;}
 li {padding-left: 1em; text-align: left;}
 
 blockquote { border-left: 5px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
-.code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.code { font-family: "Source Code Pro", "Liberation Mono", Menlo, Courier, monospace; }
 span.code {font-size: 0.8rem;}
 span.outline {outline: 1px dotted ◊|blockquote-border-color|;}
 blockquote.code {
-border-left: 10px solid ◊|blockquote-border-color|;
+border-top: 1px solid ◊|blockquote-border-color|;
+border-bottom: 1px solid ◊|blockquote-border-color|;
+background-color: ◊|blockquote-background-color|;
 margin-left: 0;
 margin-right: 0;
 overflow-x: auto;
 font-size: 0.7rem;}
 
-table.scc-stats { margin-top: 1rem; border-collapse: collapse; font-size: 0.8rem; text-align: left; hyphens: none;}
+table.scc-stats { margin-top: 1rem; border-collapse: collapse; font-size: 0.7rem; text-align: left; hyphens: none;}
 th { border-bottom: 1px solid grey; }
 th, td { padding: 0.2rem; }
 tr:nth-child(even) { background-color: #fefefe; }
@@ -194,22 +266,22 @@ line-height: 1.3;
 .sidenote-number { counter-increment: sidenote-counter; }
 
 .sidenote-number:after, .sidenote:before {
-font-family: et-book-roman-old-style;
+font-family: ◊|main-font|;
 position: relative;
 vertical-align: baseline;
 }
 
 .sidenote-number:after {
 content: counter(sidenote-counter);
-font-size: 0.7rem;
-top: -0.5rem;
+font-size: 0.65rem;
+top: -0.35rem;
 left: 0.1rem;
 }
 
 .sidenote-comma {
 position: relative;
-font-size: 0.7rem;
-top: -0.5rem;
+font-size: 0.65rem;
+top: -0.35rem;
 left: 0.1rem;
 }
 
@@ -276,7 +348,7 @@ font-size: 0.7rem;
 }
 
 .sidenote-number:after {
-font-family: et-book;
+font-family: ◊|main-font|;
 content: counter(sidenote-counter);
 color: ◊|very-light-text-color|;
 border: 1px solid ◊|very-light-text-color|;
@@ -352,7 +424,7 @@ position: static;
 font-size: 0.7rem;
 }
 html { font-size: 13px; }
-body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; font-family: 'Source Serif Pro', serif;}
+body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; font-family: "Bitstream Charter", "Century Schoolbook", serif;}
 body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
 @page {
 margin-top: 1.5in;

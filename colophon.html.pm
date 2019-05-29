@@ -4,7 +4,9 @@
 
 ◊title{Colophon}
 
-The typeface is ◊a[#:href "https://edwardtufte.github.io/et-book/"]{ET Book}.
+The typeface is ◊a[#:href
+"https://github.com/adobe-fonts/source-serif-pro"]{Source Serif Pro}
+for the main text and Source Code Pro for codeblocks.
 
 I write this site using ◊a[#:href "https://www.gnu.org/software/emacs/"]{Emacs} and
 ◊a[#:href "https://racket-lang.org/"]{DrRacket} in a custom markup language that is

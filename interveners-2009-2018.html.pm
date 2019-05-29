@@ -233,7 +233,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/2670/index.do"]{Lipson v. Canada}}, 2009 SCC 1}◊td{}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=32041"]{1}]}
@@ -437,7 +437,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/7840/index.do"]{R. v. J.Z.S.}}, 2010 SCC 1}◊td{crim.}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{◊ul{◊li{Attorney General of Alberta}◊li{Attorney General of Canada}◊li{Attorney General of Manitoba}◊li{Attorney General of Ontario}◊li{Attorney General of Quebec}◊li{Justice for Children and Youth}}◊p['((class "small-screens-only"))]{Details:  [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=32942"]{1}]}}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=32942"]{1}]}
@@ -656,7 +656,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/7913/index.do"]{Celgene Corp. v. Canada (Attorney General)}}, 2011 SCC 1}◊td{}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=33579"]{1}]}
@@ -872,7 +872,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/7986/index.do"]{Toronto-Dominion Bank v. Canada}}, 2012 SCC 1}◊td{}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=33878"]{1}]}
@@ -1115,7 +1115,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/12805/index.do"]{R. v. Manning}}, 2013 SCC 1}◊td{crim.}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{◊ul{◊li{Attorney General of Ontario}◊li{British Columbia Civil Liberties Association}◊li{Canadian Civil Liberties Association}◊li{Director of Public Prosecutions of Canada}}◊p['((class "small-screens-only"))]{Details:  [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=34358"]{1}]}}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=34358"]{1}]}
@@ -1352,7 +1352,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/13409/index.do"]{Vivendi Canada Inc. v. Dell’Aniello}}, 2014 SCC 1}◊td{}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{◊ul{◊li{Alliance of Manufacturers & Exporters Canada, also known as Canadian Manufacturers & Exporters}◊li{Canadian Chamber of Commerce}}◊p['((class "small-screens-only"))]{Details:  [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=34800"]{1}]}}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=34800"]{1}]}
@@ -1601,7 +1601,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/14577/index.do"]{Mounted Police Association of Ontario v. Canada (Attorney General)}}, 2015 SCC 1}◊td{}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{◊ul{◊li{Association des membres de la police montée du Québec}◊li{Attorney General of Alberta}◊li{Attorney General of British Columbia}◊li{Attorney General of Ontario}◊li{Attorney General of Saskatchewan}◊li{British Columbia Civil Liberties Association}◊li{Canadian Civil Liberties Association}◊li{Canadian Labour Congress}◊li{Canadian Police Association}◊li{Confédération des syndicats nationaux}◊li{Mounted Police Members' Legal Fund}◊li{Public Service Alliance of Canada}}◊p['((class "small-screens-only"))]{Details:  [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=34948"]{1}]}}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=34948"]{1}]}
@@ -1817,7 +1817,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/15695/index.do"]{Canadian Pacific Railway Co. v. Canada (Attorney General)}}, 2016 SCC 1}◊td{}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{◊ul{◊li{Railway Association of Canada}}◊p['((class "small-screens-only"))]{Details:  [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=36223"]{1}]}}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=36223"]{1}]}
@@ -2003,7 +2003,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/16325/index.do"]{Ernst v. Alberta Energy Regulator}}, 2017 SCC 1}◊td{}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{◊ul{◊li{Attorney General of Quebec}◊li{British Columbia Civil Liberties Association}◊li{Canadian Civil Liberties Association}◊li{David Asper Centre for Constitutional Rights}}◊p['((class "small-screens-only"))]{Details:  [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=36167"]{1}]}}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=36167"]{1}]}
@@ -2213,7 +2213,7 @@ Note: In the tables below, "A.o.R" means "as of right".
 ◊div['((class "full-width"))]{
 ◊table['((class "scc-stats full-width"))]{
 ◊tr{
-◊th{Citation}◊th{Criminal?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
+◊th{Citation}◊th{Crim?}◊th['((class "as-of-right-column"))]{A.o.R.?}◊th{Interveners}◊th['((class "no-print drop-on-small-screens"))]{Details}
 }
 ◊tr{
 ◊td{◊em{◊a[#:href "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/16957/index.do"]{R. v. Seipp}}, 2018 SCC 1}◊td{crim.}◊td['((class "as-of-right-column"))]{}◊td['((class "intervener-cell"))]{◊ul{◊li{Director of Public Prosecutions of Canada}}◊p['((class "small-screens-only"))]{Details:  [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=37513"]{1}]}}◊td['((class "no-print drop-on-small-screens"))]{ [◊a[#:href "https://www.scc-csc.ca/case-dossier/info/parties-eng.aspx?cas=37513"]{1}]}
