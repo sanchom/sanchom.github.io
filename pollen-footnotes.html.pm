@@ -1,7 +1,7 @@
 #lang pollen
 
-◊define-meta[page-title]{A Footnote Tag for Pollen}
-◊define-meta[short-title]{Pollen Footnotes}
+◊define-meta[page-title]{A footnote tag for Pollen}
+◊define-meta[short-title]{Pollen footnotes}
 ◊define-meta[snippet]{How I implemented a footnote tag for Pollen.}
 ◊define-meta[original-date]{2018-02-17}
 ◊define-meta[edited-date]{2018-03-07}

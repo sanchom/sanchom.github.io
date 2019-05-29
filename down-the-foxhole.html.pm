@@ -181,13 +181,12 @@ justifications in their decisions.
 
 Economic-efficiency arguments are tricky. You have to (at least
 implicitly) choose a "welfare" function: an accounting of things that
-you want to see increase and things that you want to see decreases. A
-paper by Dharmapala and Pitchford actually works through the effect
-that the majority's rule and Livingstone's rule would have on the
-number of foxes killed.◊note-cite["Dharmapala"] The results under
-their initial assumptions roughly match Livingstone's intuition in his
-dissent. The paper is fairly readable even if you ignore every
-equation.
+you aim to have more or less of. A paper by Dharmapala and Pitchford
+actually works through the effect that the majority's rule and
+Livingstone's rule would have on the number of foxes
+killed.◊note-cite["Dharmapala"] The results under their initial
+assumptions roughly match Livingstone's intuition in his dissent. The
+paper is fairly readable even if you ignore every equation.
 
 Thinking about property allocation from this economic perspective is
 only a tool for expressing reasons; it doesn't provide reasons on its
