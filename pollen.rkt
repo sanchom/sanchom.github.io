@@ -48,6 +48,9 @@
          (ormap (λ (a) (equal? "margin-note" a)) (string-split (attr-ref tx 'class)))))
   (findf-txexpr doc is-margin-note?))
 
+(define (processed-title src)
+  (smart-dashes (select-from-metas 'page-title src)))
+
 ; Simple replacements or tag aliases.
 (define elide "[…]")
 

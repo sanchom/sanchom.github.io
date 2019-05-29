@@ -3,7 +3,7 @@
 ◊|template-message|
 -->
 
-◊(define (grab-optionally-shortened-title page) (define x (select 'short-title page)) (if (not x) (select 'page-title page) x))
+◊(define (grab-optionally-shortened-title page) (define x (select 'short-title page)) (if (not x) (processed-title page) x))
 ◊(define prev-page (previous here))
 ◊(define next-page (next here))
 ◊(define prev-is-home (eq? prev-page 'index.html))
@@ -35,13 +35,13 @@
     ◊when/splice[featured-image-url]{<meta name="twitter:card" content="summary_large_image" />}
     ◊when/splice[(not featured-image-url)]{<meta name="twitter:card" content="summary" />}
     <meta name="twitter:site" content="@sanchom" />
-    <meta property="og:title" content="◊(select 'page-title here)" />
+    <meta property="og:title" content="◊(processed-title  here)" />
     ◊when/splice[snippet]{<meta property="og:description" content="◊|snippet|" />}
     ◊when/splice[featured-image-url]{<meta property="og:image" content="◊|site-root|/◊|featured-image-url|" />}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>◊|site-title|—◊(select 'page-title metas)</title>
+    <title>◊|site-title|—◊(processed-title metas)</title>
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
     ◊when/splice[(not am-home)]{<link rel="canonical" href="https://sanchom.github.io/◊|here|" />}
     ◊when/splice[am-home]{<link rel="canonical" href="https://sanchom.github.io/" />}
