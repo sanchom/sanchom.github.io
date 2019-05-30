@@ -9,10 +9,10 @@
 
 On May 23, I attended a free, one-day conference on data, law
 enforcement, and surveillance: "Policing Info World". It was hosted by
-the ◊a[#:href "https://fipa.bc.ca"]{BC Freedom of Information and
-Privacy Association} (BC FIPA), the ◊a[#:href "https://bccla.org"]{BC
-Civil Liberties Association} (BCCLA), and ◊a[#:href
-"https://www.kpu.ca"]{Kwantlen Polytechnic University} (KPU).
+the [BC Freedom of Information and Privacy
+Association](https://fipa.bc.ca) (BC FIPA), the [BC Civil Liberties
+Association](https://bccla.org) (BCCLA), and [Kwantlen Polytechnic
+University](https://www.kpu.ca) (KPU).
 
 There were four panels: one on surveillance, one on predictive and
 algorithmic policing, one on the ideal of bias-free policing, and one
@@ -78,8 +78,8 @@ information.
 Ryan Prox presented how the VPD uses predictive policing to inform
 where they should place officers. They use predictive policing only
 for the most patterned and predictable crime: property offenses. You
-can see the data that they use as input to the system at ◊a[#:href
-"https://geodash.vpd.ca/"]{geodash.vpd.ca}.
+can see the data that they use as input to the system at
+[geodash.vpd.ca](https://geodash.vpd.ca).
 
 Of course, police presence itself would increase the observations of
 crime in a particular area, thus potentially creating a feedback cycle
@@ -98,17 +98,16 @@ communities.
 There are risks inherent in off-loading our decision-making to a
 mathematical/algorithmic process. It seemed like the VPD is aware of
 this and approaching the issue thoughtfully. Prox pointed to the
-Federal Treasury Board's ◊a[#:href
-"https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592"]{Algorithmic
-Impact Assessment} which, while not legally applicable outside of the
-federal government, gives a useful framework for managing the human
-risks of algorithmic decision-making in general. For example, if an
-automated decision will "likely have very high impacts on ◊elide the
-rights of individuals or communities", then the government must (among
-other things) obtain peer review by non-government, publish
-descriptions of the system and training data, require the final
-decision to be made by a human, and conduct ongoing monitoring to
-detect unintentional outcomes.
+Federal Treasury Board's [Algorithmic Impact
+Assessment](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592)
+which, while not legally applicable outside of the federal government,
+gives a useful framework for managing the human risks of algorithmic
+decision-making in general. For example, if an automated decision will
+"likely have very high impacts on ◊elide the rights of individuals or
+communities", then the government must (among other things) obtain
+peer review by non-government, publish descriptions of the system and
+training data, require the final decision to be made by a human, and
+conduct ongoing monitoring to detect unintentional outcomes.
 
 ◊sub-heading{On the ideal of bias-free policing}
 
@@ -128,9 +127,8 @@ on campus.
 Dylan Mazur discussed street checks and their place on the spectrum of
 political violence as a means to disorganize social movements. (In
 June 2018, the Union of British Columbia Indian Chiefs and the BCCLA
-◊a[#:href
-"https://bccla.org/wp-content/uploads/2018/06/UBCIC-BCCLA-OPCC-Complaint-re-Street-Checks-Jun-14-2018-Approved-1.pdf"]{filed
-a complaint with the Office of the Police Complaint Commissioner}
+[filed a complaint with the Office of the Police Complaint
+Commissioner](https://bccla.org/wp-content/uploads/2018/06/UBCIC-BCCLA-OPCC-Complaint-re-Street-Checks-Jun-14-2018-Approved-1.pdf)
 regarding the over-representation of Indigenous and Black people in
 street checks conducted by the VPD.)
 
@@ -144,12 +142,12 @@ themselves into on a census don't match how they might identify
 themselves to an officer after an adversarial, power-imbalanced
 encounter.
 
-This need for data is consistent with many of the ◊a[#:href
-"http://trc.ca/assets/pdf/Calls_to_Action_English2.pdf"]{Calls to
-Action} from the Truth and Reconciliation Commission of Canada which
-call for data on criminal victimization and to "monitor and evaluate
-progress" in eliminating over-representation of Indigenous people in
-custody, for example.
+This need for data is consistent with many of the [Calls to
+Action](http://trc.ca/assets/pdf/Calls_to_Action_English2.pdf) from
+the Truth and Reconciliation Commission of Canada which call for data
+on criminal victimization and to "monitor and evaluate progress" in
+eliminating over-representation of Indigenous people in custody, for
+example.
 
 ◊sub-heading{On searches for data when crossing the border}
 
@@ -207,9 +205,9 @@ uniformly, predictably, and transparently, rather than shoehorning our
 new electronic devices into old categories of searches as a way of
 getting at only a tiny fraction of data that is crossing the border.
 
-Meghan McDermott presented portions of the ◊a[#:href
-"https://bccla.org/wp-content/uploads/2018/07/Electronic-Devices-Privacy-Handbook-BCCLA_2018.pdf"]{Electronic
-Devices Privacy Handbook: A Guide to Your Rights at the Border},
+Meghan McDermott presented portions of the [Electronic Devices Privacy
+Handbook: A Guide to Your Rights at the
+Border](https://bccla.org/wp-content/uploads/2018/07/Electronic-Devices-Privacy-Handbook-BCCLA_2018.pdf),
 published by the BCCLA and the Canadian Internet Policy and Public
 Interest Clinic (CIPPIC) in 2018.
 

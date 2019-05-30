@@ -2,8 +2,8 @@
 
 ◊define-meta[page-title]{Home}
 
-In September, I'll be entering second year at UBC's Allard School of
-Law (class of 2021). I want use law to help give the weakest of us a
+In September, I start my second year at UBC's Allard School of Law
+(class of 2021). I want use law to help give the weakest of us a
 voice, in the legal system and in society in general. This includes
 civil liberties, especially free expression and defendants' rights. I
 want to help with public legal education and access-to-justice
@@ -16,20 +16,21 @@ visual object recognition, machine learning, and applications of deep
 neural networks.
 
 Formerly: data scientist at Kobo, head of R&D at Shelfie,
-communications-and-development volunteer at the ◊a[#:href
-"http://bccla.org/"]{BCCLA}, flight instructor, Canadian Forces
+communications-and-development volunteer at the [BC Civil Liberties
+Association](https://bccla.org), flight instructor, Canadian Forces
 officer (Cadet Instructor Cadre), 2× Google intern.
 
 If you'd like to get updates from me whenever I write something,
-◊outline{◊a[#:href "https://tinyletter.com/sanchom"]{sign up for my tinyletter
-here}}.
+◊outline{[sign up for my tinyletter
+here](https://tinyletter.com/sanchom)}.
 
-Here's where you can find me elsewhere online:
-◊div[#:class "external-link-logos"]{
-◊little-logo[#:href "https://sanchom.wordpress.com" #:img "assets/wordpress-logo-notext-rgb.png"]
-◊little-logo[#:href "https://twitter.com/sanchom" #:img "assets/tw_ico.png"]
-◊little-logo[#:href "mailto:sanchom@gmail.com" #:img "assets/email.png"]
-}
+Here's where you can find me elsewhere online: ◊div[#:class
+"external-link-logos"]{ ◊little-logo[#:href
+"https://sanchom.wordpress.com" #:img
+"assets/wordpress-logo-notext-rgb.png"] ◊little-logo[#:href
+"https://twitter.com/sanchom" #:img "assets/tw_ico.png"]
+◊little-logo[#:href "mailto:sanchom@gmail.com" #:img
+"assets/email.png"] }
 
 ◊heading{Selected publications}
 

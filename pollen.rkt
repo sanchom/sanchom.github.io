@@ -9,6 +9,8 @@
 (require (for-syntax racket/syntax))
 (require (submod hyphenate safe))
 
+(require "util.rkt")
+(require "markdown.rkt")
 (require "citation-system.rkt")
 
 (define template-message "This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.")
@@ -307,22 +309,31 @@
     (if (equal? note-mode "sidenotes") "endnotes print-only" "endnotes"))
   (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
 
+; Only the simplest markdown links are handled this way.
+; More complex links (that have formatting within the text,
+; for example), require you to fall back to explicit Pollen
+; annotation (◊a[#:href ""]{◊em{some formatted link text}}).
+(define/contract (parse-md-links elements)
+  (txexpr-elements? . -> . txexpr-elements?)
+  (define (transform-strings element)
+    (if (string? element)
+        (parse-markdown-links element)
+        `(,element)))
+  (append* (map transform-strings elements)))
+
 (define (root . elements)
-  ; TODO: Remove the need for this nested-decode. I need it now because the insert-sidenote-commas
-  ; function works on txexprs, and searches for sequences of child elements that constitute
-  ; successive side/footnotes. If these are at the main text level, they don't appear as children
-  ; of anything until after paragraphs are formed. (Well, they're children of root, but then they're
-  ; just elements. I think I could refactor this by making insert-sidenote-commas work on txexpr-elements
-  ; instead of txexprs.
+  ; This two-level decode is necessary because some of the processing requires paragraphs to be
+  ; formed in order to have strings and sidenote-wrappers as txexpr elements.
   (decode (txexpr 'root empty (get-elements
                                (decode (add-html-footnotes (txexpr 'root empty elements))
                                        #:exclude-tags '(pre)
                                        #:txexpr-proc (compose1 custom-hyphenation show-necessary-short-forms)
                                        ; Double line breaks create new paragraphs. Single line breaks are ignored.
-                                       #:txexpr-elements-proc decode-double-breaks-into-paras
+                                       #:txexpr-elements-proc (compose1 decode-double-breaks-into-paras)
                                        #:string-proc (compose1 smart-quotes smart-dashes))))
           #:exclude-tags '(pre)
-          #:txexpr-proc insert-sidenote-commas))
+          #:txexpr-proc insert-sidenote-commas
+          #:txexpr-elements-proc (compose1 parse-md-links merge-successive-strings)))
 
 (provide declare-work)
 (provide cite)
