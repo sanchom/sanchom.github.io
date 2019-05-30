@@ -9,12 +9,12 @@
 
 (define/contract (merge-successive-strings elements)
   (txexpr-elements? . -> . txexpr-elements?)
-  (define (conditional-merge element curr-list)
-    (if (and (not (empty? curr-list))
-             (string? (first curr-list))
+  (define (conditional-merge element current-list)
+    (if (and (not (empty? current-list))
+             (string? (first current-list))
              (string? element))
-        (cons (string-append (first curr-list) element) (drop curr-list 1))
-        (cons element curr-list)))
+        (cons (string-append (first current-list) element) (drop current-list 1))
+        (cons element current-list)))
   (reverse (foldl conditional-merge '() elements)))
 
 (module+ test

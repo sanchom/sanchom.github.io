@@ -8,7 +8,7 @@
 (module+ test
   (require rackunit))
 
-(define link-re #rx"\\[.*?\\]\\(.*?\\)")
+(define link-re #rx"\\[.+?\\]\\(.+?\\)")
 
 (define/contract (contains-markdown-link? str)
   (string? . -> . boolean?)
@@ -16,6 +16,8 @@
 
 (module+ test
   (check-false (contains-markdown-link? ""))
+  (check-false (contains-markdown-link? "[](http://link.com)"))
+  (check-false (contains-markdown-link? "[link]()"))
   (check-true (contains-markdown-link? "[link](http://link.com)")))
 
 (define/contract (split-at-first-markdown-link str)
