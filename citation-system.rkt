@@ -2,8 +2,14 @@
 
 (require racket/random)
 (require pollen/core)
+(require racket/contract)
 
 (define work-metadata (make-hash))
+
+; Accessor
+(define/contract (get-work-by-id id)
+  (string? . -> . hash?)
+  (hash-ref work-metadata id))
 
 ; Citation system. Following the McGill Guide, with Chicago Manual of Style for any ambiguities.
 ; ----------------------------------------------------------------------------------------------
@@ -534,4 +540,7 @@
     ,(when/splice parenthetical ")")
     "."))
 
-(provide (all-defined-out))
+(provide declare-work)
+(provide cite)
+(provide clean-param)
+(provide get-work-by-id)

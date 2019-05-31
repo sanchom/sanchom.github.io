@@ -254,7 +254,7 @@
          (hash-ref short-form-needed id)))
   (if (and (attrs-have-key? tx 'data-short-form-placeholder)
            (short-form-needed? (attr-ref tx 'data-short-form-placeholder)))
-      (txexpr (get-tag tx) (get-attrs tx) `(" [" ,(hash-ref (hash-ref work-metadata (attr-ref tx 'data-short-form-placeholder)) 'short-form) "]"))
+      (txexpr (get-tag tx) (get-attrs tx) `(" [" ,(hash-ref (get-work-by-id (attr-ref tx 'data-short-form-placeholder)) 'short-form) "]"))
       tx))
 
 ; Ignores single line breaks in paragraph interpretation. They are
