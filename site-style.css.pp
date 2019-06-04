@@ -204,7 +204,7 @@ background: #b4d5fe;
 ◊; Core styles for commonly used elements.
 p, li, blockquote {line-height: 1.5;}
 ul {list-style: circle outside;}
-li {padding-left: 1em; text-align: left;}
+li {padding-left: 1em; text-align: left; margin-bottom: 0.35em;}
 
 blockquote { border-left: 5px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
 .code { font-family: "Source Code Pro", "Liberation Mono", Menlo, Courier, monospace; }
