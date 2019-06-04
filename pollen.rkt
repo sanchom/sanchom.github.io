@@ -56,6 +56,8 @@
 ; Simple replacements or tag aliases.
 (define elide "[…]")
 
+(define ellipsis "…")
+
 (define (nbsp)
   (string->symbol "nbsp"))
 
