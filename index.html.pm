@@ -67,6 +67,5 @@ Recognition" #:publisher "IEEE" #:year "2012" #:url
 Information Visualization, Department of Computer Science, University
 of British Columbia" #:year "2006"]
 
-A more complete list is at my ◊a[#:href
-"https://scholar.google.com/citations?user=6C-udIUAAAAJ"]{Google
-Scholar profile}.
+A more complete list is at my [Google Scholar
+profile](https://scholar.google.com/citations?user=6C-udIUAAAAJ).

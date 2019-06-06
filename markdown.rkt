@@ -45,7 +45,9 @@
 (define/contract (parse-link str)
   (string? . -> . txexpr?)
   (define parsed (first (parse-markdown str)))
-  (third parsed))
+  (define url (string-replace (attr-ref (third parsed) 'href) "\u00AD" ""))
+  (define content (get-elements (third parsed)))
+  (txexpr 'a `[[href ,url]] content))
 
 ; Parses only the simplest markdown links in a string. No
 ; parentheses in the URL, etc. This returns a list of
@@ -64,6 +66,8 @@
                 '("test string without links"))
   (check-equal? (parse-markdown-links "before [link](http://link.com) after")
                 `("before " ,(txexpr 'a '((href "http://link.com")) '("link")) " after"))
+  (check-equal? (parse-markdown-links "before [link](http://li\u00ADnk-with-soft-hyphen.com) after")
+                `("before " ,(txexpr 'a '((href "http://link-with-soft-hyphen.com")) '("link")) " after"))
   (check-equal? (parse-markdown-links "before [link\nwith\nmultiple\nlines](http://link.com) after")
                 `("before " ,(txexpr 'a '((href "http://link.com")) '("link with multiple lines")) " after"))
   (check-equal? (parse-markdown-links " mid [link two](http://link2.com)")

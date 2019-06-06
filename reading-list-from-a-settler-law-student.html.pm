@@ -111,13 +111,11 @@ Here are some more general reading lists:
 
 ◊itemize{
 
-◊a[#:href
-"https://www.cbc.ca/radio/unreserved/how-indigenous-authors-are-claiming-space-in-the-canlit-scene-1.4573996/indigenous-authors-recommend-books-all-canadians-should-read-1.4575751"]{Indigenous
-authors were asked to recommend one book everyone in Canada should
-read}
+[Indigenous authors were asked to recommend one book everyone in
+Canada should
+read](https://www.cbc.ca/radio/unreserved/how-indigenous-authors-are-claiming-space-in-the-canlit-scene-1.4573996/indigenous-authors-recommend-books-all-canadians-should-read-1.4575751)
 
-◊a[#:href
-"https://www.cbc.ca/books/7-new-books-by-indigenous-authors-you-need-to-add-to-your-reading-list-1.4701141"]{Another
-CBC list}
+[Another CBC
+list](https://www.cbc.ca/books/7-new-books-by-indigenous-authors-you-need-to-add-to-your-reading-list-1.4701141)
 
 }
