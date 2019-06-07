@@ -1,10 +1,43 @@
 #lang racket
 
+; This module implements a citation system meant to be used in Pollen.
+
+(provide
+ ; To be used in author source
+ ; ---------------------------
+
+ ; Declares a work that can be then cited.
+ declare-work
+ ; Actually cites the work (returns a txexpr with the formatted citation).
+ cite
+
+ ; To be used in your Pollen module to let the citation system
+ ; do the work it needs to do.
+ ; ------------------------------------------------------------
+
+ ; Strips newlines from a parameter that might line-wrap.
+ clean-param
+ ; Use these within your note tag to let this citation system transform
+ ; the citations it created with 'cite' into back-references or to include
+ ; short forms.
+ transform-full-cites-into-backrefs
+ transform-short-form-placeholder
+ ; Use during the final decode (txexpr-proc) to insert short-forms where
+ ; they're needed.
+ show-necessary-short-forms)
+
 (require racket/random)
 (require pollen/core)
 (require racket/contract)
+(require txexpr)
+
+(module+ test
+  (require rackunit))
 
 (define work-metadata (make-hash))
+(define first-place-cited (make-hash))
+(define most-recent-ibid-or-supra #f)
+(define short-form-needed (make-hash))
 
 ; Accessor
 (define/contract (get-work-by-id id)
@@ -14,20 +47,45 @@
 ; Citation system. Following the McGill Guide, with Chicago Manual of Style for any ambiguities.
 ; ----------------------------------------------------------------------------------------------
 
-(define (strip-at str)
-  (if (string-prefix? str "at ")
+(define/contract (strip-at str)
+  (string? . -> . string?)
+  (if (string-prefix? (string-downcase str) "at ")
       (substring str 3)
       str))
 
-(define (pinpoint-is-pages? str) (or (string-prefix? str "p ")
-                                     (string-prefix? str "pp ")
-                                     (string-prefix? str "page ")
-                                     (string-prefix? str "pages ")
-                                     (regexp-match-exact? #rx"([-0-9]*)" str)))
-(define (pinpoint-requires-at? str) (or (string-prefix? str "para") (pinpoint-is-pages? str)))
+(module+ test
+  (check-equal? (strip-at "page 13") "page 13")
+  (check-equal? (strip-at "at 13") "13")
+  (check-equal? (strip-at "At para 12") "para 12")
+  (check-equal? (strip-at "cat 5") "cat 5"))
+
+(define/contract (pinpoint-is-pages? str)
+  (string? . -> . boolean?)
+  (or (string-prefix? (string-downcase str) "p ")
+      (string-prefix? (string-downcase str) "pp ")
+      (string-prefix? (string-downcase str) "page ")
+      (string-prefix? (string-downcase str) "pages ")
+      (regexp-match-exact? #rx"([-0-9, ]*)" str)))
+
+(module+ test
+  (check-true (pinpoint-is-pages? "12--39"))
+  (check-true (pinpoint-is-pages? "p 12"))
+  (check-false (pinpoint-is-pages? "para 12"))
+  (check-false (pinpoint-is-pages? "paras 12--14"))
+  (check-false (pinpoint-is-pages? "paras 12, 14"))
+  (check-true (pinpoint-is-pages? "pp 32, 33"))
+  (check-true (pinpoint-is-pages? "Page 1"))
+  (check-true (pinpoint-is-pages? "1"))
+  (check-true (pinpoint-is-pages? "1, 35")))
+
+(define (pinpoint-requires-at? str) (or (string-prefix? (strip-at str) "para") (pinpoint-is-pages? (strip-at str))))
 (define (pinpoint-requires-comma? str) (not (pinpoint-requires-at? str)))
-(define (normalize-pinpoint pinpoint)
-  (define to-replace (first (string-split pinpoint)))
+
+(define/contract (normalize-pinpoint pinpoint)
+  (string? . -> . string?)
+  (define cleaned-pinpoint (clean-param pinpoint))
+  (define pinpoint-without-at (strip-at cleaned-pinpoint))
+  (define to-replace (first (string-split pinpoint-without-at)))
   (define replacement
     (case (string-downcase to-replace)
       [("page" "p") ""]
@@ -39,12 +97,21 @@
       [("section" "s.") "s"]
       [("sections" "ss.") "ss"]
       [else to-replace]))
-  (string-replace pinpoint to-replace replacement #:all? #f))
+  (define pinpoint-content (string-trim (string-replace pinpoint-without-at to-replace replacement #:all? #f)))
+  (if (pinpoint-requires-at? cleaned-pinpoint) (format " at ~a" pinpoint-content) (format ", ~a" pinpoint-content)))
 
-(define (render-pinpoint pinpoint)
-  (if pinpoint
-      (if pinpoint-requires-at? (format " at ~a" (normalize-pinpoint pinpoint)) (format ", ~a" (normalize-pinpoint pinpoint)))
-      ""))
+(module+ test
+  (check-equal? (normalize-pinpoint "page 1") " at 1")
+  (check-equal? (normalize-pinpoint "page\n1") " at 1")
+  (check-equal? (normalize-pinpoint "at page 1") " at 1")
+  (check-equal? (normalize-pinpoint "pages 2, 3") " at 2, 3")
+  (check-equal? (normalize-pinpoint "p 1--3") " at 1--3")
+  (check-equal? (normalize-pinpoint "paragraph 1") " at para 1")
+  ; TODO (check-equal? (normalize-pinpoint "paragraph 1--3") " at paras 1--3")
+  (check-equal? (normalize-pinpoint "at clause 1") ", cl 1")
+  (check-equal? (normalize-pinpoint "clause 1") ", cl 1")
+  (check-equal? (normalize-pinpoint "cls 2--3") ", cls 2--3")
+  )
 
 ; TODO: Can this be a contract?
 (define (validate-work-or-die w)
@@ -285,10 +352,6 @@
         `(@ ,before (em ,special-content) ,after))
       `(@ ,markedup-title)))
 
-(define (format-pinpoint pinpoint)
-  (define stripped (strip-at (clean-param pinpoint)))
-  `(@ ,(if (pinpoint-requires-at? stripped) " at " ", ") ,(normalize-pinpoint stripped)))
-
 ; Renders a full note-form of the work.
 (define (cite id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f] #:signal [signal #f])
   (define w (hash-ref work-metadata (clean-param id)))
@@ -297,7 +360,7 @@
              ,(when/splice signal signal " ")
              ,(if signal `(em "ibid") `(em "Ibid"))
              ,(when/splice parenthetical " (" parenthetical)
-             ,(when/splice pinpoint (format-pinpoint pinpoint))
+             ,(when/splice pinpoint (normalize-pinpoint pinpoint))
              ,(when/splice judge ", " judge)
              ,(when/splice parenthetical ")")
              ,(when/splice speaker " (" speaker ")") ; Only relevant for debates (TODO: consider specializing back-reference forms).
@@ -308,7 +371,7 @@
                  ,(hash-ref w 'short-form) ", "
                  (em "supra") ,(format " note ~a" supra)
                  ,(when/splice parenthetical " (" parenthetical)
-                 ,(when/splice pinpoint (format-pinpoint pinpoint))
+                 ,(when/splice pinpoint (normalize-pinpoint pinpoint))
                  ,(when/splice judge ", " judge)
                  ,(when/splice parenthetical ")")
                  ,(when/splice speaker " (" speaker ")")
@@ -367,7 +430,7 @@
     ,(when/splice (hash-ref w 'first-page) " " (hash-ref w 'first-page))
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
@@ -386,7 +449,7 @@
     ")"
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
@@ -403,7 +466,7 @@
     ")"
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."
     ))
@@ -426,7 +489,7 @@
     ,(when/splice (hash-ref w 'first-page) " " (hash-ref w 'first-page))
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
@@ -442,7 +505,7 @@
     ")"
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
@@ -457,7 +520,7 @@
     ,(when/splice (and (not parenthetical) judge) ", " judge)
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice (and parenthetical judge) ", " judge)
     ,(when/splice parenthetical ")")
     "."))
@@ -469,7 +532,7 @@
     (em ,(if url `(a [[href ,url]] ,title) `(span ,title)))
     ", "
     ,(hash-ref w 'citation)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     " ("
     ,(when/splice (hash-ref w 'jurisdiction) (hash-ref w 'jurisdiction) " ")
     ,(hash-ref w 'year)
@@ -489,7 +552,7 @@
     (em ,(if url `(a [[href ,url]] ,title) `(span ,title))) ", "
     ,(hash-ref w 'legislative-body) ", "
     ,(hash-ref w 'year)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     "."))
 
@@ -501,7 +564,7 @@
     ,(hash-ref w 'volume) " "
     ,(hash-ref w 'year) ", "
     "c " ,(hash-ref w 'chapter)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice parenthetical " (" parenthetical)
     ,(when/splice parenthetical  ")")
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
@@ -520,7 +583,7 @@
     ,(when/splice (hash-ref w 'reading) (hash-ref w 'reading) ", ")
     ,(if url `(a [[href ,url]] ,doc-string) `(span ,doc-string)) " "
     "(" ,(hash-ref w 'year) ")"
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice speaker " (" speaker ")")
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     "."))
@@ -536,11 +599,57 @@
     ,(when/splice (hash-ref w 'year) " (" (hash-ref w 'year) ")")
     (span [[data-short-form-pre-placeholder ,(format "~a" (hash-ref w 'id))]])
     ,(when/splice parenthetical " (" parenthetical)
-    ,(when/splice pinpoint (format-pinpoint pinpoint))
+    ,(when/splice pinpoint (normalize-pinpoint pinpoint))
     ,(when/splice parenthetical ")")
     "."))
 
-(provide declare-work)
-(provide cite)
-(provide clean-param)
-(provide get-work-by-id)
+; This is a function that your Pollen code should call within its note tag.
+; Sweeps through the content, replacing any data-short-form-pre-placeholder with data-short-form-placeholder.
+; You should do this only in the note context because if a work is just "cited" (i.e. rendered inline) not in a footnote or sidenote,
+; then it isn't part of the reference-counting/back-reference (ibid/supra) system.
+; This turns a citation's short-form placeholder into one that will actually be useable.
+(define/contract (transform-short-form-placeholder tx)
+  (txexpr? . -> . txexpr?)
+  (if (attrs-have-key? tx 'data-short-form-pre-placeholder)
+      (txexpr (get-tag tx) `[[data-short-form-placeholder ,(attr-ref tx 'data-short-form-pre-placeholder)]] empty)
+      tx))
+
+; Collects reference-count and first-reference info and transforms subsequent references into supra/ibid forms.
+(define/contract (transform-full-cites-into-backrefs tx footnote-number)
+  (txexpr? exact-nonnegative-integer? . -> . txexpr?)
+
+  (define (extract-from-our-custom-data-attrs tx key)
+    (define value (attr-ref tx key))
+    (if (equal? value "false") #f value))
+
+  (if (and (attrs-have-key? tx 'class)
+           (string-contains? (attr-ref tx 'class) "full-form-citation"))
+      (let* ([id (attr-ref tx 'data-citation-id)]
+             [first-cite (if (hash-has-key? first-place-cited id) (hash-ref first-place-cited id) #f)]
+             [ibid (and first-cite (equal? (car most-recent-ibid-or-supra) id) (equal? (- footnote-number 1) (cdr most-recent-ibid-or-supra)))])
+        (when (and first-cite (not ibid)) (hash-set! short-form-needed id #t))
+        (when (not (hash-has-key? first-place-cited id)) (hash-set! first-place-cited id footnote-number))
+        (set! most-recent-ibid-or-supra (cons id footnote-number))
+        ; If this work was previous cited, take its full-form citation and replace it with an ibid or supra.
+        (if first-cite
+            (cite id #:supra first-cite #:ibid ibid #:pinpoint (extract-from-our-custom-data-attrs tx 'data-citation-pinpoint)
+                  #:parenthetical (extract-from-our-custom-data-attrs tx 'data-citation-parenthetical)
+                  #:judge (extract-from-our-custom-data-attrs tx 'data-citation-judge)
+                  #:speaker (extract-from-our-custom-data-attrs tx 'data-citation-speaker)
+                  #:signal (extract-from-our-custom-data-attrs tx 'data-citation-signal))
+            tx)
+        )
+      tx))
+
+; To be called during your Pollen module's final decode.
+; This sweeps through all short-form placeholders (which are empty spans before this point)
+; and inserts the work's short-form if it was ever cited a second time.
+(define/contract (show-necessary-short-forms tx)
+  (txexpr? . -> . txexpr?)
+  (define (short-form-needed? id)
+    (and (hash-has-key? short-form-needed id)
+         (hash-ref short-form-needed id)))
+  (if (and (attrs-have-key? tx 'data-short-form-placeholder)
+           (short-form-needed? (attr-ref tx 'data-short-form-placeholder)))
+      (txexpr (get-tag tx) (get-attrs tx) `(" [" ,(hash-ref (get-work-by-id (attr-ref tx 'data-short-form-placeholder)) 'short-form) "]"))
+      tx))

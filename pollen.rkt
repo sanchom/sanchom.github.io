@@ -4,14 +4,15 @@
 (require racket/string)
 (require pollen/core)
 (require pollen/tag)
-(require pollen/decode txexpr)
+(require pollen/decode)
+(require txexpr)
 (require pollen/setup)
 (require (for-syntax racket/syntax))
 (require (submod hyphenate safe))
 
+(require "pollen-citations-mcgill/citations-mcgill.rkt")
 (require "util.rkt")
 (require "markdown.rkt")
-(require "citation-system.rkt")
 
 (define template-message "This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.")
 (define site-author "Sancho McCann")
@@ -22,11 +23,6 @@
 (define note-mode "sidenotes")
 (define footnote-list empty)
 (define margin-note-number 0)
-
-; Some globals for managing interaction with the citation system.
-(define short-form-needed (make-hash))
-(define first-place-cited (make-hash))
-(define most-recent-ibid-or-supra #f)
 
 (define (use-footnotes)
   (set! note-mode "footnotes"))
@@ -78,7 +74,7 @@
 (define (video-player #:src src #:width [width #f] . caption)
   `(figure
     (div [[class "vid-wrapper"] ,(when/splice width `[style ,(format "width: ~a;" width)])]
-     (video [[id "player"][playsinline ""][controls ""][width "100%"]] (source [[src ,src][type "video/mp4"]])))
+         (video [[id "player"][playsinline ""][controls ""][width "100%"]] (source [[src ,src][type "video/mp4"]])))
     (figcaption ,@caption)
     ))
 
@@ -146,6 +142,10 @@
 ; ------------------------------------------------------------
 
 ; Aliases to simplify citations that use signals.
+; The "cite" call is this system's interaction with the citation system.
+; Don't mess around with what is returned by "cite". The citation system
+; is expecting certain elements and attributes to linger, in order to
+; optionally transform them later on.
 (define-syntax (define-signal stx)
   (syntax-case stx ()
     [(_ SIGNAL TEXT)
@@ -172,42 +172,10 @@
 (define (note #:expanded [expanded #f] . content)
   (define footnote-number (+ 1 (length footnote-list)))
 
-  ; Sweep through the content, replacing any data-short-form-pre-placeholder with data-short-form-placeholder.
-  ; We do this only in the note context because if a work is just "cited" (i.e. rendered) not in a footnote or sidenote,
-  ; then it isn't part of the reference-counting/back-reference (ibid/supra) system.
-  (define (transform-short-form-placeholder tx)
-    (if (attrs-have-key? tx 'data-short-form-pre-placeholder)
-        (txexpr (get-tag tx) `[[data-short-form-placeholder ,(attr-ref tx 'data-short-form-pre-placeholder)]] empty)
-        tx))
-
-  (define (extract-from-attr tx key)
-    (define value (attr-ref tx key))
-    (if (equal? value "false") #f value))
-
-  ; Collects reference-count and first-reference info and transforms subsequent references into supra/ibid forms.
-  (define (transform-full-cites-into-backrefs tx)
-    (if (and (attrs-have-key? tx 'class)
-             (string-contains? (attr-ref tx 'class) "full-form-citation"))
-        (let* ([id (attr-ref tx 'data-citation-id)]
-               [first-cite (if (hash-has-key? first-place-cited id) (hash-ref first-place-cited id) #f)]
-               [ibid (and first-cite (equal? (car most-recent-ibid-or-supra) id) (equal? (- footnote-number 1) (cdr most-recent-ibid-or-supra)))])
-          (when (and first-cite (not ibid)) (hash-set! short-form-needed id #t))
-          (when (not (hash-has-key? first-place-cited id)) (hash-set! first-place-cited id footnote-number))
-          (set! most-recent-ibid-or-supra (cons id footnote-number))
-          ; If this work was previous cited, take its full-form citation and replace it with an ibid or supra.
-          (if first-cite
-              (cite id #:supra first-cite #:ibid ibid #:pinpoint (extract-from-attr tx 'data-citation-pinpoint)
-                           #:parenthetical (extract-from-attr tx 'data-citation-parenthetical)
-                           #:judge (extract-from-attr tx 'data-citation-judge)
-                           #:speaker (extract-from-attr tx 'data-citation-speaker)
-                           #:signal (extract-from-attr tx 'data-citation-signal))
-              tx)
-         )
-        tx))
-
+  ; Letting the citation system do its thing.
   (define transformed-content
     (decode-elements content
-                     #:txexpr-proc (compose1 transform-short-form-placeholder transform-full-cites-into-backrefs)))
+                     #:txexpr-proc (compose1 transform-short-form-placeholder (λ (x) (transform-full-cites-into-backrefs x footnote-number)))))
 
   (set! footnote-list
         (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
@@ -247,17 +215,6 @@
              #:exceptions hyphenation-exceptions
              #:omit-txexpr omission-test
              #:omit-word (λ (x) (or (non-breakable-capitalized? x) (ligs? x)))))
-
-; Sweeps through all short-form placeholders (which are empty spans before this point)
-; and inserts the work's short-form if it was ever cited a second time.
-(define (show-necessary-short-forms tx)
-  (define (short-form-needed? id)
-    (and (hash-has-key? short-form-needed id)
-         (hash-ref short-form-needed id)))
-  (if (and (attrs-have-key? tx 'data-short-form-placeholder)
-           (short-form-needed? (attr-ref tx 'data-short-form-placeholder)))
-      (txexpr (get-tag tx) (get-attrs tx) `(" [" ,(hash-ref (get-work-by-id (attr-ref tx 'data-short-form-placeholder)) 'short-form) "]"))
-      tx))
 
 ; Ignores single line breaks in paragraph interpretation. They are
 ; converted to spaces. But, double-breaks demarcate paragraphs.
