@@ -18,9 +18,9 @@ script:
   - docker pull sanchom/pollen
   - docker run -v `pwd`:/work --name racket_container -d sanchom/pollen tail -f /dev/null
   - docker exec racket_container raco pkg install pollen-citations-mcgill
-  - docker exec racket_container -w /work/sanchom.github.io raco test pollen.rkt markdown.rkt util.rkt || travis_terminate 1;
-  - docker exec racket_container -w /work raco pollen render -r sanchom.github.io
-  - docker exec racket_container -w /work raco pollen publish sanchom.github.io published
+  - docker exec -w /work/sanchom.github.io racket_container raco test pollen.rkt markdown.rkt util.rkt || travis_terminate 1;
+  - docker exec -w /work racket_container raco pollen render -r sanchom.github.io
+  - docker exec -w /work racket_container raco pollen publish sanchom.github.io published
   - docker rm -f racket_container
 
 deploy:
