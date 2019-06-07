@@ -9,8 +9,8 @@
 (require pollen/setup)
 (require (for-syntax racket/syntax))
 (require (submod hyphenate safe))
+(require pollen/citations-mcgill)
 
-(require "pollen-citations-mcgill/citations-mcgill.rkt")
 (require "util.rkt")
 (require "markdown.rkt")
 
