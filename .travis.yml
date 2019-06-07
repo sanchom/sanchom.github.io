@@ -16,7 +16,7 @@ before_install:
 script:
   - cd ../
   - docker pull sanchom/pollen
-  - docker run -v `pwd`:/work --name racket_container -d sanchom/pollen "tail -f /dev/null"
+  - docker run -v `pwd`:/work --name racket_container -d sanchom/pollen tail -f /dev/null
   - docker exec racket_container raco pkg install pollen-citations-mcgill
   - docker exec racket_container -w /work/sanchom.github.io raco test pollen.rkt markdown.rkt util.rkt || travis_terminate 1;
   - docker exec racket_container -w /work raco pollen render -r sanchom.github.io
