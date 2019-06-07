@@ -4,7 +4,3 @@
 [submodule "source-serif-pro"]
 	path = source-serif-pro
 	url = https://github.com/adobe-fonts/source-serif-pro
-[submodule "pollen-citations-mcgill"]
-	path = pollen-citations-mcgill
-	url = https://github.com/sanchom/pollen-citations-mcgill.git
-	branch = master
