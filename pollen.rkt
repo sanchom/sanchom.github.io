@@ -175,7 +175,7 @@
   ; Letting the citation system do its thing.
   (define transformed-content
     (decode-elements content
-                     #:txexpr-proc (compose1 transform-short-form-placeholder (λ (x) (transform-full-cites-into-backrefs x footnote-number)))))
+                     #:txexpr-proc (λ (x) (transform-cite-in-a-note x footnote-number))))
 
   (set! footnote-list
         (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
