@@ -107,7 +107,7 @@ complex issues, that might explain some of the discrepancy between
 interveners in as-of-right criminal appeals and other appeals.
 
 To give a sense of what these short judgments look like, here is an
-example from ◊declare-work[#:type "legal-case" #:title "R v Cody"
+example from ◊format-work[#:type "legal-case" #:title "R v Cody"
 #:citation "2017 SCC 25" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/16591/index.do"]
 

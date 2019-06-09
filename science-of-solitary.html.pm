@@ -269,22 +269,22 @@ Justice Leask found that the plaintiffs met that burden.
 
 ◊heading{Related media}
 
-◊declare-work[#:type "magazine/news" #:publication "BC Civil Liberties
+◊format-work[#:type "magazine/news" #:publication "BC Civil Liberties
 Association" #:title "End Solitary Confinement -- BobbyLee's Story"
 #:date "26 May 2016" #:url
 "https://www.youtube.com/watch?v=lfnDpXHgZio"]
 
-◊declare-work[#:type "book" #:author "Susan Haack" #:title "Defending
+◊format-work[#:type "book" #:author "Susan Haack" #:title "Defending
 Science -- within Reason" #:publisher "Prometheus Books" #:year "2007"
 #:publisher-location "Amherst, New York"]
 
-◊declare-work[#:type "article" #:author "Susan Haack" #:title "Of
+◊format-work[#:type "article" #:author "Susan Haack" #:title "Of
 Truth, in Science and in Law" #:journal "Brooklyn Law Review" #:volume
 "73" #:issue "3" #:year "2008" #:url
 "https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=1315&context=blr"
 #:pages "985--1008"]
 
-◊declare-work[#:type "article" #:author "Craig Haney" #:title
+◊format-work[#:type "article" #:author "Craig Haney" #:title
 "Restricting the Use of Solitary Confinement" #:journal "Annual Review
 of Criminology" #:volume "1" #:pages "285--310" #:url
 "https://www.annualreviews.org/doi/10.1146/annurev-criminol-032317-092326"

@@ -90,7 +90,7 @@ pretty good free database.}
 ◊li{◊b{Public law}: Legislative research and statutory
 interpretation. So fun to think about words and meaning.◊note{This
 isn't a Canadian case, but it is a good example of the kinds of
-questions that arise in statutory interpretation. ◊declare-work[#:type
+questions that arise in statutory interpretation. ◊format-work[#:type
 "legal-case-US" #:url
 "https://www.supremecourt.gov/opinions/14pdf/13-7451_m64o.pdf" #:title
 "Yates v United States" #:year "2014" #:citation "135 S Ct 1074"] Is a
@@ -109,16 +109,16 @@ is a well defined series of questions that you need to work through,
 yet in answering those questions, there's much room for legal realism (in the sense that that term is used ◊a[#:href "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=5995&context=journal_articles"]{here}).}
 
 ◊li{◊b{Property law}: Public property and how it relates to
-homelessness and tent communities.◊note{◊declare-work[#:type
+homelessness and tent communities.◊note{◊format-work[#:type
 "magazine/news" #:author-given "Cassidy" #:author-family "Gale"
 #:publication "CanLII Connects" #:year "20 November 2014" #:url
 "http://canliiconnects.org/en/summaries/31440" #:title "Summary of
-*Victoria (City) v Adams*"]} ◊note{◊declare-work[#:type "legal-case"
+*Victoria (City) v Adams*"]} ◊note{◊format-work[#:type "legal-case"
 #:url
 "https://www.canlii.org/en/bc/bcca/doc/2009/2009bcca563/2009bcca563.html"
 #:title "Victoria (City) v Adams" #:citation "2009 BCCA 563"]}
 ◊note{This argument is still playing out in cities around North
-America. See ◊declare-work[#:type "legal-case-US" #:url
+America. See ◊format-work[#:type "legal-case-US" #:url
 "http://cdn.ca9.uscourts.gov/datastore/opinions/2018/09/04/15-35845.pdf"
 #:title "Martin v City of Boise" #:year "2018" #:citation "No
 15-35845" #:jurisdiction "9th Cir"] This is almost the exact situation
@@ -129,7 +129,7 @@ private space. The challenge to the law was successful.}  Also, the
 economic analysis of law that is so prominent in property law today.}
 
 ◊li{◊b{Torts}: Implied consent to battery in sports settings. What
-harms are really just part of the game?◊note{◊declare-work[#:type
+harms are really just part of the game?◊note{◊format-work[#:type
 "magazine/news" #:author "Michael McCann" #:publication "Sports
 Illustrated" #:date "6 May 2018" #:url
 "https://www.si.com/nhl/2018/05/06/brad-marchand-licking-discipline-rulebook-legal"
@@ -142,12 +142,12 @@ of Licking Opponents"]}}
 ◊sub-heading{Some of my favourite readings brought to me by school so far}
 ◊ul{
 
-◊li{◊declare-work[#:type "article" #:url
+◊li{◊format-work[#:type "article" #:url
 "https://www.law.uchicago.edu/files/file/coase-problem.pdf" #:author
 "RH Coase" #:journal "Law and Economics" #:year "1960" #:volume "3"
 #:first-page "1" #:title "The Problem of Social Cost"]}
 
-◊li{◊declare-work[#:type "article" #:author "Aaron Mills" #:journal
+◊li{◊format-work[#:type "article" #:author "Aaron Mills" #:journal
 "McGill Law Journal" #:year "2016" #:volume "61" #:issue "4" #:title
 "The Lifeworlds of Law: On Revitalizing Indigenous Orders Today"
 #:first-page "847" #:url
@@ -161,7 +161,7 @@ Sims" #:year "1929" #:citation "232 Ky 791" #:jurisdiction "CA" #:id
 ◊li{The dissent here, which reads like something by
 Lovecraft. ◊cite["Edwards" #:judge "Logan J, dissenting"]}
 
-◊li{◊declare-work[#:type "article" #:author "Jeremy Waldron" #:journal
+◊li{◊format-work[#:type "article" #:author "Jeremy Waldron" #:journal
 "UCLA Law Review" #:year "1991" #:volume "39" #:pages "295--324"
 #:title "Homelessness and the Issue of Freedom" #:url
 "https://www.ru.nl/publish/pages/817133/waldron_1991.pdf"]}

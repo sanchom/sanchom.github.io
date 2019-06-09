@@ -189,7 +189,7 @@ But systems like LaTeX which are adequate for computer science
 citations are inadequate for citation layout for legal writing. Even
 confining the task to just paper-writing, a footnote in a law paper
 can contain multiple citations and related textual
-information.◊note{See ◊declare-work[#:type "magazine/news" #:url
+information.◊note{See ◊format-work[#:type "magazine/news" #:url
 "https://tex.stackexchange.com/questions/71306/bluebook-support-in-latex"
 #:title "Bluebook support in Latex?" #:publication "Tex StackExchange"
 #:date "12 September 2012"] This question and answer highlight the

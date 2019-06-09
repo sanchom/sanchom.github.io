@@ -6,7 +6,7 @@
 
 ◊title{Art as Experience}
 
-I've been reading ◊em{Art as Experience}◊note{◊declare-work[#:type
+I've been reading ◊em{Art as Experience}◊note{◊format-work[#:type
 "book" #:author "John Dewey" #:year "1934" #:title "Art as Experience"
 #:publisher "Minton Balch & Co" #:publisher-location "New York"]} a
 few pages at a time over the past year. I've needed to read it like
@@ -65,7 +65,7 @@ external to one another are non-esthetic. ◊elide In all ranges of
 experience, externality of means defines the mechanical. ◊elide Means
 are, then, media when they are not just preparatory or preliminary.}
 
-This also comes up in Thomas and Turner◊note{◊declare-work[#:type
+This also comes up in Thomas and Turner◊note{◊format-work[#:type
 "book" #:author-given "Francis-Noël" #:author-family "Thomas"
 #:author2-given "Mark" #:author2-family "Turner" #:year "2011" #:title
 "Clear and Simple as the Truth: Writing Classic Prose" #:publisher

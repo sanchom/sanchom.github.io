@@ -295,6 +295,7 @@
           #:txexpr-elements-proc (compose1 parse-md-links merge-successive-strings)))
 
 (provide declare-work)
+(provide format-work)
 (provide cite)
 (provide (all-defined-out))
 

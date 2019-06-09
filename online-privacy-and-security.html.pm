@@ -151,7 +151,7 @@ Checkup}.}
 A ◊a[#:href "https://ssd.eff.org/en/glossary/vpn"]{VPN (a virtual
 private network)} lets you hide more information from your internet
 service provider (e.g. Shaw, Telus) and from the websites you
-visit.◊note{◊declare-work[#:type "magazine/news" #:url
+visit.◊note{◊format-work[#:type "magazine/news" #:url
 "https://www.eff.org/deeplinks/2017/04/heres-how-protect-your-privacy-your-internet-service-provider"
 #:author "Amul Kalia" #:title "Here's How to Protect Your Privacy From
 Your Internet Service Provider" #:publication "Electronic Frontier
@@ -168,7 +168,7 @@ normally place in your internet service provider (ISP) to your VPN
 provider. Your ISP would no longer see and potentially log your
 traffic, but your VPN provider might. So, choose a VPN provider
 carefully, paying attention to their logging policy and laws in the
-country where they are based.◊note{◊declare-work[#:type
+country where they are based.◊note{◊format-work[#:type
 "magazine/news" #:url
 "https://ssd.eff.org/en/module/choosing-vpn-thats-right-you" #:title
 "Choosing the VPN That's Right For You" #:publication "Electronic
@@ -198,7 +198,7 @@ home is forced through the VPN.
 
 There are other ways that a VPN might provide a false sense of
 security: it might leak DNS queries to your
-ISP,◊note{◊declare-work[#:type "magazine/news" #:url
+ISP,◊note{◊format-work[#:type "magazine/news" #:url
 "https://www.makeuseof.com/tag/dns-leaks-can-destroy-anonymity-using-vpn-stop/"
 #:title "How DNS Leaks Can Destroy Anonymity When Using a VPN, And How
 to Stop Them" #:author "Dann Albright" #:date "14 May 2015"
@@ -216,7 +216,7 @@ there are ways to avoid leaking this information to your ISP. You can
 choose a VPN provider that handles DNS queries. Or, at least on the
 most recent versions of Firefox, you can ask for your DNS queries to
 get sorted out over HTTPS (they'll be encrypted, and sent to a more
-trusted DNS service).◊note{◊declare-work[#:type "magazine/news" #:url
+trusted DNS service).◊note{◊format-work[#:type "magazine/news" #:url
 "https://medium.com/@nykolas.z/dns-security-and-privacy-choosing-the-right-provider-61fc6d54b986"
 #:title "DNS Security and Privacy — Choosing the right provider"
 #:author "Nykolas Z" #:date "18 April 2018" #:publication
@@ -231,7 +231,7 @@ requests onto HTTPS and not DNS requests from other applications.}
 End-to-end encryption means that messages are encrypted the entire way
 between you and the intended recipient. Nobody other than you two can
 read the messages, not even the company running the
-service.◊note{◊declare-work[#:type "magazine/news" #:url
+service.◊note{◊format-work[#:type "magazine/news" #:url
 "https://ssd.eff.org/en/module/what-should-i-know-about-encryption#3"
 #:title "Transport-Layer Encryption or End-to-End Encryption?"
 #:publication "Electronic Frontier Foundation" #:date "24 November

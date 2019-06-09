@@ -226,7 +226,7 @@ Ontario's Court of Appeal recently had a chance to clarify what all of
 this means in ◊a[#:href
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0685.pdf"]{◊em{1704604
 Ontario Ltd v Pointes Protection
-Association}}.◊note{◊declare-work[#:type "legal-case" #:title "1704604
+Association}}.◊note{◊format-work[#:type "legal-case" #:title "1704604
 Ontario Ltd v Pointes Protection Association" #:url
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0685.pdf"
 #:citation "2018 ONCA 685"]} Because this is an Ontario court's
@@ -284,7 +284,7 @@ The trickier part is determining whether an expression relates to a
 matter of public interest.
 
 Here, the court says that the principles from ◊em{Grant v Torstar
-Corp}◊note{◊declare-work[#:type "legal-case" #:title "Grant v Torstar
+Corp}◊note{◊format-work[#:type "legal-case" #:title "Grant v Torstar
 Corp" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/7837/index.do"
 #:citation "2009 SCC 61"]} are applicable. The question is to be
@@ -405,7 +405,7 @@ defer to those balancing decisions.
 The Ontario Court of Appeal also dismissed two ◊em{Charter} challenges
 to the Ontario Act in ◊a[#:href
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0687.pdf"]{◊em{Platnick
-v Bent}}.◊note{◊declare-work[#:type "legal-case" #:title "Platnick v
+v Bent}}.◊note{◊format-work[#:type "legal-case" #:title "Platnick v
 Bent" #:citation "2018 ONCA 687" #:url
 "http://www.ontariocourts.ca/decisions/2018/2018ONCA0687.pdf"]}
 

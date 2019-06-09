@@ -168,9 +168,9 @@ though socially contingent, ideas about what is ◊em{right} in a moral
 sense. This case makes it clear that judges sometimes ◊em{make} law,
 and they sometimes make law based on pragmatic concerns and economic
 concerns.◊note{Or maybe, they are ◊em{always} maximizing economic
-efficiency. See ◊declare-work[#:type "book" #:author-given "Richard A"
+efficiency. See ◊format-work[#:type "book" #:author-given "Richard A"
 #:author-family "Posner" #:title "Economic Analysis of Law" #:year
-"1973" #:publisher "Little, Brown"] And, ◊declare-work[#:type
+"1973" #:publisher "Little, Brown"] And, ◊format-work[#:type
 "article" #:author-given "Richard A" #:author-family "Posner" #:title
 "The Economic Approach to Law" #:year "1975" #:journal "Texas Law
 Review" #:volume "53" #:pages "757" #:url
