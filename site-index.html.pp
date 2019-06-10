@@ -1,5 +1,7 @@
 #lang pollen
 
+◊(require pollen/pagetree)
+
 <!DOCTYPE html>
 
 ◊(define pagelist (pagetree->list (get-pagetree "index.ptree")))

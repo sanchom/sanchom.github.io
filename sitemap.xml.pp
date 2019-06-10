@@ -1,5 +1,6 @@
 #lang pollen
 ◊(require racket/string)
+◊(require pollen/pagetree)
 
 ◊(define pagelist (pagetree->list (get-pagetree "index.ptree")))
 

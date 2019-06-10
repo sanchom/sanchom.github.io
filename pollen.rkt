@@ -151,10 +151,10 @@
     [(_ SIGNAL TEXT)
      (with-syntax ([NOTE-SIGNAL (format-id #'SIGNAL "note-~a" #'SIGNAL)])
        #'(begin
-           (define (SIGNAL id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
-             (cite id #:supra supra #:ibid ibid #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal TEXT))
-           (define (NOTE-SIGNAL id #:supra [supra #f] #:ibid [ibid #f] #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
-             (note (SIGNAL id #:supra supra #:ibid ibid #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker))))
+           (define (SIGNAL id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
+             (cite id #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal TEXT))
+           (define (NOTE-SIGNAL id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
+             (note (SIGNAL id #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker))))
        )]))
 
 (define-signal see "See")
@@ -164,7 +164,7 @@
 (define-signal see-generally "See generally")
 
 (define (note-cite id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f] #:signal [signal #f])
-  (note (cite id #:supra #f #:ibid #f #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal signal)))
+  (note (cite id #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal signal)))
 
 ; Defines a little sidenote or footnote (depending on the mode), numbered, and by default collapsed
 ; to a small height. In print, these are all footnotes.
