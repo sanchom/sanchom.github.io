@@ -1,7 +1,6 @@
 #lang racket
 
 (require racket/contract)
-(require racket/string)
 (require txexpr)
 
 (module+ test

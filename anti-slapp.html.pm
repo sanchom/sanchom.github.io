@@ -11,7 +11,7 @@
 #:citation "No 15-14889" #:jurisdiction "11th Cir" #:year "2017" #:id
 "Tobinick"]
 
-◊declare-work[#:type "bill" #:number "Bill 2" #:title "Protection of
+◊declare-work[#:type "bill" #:number "2" #:title "Protection of
 Public Participation Act" #:legislative-body "4th Sess, 41st Leg,
 British Columbia" #:year "2019" #:url
 "https://www.leg.bc.ca/content/data%20-%20ldp/Pages/41st4th/1st_read/gov02-1.htm"
