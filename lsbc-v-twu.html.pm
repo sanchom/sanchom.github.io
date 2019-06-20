@@ -8,7 +8,7 @@
 ◊declare-work[#:type "article" #:author-given "Sancho" #:author-family
 "McCann" #:title "Finding Harmony: *Law Society of British Columbia v
 Trinity Western University*" #:comment-info "Case Comment" #:journal
-"Dalhousie Journal of Legal Studies" #:volume "28" #:forthcoming
+"Dal J Leg Stud" #:volume "28" #:forthcoming
 "2019" #:id "McCann" #:short-form "McCann"]
 
 ◊declare-work[#:type "legal-case" #:title "Law Society of British
