@@ -151,8 +151,8 @@
     [(_ SIGNAL TEXT)
      (with-syntax ([NOTE-SIGNAL (format-id #'SIGNAL "note-~a" #'SIGNAL)])
        #'(begin
-           (define (SIGNAL id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
-             (cite id #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal TEXT))
+           (define (SIGNAL id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f] #:terminal [terminal "."])
+             (cite id #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker #:signal TEXT #:terminal terminal))
            (define (NOTE-SIGNAL id #:pinpoint [pinpoint #f] #:parenthetical [parenthetical #f] #:judge [judge #f] #:speaker [speaker #f])
              (note (SIGNAL id #:pinpoint pinpoint #:parenthetical parenthetical #:judge judge #:speaker speaker))))
        )]))

@@ -21,9 +21,9 @@ Western University}}
 
 ◊subtitle{Sancho McCann}
 
-My case comment is going to be published!◊note{◊cite["McCann"]
-Commenting on ◊cite["LSBC"]} You'll be able to find it in the next
-volume of the ◊a[#:href
+My case comment is going to be published!◊note{◊cite["McCann"
+#:terminal ","] commenting on ◊cite["LSBC"]} You'll be able to find it
+in the next volume of the ◊a[#:href
 "https://ojs.library.dal.ca/djls"]{◊em{Dalhousie Journal of Legal
 Studies}}. Until then, they've said that I can post this, which should
 be very close to the final draft:
@@ -115,15 +115,15 @@ in ◊em{LSBC v TWU} tells us about how courts should review the
 discretionary decisions of administrative decision-makers for
 compliance with the ◊em{Charter}. There is a recent line of cases from
 the Supreme Court of Canada that presumably had answered this question
-already.◊note{◊see{dore} ◊see-also{loyola}} The Court generally will
-follow the rules and methods they've set out in previous cases unless
-they prove to be unworkable or if new evidence arises that shows the
-existing precedent was based on flawed or no-longer-valid
-premises.◊note{◊see["bedford" #:pinpoint "para 42" #:parenthetical
-"\"the matter may be revisited if new legal issues are raised as a
-consequence of significant developments in the law, or if there is a
-change in the circumstances or evidence that fundamentally shifts the
-parameters of the debate\""]}
+already.◊note{◊see["dore" #:terminal ";"] ◊cite["loyola"]} The Court
+generally will follow the rules and methods they've set out in
+previous cases unless they prove to be unworkable or if new evidence
+arises that shows the existing precedent was based on flawed or
+no-longer-valid premises.◊note{◊see["bedford" #:pinpoint "para 42"
+#:parenthetical "\"the matter may be revisited if new legal issues are
+raised as a consequence of significant developments in the law, or if
+there is a change in the circumstances or evidence that fundamentally
+shifts the parameters of the debate\""]}
 
 I argue that this dispute between the Law Society and Trinity Western
 University shows that the framework from ◊em{Doré} and ◊em{Loyola} is
