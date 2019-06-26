@@ -2,7 +2,7 @@
 
 ◊define-meta[page-title]{The science of solitary confinement}
 ◊define-meta[original-date]{2019-02-09}
-◊define-meta[edited-date]{2019-03-24}
+◊define-meta[edited-date]{2019-06-25}
 
 ◊declare-work[#:type "magazine/news" #:author "Treacy Ziegler" #:title
 "Memory of Space" #:publication "The Prison Arts Coalition" #:date "15
@@ -28,6 +28,12 @@ BCSC 62" #:url
 "https://www.canlii.org/en/bc/bcsc/doc/2018/2018bcsc62/2018bcsc62.html"
 #:id "BCCLA" #:short-form "*BCCLA v Canada*"]
 
+◊declare-work[#:type "legal-case" #:title "British Columbia Civil
+Liberties Association v Canada (Attorney General)" #:citation "2019
+BCCA 228" #:url
+"https://www.canlii.org/en/bc/bcca/doc/2019/2019bcca228/2019bcca228.html"
+#:id "BCCLA-CA" #:short-form "*BCCLA v Canada* (CA)"]
+
 ◊declare-work[#:type "legal-case" #:title "Canada (Attorney General) v
 Bedford" #:citation "2013 SCC 72" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/13389/index.do"
@@ -46,9 +52,16 @@ psychology of solitary confinement.◊note-cite["Quirks"] Bob McDonald
 interviewed Dr. Craig Haney, one of the expert witnesses in the BC
 Supreme Court case that resulted in portions of Canada's
 solitary-confinement regime being struck down as
-unconstitutional.◊note-cite["BCCLA"]◊note{Canada
-appealed that result. The appeal was heard on November 13, 2018. The
-decision has not been announced as of February 9, 2019.}
+unconstitutional.◊note-cite["BCCLA"]◊note{Canada appealed that
+result. The appeal was heard on November 13, 2018. The decision had
+not been announced at the time of this blog post's original
+publication, but on June 24, 2019, the Court of Appeal for British
+Columbia held that "a legislative provision that authorizes the
+prolonged and indefinite use of administrative segregation in
+circumstances that constitute [solitary confinement]" are an
+unjustified violation of s 7 of the ◊em{Charter}. The Court of Appeal
+accepted all of the trial judge's factual findings, which are the
+subject of this blog post. ◊cite["BCCLA-CA"]}
 
 This is a short comment on that case, ◊em{British Columbia Civil
 Liberties Association v Canada (Attorney General)} (◊em{BCCLA v
