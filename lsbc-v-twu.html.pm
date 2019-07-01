@@ -16,8 +16,7 @@ Columbia v Trinity Western University" #:citation "2018 SCC 32"
 #:short-form "*LSBC v TWU*" #:id "LSBC" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/17140/index.do"]
 
-◊title{Finding Harmony: ◊em{Law Society of British Columbia v Trinity
-Western University}}
+◊title{Case Comment: ◊em{LSBC v TWU}}
 
 ◊subtitle{Sancho McCann}
 
