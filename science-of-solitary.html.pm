@@ -8,13 +8,14 @@
 "Memory of Space" #:publication "The Prison Arts Coalition" #:date "15
 October 2014" #:url
 "https://theprisonartscoalition.com/2014/10/15/memory-of-space/" #:id
-"Ziegler1"]
+"Ziegler1" #:short-form "Ziegler, \"Memory of Space\""]
 
 ◊declare-work[#:type "magazine/news" #:author "Treacy Ziegler" #:title
 "The art of absolute loneliness" #:publication "Broad Street Review"
 #:date "3 June 2014" #:url
 "https://www.broadstreetreview.com/art/the-art-of-absolute-lonelines"
-#:id "Ziegler2"]
+#:id "Ziegler2" #:short-form "Ziegler, \"The Art of Absolute
+Lonliness\""]
 
 ◊declare-work[#:type "magazine/news" #:publication "Quirks and Quarks,
 CBC" #:date "8 February 2019" #:title "Months locked in a tiny box —

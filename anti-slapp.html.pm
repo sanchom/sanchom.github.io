@@ -27,7 +27,7 @@ Participation Act" #:reading "1st reading" #:jurisdiction "British
 Columbia" #:proceedings "Official Report of Debates (Hansard)"
 #:legislative-body "41-3" #:volume "No 137" #:year "15 May 2018" #:url
 "https://www.leg.bc.ca/content/hansard/41st3rd/20180515am-Hansard-n137.pdf"
-#:id "1st reading"]
+#:id "1st reading" #:short-form "Bill C-32 (1st reading)"]
 
 ◊title{BC's anti-SLAPP legislation}
 ◊subtitle{Sancho McCann}

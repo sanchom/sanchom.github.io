@@ -38,8 +38,7 @@ Mock\""]
 "Pitchford" #:year "2002" #:volume "18" #:issue "1" #:pages "39--66"
 #:title "An Economic Analysis of Riding to Hounds: *Pierson v Post*
 Revisited" #:journal "Journal of Law, Economics, & Organization" #:url
-"https://www.jstor.org/stable/pdf/3555069.pdf" #:id "Dharmapala"
-#:short-form "Dharmapala"]
+"https://www.jstor.org/stable/pdf/3555069.pdf" #:id "Dharmapala"]
 
 ◊declare-work[#:type "article" #:title "Legal Fictions in *Pierson v
 Post*" #:author "Andrea McDowell" #:year "2007" #:journal "Michigan
