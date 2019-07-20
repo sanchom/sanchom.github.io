@@ -36,7 +36,7 @@ this work ourselves, it is helpful to have clear rules. Clear rules
 will also make it easier to automate this work. There are several
 rules and examples in the ◊em{McGill Guide}◊note[#:expanded
 "t"]{◊cite["mcgill"] This is one of Canada's legal citation
-guides. It's widely, but not universally used, and it has been
+guides. It's widely but not universally used, and it has been
 criticized as exclusionary. See ◊cite["mirando"]} that could use some
 extra clarity or correction.
 
