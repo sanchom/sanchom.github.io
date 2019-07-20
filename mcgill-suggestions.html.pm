@@ -34,10 +34,11 @@ I've said that [citation layout is something that can and should be
 automated](automating-citations.html). But as long as we are doing
 this work ourselves, it is helpful to have clear rules. Clear rules
 will also make it easier to automate this work. There are several
-rules and examples in the ◊em{McGill Guide}◊note{◊cite["mcgill"] This
-is one of Canada's legal citation guides. It's widely, but not
-universally used, and it has been criticized as exclusionary. See
-◊cite["mirando"]} that could use some extra clarity or correction.
+rules and examples in the ◊em{McGill Guide}◊note[#:expanded
+"t"]{◊cite["mcgill"] This is one of Canada's legal citation
+guides. It's widely, but not universally used, and it has been
+criticized as exclusionary. See ◊cite["mirando"]} that could use some
+extra clarity or correction.
 
 ◊fig[#:src "assets/mcgill-guide.jpg" #:width "500px"]{Very helpful,
 but can be even better.}
@@ -152,7 +153,8 @@ extraneous consideration" at 174)}}.
 
 The ◊em{McGill Guide} doesn't say how to subsequently include a
 parenthetical that quotes from Justice Taschereau's dissent in
-◊em{Roncarelli}.◊note{By the way, the [old Supreme Court
+◊em{Roncarelli}.◊note[#:expanded "t"]{By the way, the [old Supreme
+Court
 Reports](https://scc-csc.lexum.com/scc-csc/scc-csc/en/2751/1/document.do)
 look so nice. Every page tells you whose words you're reading with a
 cute little margin note. They use a didone/modern typeface. Footnotes
@@ -183,8 +185,8 @@ The ◊em{McGill Guide} clearly limits parenthetical information within
 a citation to a "brief description or quotation of not more than one
 sentence." Often though, footnotes contain more information than would
 make sense in a parenthetical. There are few alternatives for how to
-present this.◊note{The following examples all come from
-◊cite["inside-job"]}
+present this.◊note[#:expanded "t"]{The following examples all come
+from ◊cite["inside-job"]}
 
 You could just cite within the footnote as if you were writing body
 text with in-text citations (that is, set the citation off with a set
