@@ -2,6 +2,7 @@
 
 ◊define-meta[page-title]{Automating citations}
 ◊define-meta[original-date]{2019-05-05}
+◊define-meta[edited-date]{2019-07-20}
 ◊define-meta[snippet]{No one should be spending time laying out citations. Here's a description of some legal tech (or just writing tech) that's made this easier for me.}
 
 ◊title{Automating citations}
@@ -221,17 +222,27 @@ that are being managed automatically.
 
 ◊heading{Code}
 
-These are works-in-progress, but take a look at them, use them or use
-ideas from them, and let me know how they could be better:
+These are all in various stages of readiness, but take a look at them,
+use them or use ideas from them, and let me know how they could be
+better:
 
 ◊itemize{
 
-◊a[#:href "https://github.com/sanchom/allard-writing-tools"]{My
-factum/paper authoring tool}
+◊a[#:href "https://github.com/sanchom/allard-writing-tools"]{My first
+factum/paper authoring tool} (deprecated: I didn't like how this
+turned out)
+
+◊a[#:href "https://github.com/sanchom/associate"]{associate}, my
+current work-in-progress on a factum/paper authoring tool.
 
 ◊a[#:href
 "https://github.com/sanchom/sanchom.github.io/blob/master-source/pollen.rkt"]{The
 code that renders this website}
+
+◊a[#:href
+"https://github.com/sanchom/pollen-citations-mcgill"]{pollen-citations-mcgill},
+the common code underlying the citation layout for this website and
+for my factum/paper authoring tool
 
 }
 

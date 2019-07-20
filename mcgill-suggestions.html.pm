@@ -226,14 +226,15 @@ cases and concluded that◊ellipsis }}
 
 }
 
-The ◊em{McGill Guide} doesn't advise which of these approaches to take. The
-◊em{Chicago Manual of Style} suggests, "When a note contains not only
-the source of a fact or quotation in the text but related substantive
-material as well, the source comes first. A period usually separates
-the citation from the commentary." And, "When a note includes a
-quotation, the source normally follows the terminal punctuation of the
-quotation. The entire source need not be put in
-parentheses."◊note-cite["cmos" #:pinpoint "sections 14.37, 14.38"]
+The ◊em{McGill Guide} doesn't advise which of these approaches to
+take, perhaps because it is not a style guide. The ◊em{Chicago Manual
+of Style} suggests, "When a note contains not only the source of a
+fact or quotation in the text but related substantive material as
+well, the source comes first. A period usually separates the citation
+from the commentary." And, "When a note includes a quotation, the
+source normally follows the terminal punctuation of the quotation. The
+entire source need not be put in parentheses."◊note-cite["cmos"
+#:pinpoint "sections 14.37, 14.38"]
 
 My suggestion would be for the ◊em{McGill Guide} to explicitly recognize
 that variation between these approaches is okay, and that the choice
