@@ -3,7 +3,7 @@
 ◊define-meta[page-title]{McGill Guide 9.1: Suggestions for improvement}
 ◊define-meta[short-title]{McGill Guide 9.1}
 ◊define-meta[original-date]{2019-07-18}
-◊define-meta[snippet]{Some suggested improvements for Canada's legal citation guide}
+◊define-meta[snippet]{Some suggested improvements for one of Canada's legal citation guides}
 
 ◊(define (mcgill-example . content) `(blockquote [[class "mcgill-example"]] ,@content))
 
@@ -11,6 +11,11 @@
 Uniform Legal Citation" #:edition "9th" #:year "2018" #:publisher
 "Thomson Reuters" #:publisher-location "Toronto" #:short-form "McGill
 Guide"]
+
+◊declare-work[#:id "mirando" #:type "magazine/news" #:title "Legal
+Citation: Beyond the McGill Guide" #:author "Louis Mirando" #:url
+"http://www.slaw.ca/2014/12/08/legal-citation-beyond-the-mcgill-guide/"
+#:publication "Slaw" #:date "8 December 2014"]
 
 ◊declare-work[#:id "inside-job" #:type "article" #:title "An Inside
 Job: Engaging with Indigenous Legal Traditions through Stories"
@@ -29,8 +34,10 @@ I've said that [citation layout is something that can and should be
 automated](automating-citations.html). But as long as we are doing
 this work ourselves, it is helpful to have clear rules. Clear rules
 will also make it easier to automate this work. There are several
-rules and examples in the ◊em{McGill Guide}◊note-cite["mcgill"] that could
-use some extra clarity or correction.
+rules and examples in the ◊em{McGill Guide}◊note{◊cite["mcgill"] This
+is one of Canada's legal citation guides. It's widely, but not
+universally used, and it has been criticized as exclusionary. See
+◊cite["mirando"]} that could use some extra clarity or correction.
 
 ◊fig[#:src "assets/mcgill-guide.jpg" #:width "500px"]{Very helpful,
 but can be even better.}
