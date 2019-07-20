@@ -32,7 +32,7 @@ will also make it easier to automate this work. There are several
 rules and examples in the ◊em{McGill Guide}◊note-cite["mcgill"] that could
 use some extra clarity or correction.
 
-◊fig[#:src "assets/mcgill-guide.jpg" #:width "300px"]{Very helpful,
+◊fig[#:src "assets/mcgill-guide.jpg" #:width "500px"]{Very helpful,
 but can be even better.}
 
 ◊heading{Extra clarity needed}

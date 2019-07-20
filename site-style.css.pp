@@ -172,8 +172,9 @@ img.little-logo { float: left; margin-right: 1em; margin-bottom: 1em; }
 ◊; Other image styles.
 img.thumbnail { float: left; margin-right: 1em; margin-bottom: 1em; margin-top: 0.5em; width: 150px;}
 img:not(.little-logo):not(.thumbnail):not(.specified-width) { width: 100%; }
-img { max-width: 100%; }
+img { max-width: 100%; border-radius: 10px; }
 .vid-wrapper { margin-left: auto; margin-right: auto; max-width: 100%; }
+video { border-radius: 10px; }
 
 ◊; Taken from Tufte-css. Plain, underlined links without cutting
 ◊; through descenders.
@@ -361,8 +362,9 @@ border: 1px solid ◊|very-light-text-color|;
 font-size: 0.8em;
 top: -0.1rem;
 left: 0.1rem;
-padding-left: 0.35em;
-padding-right: 0.35em;
+margin-left: 0.1em;
+padding-left: 0.4em;
+padding-right: 0.4em;
 border-radius: 50%;
 }
 
