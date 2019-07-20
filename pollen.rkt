@@ -102,6 +102,10 @@
 (define (outline . content)
   `(span [[class "outline"]] ,@content))
 
+; A little blood red
+(define (red . content)
+  `(span [[class "red"]] ,@content))
+
 ; Some code styling
 (define (codeblock . content)
   `(blockquote [[class "code"]] (pre [[class "code"]] ,@content)))

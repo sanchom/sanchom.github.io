@@ -134,6 +134,8 @@ b { font-weight: 600;}
 
 .warning { color: ◊|highlight-color|; }
 
+.red { color: ◊|highlight-color|; }
+
 .center { text-align: center; }
 
 p.date {font-size: 0.8em; font-style: italic; text-align: right;}
@@ -205,6 +207,10 @@ background: #b4d5fe;
 p, li, blockquote {line-height: 1.5;}
 ul {list-style: circle outside;}
 li {padding-left: 1em; text-align: left; margin-bottom: 0.35em;}
+
+blockquote.mcgill-example {
+background-color: ◊|blockquote-background-color|; padding-right: 1em;
+}
 
 blockquote { border-left: 5px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
 .code { font-family: "Source Code Pro", "Liberation Mono", Menlo, Courier, monospace; }
