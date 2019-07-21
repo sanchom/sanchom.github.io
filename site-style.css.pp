@@ -280,14 +280,14 @@ vertical-align: baseline;
 
 .sidenote-number:after {
 content: counter(sidenote-counter);
-font-size: 0.65rem;
+font-size: 0.65em;
 top: -0.35rem;
 left: 0.1rem;
 }
 
 .sidenote-comma {
 position: relative;
-font-size: 0.65rem;
+font-size: 0.65em;
 top: -0.35rem;
 left: 0.1rem;
 }

@@ -2,7 +2,7 @@
 
 ◊define-meta[page-title]{The double-aspect doctrine}
 ◊define-meta[original-date]{2018-12-26}
-◊define-meta[edited-date]{2019-05-24}
+◊define-meta[edited-date]{2019-07-21}
 ◊define-meta[snippet]{Teasing apart the ways in which the double-aspect doctrine is used.}
 ◊use-footnotes[]
 
@@ -55,11 +55,13 @@ Management Act (British Columbia)" #:citation "2019 BCCA 181" #:url
 ◊fig[#:src "assets/pipelines-double-aspect.png" #:width "500px"]{The
 double-aspect doctrine explains why the provincial and federal
 government might both be able to make legislation relating to a
-particular field. On April 26, 2018, the BC government asked the BC
-Court of Appeal to decide (among other things) whether the province
-has the power to make certain amendments to the to the Environmental
-Management Act that would affect a proposed pipeline being built by
-the federal government. See the ◊a[#:href
+particular field. (The figure I've drawn here as a method of
+visualizing the double-aspect doctrine is an approach taken from
+Professor Joel Bakan's first-year lecture on the topic.) On April 26,
+2018, the BC government asked the BC Court of Appeal to decide whether
+the province has the power to make certain amendments to the to the
+Environmental Management Act that would affect a proposed pipeline
+being built by the federal government. See the ◊a[#:href
 "https://news.gov.bc.ca/releases/2018PREM0019-000742"]{news
 release}. Update: The BC Court of Appeal rejected the province's
 characterization that is reflected in this diagram.◊note{"Part 2.1
@@ -92,7 +94,7 @@ interplay and indeed overlap between federal and provincial
 powers."◊note-cite["OPSEU" #:pinpoint "para 27"] One way that this
 overlap plays out is through the double-aspect doctrine.
 
-◊em{Multiple Access Ltd v McCutcheon}◊note-cite["Multiple Access"],
+◊em{Multiple Access Ltd v McCutcheon},◊note-cite["Multiple Access"]
 the case generally used to introduce the double-aspect doctrine,
 conflates two kinds of doubleness and this can lead to an overly
 narrow conception of the doctrine. This article presents how I've come
