@@ -2,14 +2,18 @@
 
 ◊define-meta[page-title]{Home}
 
-In September, I start my second year at UBC's Allard School of Law
-(class of 2021). I want use law to help give the weakest of us a
-voice, in the legal system and in society in general. This includes
-civil liberties, especially free expression and defendants' rights. I
-want to help with public legal education and access-to-justice
-initiatives, to give more of us more confidence in the outcomes of the
-legal system and other government decision-making processes. I'm also
-interested in the many overlaps of law and technology.
+I am in my second year at UBC's Allard School of Law (class of
+2021). I want use law to help give the weakest of us a voice, in the
+legal system and in society in general. This includes civil liberties,
+human rights, and democratic rights. I want to help with public legal
+education and access-to-justice initiatives, to give more of us more
+confidence in the outcomes of the legal system and other government
+decision-making processes. I'm also interested in the many overlaps of
+law and technology.
+
+I am on the [Gale Moot](https://www.galecupmoot.com/) team and am the
+Associate Editor at the [Canadian Journal of Family
+Law](http://faculty.allard.ubc.ca/cdnjfl/).
 
 I'm trained as a computer scientist. In that field, I've focused on
 visual object recognition, machine learning, and applications of deep
