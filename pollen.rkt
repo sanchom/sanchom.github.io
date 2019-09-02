@@ -113,6 +113,9 @@
 (define (tt . content)
   `(span [[class "code"]] ,@content)) ; TODO: Use <code> instead.
 
+(define (no-formatting . content)
+  `(span ,@content))
+
 ; Explicit list annotation. First, detects double-line-breaks to
 ; create top-level block elements, then turns top-level elements
 ; within the itemize tag into list items. Excludes block-tags to avoid
@@ -200,7 +203,7 @@
 ; Custom hyphenation that doesn't break URLs.
 (define (custom-hyphenation x)
   (define allowed-capitalized-hyphenations
-    (list "Atmos-View"))
+    (list "Atmos-View" "un-itali-cized"))
   (define non-breakable-capitalized? (λ (word) (let ([letter (substring word 0 1)])
                                                  (and (equal? letter (string-upcase letter))
                                                       (not (ormap (λ (hy) (equal? (string-replace hy "-" "") word)) allowed-capitalized-hyphenations))))))
@@ -288,12 +291,12 @@
   ; formed in order to have strings and sidenote-wrappers as txexpr elements.
   (decode (txexpr 'root empty (get-elements
                                (decode (add-html-footnotes (txexpr 'root empty elements))
-                                       #:exclude-tags '(pre)
+                                       #:exclude-tags '(pre no-formatting)
                                        #:txexpr-proc (compose1 custom-hyphenation show-necessary-short-forms)
                                        ; Double line breaks create new paragraphs. Single line breaks are ignored.
                                        #:txexpr-elements-proc (compose1 decode-double-breaks-into-paras)
                                        #:string-proc (compose1 smart-quotes smart-dashes))))
-          #:exclude-tags '(pre)
+          #:exclude-tags '(pre no-formatting)
           #:txexpr-proc insert-sidenote-commas
           #:txexpr-elements-proc (compose1 parse-md-links merge-successive-strings)))
 
