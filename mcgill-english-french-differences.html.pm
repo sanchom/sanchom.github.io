@@ -118,13 +118,13 @@ The format of a book's publication information differs. In
 English ◊em{McGill} style, the format is:
 
 ◊mcgill-example{
-(Toronto: Thomson Reuters, 2011).
+(Toronto, ON: Thomson Reuters, 2011).
 }
 
 In French ◊em{McGill} style, the format is:
 
 ◊mcgill-example{
-Toronto, Thomson Reuters, 2011.
+Toronto (ON), Thomson Reuters, 2011.
 }
 
 Editions in French ◊em{McGill} style are super-scripted:
