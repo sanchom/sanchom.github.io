@@ -4,6 +4,7 @@
 ◊define-meta[short-title]{Reading (etc.) list}
 ◊define-meta[snippet]{Books, articles, cases, etc. that have helped me understand the effects of colonialism.}
 ◊define-meta[original-date]{2019-06-03}
+◊define-meta[edited-date]{2019-11-02}
 
 ◊title{Reading list from a settler law student}
 ◊subtitle{Sancho McCann}
@@ -107,9 +108,12 @@ against Indigenous women and girls, systemic bias}]
 
 }
 
-Here are some more general reading lists:
+Here are some reading lists that others have put together
 
 ◊itemize{
+
+[First Peoples Law Reading
+List](https://slack-files.com/T4B96TXTN-FPNG4CG8Z-60955f6f38)
 
 [Indigenous authors were asked to recommend one book everyone in
 Canada should
