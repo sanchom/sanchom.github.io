@@ -4,12 +4,14 @@
 ◊define-meta[short-title]{Case comment: LSBC v TWU}
 ◊define-meta[snippet]{Some background for non-law readers of my case comment on LSBC v TWU.}
 ◊define-meta[original-date]{2019-06-20}
+◊define-meta[edited-date]{2019-11-23}
 
 ◊declare-work[#:type "article" #:author-given "Sancho" #:author-family
 "McCann" #:title "Finding Harmony: *Law Society of British Columbia v
 Trinity Western University*" #:comment-info "Case Comment" #:journal
-"Dal J Leg Stud" #:volume "28" #:forthcoming
-"2019" #:id "McCann" #:short-form "McCann"]
+"Dal J Leg Stud" #:volume "28" #:first-page "95" #:year "2019" #:url
+"https://commentary.canlii.org/w/canlii/2019CanLIIDocs2663#!fragment/zoupio-_Toc3Page102"
+#:id "McCann" #:short-form "McCann"]
 
 ◊declare-work[#:type "legal-case" #:title "Law Society of British
 Columbia v Trinity Western University" #:citation "2018 SCC 32"
@@ -20,18 +22,11 @@ Columbia v Trinity Western University" #:citation "2018 SCC 32"
 
 ◊subtitle{Sancho McCann}
 
-My case comment is going to be published!◊note{◊cite["McCann"
-#:terminal ","] commenting on ◊cite["LSBC"]} You'll be able to find it
-in the next volume of the ◊a[#:href
-"https://ojs.library.dal.ca/djls"]{◊em{Dalhousie Journal of Legal
-Studies}}. Until then, they've said that I can post this, which should
-be very close to the final draft:
-
-◊center{◊a[#:href "assets/McCann-Finding-Harmony-LSBC-v-TWU.pdf"]{Finding Harmony:
-◊em{Law Society of British Columbia v Trinity Western University}}.}
-
-Here, I want to give some acknowledgements and also set out some
-background for non-law readers.
+Check out my [case
+comment](https://commentary.canlii.org/w/canlii/2019CanLIIDocs2663#!fragment/zoupio-_Toc3Page102)◊note{◊cite["McCann"
+#:terminal ","] commenting on ◊cite["LSBC"]} in the ◊em{Dalhousie
+Journal of Legal Studies}! Here, I want to give some acknowledgements
+and also set out some background for non-law readers.
 
 ◊heading{Acknowledgements}
 
@@ -39,8 +34,9 @@ I'd like to thank Professor Margot Young for encouraging me to develop
 these ideas into an article after a discussion during office hours,
 and James Barth, a friend from 1L who read through an early
 draft. Much of the content has changed since those early stages; any
-errors are my own. I'd also like to thank the student editors at the
-Dalhousie Journal of Legal studies. They made this a better paper.
+errors are my own. I'd also like to thank the editors and reviewers
+from the Dalhousie Journal of Legal studies. They made this a better
+paper.
 
 ◊heading{Background}
 

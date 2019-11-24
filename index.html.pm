@@ -41,8 +41,8 @@ Here's where you can find me elsewhere online: ◊div[#:class
 ◊format-work[#:type "article" #:author-given "Sancho" #:author-family
 "McCann" #:title "Finding Harmony: *Law Society of British Columbia v
 Trinity Western University*" #:comment-info "Case Comment" #:journal
-"Dalhousie Journal of Legal Studies" #:volume "28" #:forthcoming
-"2019"]
+"Dalhousie Journal of Legal Studies" #:volume "28" #:year "2019"
+#:first-page "95"]
 
 ◊format-work[#:type "thesis" #:title "Object classification and
 localization using spatially-localized features" #:author-given
