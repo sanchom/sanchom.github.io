@@ -1,6 +1,7 @@
 #lang pollen
 
 ◊define-meta[page-title]{Early impressions from Canada v Vavilov}
+◊define-meta[short-title]{Canada v Vavilov}
 ◊define-meta[original-date]{2019-12-19}
 ◊define-meta[featured-image-url]{assets/vavilov-flowchart.png}
 ◊define-meta[snippet]{Some early impressions of the Vavilov framework}
