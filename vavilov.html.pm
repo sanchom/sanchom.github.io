@@ -238,6 +238,6 @@ novo} analysis, but the court also is not to allow the administrative
 decision maker to "adopt an interpretation it knows to be inferior —
 albeit plausible — merely because the interpretation in question
 appears to be available and is expedient." And sometimes, the
-"correct" interpretation will just happy to "become clear" to the
+"correct" interpretation will just happen to "become clear" to the
 reviewing court (although not doing a ◊em{de novo} analysis). I'd love
 some help understanding this.
