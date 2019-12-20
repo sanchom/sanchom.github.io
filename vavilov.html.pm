@@ -30,7 +30,7 @@ New Brunswick" #:citation "2008 SCC 9" #:short-form "*Dunsmuir*"]
 ◊fig[#:src "assets/vavilov-flowchart.png"]{The ◊em{Vavilov} framework
 for determining the standard of review.}
 
-Here are some early thoughts◊note{I've been helped by various Twitter
+Here are some early thoughts◊note[#:expanded "yes"]{I've been helped by various Twitter
 threads I've encountered throughout the day: [Mary
 Liston](https://twitter.com/mary1liston/status/1207735201515704320),
 [Caroline
