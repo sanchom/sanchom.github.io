@@ -30,10 +30,16 @@ New Brunswick" #:citation "2008 SCC 9" #:short-form "*Dunsmuir*"]
 ◊fig[#:src "assets/vavilov-flowchart.png"]{The ◊em{Vavilov} framework
 for determining the standard of review.}
 
-Here are some early thoughts on ◊em{Canada v
-Vavilov}◊note-cite["Vavilov"]. In this decision, the Supreme Court of
-Canada presented a revised approach for how courts should determine
-the standard of review in judicial review.
+Here are some early thoughts◊note{I've been helped by various Twitter
+thread's I've encountered throughout the day: [Mary
+Liston](https://twitter.com/mary1liston/status/1207735201515704320),
+[Caroline
+Mandell](https://twitter.com/cjmandell/status/1207770850944061440),
+[Adil
+Abdulla](https://twitter.com/Adil_Abdulla/status/1207722233059323906).}
+on ◊em{Canada v Vavilov}◊note-cite["Vavilov"].  In this decision, the
+Supreme Court of Canada presented a revised approach for how courts
+should determine the standard of review in judicial review.
 
 There are two main takeaways: 1) the new framework for selecting the
 standard of review, and 2) an in-depth explanation of what
