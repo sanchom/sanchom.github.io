@@ -31,7 +31,7 @@ New Brunswick" #:citation "2008 SCC 9" #:short-form "*Dunsmuir*"]
 for determining the standard of review.}
 
 Here are some early thoughts◊note{I've been helped by various Twitter
-thread's I've encountered throughout the day: [Mary
+threads I've encountered throughout the day: [Mary
 Liston](https://twitter.com/mary1liston/status/1207735201515704320),
 [Caroline
 Mandell](https://twitter.com/cjmandell/status/1207770850944061440),
