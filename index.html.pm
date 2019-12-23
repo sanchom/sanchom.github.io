@@ -42,7 +42,8 @@ Here's where you can find me elsewhere online: ◊div[#:class
 "McCann" #:title "Finding Harmony: *Law Society of British Columbia v
 Trinity Western University*" #:comment-info "Case Comment" #:journal
 "Dalhousie Journal of Legal Studies" #:volume "28" #:year "2019"
-#:first-page "95"]
+#:first-page "95" #:url
+"https://commentary.canlii.org/w/canlii/2019CanLIIDocs2940"]
 
 ◊format-work[#:type "thesis" #:title "Object classification and
 localization using spatially-localized features" #:author-given

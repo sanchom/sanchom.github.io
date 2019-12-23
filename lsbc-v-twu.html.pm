@@ -10,7 +10,7 @@
 "McCann" #:title "Finding Harmony: *Law Society of British Columbia v
 Trinity Western University*" #:comment-info "Case Comment" #:journal
 "Dal J Leg Stud" #:volume "28" #:first-page "95" #:year "2019" #:url
-"https://commentary.canlii.org/w/canlii/2019CanLIIDocs2663#!fragment/zoupio-_Toc3Page102"
+"https://commentary.canlii.org/w/canlii/2019CanLIIDocs2940"
 #:id "McCann" #:short-form "McCann"]
 
 ◊declare-work[#:type "legal-case" #:title "Law Society of British
@@ -23,7 +23,7 @@ Columbia v Trinity Western University" #:citation "2018 SCC 32"
 ◊subtitle{Sancho McCann}
 
 Check out my [case
-comment](https://commentary.canlii.org/w/canlii/2019CanLIIDocs2663#!fragment/zoupio-_Toc3Page102)◊note{◊cite["McCann"
+comment](https://commentary.canlii.org/w/canlii/2019CanLIIDocs2940)◊note{◊cite["McCann"
 #:terminal ","] commenting on ◊cite["LSBC"]} in the ◊em{Dalhousie
 Journal of Legal Studies}! Here, I want to give some acknowledgements
 and also set out some background for non-law readers.

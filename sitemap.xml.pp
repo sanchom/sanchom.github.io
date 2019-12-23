@@ -9,12 +9,12 @@
 
 <url>
 <loc>https://sanchom.github.io</loc>
-<changefreq>weekly</changefreq>
+<changefreq>daily</changefreq>
 </url>
 
 <url>
 <loc>https://sanchom.github.io/site-index.html</loc>
-<changefreq>weekly</changefreq>
+<changefreq>daily</changefreq>
 </url>
 
 ◊(apply string-append (map (lambda (x)
