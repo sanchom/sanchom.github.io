@@ -2,13 +2,20 @@
 
 ◊define-meta[page-title]{Vavilov and Indigenous self-government}
 ◊define-meta[short-title]{Vavilov and Pastion}
-◊define-meta[original-date]{2020-01-20}
+◊define-meta[original-date]{2020-01-12}
+◊define-meta[edited-date]{2020-01-15}
 ◊define-meta[snippet]{How Vavilov does not undercut Indigenous self-government}
 
 ◊declare-work[#:id "Vavilov" #:type "legal-case" #:title "Canada
 (Minister of Citizenship and Immigration) v. Vavilov" #:citation "2019
 SCC 65" #:short-form "*Vavilov*" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/18078/index.do"]
+
+◊declare-work[#:id "Vowel" #:type "magazine/news" #:title "The myth of
+the corrupt chief and band council (Part I)" #:publication
+"âpihtawikosisân" #:author "Chelsea Vowel" #:date "15 February 2016"
+#:url
+"https://apihtawikosisan.com/2016/02/the-myth-of-the-corrupt-chief-and-band-council-part-i/"]
 
 ◊title{◊em{Vavilov} and Indigenous self-government}
 ◊subtitle{Sancho McCann}
@@ -20,11 +27,14 @@ Dene Tha' First Nation" #:citation "2018 FC 648" #:url
 
 There has been optimism that ◊em{Pastion v Dene Tha' First
 Nation}◊note-cite["Pastion"] makes space for Indigenous
-self-government within Canada's administrative
-state. Post-◊em{Vavilov}, courts will be reviewing the reasons of
-decision-makers with heightened scrutiny. Could this cut into the
-sphere of deference carved out by ◊em{Pastion} for Indigenous
-decision-makers? I think it does not.
+self-government within Canada's administrative state.◊note[#:expanded
+"yes"]{I acknowledge that this optimism is necessarily limited by the
+fact that the government structures that are afforded power through
+the administrative state are still Canadian-created and
+controlled. ◊see["Vowel"]} Post-◊em{Vavilov}, courts will be reviewing
+the reasons of decision-makers with heightened scrutiny. Could this
+cut into the sphere of deference carved out by ◊em{Pastion} for
+Indigenous decision-makers? I think it does not.
 
 The Court in ◊em{Vavilov} lists various factors that inform the
 scope◊note{Although, not literally a ◊em{range}.} of what is
