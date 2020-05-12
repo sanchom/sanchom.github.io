@@ -1,8 +1,9 @@
 #lang pollen
 
 ◊(define-meta template "cars-template.html")
+◊(define-m
 
-◊title{Canadian Aviation Regulations}
+◊h1{Canadian Aviation Regulations}
 ◊heading{About this book}
 
 This book will help prepare you for Canada's Private Pilot written
