@@ -1,7 +1,7 @@
 #lang pollen
 
-◊define-meta[page-title]{McGill Guide 9.1: Suggestions for improvement}
-◊define-meta[short-title]{McGill Guide 9.1}
+◊define-meta[page-title]{◊@{◊em{McGill Guide} 9.1: Suggestions for improvement}}
+◊define-meta[short-title]{◊@{◊em{McGill Guide} 9.1}}
 ◊define-meta[original-date]{2019-07-18}
 ◊define-meta[snippet]{Some suggested improvements for one of Canada's legal citation guides}
 
@@ -26,9 +26,6 @@ Job: Engaging with Indigenous Legal Traditions through Stories"
 ◊declare-work[#:id "cmos" #:type "book" #:short-form "CMOS" #:title
 "The Chicago Manual of Style" #:edition "17th" #:publisher "University
 of Chicago Press" #:publisher-location "Chicago" #:year "2017"]
-
-◊title{McGill Guide 9.1: Suggestions for improvement}
-◊subtitle{Sancho McCann}
 
 I've said that [citation layout is something that can and should be
 automated](automating-citations.html). But as long as we are doing

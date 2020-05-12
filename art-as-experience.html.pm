@@ -4,8 +4,6 @@
 ◊define-meta[original-date]{2018-09-04}
 ◊define-meta[edited-date]{2018-09-05}
 
-◊title{Art as Experience}
-
 I've been reading ◊em{Art as Experience}◊note{◊format-work[#:type
 "book" #:author "John Dewey" #:year "1934" #:title "Art as Experience"
 #:publisher "Minton Balch & Co" #:publisher-location "New York"]} a

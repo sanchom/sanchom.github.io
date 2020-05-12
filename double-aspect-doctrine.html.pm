@@ -50,8 +50,6 @@ Management Act (British Columbia)" #:citation "2019 BCCA 181" #:url
 "https://www.courts.gov.bc.ca/jdb-txt/ca/19/01/2019BCCA0181.htm" #:id
 "Pipeline reference"]
 
-◊title{The double-aspect doctrine}
-
 ◊fig[#:src "assets/pipelines-double-aspect.png" #:width "500px"]{The
 double-aspect doctrine explains why the provincial and federal
 government might both be able to make legislation relating to a

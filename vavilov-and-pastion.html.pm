@@ -1,7 +1,7 @@
 #lang pollen
 
-◊define-meta[page-title]{Vavilov and Indigenous self-government}
-◊define-meta[short-title]{Vavilov and Pastion}
+◊define-meta[page-title]{◊@{◊em{Vavilov} and Indigenous self-government}}
+◊define-meta[short-title]{◊@{◊em{Vavilov} and ◊em{Pastion}}}
 ◊define-meta[original-date]{2020-01-12}
 ◊define-meta[edited-date]{2020-01-19}
 ◊define-meta[snippet]{How Vavilov does not undercut Indigenous self-government}
@@ -22,9 +22,6 @@ the corrupt chief and band council (Part I)" #:publication
 #:title "Protection of First Nations Cultural Heritage: Laws, Policy,
 and Reform" #:year "2009" #:publisher "UBC Press" #:publisher-location
 "Vancouver"]
-
-◊title{◊em{Vavilov} and Indigenous self-government}
-◊subtitle{Sancho McCann}
 
 ◊declare-work[#:id "Pastion" #:type "legal-case" #:title "Pastion v
 Dene Tha' First Nation" #:citation "2018 FC 648" #:url

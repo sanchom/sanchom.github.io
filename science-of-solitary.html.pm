@@ -40,9 +40,6 @@ Bedford" #:citation "2013 SCC 72" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/13389/index.do"
 #:id "Bedford"]
 
-◊title{The science of solitary confinement}
-◊subtitle{Sancho McCann}
-
 ◊fig[#:src "assets/raymond-palmore-cell.jpg"]{Used with permission
 from Raymond Palmore. Drawn during his time at Corcoran State
 Prison.◊note{Read how art can help people in solitary confinement

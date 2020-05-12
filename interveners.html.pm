@@ -40,13 +40,13 @@ Supreme Court of Canada, 1997--1999: A content analysis"
 "http://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html" #:id
 "Criminal Code"]
 
-◊title{Interveners at the Supreme Court of Canada}
-◊subtitle{Sancho McCann}◊margin-note{This is a repost of an article I originally wrote ◊a[#:href "https://sanchom.wordpress.com/2017/08/08/interveners/"]{here}, with some minor editorial changes.}
-
-Third parties submit amicus briefs ("friend-of-the-court" briefs) in
-almost every U.S. Supreme Court case. 781 were submitted in the term
-spanning 2014--2015---an average of 12 per case---and 147 in the
+◊margin-note{This is a repost of an article I originally wrote
 ◊a[#:href
+"https://sanchom.wordpress.com/2017/08/08/interveners/"]{here}, with
+some minor editorial changes.} Third parties submit amicus briefs
+("friend-of-the-court" briefs) in almost every U.S. Supreme Court
+case. 781 were submitted in the term spanning 2014--2015---an average
+of 12 per case---and 147 in the ◊a[#:href
 "http://www.scotusblog.com/case-files/cases/obergefell-v-hodges/"]{marriage
 equality} case alone.◊note-cite["Larsen"]◊note-cite["Franze"]
 

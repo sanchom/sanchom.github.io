@@ -1,7 +1,7 @@
 #lang pollen
 
-◊define-meta[page-title]{Early impressions from Canada v Vavilov}
-◊define-meta[short-title]{Canada v Vavilov}
+◊define-meta[page-title]{◊@{Early impressions from ◊em{Canada v Vavilov}}}
+◊define-meta[short-title]{◊@{◊em{Canada v Vavilov}}}
 ◊define-meta[original-date]{2019-12-19}
 ◊define-meta[featured-image-url]{assets/vavilov-flowchart.png}
 ◊define-meta[snippet]{Some early impressions of the Vavilov framework}
@@ -22,10 +22,6 @@ New Brunswick" #:citation "2008 SCC 9" #:short-form "*Dunsmuir*"]
 "Pushpanathan v Canada (Minister of Citizenship and Immigration)"
 #:citation "[1998] 1 SCR 982" #:parallel-citation "160 DLR (4th) 193"
 #:short-form "*Pushpanathan*"]
-
-◊title{Early impressions from ◊em{Canada v Vavilov}}
-
-◊subtitle{Sancho McCann}
 
 ◊fig[#:src "assets/vavilov-flowchart.png"]{The ◊em{Vavilov} framework
 for determining the standard of review.}

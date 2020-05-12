@@ -1,7 +1,7 @@
 #lang pollen
 
-◊define-meta[page-title]{Finding Harmony: Law Society of British Columbia v Trinity Western University}
-◊define-meta[short-title]{Case comment: LSBC v TWU}
+◊define-meta[page-title]{◊@{Finding Harmony: ◊em{Law Society of British Columbia v Trinity Western University}}}
+◊define-meta[short-title]{◊@{Case comment: ◊em{LSBC v TWU}}}
 ◊define-meta[snippet]{Some background for non-law readers of my case comment on LSBC v TWU.}
 ◊define-meta[original-date]{2019-06-20}
 ◊define-meta[edited-date]{2019-11-23}
@@ -17,10 +17,6 @@ Trinity Western University*" #:comment-info "Case Comment" #:journal
 Columbia v Trinity Western University" #:citation "2018 SCC 32"
 #:short-form "*LSBC v TWU*" #:id "LSBC" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/17140/index.do"]
-
-◊title{◊em{Law Society of British Columbia v Trinity Western University}}
-
-◊subtitle{Sancho McCann}
 
 Check out my [case
 comment](https://commentary.canlii.org/w/canlii/2019CanLIIDocs2940)◊note{◊cite["McCann"

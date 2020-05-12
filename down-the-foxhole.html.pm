@@ -4,8 +4,6 @@
 ◊define-meta[original-date]{2018-10-26}
 ◊define-meta[snippet]{Pierson v Post: who owns a killed fox?}
 
-◊title{Down the foxhole}
-
 ◊fig[#:src "assets/desportes-fox.jpg" #:width "300px"]
 
 ◊declare-work[#:type "legal-case-US" #:title "Pierson v Post" #:year

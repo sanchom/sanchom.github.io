@@ -4,8 +4,6 @@
 ◊define-meta[original-date]{2018-05-26}
 ◊define-meta[edited-date]{2018-07-24}
 
-◊title{The trees of Dog Mountain}
-
 The ◊a[#:href
 "https://www.vancouvertrails.com/trails/dog-mountain/"]{Dog Mountain
 hike} is a 4.4-kilometre hike that is accessible from the parking lot

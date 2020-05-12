@@ -4,7 +4,6 @@
 ◊define-meta[original-date]{2017-12-29}
 ◊define-meta[edited-date]{2018-05-24}
 
-◊title{My 2017}
 ◊heading{Work}
 
 Shelfie, the startup I had worked at since 2014, ◊a[#:href

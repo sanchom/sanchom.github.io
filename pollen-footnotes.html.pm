@@ -6,9 +6,6 @@
 ◊define-meta[original-date]{2018-02-17}
 ◊define-meta[edited-date]{2018-03-07}
 
-◊title{A footnote tag for Pollen}
-◊subtitle{Sancho McCann}
-
 In unspecialized ◊a[#:href
 "https://docs.racket-lang.org/pollen/third-tutorial.html"]{Pollen
 markup}, tags are converted directly into associated html

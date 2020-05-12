@@ -1,12 +1,8 @@
 #lang pollen
 
-◊define-meta[page-title]{A critique of “Algorithmic Extremism”}
+◊define-meta[page-title]{A critique of "Algorithmic Extremism"}
 ◊define-meta[original-date]{2020-01-19}
 ◊define-meta[snippet]{A critique of a recent observation of YouTube recommendations}
-
-◊title{A critique of "Algorithmic Extremism"}
-
-◊subtitle{Sancho McCann}
 
 This post is a critique and recontextualization of a recent pre-print
 paper by Mark Ledwich and Anna Zaitsev, "[Algorithmic Extremism:

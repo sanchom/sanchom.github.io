@@ -6,9 +6,6 @@
 ◊define-meta[original-date]{2019-06-03}
 ◊define-meta[edited-date]{2019-11-02}
 
-◊title{Reading list from a settler law student}
-◊subtitle{Sancho McCann}
-
 Here are some things that I've read (or listened to, or watched) that
 have helped develop my understanding of colonialism and its effects on
 Indigenous people in Canada.◊note{I'm maintaining this page in

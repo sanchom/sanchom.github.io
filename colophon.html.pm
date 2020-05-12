@@ -2,8 +2,6 @@
 
 ◊define-meta[page-title]{Colophon}
 
-◊title{Colophon}
-
 The typeface is ◊a[#:href
 "https://github.com/adobe-fonts/source-serif-pro"]{Source Serif Pro}
 for the main text and Source Code Pro for codeblocks.

@@ -29,9 +29,6 @@ Columbia" #:proceedings "Official Report of Debates (Hansard)"
 "https://www.leg.bc.ca/content/hansard/41st3rd/20180515am-Hansard-n137.pdf"
 #:id "1st reading" #:short-form "Bill C-32 (1st reading)"]
 
-◊title{BC's anti-SLAPP legislation}
-◊subtitle{Sancho McCann}
-
 ◊heading{What is anti-SLAPP legislation?}
 
 The BC government just reintroduced their anti-SLAPP

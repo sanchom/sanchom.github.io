@@ -46,8 +46,29 @@
          (ormap (λ (a) (equal? "margin-note" a)) (string-split (attr-ref tx 'class)))))
   (findf-txexpr doc is-margin-note?))
 
-(define (processed-title src)
-  (smart-dashes (select-from-metas 'page-title src)))
+; For use in the html <title> element. It doesn't recognize italics etc, so those are stripped out.
+(define (simplified-title src)
+  (define t (select-from-metas 'page-title src))
+  (cond
+    [(string? t) (smart-quotes (smart-dashes t))]
+    [(txexpr-elements? t) (decode-elements t
+                                           #:txexpr-proc (λ (tx) `(@ ,@(get-elements tx)))
+                                           #:string-proc (compose1 smart-quotes smart-dashes))]
+    [else (raise-user-error "Title is neither a string nor txexpr-elements.")]))
+
+; For fetching the title or short title for use in the body. It does recognize italics.
+(define (processed-title t)
+  (cond
+    [(string? t) (smart-quotes (smart-dashes t))]
+    [(txexpr-elements? t) (decode t
+                                  #:string-proc (compose1 smart-quotes smart-dashes))]
+    [else (raise-user-error (format "Title is neither a string nor txexpr-elements: ~a" t))]))
+
+; For use in next/prev links.
+(define (grab-optionally-shortened-title src)
+  (define title (processed-title (select-from-metas 'page-title src)))
+  (define short-title (select-from-metas 'short-title src))
+  (if (not short-title) title short-title))
 
 ; Simple replacements or tag aliases.
 (define elide "[…]")
@@ -79,10 +100,10 @@
     ))
 
 (define (title . content)
-  `(h1 ((hyphens "none")) ,@content))
+  (raise-user-error (format "~a: title tag is deprecated; use (define-meta 'title ◊@{title goes ◊em{here}}) in source" (select-from-metas 'here-path (current-metas)))))
 
 (define (subtitle . content)
-  `(p ((class "subtitle") (hyphens "none")) ,@content))
+  (raise-user-error (format "~a: subtitle tag is deprecated; suggest using author tag" (select-from-metas 'here-path (current-metas)))))
 
 (define (heading . content)
   `(h2 ((hyphens "none")) ,@content))

@@ -138,7 +138,9 @@ b { font-weight: 600;}
 
 .center { text-align: center; }
 
-p.date {font-size: 0.8em; font-style: italic; text-align: right;}
+div.byline {font-size: 0.8rem; border-top: 0.5px solid ◊|very-light-text-color|; border-bottom: 0.5px solid ◊|very-light-text-color|;
+            padding-top: 0.25rem; padding-bottom: 0.25rem;}
+span.date {font-size: 0.8rem; font-style: italic; color: ◊|light-text-color|;}
 
 p.subtitle {font-size: 1.2em; font-weight: 300; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
 
@@ -238,7 +240,7 @@ td.intervener-cell { font-size: 0.6rem; }
 .intervener-cell li { margin-left: 0rem; padding-left: 0rem;}
 
 ◊; Styles for sidenotes and margin-notes. Taken from Tufte-css.
-.sidenote, .margin-note, p.date {
+.sidenote, .margin-note {
 text-align: left;
 color: ◊|light-text-color|;
 float: right;
@@ -343,17 +345,6 @@ padding-left: 0.5em;
 margin-left: 0em;
 }
 
-p.date {
-text-align: right;
-margin-top: 1.5rem;
-width: 100%;
-float: none;
-clear: none;
-color: ◊|light-text-color|;
-position: static;
-font-size: 0.7rem;
-}
-
 .sidenote-number:after {
 font-family: ◊|main-font|;
 content: counter(sidenote-counter);
@@ -421,16 +412,6 @@ background-position: 0% 93%, 100% 93%, 0% 93%;
 .sidenote, .margin-expand:checked + .sidenote, .backlink, div.header { display: none; }
 .endnotes { display: block; }
 div#disqus_thread{ display: none; }
-p.date{
-text-align: right;
-margin-top: 1.5rem;
-width: 100%;
-float: none;
-clear: none;
-color: ◊|light-text-color|;
-position: static;
-font-size: 0.7rem;
-}
 html { font-size: 13px; }
 body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; font-family: "Bitstream Charter", "Century Schoolbook", serif;}
 body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }

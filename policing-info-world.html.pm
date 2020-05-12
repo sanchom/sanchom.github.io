@@ -1,11 +1,10 @@
 #lang pollen
 
-◊define-meta[page-title]{Policing Info World}
+◊define-meta[page-title]{Policing Info World: conference review}
+◊define-meta[short-title]{Policing Info World}
 ◊define-meta[snippet]{A review of a conference on data, law enforcement, and surveillance.}
 ◊define-meta[original-date]{2019-05-25}
 ◊define-meta[edited-date]{2019-05-26}
-
-◊title{Policing Info World: Conference Review}
 
 On May 23, I attended a free, one-day conference on data, law
 enforcement, and surveillance: "Policing Info World". It was hosted by

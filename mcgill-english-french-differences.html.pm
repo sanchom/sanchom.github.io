@@ -1,7 +1,7 @@
 #lang pollen
 
-◊define-meta[page-title]{English-French differences in the McGill Guide}
-◊define-meta[short-title]{McGill Guide: English/French}
+◊define-meta[page-title]{◊@{English-French differences in the ◊em{McGill Guide}}}
+◊define-meta[short-title]{◊@{◊em{McGill Guide}: English/French}}
 ◊define-meta[original-date]{2019-09-01}
 ◊define-meta[snippet]{Highlighting the most salient differences between French and English McGill style.}
 
@@ -28,9 +28,6 @@ Typographical Rules" #:author "Translation Bureau" #:publication
 "Public Works and Government Services Canada" #:url
 "https://www.btb.termiumplus.gc.ca/tcdnstyl-chap?lang=eng&lettr=chapsect17&info0=17"
 #:date "2019"]
-
-◊title{English-French differences in the ◊em{McGill Guide}}
-◊subtitle{Sancho McCann}
 
 I'm writing this blog post for English-primary editors who want to get
 up to speed with the French citation style presented in the ◊em{McGill

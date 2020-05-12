@@ -5,9 +5,6 @@
 ◊define-meta[edited-date]{2019-07-20}
 ◊define-meta[snippet]{No one should be spending time laying out citations. Here's a description of some legal tech (or just writing tech) that's made this easier for me.}
 
-◊title{Automating citations}
-◊subtitle{Sancho McCann}
-
 I wrote the code that controls how this website appears to you. This
 is of course built on top of the work of others, like the ◊a[#:href
 "https://docs.racket-lang.org/pollen/"]{pollen publishing system}. I

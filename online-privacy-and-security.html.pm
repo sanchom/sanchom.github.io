@@ -4,8 +4,6 @@
 ◊define-meta[original-date]{2018-12-30}
 ◊define-meta[snippet]{Securing your devices and online communication}
 
-◊title{Online privacy and security}
-
 I am not a computer-security or privacy expert. I'm merely a computer
 scientist turned law student who has thought about these topics for a
 long time.

@@ -3,7 +3,7 @@
 ◊|template-message|
 -->
 
-◊(define (grab-optionally-shortened-title page) (define x (select 'short-title page)) (if (not x) (processed-title page) x))
+◊(define title (processed-title (select-from-metas 'page-title metas)))
 ◊(define prev-page (previous here))
 ◊(define next-page (next here))
 ◊(define prev-is-home (eq? prev-page 'index.html))
@@ -35,13 +35,13 @@
     ◊when/splice[featured-image-url]{<meta name="twitter:card" content="summary_large_image" />}
     ◊when/splice[(not featured-image-url)]{<meta name="twitter:card" content="summary" />}
     <meta name="twitter:site" content="@sanchom" />
-    <meta property="og:title" content="◊(processed-title  here)" />
+    <meta property="og:title" content="◊(simplified-title here)" />
     ◊when/splice[snippet]{<meta property="og:description" content="◊|snippet|" />}
     ◊when/splice[featured-image-url]{<meta property="og:image" content="◊|site-root|/◊|featured-image-url|" />}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>◊|site-title|—◊(processed-title metas)</title>
+    <title>◊|site-title|—◊(simplified-title metas)</title>
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
     ◊when/splice[(not am-home)]{<link rel="canonical" href="https://sanchom.github.io/◊|here|" />}
     ◊when/splice[am-home]{<link rel="canonical" href="https://sanchom.github.io/" />}
@@ -50,9 +50,9 @@
 <header>
   <nav>
     <div class="header">
-      <div class="left-header">◊when/splice[prev-page]{◄ <a href="◊|prev-page|">◊(grab-optionally-shortened-title prev-page)</a>}◊when/splice[(not prev-page)]{<a href="site-index.html">Index</a>}</div>
+      <div class="left-header">◊when/splice[prev-page]{◄ <a href="◊|prev-page|">◊(->html (grab-optionally-shortened-title prev-page))</a>}◊when/splice[(not prev-page)]{<a href="site-index.html">Index</a>}</div>
       <div class="center-header">◊when/splice[(and (not prev-is-home)(not am-home))]{<a href="index.html">Home</a> · <a href="site-index.html">Index</a>}◊when/splice[prev-is-home]{<a href="site-index.html">Index</a>}</div>
-      <div class="right-header">◊when/splice[next-page]{<a href="◊|next-page|">◊(grab-optionally-shortened-title next-page)</a> ►}</div>
+      <div class="right-header">◊when/splice[next-page]{<a href="◊|next-page|">◊(->html (grab-optionally-shortened-title next-page))</a> ►}</div>
     </div>
   </nav>
   <div style="clear: both;"></div>
@@ -60,9 +60,10 @@
 </header>
 <div style="clear: both;"></div>
 <article>
-<p class="date">
+
+◊when/splice[(not am-home)]{<h1>◊(->html title)</h1><div class="byline">By Sancho McCann · <span class="date">
 ◊when/splice[original-date]{<time datetime="◊|original-date|">◊|original-date|</time>}◊when/splice[edited-date]{, edited: <time datetime="◊|edited-date|">◊|edited-date|</time>}
-</p>
+</span></div>}
     ◊(->html doc)
 </article>
 

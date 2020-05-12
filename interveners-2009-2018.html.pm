@@ -35,9 +35,6 @@ February 2019" #:url
 Supreme Court of Canada decides a Charter case from the bench — again"
 #:id "Goldenberg" #:short-form "Goldenberg"]
 
-◊title{Interveners at the Supreme Court of Canada: Revisited (2009--2018)}
-◊subtitle{Sancho McCann}
-
 ◊heading{Interveners revisited}
 
 I previously wrote about interveners at the Supreme Court of Canada
