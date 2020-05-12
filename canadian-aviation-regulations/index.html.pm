@@ -1,7 +1,6 @@
 #lang pollen
 
 ◊(define-meta template "cars-template.html")
-◊(define-m
 
 ◊h1{Canadian Aviation Regulations}
 ◊heading{About this book}
