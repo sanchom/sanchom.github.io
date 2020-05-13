@@ -2,18 +2,17 @@
 
 ◊define-meta[page-title]{Home}
 
-I am in my second year at UBC's Allard School of Law (class of
-2021). I want use law to help give the weakest of us a voice, in the
-legal system and in society in general. This includes civil liberties,
-human rights, and democratic rights. I want to help with public legal
-education and access-to-justice initiatives, to give more of us more
-confidence in the outcomes of the legal system and other government
-decision-making processes. I'm also interested in the many overlaps of
-law and technology.
+I am entering my third year at UBC's Allard School of Law (class of
+2021). I hope to do work that gives more of us more confidence in the
+outcomes of the legal system and government decision-making in
+general. I'm also interested in the many overlaps of law and
+technology.
 
-I am on the [Gale Moot](https://www.galecupmoot.com/) team and am the
-Associate Editor at the [Canadian Journal of Family
-Law](http://faculty.allard.ubc.ca/cdnjfl/).
+I was on the [Gale Moot](https://www.galecupmoot.com/) team, am the
+Senior Editor at the [Canadian Journal of Family
+Law](http://faculty.allard.ubc.ca/cdnjfl/), and organize a reading
+group on [Algorithmic Decision-Making and the Rule of
+Law](https://github.com/sanchom/algorithmic-decision-making-and-rule-of-law).
 
 I'm trained as a computer scientist. In that field, I've focused on
 visual object recognition, machine learning, and applications of deep
