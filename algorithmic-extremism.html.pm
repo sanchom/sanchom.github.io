@@ -1,6 +1,7 @@
 #lang pollen
 
 ◊define-meta[page-title]{A critique of "Algorithmic Extremism"}
+◊define-meta[short-title]{Critique: "Algorithmic Extremism"}
 ◊define-meta[original-date]{2020-01-19}
 ◊define-meta[snippet]{A critique of a recent observation of YouTube recommendations}
 
