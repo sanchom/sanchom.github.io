@@ -18,6 +18,10 @@ I'm trained as a computer scientist. In that field, I've focused on
 visual object recognition, machine learning, and applications of deep
 neural networks.
 
+The views expressed on this blog are from my own personal perspective
+and do not represent those of the Department of Justice or the
+Government of Canada.
+
 If you'd like to get updates from me whenever I write something,
 ◊outline{[sign up for my tinyletter
 here](https://tinyletter.com/sanchom)}.
