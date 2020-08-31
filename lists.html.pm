@@ -81,6 +81,38 @@ Where I like to find new music.
 Find me on
 [Goodreads](https://www.goodreads.com/user/show/83412315-sancho).
 
+◊sub-heading{Some supplementary material for law school}
+
+Here are some sources I've found interesting and helpful throughout
+law school.
+
+◊itemize{
+
+Craig Forcese, "[Public Law and
+Legislation](https://www.craigforcese.com/podcasts/2016/12/28/constitutional-and-public-law.html)"
+(presents the constitutional principles underlying public power in
+Canada, sources of legitimacy and accountability, and the process of
+creating legislation)
+
+Craig Forcese, "[Administrative
+Law](https://www.craigforcese.com/administrative-law)" (how courts
+review executive acts; includes updates from ◊em{Vavilov})
+
+Intrepid podcast's "[Muskoka Chair
+Chats](https://www.intrepidpodcast.com/podcast)" episodes 126,
+127, 128, 129, 134, ◊elide (an explainer series on the Charter)
+
+John Borrows, "[Law
+340](https://www.youtube.com/channel/UC3GVqsk_81azYxiGda4j6iQ/videos)"
+(YouTube series on Canada's Aboriginal law, with some discussion about
+Indigenous law as well)
+
+Supreme Advocacy's ["SCC Weekly" and "Student Extras" email
+lists](https://supremeadvocacy.ca/bulletin/?lang=fr)
+
+}
+
+
 ◊sub-heading{Writing resources}
 
 Just some things that have influenced how I communicate.
