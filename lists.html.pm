@@ -133,11 +133,6 @@ Lacour in “[Tony Morrison, The Art of Fiction
 No. 134](https://www.theparisreview.org/interviews/1888/the-art-of-fiction-no-134-toni-morrison)”,
 ◊em{The Paris Review} (1993).
 
-Steven Pinker, ◊a[#:href
-"https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century"]{◊em{The
-Sense of Style: The Thinking Person's Guide to Writing in the 21st
-Century}} (New York: Penguin, 2014).
-
 Francis-Noël Thomas & Mark Turner, ◊a[#:href
 "http://classicprose.com/"]{◊em{Clear and Simple as the Truth: Writing
 Classic Prose}} (Princeton: Princeton University Press, 2011)
