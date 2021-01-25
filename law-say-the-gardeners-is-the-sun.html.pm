@@ -10,8 +10,8 @@ Hussain" #:title "Auden's Law Like Love" #:journal "Law, Culture and
 the Humanities" #:year "2019" #:url
 "https://journals.sagepub.com/doi/abs/10.1177/1743872118787567?journalCode=lcha"]
 
-This poem by WH Auden is a succinct presentation of many of the
-conceptions of law we encountered in our Jurisprudence course.
+This poem by WH Auden presents many of the conceptions of law we
+encountered in our Jurisprudence course.
 
 You can read the full poem
 [here](https://allpoetry.com/Law,-Like-Love).◊note{That site, like
@@ -19,7 +19,7 @@ many others, gives it the title, "Law, Like Love," but it was
 published without a title and anthologized by its first line "Law, say
 the gardeners, is the sun." ◊cite["Hussain"]}
 
-It opens with a reference to law and obedience that are based in
+It opens with references to law and obedience that are based in
 prediction and perhaps natural law.
 
 ◊codeblock{
@@ -29,8 +29,8 @@ All gardeners obey
 To-morrow, yesterday, to-day.
 }
 
-This predictive focus is also found in the writing of Kelsen and
-Holmes Jr.
+The idea of law as prediction is also found in the writings of Kelsen
+and Holmes Jr.
 
 The next stanza presents a tension between tradition --- couched in
 wisdom --- and sensitivity to new circumstances.
@@ -42,14 +42,13 @@ The grandchildren put out a treble tongue,
 Law is the senses of the young.
 }
 
-This tension is also expressed by Oliver Wendell Holmes, Jr when he
-compares tradition to a dragon that we must decide to either "kill" or
-"tame" and make a "useful animal."
+This reminds me of Oliver Wendell Holmes, Jr's ◊em{dragon} that we
+must decide to either "kill" or "tame" and make a "useful animal."
 
-The poem presents HLA Hart's separation of law and morals
-(◊em{Yet law-abiding scholars write: / Law is neither wrong nor
-right}) and notions of notice and prospectivity (◊em{Law is as I've
-told you before, Law is as you know I suppose}).
+Auden then presents HLA Hart's separation of law and morals (◊em{Yet
+law-abiding scholars write: / Law is neither wrong nor right}) and
+notions of notice and prospectivity (◊em{Law is as I've told you
+before, Law is as you know I suppose}).
 
 ◊declare-work[#:id "Cover" #:type "article" #:author-given "Robert M"
 #:author-family "Cover" #:title "Forward: *Nomos* and Narrative"
