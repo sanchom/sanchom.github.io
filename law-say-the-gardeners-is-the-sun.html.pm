@@ -42,8 +42,9 @@ The grandchildren put out a treble tongue,
 Law is the senses of the young.
 }
 
-This reminds me of Oliver Wendell Holmes, Jr's ◊em{dragon} that we
-must decide to either "kill" or "tame" and make a "useful animal."
+This reminds me of Oliver Wendell Holmes, Jr's ◊em{dragon} of
+tradition that we must decide to either "kill" or "tame" and make a
+"useful animal."
 
 Auden then presents HLA Hart's separation of law and morals (◊em{Yet
 law-abiding scholars write: / Law is neither wrong nor right}) and
