@@ -144,6 +144,8 @@ span.date {font-size: 0.8rem; font-style: italic; color: ◊|light-text-color|;}
 
 p.subtitle {font-size: 1.2em; font-weight: 300; font-style: italic; margin-top: 1rem; margin-bottom: 1rem; display: block; line-height: 1;}
 
+div.abstract {font-size: 0.8em; margin-top: 1.5rem; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;}
+
 div#disqus_thread {margin-top: 3rem;}
 
 .backlink {font-size: 0.8em; font-weight: bold; position: relative; bottom: 0.2em;}
@@ -259,6 +261,10 @@ overflow: hidden;
 display: -webkit-box;
 -webkit-line-clamp: 3;
 -webkit-box-orient: vertical;
+}
+
+blockquote .sidenote, blockquote .margin-note {
+margin-right: calc(-40% - 3.5rem);
 }
 
 .footnote {

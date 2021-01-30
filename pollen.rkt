@@ -123,6 +123,9 @@
 (define (outline . content)
   `(span [[class "outline"]] ,@content))
 
+(define (abstract . content)
+  `(div [[class "abstract"]] ,@content))
+
 ; A little blood red
 (define (red . content)
   `(span [[class "red"]] ,@content))
