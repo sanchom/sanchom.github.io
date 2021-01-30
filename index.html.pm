@@ -2,17 +2,18 @@
 
 ◊define-meta[page-title]{Home}
 
-I am entering my third year at UBC's Allard School of Law (class of
-2021). I hope to do work that gives more of us more confidence in the
-outcomes of the legal system and government decision-making in
-general. I'm also interested in the many overlaps of law and
-technology.
+I am in my third year at UBC's Allard School of Law. I am spending my
+final term as a student clinician at the Indigenous Community Legal
+Clinic. Long term, I hope to do work that gives more of us more
+confidence in the outcomes of the legal system and government
+decision-making in general. I'm also interested in the many overlaps
+of law and technology.
 
 I was on the [Gale Moot](https://www.galecupmoot.com/) team, am the
 Senior Editor at the [Canadian Journal of Family
 Law](http://faculty.allard.ubc.ca/cdnjfl/), and organize a reading
 group on [Algorithmic Decision-Making and the Rule of
-Law](https://github.com/sanchom/algorithmic-decision-making-and-rule-of-law).
+Law](https://github.com/sanchom/algorithmic-decision-making-and-rule-of-law). 
 
 I'm trained as a computer scientist. In that field, I've focused on
 visual object recognition, machine learning, and applications of deep
