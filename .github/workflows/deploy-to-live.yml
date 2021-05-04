@@ -8,6 +8,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Inspecting directory
+        run: ls
       - name: Stepping up one directory
         run: cd ../
       - name: Inspecting directory
