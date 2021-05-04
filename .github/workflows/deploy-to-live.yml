@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Inspecting directory
         run: ls
-      - name: Stepping up one directory
-        run: cd ../
+      - name: Checking out repository
+        uses: actions/checkout@v2
       - name: Inspecting directory
         run: ls
       - name: Pulling my custom pollen Docker image
