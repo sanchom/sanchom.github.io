@@ -12,8 +12,12 @@ jobs:
         run: ls
       - name: Checking out repository
         uses: actions/checkout@v2
+        with:
+          path: sanchom.github.io
       - name: Inspecting directory
         run: ls
+      - name: Inspecting repository
+        run: ls sanchom.github.io
       - name: Pulling my custom pollen Docker image
         run: docker pull sanchom/pollen
       - name: Starting container
