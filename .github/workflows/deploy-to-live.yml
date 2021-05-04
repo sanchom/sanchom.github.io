@@ -28,5 +28,9 @@ jobs:
         run: docker exec racket_container ls /work
       - name: Testing
         run: docker exec racket_container bash -c "cd /work/sanchom.github.io && raco test pollen.rkt markdown.rkt util.rkt"
+      - name: Rendering
+        run: docker exec racket_container bash -c "cd /work && raco pollen render -r sanchom.github.io"
+      - name: Publishing to staging folder
+        run: docker exec racket_container bash -c "cd /work && raco pollen publish sanchom.github.io published"
       - name: Shuting down container
         run: docker rm -f racket_container
