@@ -2,18 +2,19 @@
 
 ◊define-meta[page-title]{Home}
 
-I am in my third year at UBC's Allard School of Law. I am spending my
-final term as a student clinician at the Indigenous Community Legal
-Clinic. Long term, I hope to do work that gives more of us more
-confidence in the outcomes of the legal system and government
-decision-making in general. I'm also interested in the many overlaps
+I just completed 3L at UBC's Allard School of Law. I spent my final
+term at the Indigenous Community Legal Clinic. In summer 2021, I am
+working on some personal research and writing projects and doing some
+volunteer work. Long term, I hope to do work that gives more of us
+more confidence in the outcomes of the legal system and government
+decision-making in general. I am very interested in the many overlaps
 of law and technology.
 
-I was on the [Gale Moot](https://www.galecupmoot.com/) team, am the
+I was on the [Gale Moot](https://www.galecupmoot.com/) team, was the
 Senior Editor at the [Canadian Journal of Family
-Law](http://faculty.allard.ubc.ca/cdnjfl/), and organize a reading
+Law](http://faculty.allard.ubc.ca/cdnjfl/), and organized a reading
 group on [Algorithmic Decision-Making and the Rule of
-Law](https://github.com/sanchom/algorithmic-decision-making-and-rule-of-law). 
+Law](https://github.com/sanchom/algorithmic-decision-making-and-rule-of-law).
 
 I'm trained as a computer scientist. In that field, I've focused on
 visual object recognition, machine learning, and applications of deep
@@ -32,6 +33,10 @@ Here's where you can find me elsewhere online: ◊div[#:class
 "assets/email.png"] }
 
 ◊heading{Selected publications}
+
+◊format-work[#:type "article" #:author-given "Sancho" #:author-family
+"McCann" #:title "Copyright Throughout a Creative AI Pipeline"
+#:forthcoming "2021" #:journal "Can J Law & Tech" #:volume "19"]
 
 ◊format-work[#:type "article" #:author-given "Sancho" #:author-family
 "McCann" #:title "Finding Harmony: *Law Society of British Columbia v
