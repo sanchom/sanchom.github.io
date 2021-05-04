@@ -38,4 +38,3 @@ jobs:
           branch: master
           folder: published
           clean: true
-          dry-run: true
