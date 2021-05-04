@@ -23,9 +23,9 @@ jobs:
       - name: Testing
         run: docker exec racket_container bash -c "cd /work/ && raco test pollen.rkt markdown.rkt util.rkt"
       - name: Rendering
-        run: docker exec racket_container bash -c "cd /work && raco pollen render -r ."
+        run: docker exec racket_container bash -c "cd /work && raco pollen render -r /work"
       - name: Publishing to tmp folder
-        run: docker exec racket_container bash -c "cd /work && raco pollen publish . /tmp/published"
+        run: docker exec racket_container bash -c "cd /work && raco pollen publish /work /tmp/published"
       - name: Moving tmp folder to persisted staging folder
         run: docker exec racket_container bash -c "cd /work && mv /tmp/published ./"
       - name: Shuting down container
