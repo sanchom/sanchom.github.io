@@ -34,10 +34,10 @@ jobs:
         run: docker exec racket_container bash -c "cd /work && raco pollen publish repo published"
       - name: Shuting down container
         run: docker rm -f racket_container
-      - name: Inspecting directory again
-        run: pwd
-      - name: Inspecting directory again
-        run: ls
+      - name: Moving the staging folder into the repository
+        run: mv published repo
+      - name: Inspecting repository
+        run: ls repo
       - name: Deploying to live
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
