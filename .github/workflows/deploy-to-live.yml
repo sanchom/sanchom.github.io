@@ -14,8 +14,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: repo
-      - name: Preparing staging directory
-        run: touch published
       - name: Inspecting directory
         run: ls
       - name: Inspecting repository
@@ -37,7 +35,7 @@ jobs:
       - name: Shuting down container
         run: docker rm -f racket_container
       - name: Moving the staging folder into the repository
-        run: mv published repo
+        run: sudo mv published repo
       - name: Inspecting repository
         run: ls repo
       - name: Deploying to live
