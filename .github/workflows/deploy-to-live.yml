@@ -1,0 +1,11 @@
+name: deploy-to-live
+on:
+  push:
+    branches:
+      - master-source
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: docker pull sanchom/pollen
