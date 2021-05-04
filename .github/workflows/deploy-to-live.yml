@@ -37,7 +37,7 @@ jobs:
       - name: Moving the staging folder into the repository
         run: sudo mv published sanchom.github.io
       - name: Inspecting repository
-        run: ls sanchom.github.io
+        run: tree /home/runner/work/
       - name: Deploying to live
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -45,4 +45,3 @@ jobs:
           folder: published
           clean: false
           dry-run: true
-          workspace: sanchom.github.io
