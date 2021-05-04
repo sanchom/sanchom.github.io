@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Stepping up one directory
         run: cd ../
+      - name: Inspecting directory
+        run: ls
       - name: Pulling my custom pollen Docker image
         run: docker pull sanchom/pollen
       - name: Starting container
