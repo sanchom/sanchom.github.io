@@ -101,7 +101,7 @@ available to Margaret in 1965. The Governor in Council did not have
 "the power to enfranchise unmarried Indian women." Thus, instead of
 voluntarily enfranchising in 1965, Margaret lost her status in 1969
 when she married out. She thus regained eligibility through
-s. 6(1)(c),◊note{Today, s. 6(1)(a.1).}. So, Karl is eligible under
+s. 6(1)(c).◊note{Today, s. 6(1)(a.1).} So, Karl is eligible under
 s. 6(1) and Annora under s. 6(2).
 
 You can see that in order to understand this decision, I needed to
