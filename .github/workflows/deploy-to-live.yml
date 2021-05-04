@@ -16,7 +16,7 @@ jobs:
         run: docker run -v `pwd`:/work --name racket_container -d sanchom/pollen tail -f /dev/null
       - name: Installing latest pollen dependencies in container
         run: docker exec racket_container raco pkg install pollen-citations-mcgill
-      - name: Testing
-        run: docker exec racket_container bash -c "cd /work/sanchom.github.io && raco test pollen.rkt markdown.rkt util.rkt"
+      - name: Inspecting work directory
+        run: docker exec racket_container bash -c "ls /work/"
       - name: Shuting down container
         run: docker rm -f racket_container
