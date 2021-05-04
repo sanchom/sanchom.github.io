@@ -8,12 +8,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspecting directory
-        run: tree `pwd`
       - name: Checking out repository
         uses: actions/checkout@v2.3.4
-        with:
-          path: sanchom.github.io
       - name: Inspecting directory
         run: tree `pwd`
       - name: Pulling my custom pollen Docker image
@@ -25,23 +21,21 @@ jobs:
       - name: Inspecting work directory
         run: docker exec racket_container ls /work
       - name: Testing
-        run: docker exec racket_container bash -c "cd /work/sanchom.github.io && raco test pollen.rkt markdown.rkt util.rkt"
+        run: docker exec racket_container bash -c "cd /work/ && raco test pollen.rkt markdown.rkt util.rkt"
       - name: Rendering
-        run: docker exec racket_container bash -c "cd /work && raco pollen render -r sanchom.github.io"
-      - name: Publishing to staging folder
-        run: docker exec racket_container bash -c "cd /work && raco pollen publish sanchom.github.io published"
+        run: docker exec racket_container bash -c "cd /work && raco pollen render -r ."
+      - name: Publishing to tmp folder
+        run: docker exec racket_container bash -c "cd /work && raco pollen publish . /tmp/published"
+      - name: Moving tmp folder to persisted staging folder
+        run: docker exec racket_container bash -c "cd /work && mv /tmp/published ./"
       - name: Shuting down container
         run: docker rm -f racket_container
-      - name: Moving the staging folder into the repository
-        run: sudo mv published sanchom.github.io
       - name: Inspecting directory
         run: tree `pwd`
-      - name: Descend into repository
-        run: cd sanchom.github.io
       - name: Deploying to live
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: master
           folder: published
-          clean: false
+          clean: true
           dry-run: true
