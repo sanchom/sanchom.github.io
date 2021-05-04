@@ -71,7 +71,7 @@ Crown-Indigenous Reglations and Northern Affairs Canada (CIRNAC), "[Background o
 These are good explanations. However, to really understand today's
 status eligibility rules, you need to understand the statutory history
 of the relevant sections of the ◊em{Indian Act}. Just look at some of
-the language in today's Act: "Subect to section 7, a person is
+the language in today's Act: "Subject to section 7, a person is
 entitled to be registered if ◊elide the name of that person was
 omitted or deleted from the Indian Register ◊elide under subparagraph
 12(1)(a)(iii) pursuant to an order made under subsection 109(1), as
