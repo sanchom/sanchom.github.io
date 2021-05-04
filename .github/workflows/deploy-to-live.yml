@@ -9,15 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Inspecting directory
-        run: ls
+        run: tree ./
       - name: Checking out repository
         uses: actions/checkout@v2
         with:
           path: sanchom.github.io
       - name: Inspecting directory
-        run: ls
-      - name: Inspecting repository
-        run: ls sanchom.github.io
+        run: tree ./
       - name: Pulling my custom pollen Docker image
         run: docker pull sanchom/pollen
       - name: Starting container
@@ -36,12 +34,12 @@ jobs:
         run: docker rm -f racket_container
       - name: Moving the staging folder into the repository
         run: sudo mv published sanchom.github.io
-      - name: Inspecting repository
-        run: tree /home/runner/work/
+      - name: Inspecting directory
+        run: tree ./
       - name: Deploying to live
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: master
-          folder: published
+          folder: sanchom.github.io/published
           clean: false
           dry-run: true
