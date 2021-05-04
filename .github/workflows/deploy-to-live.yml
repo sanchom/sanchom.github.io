@@ -13,11 +13,11 @@ jobs:
       - name: Checking out repository
         uses: actions/checkout@v2
         with:
-          path: repo
+          path: sanchom.github.io
       - name: Inspecting directory
         run: ls
       - name: Inspecting repository
-        run: ls repo
+        run: ls sanchom.github.io
       - name: Pulling my custom pollen Docker image
         run: docker pull sanchom/pollen
       - name: Starting container
@@ -27,17 +27,17 @@ jobs:
       - name: Inspecting work directory
         run: docker exec racket_container ls /work
       - name: Testing
-        run: docker exec racket_container bash -c "cd /work/repo && raco test pollen.rkt markdown.rkt util.rkt"
+        run: docker exec racket_container bash -c "cd /work/sanchom.github.io && raco test pollen.rkt markdown.rkt util.rkt"
       - name: Rendering
-        run: docker exec racket_container bash -c "cd /work && raco pollen render -r repo"
+        run: docker exec racket_container bash -c "cd /work && raco pollen render -r sanchom.github.io"
       - name: Publishing to staging folder
-        run: docker exec racket_container bash -c "cd /work && raco pollen publish repo published"
+        run: docker exec racket_container bash -c "cd /work && raco pollen publish sanchom.github.io published"
       - name: Shuting down container
         run: docker rm -f racket_container
       - name: Moving the staging folder into the repository
-        run: sudo mv published repo
+        run: sudo mv published sanchom.github.io
       - name: Inspecting repository
-        run: ls repo
+        run: ls sanchom.github.io
       - name: Deploying to live
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -45,4 +45,4 @@ jobs:
           folder: published
           clean: false
           dry-run: true
-          workspace: repo
+          workspace: sanchom.github.io
