@@ -8,4 +8,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: docker pull sanchom/pollen
+      - name: Pull my custom pollen Docker image
+        run: docker pull sanchom/pollen
+      - name: Start container
+        run: docker run -v `pwd`:/work --name racket_container -d sanchom/pollen tail -f /dev/null
+      - name: Shut down container
+        run: docker rm -f racket_container
