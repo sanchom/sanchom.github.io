@@ -43,3 +43,4 @@ jobs:
           folder: published
           clean: false
           dry-run: true
+          workspace: /home/runner/work/sanchom.github.io/sanchom.github.io/sanchom.github.io
