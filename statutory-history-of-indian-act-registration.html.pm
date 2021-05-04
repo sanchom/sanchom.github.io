@@ -48,7 +48,7 @@ Nations' self-government" (◊cite["TRC1" #:pinpoint "107" #:terminal
 ""]). It has played a role in the trauma disproportionally experienced
 by "Indigenous women, girls and 2SLGBTQIAA people" (see generally
 ◊cite["MMIWG1" #:pinpoint "249ff" #:terminal ""]). Nevertheless,
-◊em{status} has important practical implications and is important to
+status has important practical implications and is important to
 individuals for different reasons (see ◊cite["JFK" #:terminal ""]). I
 wrote this post to help people new to this area of law to do the
 research they might need to do to understand the eligibility rules.}
@@ -110,30 +110,30 @@ So what determined whether Karl was entitled under s. 6(1) or under
 s. 6(2)? That depended on his mother Margaret's path to
 re-entitlement.
 
-Karl's mother, Margaret, had purportedly "voluntarily enfranchised" in
-1965 via s. 109(1). She later married a "non-Indian Canadian" in
-1969. If Margaret's voluntary enfranchisement in 1965 was effective,
-then she would have become re-entitled to registration through
-s. 6(1)(d) [re-entitlement after voluntary enfranchisement]. If,
-however, Margaret was never able to voluntarily enfranchise (this was
-the argument Karl was making), she would have instead lost her
-eligibility by "marrying out" in 1969 and then would have become
-re-entitled through s. 6(1)(c)◊note{Today, this is s. 6(1)(a.1).}
-[re-entitlement after marrying out]. This difference is significant
-because if Margaret became re-entitled through s. 6(1)(c),◊note{Today,
-s. 6(1)(a.1).} then Karl ◊em{would} be entitled under
-s. 6(1).◊note{Specifically, s. 6(1)(c.1), at the time of Karl's
-application, or today, s. 6(1)(a.3)(i).} If instead Margaret became
-re-entitled through s. 6(1)(d) [re-entitlement after voluntary
+Karl's mother, Margaret, had purportedly "voluntarily enfranchised"
+(gave up her status) in 1965 via s. 109(1). She later married a
+"non-Indian Canadian" in 1969. If Margaret's voluntary enfranchisement
+in 1965 was effective, then she would have become re-entitled to
+registration through s. 6(1)(d) [re-entitlement after voluntary
+enfranchisement]. If, however, Margaret was never able to voluntarily
+enfranchise (this was the argument Karl was making), she would have
+instead lost her eligibility by "marrying out" in 1969 and then would
+have become re-entitled through s. 6(1)(c)◊note{Today, this is
+s. 6(1)(a.1).}  [re-entitlement after marrying out]. This difference
+is significant because if Margaret became re-entitled through
+s. 6(1)(c),◊note{Today, s. 6(1)(a.1).} then Karl ◊em{would} be
+entitled under s. 6(1).◊note{Specifically, s. 6(1)(c.1), at the time
+of Karl's application, or today, s. 6(1)(a.3)(i).} If instead Margaret
+became re-entitled through s. 6(1)(d) [re-entitlement after voluntary
 enfranchisement], Karl would have only been entitled himself through
 s. 6(2).
 
-Judge Barin, after a quite intensive exercise of statutory
-interpretation, concluded that voluntary enfranchisement was not
-available to Margaret in 1965. The Governor in Council did not have
-"the power to enfranchise unmarried Indian women." Thus, instead of
-voluntarily enfranchising in 1965, Margaret lost her status in 1969
-when she married out. She thus regained eligibility through
+Judge Barin, after an intensive exercise of statutory interpretation,
+concluded that voluntary enfranchisement was not available to Margaret
+in 1965. The Governor in Council did not have "the power to
+enfranchise unmarried Indian women." Thus, instead of voluntarily
+enfranchising in 1965, Margaret lost her status in 1969 when she
+married out. She thus regained eligibility through
 s. 6(1)(c).◊note{Today, s. 6(1)(a.1).} So, Karl is eligible under
 s. 6(1) and Annora under s. 6(2).
 
@@ -144,7 +144,7 @@ that research easier for you by linking directly to the historic acts
 and amendments since 1951 that affect the registration eligibility
 rules.
 
-◊heading{Statutory History}
+◊heading{Statutory History [◊a[#:id "history" #:href "#history"]{direct link}]}
 
 There are many more amendments to the ◊em{Indian Act} than I list
 below. These are only those since 1951 that affected the registration
@@ -182,11 +182,11 @@ persons.
 }
 
 
-From 2002 onward, the Department of Justice allows you to browse the
-Act as it was in force at any point in time:
-[laws-lois.justice.gc.ca/eng/acts/i-5/PITIndex.html](https://laws-lois.justice.gc.ca/eng/acts/i-5/PITIndex.html). But,
-I'll still link to the two amendments to the registration provisions
-next.
+The Department of Justice allows you to browse the Act as it was in
+force at any point in time from 2002 onward:
+<[laws-lois.justice.gc.ca/eng/acts/i-5/PITIndex.html](https://laws-lois.justice.gc.ca/eng/acts/i-5/PITIndex.html)>. But
+I'll still link to the two post-2002 amendments to the registration
+rules next.
 
 ◊itemize{
 
