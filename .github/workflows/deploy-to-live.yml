@@ -36,10 +36,12 @@ jobs:
         run: sudo mv published sanchom.github.io
       - name: Inspecting directory
         run: tree `pwd`
+      - name: Descend into repository
+        run: cd sanchom.github.io
       - name: Deploying to live
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: master
-          folder: sanchom.github.io/published
+          folder: published
           clean: false
           dry-run: true
