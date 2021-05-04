@@ -3,6 +3,7 @@
 ◊define-meta[page-title]{◊@{Statutory History of Eligibility for Registration (Status) under the ◊em{Indian Act}}}
 ◊define-meta[short-title]{◊@{◊em{Indian Act} Status (History)}}
 ◊define-meta[original-date]{2021-05-02}
+◊define-meta[snippet]{Amendments to the Indian Act’s registration (status) rules since 1951.}
 
 ◊declare-work[#:id "Hele" #:type "legal-case" #:title "Hele v Attorney
 General of Canada" #:citation "2020 QCCS 2406" #:url
@@ -20,9 +21,41 @@ BCCA 153" #:url "https://canlii.ca/t/230zn"]
 "Descheneaux c Canada (Procureur Général)" #:citation "2015 QCCS 3555"
 #:url "https://canlii.ca/t/glzhm"]
 
+◊declare-work[#:id "TRC1" #:type "custom" #:custom-format "*The Final
+Report of the Truth and Reconcillation Commission of Canada*, vol 1
+(Ottawa, 2015)" #:short-form "TRC, Volume 1"]
+
+◊declare-work[#:id "MMIWG1" #:type "custom" #:custom-format
+"*Reclaiming Power and Place: The Final Report of the National Inquiry
+into Missing and Murdered Indigenous Women and Girls*, vol 1a (2019)"
+#:short-form "MMIWG, Volume 1a"]
+
+◊declare-work[#:id "JFK" #:type "magazine/news" #:title "The Problem
+with Indian Status, Part 1: So Who Gets Status Anyway?" #:author
+"Claire Truesdale" #:date "10 July 2015" #:publication "JFK Law
+Corporation" #:url
+"https://jfklaw.ca/the-problem-with-indian-status-part-1-so-who-gets-status-anyway/"]
+
 On this page, I link to versions of and amendments to the ◊em{Indian
-Act}’s registration rules◊note-cite["Indian Act" #:pinpoint "ss 6, 7"]
-(colloquially referred to as ◊em{status}) from 1951 onward.
+Act}’s registration rules◊note{◊cite["Indian Act" #:pinpoint "ss 6,
+7"] In this short post, I cannot fully convey the harmful effects the
+◊em{Indian Act} has had on Indigenous peoples in Canada. The
+◊em{Indian Act} has been used as a tool of "aggressive assimilation"
+(◊cite["TRC1" #:pinpoint "97" #:terminal ""]). It was a "central
+element to the Canadian government's colonial policy" (◊cite["TRC1"
+#:pinpoint "106" #:terminal ""]) and was used to "undermine First
+Nations' self-government" (◊cite["TRC1" #:pinpoint "107" #:terminal
+""]). It has played a role in the trauma disproportionally experienced
+by "Indigenous women, girls and 2SLGBTQIAA people" (see generally
+◊cite["MMIWG1" #:pinpoint "249ff" #:terminal ""]). Nevertheless,
+◊em{status} has important practical implications and is important to
+individuals for different reasons (see ◊cite["JFK" #:terminal ""]). I
+wrote this post to help people new to this area of law to do the
+research they might need to do to understand the eligibility rules.}
+(colloquially referred to as ◊em{status}) from 1951 onward. I do not
+attempt to explain what the rules are or the details of any particular
+amendment. I am still learning that myself. But I hope these statutory
+references are a helpful starting point for others.
 
 First, here is some background material that presents in broad strokes
 how eligibility for registration has changed over the years.
@@ -73,7 +106,7 @@ and 6(2).
 
 ◊fig[#:src "assets/hele.png"]
 
-So, what determined whether Karl was entitled under s. 6(1) or under
+So what determined whether Karl was entitled under s. 6(1) or under
 s. 6(2)? That depended on his mother Margaret's path to
 re-entitlement.
 
@@ -90,8 +123,8 @@ re-entitled through s. 6(1)(c)◊note{Today, this is s. 6(1)(a.1).}
 because if Margaret became re-entitled through s. 6(1)(c),◊note{Today,
 s. 6(1)(a.1).} then Karl ◊em{would} be entitled under
 s. 6(1).◊note{Specifically, s. 6(1)(c.1), at the time of Karl's
-application, or today, s. 6(1)(a.3)(i).} If instead Margaret had
-become re-entitled through s. 6(1)(d) [re-entitlement after voluntary
+application, or today, s. 6(1)(a.3)(i).} If instead Margaret became
+re-entitled through s. 6(1)(d) [re-entitlement after voluntary
 enfranchisement], Karl would have only been entitled himself through
 s. 6(2).
 
