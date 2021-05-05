@@ -38,3 +38,4 @@ jobs:
           branch: master
           folder: published
           clean: true
+          single-commit: true
