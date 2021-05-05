@@ -248,12 +248,49 @@ the federal and provincial governments.◊note-cite["Siemens" #:pinpoint
 Most recently, in the ◊em{Greenhouse Gas Pollution Pricing Act}
 reference,◊note-cite["GGPPA Reference"] the court clarified that it
 prefers the first of those three framings: "that the double aspect
-doctrine concerns fact situations."◊note{◊cite["GGPPA Reference"
-#:pinpoint "para 130"] I find paragraph 130 an enigma. The second
-sentence seems to be in support of the view that the first sentence is
-presenting an argument against, but the connecting phrases suggest the
-opposite.} "The same fact situations can be regulated from different
-perspectives, one of which may relate to a provincial power and the
-other to a federal power."◊note{◊cite["GGPPA Reference" #:pinpoint
-"para 125" #:terminal ", citing"] ◊cite["Desgagnés" #:pinpoint "para
-84"]}
+doctrine concerns fact situations."◊note-cite["GGPPA Reference"
+#:pinpoint "para 130"] "The same fact situations can be regulated from
+different perspectives, one of which may relate to a provincial power
+and the other to a federal power."◊note{◊cite["GGPPA Reference"
+#:pinpoint "para 125" #:terminal ", citing"] ◊cite["Desgagnés"
+#:pinpoint "para 84"]}
+
+Paragraph 130 of the GGPPA reference confirms the presentation above
+(replacing "field" with "fact situation"). I'll reproduce it next
+along with my own added notes to explain how I understand it.
+
+◊blockquote{
+
+ I recognize that it might be argued that Canada and the provinces are
+ exercising their jurisdiction in relation to different
+ matters◊note{And therefore (the argument goes) the double-aspect
+ doctrine does not apply.} rather than to different aspects of the
+ same matter, that is, that Canada’s authority is limited to minimum
+ national standards of GHG pricing stringency and that this is
+ obviously different than the matters in relation to which provinces
+ might exercise jurisdiction over GHG pricing. This view◊note{"This
+ view" being the narrow view that for the double-aspect doctrine to
+ apply, we must find that the federal and provincial governments are
+ trying to legislate the ◊em{very same matter}, albeit via different
+ aspects.} finds support in some of the language used by this Court,
+ such as the comment in Canadian Western Bank that the double aspect
+ doctrine concerns “the various ‘aspects’ of the ‘matter’”:
+ para. 30. However, I do not read Canadian Western Bank that narrowly,
+ given this Court’s recent guidance in ◊em{Desgagnés Transport}, in
+ which it stated that the double aspect doctrine concerns “fact
+ situations”. Moreover, the fact that Canada can be understood to be
+ empowered to deal only with a different matter than the provinces
+ does not change the resulting jurisdictional reality that where
+ Canada is empowered to impose a minimum national standard, a double
+ aspect situation arises: federal and provincial laws apply
+ concurrently, but the federal law is paramount.◊note{Even if we were
+ to deny that the double-aspect doctrine would apply in the case where
+ Canada and the provinces are exercising their jurisdiction in
+ relation to different matters, the legal situation will be the same
+ and federal paramountcy will apply in the case of conflict.} From the
+ perspective of provincial autonomy, the corrosive effect is the
+ same. Therefore, courts must recognize that this amounts to an
+ invitation to identify a previously unidentified double aspect, with
+ clear consequences for provincial autonomy.
+
+}
