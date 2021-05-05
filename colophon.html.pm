@@ -12,7 +12,7 @@ then rendered into HTML and CSS using the ◊a[#:href "http://docs.racket-lang.o
 publishing program. The source for this site is ◊a[#:href "https://github.com/sanchom/sanchom.github.io"]{here}.
 
 Citation style is from the Canadian Guide to Uniform Legal Citation,
-supplemented with Chicago Manual of Style.
+supplemented with the Chicago Manual of Style.
 
 I have been heavily influenced by Matthew Butterick's ◊em{◊a[#:href "https://practicaltypography.com/"]{Practical Typography}}
 and I copied many CSS techniques (e.g. underlining, responsive margin notes) from ◊a[#:href "https://edwardtufte.github.io/tufte-css/"]{Tufte CSS}.
