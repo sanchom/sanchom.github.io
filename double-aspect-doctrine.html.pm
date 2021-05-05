@@ -2,9 +2,8 @@
 
 ◊define-meta[page-title]{The double-aspect doctrine}
 ◊define-meta[original-date]{2018-12-26}
-◊define-meta[edited-date]{2019-07-21}
+◊define-meta[edited-date]{2021-05-04}
 ◊define-meta[snippet]{Teasing apart the ways in which the double-aspect doctrine is used.}
-◊use-footnotes[]
 
 ◊declare-work[#:type "legal-case" #:title "Reference re Secession of
 Quebec" #:citation "[1998] 2 SCR 217" #:url
@@ -50,16 +49,26 @@ Management Act (British Columbia)" #:citation "2019 BCCA 181" #:url
 "https://www.courts.gov.bc.ca/jdb-txt/ca/19/01/2019BCCA0181.htm" #:id
 "Pipeline reference"]
 
+◊declare-work[#:type "legal-case" #:title "References re Greenhouse
+Gas Pollution Pricing Act" #:citation "2021 SCC 11" #:url
+"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/18781/index.do"
+#:id "GGPPA Reference"]
+
+◊declare-work[#:type "legal-case" #:title "Desgagnés Transport Inc v
+Wärtsilä Canada Inc" #:citation "2019 SCC 58" #:url
+"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/18040/index.do"
+#:id "Desgagnés"]
+
 ◊fig[#:src "assets/pipelines-double-aspect.png" #:width "500px"]{The
 double-aspect doctrine explains why the provincial and federal
 government might both be able to make legislation relating to a
-particular field. (The figure I've drawn here as a method of
-visualizing the double-aspect doctrine is an approach taken from
-Professor Joel Bakan's first-year lecture on the topic.) On April 26,
-2018, the BC government asked the BC Court of Appeal to decide whether
-the province has the power to make certain amendments to the to the
-Environmental Management Act that would affect a proposed pipeline
-being built by the federal government. See the ◊a[#:href
+particular field or fact situation. (The figure I've drawn here as a
+method of visualizing the double-aspect doctrine is an approach taken
+from Professor Joel Bakan's first-year lecture on the topic.) On April
+26, 2018, the BC government asked the BC Court of Appeal to decide
+whether the province has the power to make certain amendments to the
+to the Environmental Management Act that would affect a proposed
+pipeline being built by the federal government. See the ◊a[#:href
 "https://news.gov.bc.ca/releases/2018PREM0019-000742"]{news
 release}. Update: The BC Court of Appeal rejected the province's
 characterization that is reflected in this diagram.◊note{"Part 2.1
@@ -206,8 +215,9 @@ conception, the double-aspect doctrine explains any scenario where the
 courts allow legislation from our two levels of government to touch a
 particular field. The double-aspect doctrine is not reserved for cases
 where the two levels of government play tug-of-war over a provision;
-it is also at play when they play tug-of-war over a field, through
-◊em{different provisions}, through ◊em{different} law.
+it is also at play when they play tug-of-war over a field (or, as
+developed more recently, over a fact situation), through ◊em{different
+provisions}, through ◊em{different} law.
 
 "In most cases, application of the doctrine simply entails the court
 evidencing a willingness to apply the pith and substance doctrine
@@ -234,3 +244,16 @@ side by side.◊note-cite["Reproduction reference" #:pinpoint "para
 doctrine.  Accordingly, gaming can be subject to legislation by both
 the federal and provincial governments.◊note-cite["Siemens" #:pinpoint
 "para 22"]}
+
+Most recently, in the ◊em{Greenhouse Gas Pollution Pricing Act}
+reference,◊note-cite["GGPPA Reference"] the court clarified that it
+prefers the first of those three framings: "that the double aspect
+doctrine concerns fact situations."◊note{◊cite["GGPPA Reference"
+#:pinpoint "para 130"] I find paragraph 130 an enigma. The second
+sentence seems to be in support of the view that the first sentence is
+presenting an argument against, but the connecting phrases suggest the
+opposite.} "The same fact situations can be regulated from different
+perspectives, one of which may relate to a provincial power and the
+other to a federal power."◊note{◊cite["GGPPA Reference" #:pinpoint
+"para 125" #:terminal ", citing"] ◊cite["Desgagnés" #:pinpoint "para
+84"]}
