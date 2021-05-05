@@ -335,7 +335,7 @@
   (define (omitted-path? path)
     (or (equal? (path->string (file-name-from-path path)) ".travis.yml")
         (equal? (path->string (file-name-from-path path)) ".gitattributes")
-        (equal? (path->string (file-name-from-path path)) ".github/workflows/deploy-to-live.yml")
+        (equal? (path->string (file-name-from-path path)) "deploy-to-live.yml")
         (equal? (path->string (file-name-from-path path)) "cars.xml")
         (string-suffix? (path->string (file-name-from-path path)) "template.html")
         (string-suffix? (path->string (file-name-from-path path)) "~")))
