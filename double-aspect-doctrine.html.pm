@@ -60,9 +60,9 @@ Wärtsilä Canada Inc" #:citation "2019 SCC 58" #:url
 #:id "Desgagnés"]
 
 ◊fig[#:src "assets/pipelines-double-aspect.png" #:width "500px"]{The
-double-aspect doctrine explains why the provincial and federal
-government might both be able to make legislation relating to a
-particular field or fact situation. (The figure I've drawn here as a
+double-aspect doctrine explains why a provincial legislature and
+federal Parliament might both be able to make legislation relating to
+a particular field or fact situation. (The figure I've drawn here as a
 method of visualizing the double-aspect doctrine is an approach taken
 from Professor Joel Bakan's first-year lecture on the topic.) On April
 26, 2018, the BC government asked the BC Court of Appeal to decide
@@ -83,7 +83,7 @@ to, what makes the pipeline “specifically of federal jurisdiction.”"
 
 Federalism is a broad subcategory within Canadian constitutional
 law. In this context, federalism refers to the division of law-making
-power between our provincial and federal governments.
+power between our provincial legislatures and federal Parliament.
 
 ◊q{In a federal system of government such as ours, political power is
 shared by two orders of government: the federal government on the one
@@ -109,9 +109,9 @@ to think of the double-aspect doctrine and one way of teasing apart
 the ways in which the doctrine is used.
 
 ◊em{Multiple Access} concerned legislation enacted by the federal and
-Ontario governments with provisions that overlapped significantly both
-in their expression and in the people and conduct covered. Look at
-section 100.4 of the ◊em{Canada Corporations Act}◊note-cite["CCA"
+Ontario legislatures with provisions that overlapped significantly
+both in their expression and in the people and conduct covered. Look
+at section 100.4 of the ◊em{Canada Corporations Act}◊note-cite["CCA"
 #:pinpoint "s 100.4(1)" #:parenthetical "\"Every insider of a company,
 every person employed or retained by the company, the auditor of the
 company and every associate of the insider and affiliate of the
@@ -170,12 +170,12 @@ explained the doctrine using material from an article by William
 Lederman, "Classification of Laws and the British North America Act."
 Lederman's article and ◊em{Multiple Access} contemplate one kind of
 scenario in which the double-aspect doctrine can arise (when the court
-is asked to choose which of the federal or provincial governments gets
+is asked to choose which of the federal or provincial legislatures gets
 to pass a particular law), but in this scenario, two kinds of
 doubleness are conflated.
 
 ◊em{Multiple Access} and Lederman's article talk about the
-double-aspect doctrine as if the federal and provincial governments
+double-aspect doctrine as if the federal and provincial legislatures
 are playing tug-of-war over one particular law, asking, "who gets to
 enact it?" Double-aspect enters when the answer is, "both of you."
 This is the setting where we look for a 50/50 split between the
@@ -256,7 +256,7 @@ and the other to a federal power."◊note{◊cite["GGPPA Reference"
 #:pinpoint "para 84"]}
 
 Paragraph 130 of the GGPPA reference confirms the presentation above
-(replacing "field" with "fact situation"). I'll reproduce it next
+(replacing "field" with "fact situation"). I'll reproduce it next,
 along with my own added notes to explain how I understand it.
 
 ◊blockquote{
