@@ -30,8 +30,8 @@ jobs:
         run: docker exec racket_container bash -c "cd /work && mv /tmp/published ./"
       - name: Shuting down container
         run: docker rm -f racket_container
-      - name: Inspecting directory
-        run: tree `pwd`
+      - name: Inspecting staging folder
+        run: tree -a published
       - name: Deploying to live
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
