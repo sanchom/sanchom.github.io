@@ -10,10 +10,6 @@ lists](https://lexgill.com/lists/).}
 
 ◊itemize{
 
-[Artificial Intelligence](https://lexfridman.com/podcast/)
-(Conversations with people working on deep learning, AI, cognitive
-science, physics, math, etc.)
-
 [Borderlines](https://borderlines.ca/) (Canadian immigration law and
 policy)
 
