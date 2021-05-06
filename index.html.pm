@@ -7,7 +7,7 @@ term at the Indigenous Community Legal Clinic. In summer 2021, I am
 working on some personal research and writing projects and doing some
 volunteer work. Long term, I hope to do work that gives more of us
 more confidence in the outcomes of the legal system and government
-decision-making in general. I am very interested in the many overlaps
+decision-making in general. I am interested in the many overlaps
 of law and technology.
 
 I was on the [Gale Moot](https://www.galecupmoot.com/) team, was the
