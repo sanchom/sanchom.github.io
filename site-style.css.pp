@@ -26,9 +26,13 @@
         (format "@media all and (max-width:~apx){html {font-size:~apx;}}\n" (- width-for-max-font (* x 40)) (- max-font-size x)))
       (range 0 size-steps)))
 
+html {
+padding-left: 5%;
+}
+
 body {
 font-family: ◊|main-font|, serif;
-margin-top: 5em; margin-bottom: 5em; margin-left: 10%; margin-right: 33%;
+margin-top: 5em; margin-bottom: 5em; margin-left: auto; margin-right: 33%;
 max-width: 40em;
 background-color: ◊|background-color|;
 color: ◊|dark-text-color|;
@@ -241,6 +245,10 @@ html { font-size:◊|font-size-on-small-screens|px; }
 .small-screens-only { display: initial; }
 .drop-on-small-screens { display: none; }
 
+html {
+padding-left: 0;
+}
+
 body {
 margin-top: 1em;
 margin-left: 1em;
@@ -331,7 +339,7 @@ background-position: 0% 93%, 100% 93%, 0% 93%;
 .sidenote, .margin-expand:checked + .sidenote, .backlink, div.header { display: none; }
 .endnotes { display: block; }
 div#disqus_thread{ display: none; }
-html { font-size: 13px; }
+html { padding-left: 0; font-size: 13px; }
 body { margin-top: 0; margin-bottom: 0; margin-left: 10%; margin-right: 10%; font-family: "Bitstream Charter", "Century Schoolbook", serif;}
 body.print-with-right-margin { margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 25.0%; }
 @page {
