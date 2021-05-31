@@ -4,11 +4,13 @@
 ◊define-meta[short-title]{Reading (etc.) list}
 ◊define-meta[snippet]{Books, articles, cases, etc. that have helped me understand the effects of colonialism.}
 ◊define-meta[original-date]{2019-06-03}
-◊define-meta[edited-date]{2019-11-02}
+◊define-meta[edited-date]{2021-05-30}
 
-Here are some things that I've read (or listened to, or watched) that
-have helped develop my understanding of colonialism and its effects on
-Indigenous people in Canada.◊note{I'm maintaining this page in
+In this reading list, I've included much that I've read (or listened
+to, or watched) that has helped develop my understanding of
+colonialism and its effects on Indigenous people in Canada. I have
+also just generally included perspectives from Indigenous people that
+have influenced my thinking today.◊note{I'm maintaining this page in
 response to the [Calls for Justice from the National Inquiry into
 Missing and Murdered Indigenous Women and
 Girls](https://www.mmiwg-ffada.ca/), specifically Call for Justice
@@ -24,12 +26,55 @@ Break" #:publisher "House of Anansi Press" #:year "2016"
 #:publisher-location "Toronto" #:id "Vermette" #:url
 "https://www.katherenavermette.com/the-break"]
 
+◊declare-work[#:id "Emancipatory Politics" #:type "book" #:author
+"Avigail Eisenberg" #:etal?  "yes" #:editors? "yes" #:title
+"Recognition Versus Self-Determination: Dilemmas of Emancipatory
+Politics" #:publisher "UBC Press" #:publisher-location "Vancouver"
+#:year "2015" #:url
+"https://www.ubcpress.ca/recognition-versus-self-determination"]
+
 ◊itemize{
+
+◊format-work[#:type "custom" #:custom-format "*Truth and
+Reconciliation Commission of Canada: Final Report* (2015)" #:url
+"http://www.trc.ca/about-us/trc-findings.html" #:display-url? "yes"]
 
 ◊cite["Vermette"] [◊em{primacy of relationships, encounters, cycle of
 victimization and criminalization, stories, belief and empathy,
 strength, self-identity, normalized violence, distinctive roles of
 women, Métis}]
+
+◊format-work[#:type "book" #:author-given "Leanne Betasamosake"
+#:author-family "Simpson" #:title "This Accident of Being Lost" #:year
+"2017" #:publisher "House of Anansi Press" #:publisher-location
+"Toronto" #:url
+"https://houseofanansi.com/products/this-accident-of-being-lost"]
+[◊em{poetry, narrative, science fiction, relationships}]
+
+◊format-work[#:type "chapter" #:author "Glen Coulthard" #:in-book
+"Emancipatory Politics" #:first-page "147" #:title "Place Against
+Empire: The Dene Nation, Land Claims, and the Politics of Recognition
+in the North"]
+
+◊format-work[#:type "article" #:author-given "Robert J"
+#:author-family "Miller" #:title "The International Law of
+Colonialism: A Comparative Analysis" #:journal "Lewis & Clark L Rev"
+#:first-page "847" #:volume "15" #:issue "4" #:year "2011" #:url
+"https://law.lclark.edu/live/files/10652-lcb154art1millerpdf"]
+[◊em{doctrine of discovery, terra nullius, Crown title, Christianity}]
+
+◊format-work[#:type "article" #:title "Red Intersectionality and
+Violence-informed Witnessing Praxis with Indigenous Girls" #:author
+"Natalie Clark" #:journal "Girlhood Studies" #:volume "9" #:issue "2"
+#:first-page "46" #:year "2016" #:url
+"https://www.berghahnjournals.com/view/journals/girlhood-studies/9/2/ghs090205.xml"]
+
+◊format-work[#:type "article" #:title "Decolonization Is Not a
+Metaphor" #:author "Eve Tuck" #:author2-given "K Wayne"
+#:author2-family "Yang" #:journal "Decolonization: Indigeneity,
+Education & Society" #:volume "1" #:issue "1" #:year "2012"
+#:first-page "1" #:url
+"https://jps.library.utoronto.ca/index.php/des/article/view/18630"]
 
 ◊format-work[#:type "article" #:author "Aaron Mills" #:journal
 "McGill Law Journal" #:year "2016" #:volume "61" #:issue "4" #:title
@@ -50,6 +95,18 @@ stories, over-victimization, strength, agency}]
 #:publication "CANADALAND" #:year "2018" #:url
 "https://www.canadalandshow.com/shows/thunder-bay/"] [◊em{podcast,
 systemic-bias}]
+
+◊format-work[#:type "article" #:author "Robin Fisher" #:title "Joseph
+Trutch and Indian Land Policy" #:journal "BC Studies" #:volume "12"
+#:year "1971" #:first-page "3" #:url
+"https://ojs.library.ubc.ca/index.php/bcstudies/article/view/719/761"]
+
+◊format-work[#:type "article" #:author "George Abbott" #:title
+"Persistence of Colonial Prejudice and Policy in British Columbia's
+Indigenous Relations: Did the Spirit of Joseph Trutch Haunt
+Twentieth-Century Resource Development?" #:journal "BC Studies"
+#:volume "194" #:year "2017" #:first-page "39" #:url
+"https://ojs.library.ubc.ca/index.php/bcstudies/article/view/188652/186508"]
 
 ◊format-work[#:type "magazine/news" #:title "First Contact"
 #:publication "Aboriginal Peoples Television Network" #:year "2018"
