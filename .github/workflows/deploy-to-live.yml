@@ -16,6 +16,8 @@ jobs:
         run: docker pull sanchom/pollen
       - name: Starting container
         run: docker run -v `pwd`:/work --name racket_container -d sanchom/pollen tail -f /dev/null
+      - name: Installing tzdata
+      	run: docker exec racket_container apt-get install -y tzdata
       - name: Installing latest pollen dependencies in container
         run: docker exec racket_container raco pkg install --auto pollen-citations-mcgill gregor
       - name: Inspecting work directory
