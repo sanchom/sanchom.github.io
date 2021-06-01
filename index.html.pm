@@ -2,13 +2,14 @@
 
 ◊define-meta[page-title]{Home}
 
-I just completed 3L at UBC's Allard School of Law. I spent my final
-term at the Indigenous Community Legal Clinic. In summer 2021, I am
-working on some personal research and writing projects and doing some
-volunteer work before starting work as a judicial law clerk. Long
-term, I hope to do work that gives more of us more confidence in the
-outcomes of the legal system and government decision-making in
-general. I am interested in the many overlaps of law and technology.
+I just completed my law degree at UBC's Allard School of Law. I spent
+my final term at the Indigenous Community Legal Clinic. In summer
+2021, I am working on some personal research and writing projects and
+doing some volunteer work before starting work as a judicial law
+clerk. Long term, I hope to do work that gives more of us more
+confidence in the outcomes of the legal system and government
+decision-making in general. I am interested in the many overlaps of
+law and technology.
 
 I was on the [Gale Moot](https://www.galecupmoot.com/) team, was the
 Senior Editor at the [Canadian Journal of Family
