@@ -48,6 +48,9 @@
          (ormap (λ (a) (equal? "margin-note" a)) (string-split (attr-ref tx 'class)))))
   (findf-txexpr doc is-margin-note?))
 
+(define (make-nice-date iso-date-string)
+  (~t (iso8601->date iso-date-string) "MMMM d, y"))
+
 (define (recent-updates)
   (define page-list (filter (lambda (x) (or (select 'original-date x) (select 'edited-date x)))
                      (remove* '(index.html) (pagetree->list (get-pagetree "index.ptree")))))
@@ -57,12 +60,10 @@
         (select 'original-date p)))
   (define (most-recent-three x)
     (take (sort x string>? #:key extract-date) 3))
-  (define (make-nice iso-date-string)
-    (~t (iso8601->date iso-date-string) "MMM d, y"))
   (define (date-info p)
     (if (select 'edited-date p)
-        (format " (updated ~a)" (make-nice (select 'edited-date p)))
-        (format " (posted ~a)" (make-nice (select 'original-date p)))))
+        (format " (updated ~a)" (make-nice-date (select 'edited-date p)))
+        (format " (posted ~a)" (make-nice-date (select 'original-date p)))))
   `(ul ,@(map (lambda (x) `(li (a [[href ,(format "~a" x)]] ,(processed-title (select-from-metas 'page-title x))) ,(date-info x))) (most-recent-three page-list))))
 
 ; For use in the html <title> element. It doesn't recognize italics etc, so those are stripped out.

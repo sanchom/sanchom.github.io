@@ -21,7 +21,7 @@ I'm trained as a computer scientist. In that field, I've focused on
 visual object recognition, machine learning, and applications of deep
 neural networks.
 
-◊sub-heading{Recent Updates}
+◊sub-heading{Recent updates}
 
 ◊recent-updates[]
 
