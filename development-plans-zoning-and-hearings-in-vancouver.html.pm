@@ -105,7 +105,7 @@ British Columbia has said:
 
 ◊blockquote{
 
-[44] ◊elide There is an abundance of jurisprudence on the fundamental
+[44] ◊ellipsis There is an abundance of jurisprudence on the fundamental
 importance of notice to the legitimacy of the decision-making process
 in land use and zoning cases.  Simply put, failure to comply with the
 notice requirements in relation to a public hearing undermines the
@@ -164,12 +164,12 @@ public utility land uses."◊note{See the full list at ◊cite["LGA"
 Official community plans cannot be adopted without a public
 hearing.◊note-see["LGA" #:pinpoint "s 464"] Once a council adopts an
 OCP, council becomes constrained by the OCP. "All bylaws enacted or
-works undertaken by a council... after the adoption of... an official
-community plan... must be consistent with the relevant
-plan."◊note-cite["LGA" #:pinpoint "s 478(2)"] However, a council also
-gains some efficiency if it develops consistenly with the OCP: council
-may ◊em{waive} the public hearing for zoning bylaws that are
-consistent with the OCP.◊note-see["LGA" #:pinpoint "464(2)"]
+works undertaken by a council ◊ellipsis after the adoption of
+◊ellipsis an official community plan ◊ellipsis must be consistent with
+the relevant plan."◊note-cite["LGA" #:pinpoint "s 478(2)"] However, a
+council also gains some efficiency if it develops consistenly with the
+OCP: council may ◊em{waive} the public hearing for zoning bylaws that
+are consistent with the OCP.◊note-see["LGA" #:pinpoint "464(2)"]
 
 Vancouver's official ◊em{development} plans similarly constrain
 Council. However, there are two major differences. First, the
@@ -197,7 +197,7 @@ Act}, but not Section 464. ◊see["VC" #:pinpoint "s 2.1"]}
 
 ◊heading{Why is Vancouver different?}
 
-They didn't start out different.
+Vancouver didn't start out so different.
 
 As recently as 1979, all municipalities in British Columbia were in
 roughly the same position that Vancouver is in today on this
@@ -207,11 +207,11 @@ today's ◊em{Local Government Act}.} as it existed in 1979 simply said,
 a hearing under section 720."◊note-cite["Municipal Act 1979"
 #:pinpoint "s 721"] There was no possibility to waive that public
 hearing, even when the community had an official community plan in
-place. And those OCPs also required a public
-hearing.◊note-see["Municipal Act 1979" #:pinpoint "s 711"
-#:parenthetical "“[t]he council shall not designate a community plan
-as an official community plan unless it has held a public
-hearing...”"]
+place. Unlike the situation in Vancouver today, those OCPs also
+required a public hearing.◊note-see["Municipal Act 1979" #:pinpoint "s
+711" #:parenthetical "“[t]he council shall not designate a community
+plan as an official community plan unless it has held a public
+hearing”"]
 
 By the early 1980s, municipalities were getting frustrated with
 inefficiencies in the planning process, particularily the
