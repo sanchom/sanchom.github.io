@@ -3,8 +3,7 @@
 ◊define-meta[page-title]{Lists}
 
 Here are some of the things I like and that I tend to recommend to
-people.◊note{Inspired by [Lex Gill's
-lists](https://lexgill.com/lists/).}
+people.
 
 ◊sub-heading{Podcasts}
 
@@ -64,6 +63,8 @@ Where I like to find new music.
 
 ◊itemize{
 
+[BBC Sounds](https://www.bbc.co.uk/sounds)
+
 [NTS Radio](https://nts.live)
 
 [PyroRadio](http://www.pyroradio.com/)
@@ -96,7 +97,7 @@ review executive acts; includes updates from ◊em{Vavilov})
 
 Intrepid podcast's "[Muskoka Chair
 Chats](https://www.intrepidpodcast.com/podcast)" episodes 126,
-127, 128, 129, 134, ◊elide (an explainer series on the Charter)
+127, 128, 129, 134 (an explainer series on the Charter)
 
 John Borrows, "[Law
 340](https://www.youtube.com/channel/UC3GVqsk_81azYxiGda4j6iQ/videos)"
@@ -120,18 +121,12 @@ Bryan A. Garner, ◊a[#:href
 Modern English Usage}}, 4th ed (New York: Oxford University Press,
 2016).
 
-Bryan A. Garner & David Foster Wallace, ◊em{Quack this Way: David
-Foster Wallace & Bryan A. Garner Talk Language and Writing} (Dallas:
-RosePen Books, 2013).
-
-Interview of Toni Morrison by Elissa Schappell & Claudia Brodsky
-Lacour in “[Tony Morrison, The Art of Fiction
-No. 134](https://www.theparisreview.org/interviews/1888/the-art-of-fiction-no-134-toni-morrison)”,
-◊em{The Paris Review} (1993).
+Louise Rosenblatt, ◊a[#:href ""]{◊em{Literature as Exploration}}, 5th
+ed (New York: MLA, 1995).
 
 Francis-Noël Thomas & Mark Turner, ◊a[#:href
 "http://classicprose.com/"]{◊em{Clear and Simple as the Truth: Writing
-Classic Prose}} (Princeton: Princeton University Press, 2011)
+Classic Prose}} (Princeton: Princeton University Press, 2011).
 
 Edward Tufte, ◊a[#:href
 "https://www.edwardtufte.com/tufte/books_vdqi"]{◊em{Visual Display of
@@ -142,10 +137,5 @@ Chelsea Vowel, ◊a[#:href
 "https://www.portageandmainpress.com/product/indigenous-writes/"]{◊em{Indigenous
 Writes: A Guide to First Nations, Métis & Inuit Issues in Canada}}
 (Winnipeg: Highwater Press, 2016).
-
-David Foster Wallace, “[Tense Present: Democracy, English, and the
-Wars over
-Usage](https://harpers.org/wp-content/uploads/HarpersMagazine-2001-04-0070913.pdf)”,
-◊em{Harpers} (April 2001).
 
 }
