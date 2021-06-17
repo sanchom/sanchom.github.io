@@ -2,23 +2,42 @@
 
 ◊define-meta[page-title]{Home}
 
-I just completed my law degree at UBC's Allard School of Law. I spent
-my final term at the Indigenous Community Legal Clinic. In summer
-2021, I am working on some personal research and writing projects and
-doing some volunteer work. Long term, I hope to do work that gives
-more of us more confidence in the outcomes of the legal system and
-government decision-making in general. I am interested in the many
-overlaps of law and technology.
+In 2021, I completed my law degree at UBC's Allard School of Law. Some
+of the highlights for me were my time with the Canadian Journal of
+Family Law, the Gale Moot, seminar courses and directed research, and
+my term at the Indigenous Community Legal Clinic. This summer, I am
+working on personal research and writing projects and doing some
+volunteer work. Long term, I hope to do work that gives more of us
+more confidence in the outcomes of the legal system and government
+decision-making in general. I am interested in the many overlaps of
+law and technology, especially algorithmic decision-making and
+copyright.
 
-I was on the [Gale Moot](https://www.galecupmoot.com/) team, was the
-Senior Editor at the [Canadian Journal of Family
-Law](http://faculty.allard.ubc.ca/cdnjfl/), and organized a reading
-group on [Algorithmic Decision-Making and the Rule of
-Law](https://github.com/sanchom/algorithmic-decision-making-and-rule-of-law).
+I am also a computer scientist. In that field, I've focused on visual
+object recognition, machine learning, and applications of deep neural
+networks. My interest has shifted toward fairness, accountability, and
+transparency. I stay up to date with recent publications and continue
+to review for [ICLR](https://iclr.cc/), [ICML](https://icml.cc/), and
+[NeurIPS](https://neurips.cc/).
 
-I'm trained as a computer scientist. In that field, I've focused on
-visual object recognition, machine learning, and applications of deep
-neural networks.
+All of my work is connected to the relationships that I've been part
+of over the years: family, friends, instructors, supervisors and
+mentors, students, and the places that I've lived. I am a
+[settler](https://apihtawikosisan.com/2020/02/settling-on-a-name-names-for-non-indigenous-canadians/)
+born in Winnipeg, [Treaty 1
+Territory](https://en.wikipedia.org/wiki/Treaty_1), traditional
+territory of the Anishinaabe, Cree, Oji-Cree, and Dakota Peoples, and
+the homeland of the Métis Nation. I now live in Vancouver, which
+overlaps with the traditional, ancestral, and unceded territories of
+the Musqueam, Squamish and Tsleil-Waututh.◊note{Learn more about the
+land where you live at [native-land.ca](https://native-land.ca/).}
+
+◊fig[#:src "assets/flying-colors.png" #:width "400px"]{The hangar from
+my first flight instruction job. I'm thankful for all the time that I
+spent with students in these cockpits.}
+
+◊fig[#:src "assets/chilcotins.png" #:width "400px"]{Sunset at a lake
+during a hiking trip through the South Chilcotins.}
 
 ◊sub-heading{Recent updates}
 

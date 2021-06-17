@@ -4,7 +4,7 @@
 ◊define-meta[short-title]{Reading (etc.) list}
 ◊define-meta[snippet]{Books, articles, cases, etc. that have helped me understand the effects of colonialism.}
 ◊define-meta[original-date]{2019-06-03}
-◊define-meta[edited-date]{2021-05-30}
+◊define-meta[edited-date]{2021-06-15}
 
 In this reading list, I've included much that I've read (or listened
 to, or watched) that has helped develop my understanding of
@@ -130,6 +130,20 @@ Métis}]
 law}◊note{Indigenous law is distinct from Aboriginal law. Aboriginal
 law is the law of Canada that relates to Indigenous people. Indigenous
 law is the legal practices of Indigenous people.}]
+
+◊format-work[#:type "book" #:title "Resurgence and Reconciliation:
+Indigenous--Settler Relations and Earth Teachings" #:author "Michael
+Asch" #:author2-given "John" #:author2-family "Borrows"
+#:author3-given "James" #:author3-family "Tully" #:publisher
+"University of Toronto Press" #:publisher-location "Toronto" #:year
+"2018" #:url
+"https://utorontopress.com/ca/resurgence-and-reconciliation-2"]
+[◊em{Indigenous law, political science}]
+
+◊format-work[#:type "book" #:author-institutional "McGill Law Journal"
+#:title "Volume 61, No 4: Special Issue on 'Indigenous Law and Legal
+Pluralism'" #:year "2016" #:url
+"https://www.erudit.org/en/journals/mlj/2016-v61-n4-mlj02883/"]
 
 ◊format-work[#:type "book" #:title "Independent report on the
 incarceration of Angela Cardinal" #:author "Roberta Campbell" #:year
