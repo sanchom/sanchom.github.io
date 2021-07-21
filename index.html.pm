@@ -7,11 +7,11 @@ of the highlights for me were my time with the Canadian Journal of
 Family Law, the Gale Moot, seminar courses and directed research, and
 my term at the Indigenous Community Legal Clinic. This summer, I am
 working on personal research and writing projects and doing some
-volunteer work. Long term, I hope to do work that gives more of us
-more confidence in the outcomes of the legal system and government
-decision-making in general. I am interested in the many overlaps of
-law and technology, especially algorithmic decision-making and
-copyright.
+volunteer work. Long term, I want to help demystify the law and to
+give more of us more confidence in the outcomes of the legal system
+and government decision-making in general. I am interested in the many
+overlaps of law and technology, especially algorithmic decision-making
+and copyright.
 
 I am also a computer scientist. In that field, I've focused on visual
 object recognition, machine learning, and applications of deep neural
