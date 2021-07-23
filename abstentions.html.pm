@@ -2,6 +2,7 @@
 
 ◊define-meta[page-title]{Abstentions at Vancouver City Council: Follow-up}
 ◊define-meta[short-title]{Abstentions}
+◊define-meta[featured-image-url]{assets/voting-chart.png}
 ◊define-meta[original-date]{2021-07-23}
 ◊define-meta[snippet]{Some additional details about motions in which an abstention tipped the vote}
 
