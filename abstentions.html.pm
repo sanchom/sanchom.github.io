@@ -31,7 +31,7 @@ To be clear, the argument in my op-ed would be unchanged even if I
 discovered no motions in which an abstention tipped the scales. But it
 is interesting to see the motions where abstentions made a difference
 to the vote. I also hope this might familiarize people with the Open
-Data Portal and how to understand Council minutes.
+Data Portal and Council minutes.
 
 ◊heading{Correction}
 
