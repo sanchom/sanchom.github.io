@@ -32,7 +32,8 @@ expand to four small modules. I will update this page as I complete
 the material for each.
 
 ◊b{What this series omits, but I want you to be aware of, are methods
-of research into Indigenous laws and legal traditions.} In the series
+of research into Indigenous laws and legal traditions.} I have no
+practical experience with those methods of research. In the series
 developed on this page, you will see that even researching what Canada
 has written down about its legislated law can be complicated. It is
 all that more complex to research Indigenous law that may or may not
