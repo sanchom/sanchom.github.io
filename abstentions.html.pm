@@ -4,8 +4,8 @@
 ◊define-meta[short-title]{Abstentions}
 ◊define-meta[featured-image-url]{assets/voting-chart.png}
 ◊define-meta[original-date]{2021-07-23}
-◊define-meta[edited-date]{2021-07-25}
-◊define-meta[snippet]{Some additional details about motions in which an abstention tipped the vote}
+◊define-meta[edited-date]{2021-07-26}
+◊define-meta[snippet]{A correction, and some additional details about abstentions, history, and context.}
 
 In this blog post, I share some additional details about the
 abstentions I mention in [my op-ed that appeared in the Vancouver Sun
@@ -204,16 +204,17 @@ then ruled out of order because it was too similar to something
 proposed within the previous 365 days. So, the wording associated with
 vote 7435 did not end up in the ultimate motion that carried.
 
-◊heading{History of the abstention rule}
+◊heading{History and context of the abstention rule}
 
-I'm also interested in tracking down the history of the abstention
-rule. As best as I can tell, it was added to the ◊em{Municipal Act} in
-1957 and to the ◊em{Vancouver Charter} in 1993.◊note{While I don't
-promise that what follows shows the absolute earliest use of this
-rule, I want to share the earliest appearances that I have been able
-to find of this rule in both the ◊em{Municipal Act} (what is now the
-◊em{Community Charter} and generally does not apply to Vancouver) and
-the ◊em{Vancouver Charter} (applies only in Vancouver).}
+I'm also interested in understanding the history and context of the
+abstention rule. As best as I can tell, it was added to the
+◊em{Municipal Act} in 1957 and to the ◊em{Vancouver Charter} in
+1993.◊note{While I don't promise that what follows shows the absolute
+earliest use of this rule, I want to share the earliest appearances
+that I have been able to find of this rule in both the ◊em{Municipal
+Act} (what is now the ◊em{Community Charter} and generally does not
+apply to Vancouver) and the ◊em{Vancouver Charter} (applies only in
+Vancouver).}
 
 ◊declare-work[#:id "MA 1957" #:type "statute" #:title "Municipal
 Act" #:volume "SBC" #:year "1957" #:chapter "42"]
@@ -221,13 +222,15 @@ Act" #:volume "SBC" #:year "1957" #:chapter "42"]
 The earliest I have been able to place this rule is Section 164 of the
 1957 ◊em{Municipal Act}.◊note{◊cite["MA 1957"] I have tried to rule
 out the possibility that it was around before 1957. I looked at the
-text of the 1948 ◊em{Municipal Clauses Act}. It contains a clause
-that is much the same as the what would be 164(1) in the 1957 Act, but
-did not contain anything like 164(2). I then examined all amendments
-to the ◊em{Municipal Clauses Act} between 1948 and 1957 and could
-not find that the abstention rule was introduced prior to 1957. I have
-not done the work necessary to be sure that the abstention rule was
-not part of some other Act that I just haven't thought to look in.}
+text of the 1948 ◊em{Municipal Clauses Act}. It was a
+revision/consolidation of many of the clauses applying to the workings
+of municipalities. It contained a clause that is much the same as the
+eventual 164(1) in the 1957 Act but did not contain anything like
+164(2). I then examined all amendments to the ◊em{Municipal Clauses
+Act} between 1948 and 1957 and could not find that the abstention rule
+was introduced prior to 1957. I have not done the work necessary to be
+sure that the abstention rule was not part of some other Act that I
+just haven't thought to look in.}
 
 ◊fig[#:src "assets/sbc-1957-c-42-municipality-act-s-164.png"]{Section
 164 of the 1957 ◊em{Municipal Act}.}
@@ -282,6 +285,51 @@ convenience in 1979)."] It listed several specific sections of the
 ◊em{Municipal Act} that applied to Vancouver and said those and only
 those sections of the ◊em{Municipal Act} applied to Vancouver. The
 abstention rule was not one of those sections.}
+
+◊declare-work[#:id "WA" #:type "book" #:title "Mayor & Councilmember
+Handbook" #:author-institutional "Association of Washington Cities and
+Muncipal Research & Services Center of Washington" #:year "2019" #:url
+"https://mrsc.org/getmedia/034f13b6-7ec2-4594-b60b-efaf61dd7d10/Mayor-And-Councilmember-Handbook.pdf.aspx?ext=.pdf"
+#:short-form "Washington Handbook" #:publisher-location "Olympia"]
+
+For a comparative look across the border, Washington publishes a
+◊em{[Mayor & Councilmember
+Handbook](https://mrsc.org/getmedia/034f13b6-7ec2-4594-b60b-efaf61dd7d10/Mayor-And-Councilmember-Handbook.pdf.aspx?ext=.pdf)}.◊note-cite["WA"]
+In Washington, state law does not specify how each municipality must
+treat abstentions. It is open to each municipality in Washington to
+decide how to treat abstentions. The handbook gives example text for a
+rule that municipalities can use to treat abstentions as affirmative
+votes. It also provides one possible justification for such a rule:
+"If a city does not have a rule, abstentions by one or more
+councilmembers may make it impossible for final action to be taken on
+a matter, particularly where a majority vote of the full council is
+needed."◊note-cite["WA" #:pinpoint "43"]
+
+◊declare-work[#:id "AB" #:type "statute" #:title "Municipal Government
+Act" #:volume "RSA" #:chapter "M-26" #:year "2000" #:url
+"https://www.qp.alberta.ca/documents/Acts/m26.pdf"]
+
+In Alberta, the rule is that "[a] councillor attending a council
+meeting must vote on a matter put to a vote at the meeting unless the
+councillor is required or permitted to abstain from voting under this
+or any other enactment."◊note-cite["AB" #:pinpoint "183"] A councillor
+in Alberta is ◊em{required} to abstain when they have a conflict of
+interest◊note{◊cite["AB" #:pinpoint "s 172"] British Columbia makes a
+clearer distinction in terminology and does not lump abstentions
+together with declarations of conflict.} or when they are absent for
+the entire public hearing on a matter.◊note-cite["AB" #:pinpoint "s
+184"] A councillor ◊em{is permitted} to abstain if they were absent
+from a portion of a public hearing on a matter.◊note-cite["AB"
+#:pinpoint "s 184"] If a councillor does not vote on a matter when
+they are neither required nor permitted to abstain, that disqualifies
+the councillor from council altogether.◊note{◊see["AB" #:pinpoint "s
+174(f)" #:terminal ": "] "A councillor is disqualified from council if... the
+councillor does not vote on a matter at a council meeting at which the
+councillor is present, unless the councillor is required or is
+permitted to abstain from voting under this or any other enactment.}
+That's much harsher than the rule in BC. In BC, abstentions are
+◊em{deemed} affirmative votes. In AB, abstaining when you are required
+to vote gets you kicked off council!
 
 In any case, this rule goes back at least twenty-eight years in
 Vancouver and sixty-four years in British Columbia. I would very much
