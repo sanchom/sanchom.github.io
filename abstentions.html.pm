@@ -261,7 +261,7 @@ citizens](https://www.leg.bc.ca/documents-data/debate-transcripts/35th-parliamen
 [In
 committee](https://www.leg.bc.ca/documents-data/debate-transcripts/35th-parliament/2nd-session/19930728pm-Hansard-v12n21),
 when discussing the section of the bill (section 62) that introduced
-the abstention rule, members were focused on other aspects that
+the abstention rule, members were focused on other aspects of that
 section (e.g. quorum, ability to increase council size, the ward
 system) and did not mention anything about the abstention
 rule. Reading between the lines of that discussion, it seems Vancouver
