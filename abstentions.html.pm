@@ -4,6 +4,7 @@
 ◊define-meta[short-title]{Abstentions}
 ◊define-meta[featured-image-url]{assets/voting-chart.png}
 ◊define-meta[original-date]{2021-07-23}
+◊define-meta[edited-date]{2021-07-25}
 ◊define-meta[snippet]{Some additional details about motions in which an abstention tipped the vote}
 
 In this blog post, I share some additional details about the
@@ -202,3 +203,88 @@ by-law. This amendment carried, but was immediately reconsidered and
 then ruled out of order because it was too similar to something
 proposed within the previous 365 days. So, the wording associated with
 vote 7435 did not end up in the ultimate motion that carried.
+
+◊heading{History of the abstention rule}
+
+I'm also interested in tracking down the history of the abstention
+rule. As best as I can tell, it was added to the ◊em{Municipal Act} in
+1957 and to the ◊em{Vancouver Charter} in 1993.◊note{While I don't
+promise that what follows shows the absolute earliest use of this
+rule, I want to share the earliest appearances that I have been able
+to find of this rule in both the ◊em{Municipal Act} (what is now the
+◊em{Community Charter} and generally does not apply to Vancouver) and
+the ◊em{Vancouver Charter} (applies only in Vancouver).}
+
+◊declare-work[#:id "MA 1957" #:type "statute" #:title "Municipal
+Act" #:volume "SBC" #:year "1957" #:chapter "42"]
+
+The earliest I have been able to place this rule is Section 164 of the
+1957 ◊em{Municipal Act}.◊note{◊cite["MA 1957"] I have tried to rule
+out the possibility that it was around before 1957. I looked at the
+text of the 1948 ◊em{Municipal Clauses Act}. It contains a clause
+that is much the same as the what would be 164(1) in the 1957 Act, but
+did not contain anything like 164(2). I then examined all amendments
+to the ◊em{Municipal Clauses Act} between 1948 and 1957 and could
+not find that the abstention rule was introduced prior to 1957. I have
+not done the work necessary to be sure that the abstention rule was
+not part of some other Act that I just haven't thought to look in.}
+
+◊fig[#:src "assets/sbc-1957-c-42-municipality-act-s-164.png"]{Section
+164 of the 1957 ◊em{Municipal Act}.}
+
+◊declare-work[#:id "LERA" #:title "Local Elections Reform Act" #:type
+"statute" #:volume "SBC" #:year "1993" #:chapter "54"]
+
+The abstention rule was not added to the ◊em{Vancouver Charter}
+then. The rule has lived on in various places in the ◊em{Municipal
+Act} (and now in the ◊em{Community Charter}) since 1957. But its first
+appearance in the ◊em{Vancouver Charter} seems to be in 1993, through
+the ◊em{Local Elections Reform Act}.◊note-cite["LERA" #:pinpoint "s
+62"] The Act was largely focused on updating procedures for municipal
+elections, but it also happened to make some general amendments to the
+◊em{Vancouver Charter}. One of those amendments was the introduction
+of the abstention rule.
+
+◊fig[#:src "assets/sbc-1993-c-54-s-62-adding-todays-145-1(3).png"]{The
+addition of today's 145.1(3) of the ◊em{Vancouver Charter} as part of
+the ◊em{Local Elections Reform Act} in 1993.}
+
+◊declare-work[#:id "VC1953" #:type "statute" #:title "Vancouver
+Charter" #:volume "SBC" #:year "1953" #:chapter "55"]
+
+When this bill went through the legislature, the discussion was
+largely focused on the electoral aspects of the bill. The bill's
+sponsor, Robin Blencoe, said that the bill was a product of "[major
+consultation with local government and concerned
+citizens](https://www.leg.bc.ca/documents-data/debate-transcripts/35th-parliament/2nd-session/19930614pm-Hansard-v11n3)."
+
+[In
+committee](https://www.leg.bc.ca/documents-data/debate-transcripts/35th-parliament/2nd-session/19930728pm-Hansard-v12n21),
+when discussing the section of the bill (section 62) that introduced
+the abstention rule, members were focused on other aspects that
+section (e.g. quorum, ability to increase council size, the ward
+system) and did not mention anything about the abstention
+rule. Reading between the lines of that discussion, it seems Vancouver
+was consulted closely on the content of the amendments which implies
+that the addition of the abstention rule was not just imposed on
+Vancouver by the province.
+
+It is of course possible that this rule was part of Vancouver's
+procedure by-law prior to 1993. I have not been able to get a hold of
+historic versions of the procedure by-law to rule that out. Another
+possibility is that the ◊em{Vancouver Charter} incorporated by
+reference the rule from the ◊em{Municipal Act}. But the ◊em{Vancouver
+Charter} has been very selective about which portions of the
+◊em{Municipal Act} it incorporates by reference and as far as I can
+tell, did not incorporate the abstention rule by reference.◊note{See
+◊cite["VC1953" #:pinpoint "s 578" #:terminal " (as consolidated for
+convenience in 1979)."] It listed several specific sections of the
+◊em{Municipal Act} that applied to Vancouver and said those and only
+those sections of the ◊em{Municipal Act} applied to Vancouver. The
+abstention rule was not one of those sections.}
+
+In any case, this rule goes back at least twenty-eight years in
+Vancouver and sixty-four years in British Columbia. I would very much
+appreciate pointers to even earlier appearances of this rule, its use
+in procedure by-laws prior to being required by provincial statute, or
+any information about the context in which it was introduced.

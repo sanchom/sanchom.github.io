@@ -174,7 +174,7 @@ the process for doing so differs between federal Parliament and
 provincial legislatures and the practices have changed over time. In
 this series, I will be focusing on the approach take by the federal
 Parliament and the BC legislature. If you're doing work in another
-provice, these general principles should help you understand the
+province, these general principles should help you understand the
 approach taken by your province, but you'll need to take some time to
 understand the particular system(s) used in your jurisdiction.
 
