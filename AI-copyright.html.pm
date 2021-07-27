@@ -2,7 +2,7 @@
 
 ◊define-meta[page-title]{Copyright Throughout a Creative AI Pipeline}
 ◊define-meta[short-title]{AI Copyright}
-◊define-meta[snippet]{An article I wrote about copyright in the inputs, intermediary products, and final output of AI programs.}
+◊define-meta[snippet]{An article I wrote about copyright in the inputs, intermediate products, and final output of AI programs.}
 ◊define-meta[original-date]{2021-07-27}
 
 ◊declare-work[#:id "McCann" #:type "article" #:author "Sancho McCann"
