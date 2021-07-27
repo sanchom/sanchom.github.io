@@ -12,7 +12,8 @@ JL & Tech" #:year "2021" #:volume "19" #:first-page "109"]
 My article, "Copyright Throughout a Creative AI
 Pipeline,"◊note-cite["McCann"] was just published by the Canadian
 Journal of Law & Technology. The final, reviewed and edited version is
-only accessible through [WestLaw](https://www.westlawnextcanada.com/)
+only accessible through ◊a[#:href
+"https://nextcanada.westlaw.com/Document/I17a8222eea2711ebbea4f0dc9fb69570/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0)"]{WestLaw}
 for the first nine months after publication. But I am allowed to share
 [this draft version on
 SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3893972) for
