@@ -58,8 +58,9 @@ Here's where you can find me elsewhere online: ◊div[#:class
 ◊heading{Selected publications}
 
 ◊format-work[#:type "article" #:author-given "Sancho" #:author-family
-"McCann" #:title "Copyright Throughout a Creative AI Pipeline"
-#:forthcoming "2021" #:journal "Can J Law & Tech" #:volume "19"]
+"McCann" #:title "Copyright Throughout a Creative AI Pipeline" #:year
+"2021" #:journal "Can J Law & Tech" #:volume "19" #:first-page "109"
+#:url "AI-copyright.html"]
 
 ◊format-work[#:type "article" #:author-given "Sancho" #:author-family
 "McCann" #:title "Finding Harmony: *Law Society of British Columbia v
