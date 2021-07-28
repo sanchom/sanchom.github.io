@@ -204,7 +204,7 @@ then ruled out of order because it was too similar to something
 proposed within the previous 365 days. So, the wording associated with
 vote 7435 did not end up in the ultimate motion that carried.
 
-◊heading{History and context of the abstention rule}
+◊heading{History and context of the abstention rule [◊a[#:id "history" #:href "#history"]{direct link}]}
 
 I'm also interested in understanding the history and context of the
 abstention rule. As best as I can tell, it was added to the
