@@ -212,7 +212,8 @@ abstention rule. As best as I can tell, it was added to the
 1993.◊note{While I don't promise that what follows shows the absolute
 earliest use of this rule, I want to share the earliest appearances
 that I have been able to find of this rule in both the ◊em{Municipal
-Act} (what is now the ◊em{Community Charter} and generally does not
+Act}◊note{The ◊em{Municipal Act} evolved into today's ◊em{Local
+Government Act} and the ◊em{Community Charter}.} (generally does not
 apply to Vancouver) and the ◊em{Vancouver Charter} (applies only in
 Vancouver).}
 
@@ -240,13 +241,13 @@ just haven't thought to look in.}
 
 The abstention rule was not added to the ◊em{Vancouver Charter}
 then. The rule has lived on in various places in the ◊em{Municipal
-Act} (and now in the ◊em{Community Charter}) since 1957. But its first
-appearance in the ◊em{Vancouver Charter} seems to be in 1993, through
-the ◊em{Local Elections Reform Act}.◊note-cite["LERA" #:pinpoint "s
-62"] The Act was largely focused on updating procedures for municipal
-elections, but it also happened to make some general amendments to the
-◊em{Vancouver Charter}. One of those amendments was the introduction
-of the abstention rule.
+Act} (and now in the ◊em{Local Government Act} and ◊em{Community
+Charter}) since 1957. But its first appearance in the ◊em{Vancouver
+Charter} seems to be in 1993, through the ◊em{Local Elections Reform
+Act}.◊note-cite["LERA" #:pinpoint "s 62"] The Act was largely focused
+on updating procedures for municipal elections, but it also happened
+to make some general amendments to the ◊em{Vancouver Charter}. One of
+those amendments was the introduction of the abstention rule.
 
 ◊fig[#:src "assets/sbc-1993-c-54-s-62-adding-todays-145-1(3).png"]{The
 addition of today's 145.1(3) of the ◊em{Vancouver Charter} as part of
