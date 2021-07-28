@@ -212,10 +212,10 @@ abstention rule. As best as I can tell, it was added to the
 1993.◊note{While I don't promise that what follows shows the absolute
 earliest use of this rule, I want to share the earliest appearances
 that I have been able to find of this rule in both the ◊em{Municipal
-Act}◊note{The ◊em{Municipal Act} evolved into today's ◊em{Local
-Government Act} and the ◊em{Community Charter}.} (generally does not
-apply to Vancouver) and the ◊em{Vancouver Charter} (applies only in
-Vancouver).}
+Act}(generally does not apply to Vancouver) and the ◊em{Vancouver
+Charter} (applies only in Vancouver). The ◊em{Municipal Act} evolved
+into today's ◊em{Local Government Act} and the ◊em{Community
+Charter}.}
 
 ◊declare-work[#:id "MA 1957" #:type "statute" #:title "Municipal
 Act" #:volume "SBC" #:year "1957" #:chapter "42"]
