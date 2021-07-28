@@ -4,7 +4,7 @@
 ◊define-meta[short-title]{Abstentions}
 ◊define-meta[featured-image-url]{assets/voting-chart.png}
 ◊define-meta[original-date]{2021-07-23}
-◊define-meta[edited-date]{2021-07-26}
+◊define-meta[edited-date]{2021-07-27}
 ◊define-meta[snippet]{A correction, and some additional details about abstentions, history, and context.}
 
 In this blog post, I share some additional details about the
@@ -52,8 +52,8 @@ did not make a difference.
 
 ◊fig[#:src "assets/minutes-vote-4072.png"]{The minutes for vote 4072.}
 
-I have sent an email to the Open Data Portal maintainers to suggest
-correcting the data.
+I have sent an email to the Open Data Portal maintainers and they are
+in the process of correcting the entry.
 
 ◊heading{The thirteen motions}
 
