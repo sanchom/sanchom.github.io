@@ -25,6 +25,8 @@
     <title>◊|site-title|—Site Index</title>
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
     <link rel="canonical" href="https://sanchom.github.io/site-index.html" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
 </head>
   <body>
     <script>

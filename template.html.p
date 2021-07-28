@@ -45,6 +45,8 @@
     <link rel="stylesheet" type="text/css" href="../site-style.css" />
     ◊when/splice[(not am-home)]{<link rel="canonical" href="https://sanchom.github.io/◊|here|" />}
     ◊when/splice[am-home]{<link rel="canonical" href="https://sanchom.github.io/" />}
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
 </head>
   <body ◊when/splice[(need-right-margin? doc)]{class="print-with-right-margin"}>
 <header>
