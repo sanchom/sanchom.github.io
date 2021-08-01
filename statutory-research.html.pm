@@ -3,6 +3,7 @@
 ◊define-meta[page-title]{Statutory research series}
 ◊define-meta[short-title]{Statutory research}
 ◊define-meta[original-date]{2021-07-24}
+◊define-meta[edited-date]{2021-08-01}
 ◊define-meta[featured-image-url]{assets/1921-Bill-12.png}
 ◊define-meta[snippet]{How to research statutory and legislative history of Canadian statutory law.}
 
@@ -139,8 +140,11 @@ content of that Act.
 amendments that have occurred to all the existing Acts over time and
 enacts an updated version of each of those Acts. These updated
 versions incorporate directly into their text the most up-to-date
-amended language. The Revised Statutes have hundreds of chapters, one
-for each Act that was in force at the time.
+amended language. They are not intended to be new law. They are only
+meant to consolidate and declare anew "the law as contained in the
+Acts... for which the Revised Statutes are substituted." The Revised
+Statutes have hundreds of chapters, one for each Act that was in force
+at the time.
 
 ◊fig[#:src "assets/RSC-1985-TOC.png"]{The first page of the table of
 contents of the 1985 Revised Statutes of Canada. Each Act that was in
@@ -259,3 +263,256 @@ identify the associated statutes, bills, and Hansard records.
 That is what I will share with you in the following Parts: how to
 actually ◊em{find} these materials and various methods of research
 that are effective across different eras.
+
+◊heading{Part 2: Federal statutory history}
+
+In this Part, I will show you how to use specific online resources to
+discover the statutory material that has contributed to a federal Act.
+
+This will involve the following resources:
+
+◊itemize{
+
+[Today's consolidated Acts at the Justice Laws website](https://laws-lois.justice.gc.ca/eng/acts/).
+
+[Annual
+Statutes](https://laws-lois.justice.gc.ca/eng/AnnualStatutes/index.html)
+available online from 2001 onwards.
+
+Annual Statutes from before 2001 are unfortunately more difficult to
+access. If you are a student with access to your university's online
+databases, you likely have access to HeinOnline and a database titled
+"Annual Statutes." Here is the [direct
+link](https://heinonline-org.ezproxy.library.ubc.ca/HOL/Index?collection=caotp)
+for those at UBC. If you do not have online access, most universities
+also have the print volumes available.
+
+◊em{Revised Statutes of Canada, 1985} and its supplements can be found
+in PDF form ◊a[#:href
+"https://publications.gc.ca/site/eng/search/search.html?st=1&ssti=1&_ssti=on&ast=Revised+Statutes+of+Canada+1985&cnst=&_e=on&_f=on&adof=true&_adof=on&hpp=10&psi=1&rq.ssp=-5)"]{here,
+on the Government of Canada's publication site}.
+
+Revised statutes from before 1985 are more difficult to access. All
+revised statutes (1886, 1906, 1927, 1952, 1970, 1985) are available
+through HeinOnline, in a database titled "Revised Statutes of Canada."
+Here is the [direct
+link](https://heinonline-org.ezproxy.library.ubc.ca/HOL/Index?index=castatutes/rdtutda&collection=castatutes)
+if you're at UBC. Most university libraries will also have print
+volumes of these.
+
+}
+
+To show you how to use these, I will work through an example. Let's
+trace the size of the Canadian Radio-television and Telecommunications
+Commission (CRTC) throughout its history.
+
+◊declare-work[#:id "CRTC" #:type "statute" #:title "Canadian
+Radio-television and Telecommunications Commission Act" #:volume "RSC"
+#:year "1985" #:chapter "C-22" #:url
+"https://laws.justice.gc.ca/eng/acts/C-22/FullText.html"]
+
+◊declare-work[#:id "mcgill" #:type "book" #:title "Canadian Guide to
+Uniform Legal Citation" #:edition "9th" #:year "2018" #:publisher
+"Thomson Reuters" #:publisher-location "Toronto" #:short-form "McGill
+Guide"]
+
+Section 3(1) of [today's official
+consolidation](https://laws.justice.gc.ca/eng/acts/C-22/FullText.html)
+of the ◊em{CRTC Act}◊note{◊cite["CRTC" #:pinpoint "s 3(1)"] And a
+small detail about citing statutes: when you cite a statute without
+specifying a particular point in time, the convention is that you are
+citing to the statute as it is amended at the time that your writing
+is published. ◊see["mcgill" #:pinpoint "s 2.1.11"]} says the
+following:
+
+◊q{
+
+There is established a commission, to be known as the Canadian
+Radio-television and Telecommunications Commission, consisting of not
+more than 13 members, to be appointed by the Governor in Council.
+
+}
+
+Today, the CRTC can have at most thirteen members.
+
+To trace this Section back through time, look to the [revision
+annotation](https://laws-lois.justice.gc.ca/eng/FAQ/#g2) at the end of
+the Section. I'll reproduce the revision annotation here, but it is
+part of both the PDF and HTML views of the consolidated statute today:
+
+◊q{
+R.S., 1985, c. C-22, s. 3; 1991, c. 11, s. 76; 2010, c. 12, s. 1701.
+}
+
+This annotation tells us that Section 3 was amended in 2010 and
+1991. It also tells us that Section 3 was most recently enacted in
+full in the Revised Statutes of Canada, 1985. This does not mean that
+this Section ultimately originated in 1985. The Revised Statutes of
+Canada will provided a further revision annotation if there is history
+prior to 1985. But for now, we know that we need to examine at least
+the following sources:
+
+◊itemize{
+
+SC 2010, c 12, s 1701 (Annual Statutes of Canada 2010, Chapter 12, Section 1701);
+
+SC 1991, c 11, s 76 (Annual Statutes of Canada 1991, Chapter 11,
+Section 76);
+
+RSC 1985, c C-22, s 3 (Revised Statutes of Canada 1985, Chapter C-22, Section 3).
+
+}
+
+Before we dive into what the ◊em{CRTC Act} looked like after each of
+those revisions/amendments, let's keep tracing the history backward
+from 1985. For this, we need to go to the Revised Statutes of Canada,
+1985, Chapter C-22, Section 3. Find it from the Government of Canada
+◊a[#:href
+"https://publications.gc.ca/site/eng/search/search.html?st=1&ssti=1&_ssti=on&ast=Revised+Statutes+of+Canada+1985&cnst=&_e=on&_f=on&adof=true&_adof=on&hpp=10&psi=1&rq.ssp=-5)"]{here}
+or through UBC's HeinOnline database
+[here](https://heinonline-org.ezproxy.library.ubc.ca/HOL/Index?index=castatutes/rdtutda&collection=castatutes).
+
+RSC 1985 is huge: seven volumes and several supplements. I always go
+to [the
+index](https://publications.gc.ca/collections/collection_2014/lois-statutes/YX44-1985%20X1991-eng.pdf)
+first to figure out in which volume I'll find the chapter that I
+want. It says Chapter C-22 is in [Volume
+II](https://publications.gc.ca/collections/collection_2014/lois-statutes/YX44-1985%202.pdf). There,
+you'll find the ◊em{CRTC Act} as it was "revised"◊note{Recall that
+these periodic ◊em{revisions} are not intended to change the law, but
+instead only consolidate and declare anew "the law as contained in the
+Acts... for which the Revised Statutes are substituted."} in 1985.
+
+◊fig[#:src "assets/RSC-1985-C-22-s-1.png"]{The opening of the ◊em{CRTC
+Act} as revised in 1985.}
+
+◊fig[#:src "assets/RSC-1985-C-22-s-3.png"]{Section 3 of the ◊em{CRTC
+Act} as revised in 1985.}
+
+Here, we find that Section 3 does in fact point back further in time,
+to a citation that looks a little strange: ◊tt{1974-75-76, c. 49,
+s. 3}. Before 1983, a volume of the Statutes of Canada would sometimes
+span several years when a session of Parliament spanned several
+years. That seems to no longer be the practice. In any case, since
+this is before 2001, there is no easily accessible, online source for
+this volume. I access it through HeinOnline. Again, the direct link
+for those at UBC is
+[here](https://heinonline-org.ezproxy.library.ubc.ca/HOL/Index?collection=caotp).
+
+◊fig[#:src "assets/SC-1974-76-c-49-s-3.png"]{Section 3 of the original ◊em{CRTC
+Act}, enacted in 1975.}
+
+There is no revision annotation at the end of Section 3, so this is
+where our tracing ends.
+
+◊b{A point of caution}: while this is all correct regarding the
+Canadian Radio-television and Telecommunications Commission under the
+◊em{Canadian Radio-television and Telecommunications Commission Act},
+there was a predecessor commission named the Canadian Radio and
+Television Commission created by the ◊em{Broadcasting Act} in
+1968. This would have become apparent through researching secondary
+sources and Hansard. If I were doing this research for real, I would
+want to understand what that previous commission looked like and
+whether Parliament intended the new CRTC to be like the old CRTC.
+
+To summarize, the entire history of Section 3 of the ◊em{CRTC Act} is
+captured by:
+
+◊itemize{
+
+SC 1974-75-76, c 49, s 3;
+
+RSC 1985, c C-22, s 3;
+
+SC 1991, c 11, s 76;
+
+SC 2010, c 12, s 1701.
+
+}
+
+When did the Commission change size? Upon initial creation and in
+1985, the Commission was made up of up to nine full-time members and
+ten part-time members. Today, it is made up of no more than thirteen
+members. Did that change happen in 1991? Or did it happen in 2010? To
+discover this, we need to look at the Statutes of Canada in 1991 and
+2010.
+
+For the 1991 amendment, I need to rely on HeinOnline again (the
+[direct
+link](https://heinonline-org.ezproxy.library.ubc.ca/HOL/Index?collection=caotp)
+for UBC people). Statutes of Canada 1991, Chapter 11 was in fact a new
+◊em{Broadcasting Act} with the structure that we see today. It also
+included "related and consequential amendments" to related Acts,
+including an amendment to the size of the CRTC.◊note{I would take some
+time to look closely at the structure of SC 1991, c 11. Sections 1
+through 71 become the substantive content of the ◊em{Broadcasting
+Act}. Sections 72 and onward are quite different. Sections 72 and
+onward mostly repeal, amend, or replace various sections of other
+Acts. In particular, Section 76 is the Section that amends the
+◊em{CRTC Act} to change the size of the CRTC.}
+
+◊fig[#:src "assets/SC-1991-c-11-s-75-77.png"]{This is Section 76 of
+Chapter 11 of the Annual Statutes of Canada, 1991. Section 76 is
+actually an ◊em{amendment} to Section 3 of the existing ◊em{CRTC Act}.}
+
+Section 76 changes the composition of the CRTC. This amendment changes
+four of the part-time positions into full-time positions. After this
+amendment, the CRTC consists of "not more than thirteen full-time
+members and not more than six part-time members."
+
+For the 2010 amendment, we can use the [Annual Statutes published on
+the Justice Laws
+website](https://laws-lois.justice.gc.ca/eng/AnnualStatutes/index2010.html). [Chapter
+12](https://laws-lois.justice.gc.ca/eng/AnnualStatutes/2010_12/) (the
+◊em{Jobs and Economic Growth Act}) is a monster Act. It has over
+two-thousand individual sections. But we are only interested in
+[Section
+1701](https://laws-lois.justice.gc.ca/eng/AnnualStatutes/2010_12/page-75.html#h-87). There,
+we see that the ◊em{CRTC Act} was amended to read as it does today:
+"not more than 13 members" and no mention of part-time
+members. Section 1702 amends Section 4 of the ◊em{CRTC Act} to say
+that all members are full-time members: "A member shall devote the
+whole of his or her time to the performance of his or her duties under
+this Act."
+
+◊sub-heading{Enactment does not imply in force}
+
+So far, I have only shown you how to find the statutory material that
+has contributed to the content of the Act. What I haven't shown you,
+and what I am postponing until a later Part, is how to determine when
+these amendments actually come into force. The CRTC didn't suddenly
+lose its part-time members when the ◊em{Jobs and Economic Growth Act}
+received Royal Assent.
+
+◊sub-heading{Concluding Part 2}
+
+In this Part, through example, I showed you how to trace the content
+of a federal Act back through time by following the revision
+annotations found at the end of any Section. This allows you to find
+the statutory material that has contributed to an Act. Here are the
+important things you should understand now.
+
+A revised statute (as was done in 1985) is a fresh starting point for
+any Act. Revised statutes are massive, and you should start with the
+table of contents or index.
+
+In the past, "annual" statutes sometimes spanned several years.
+
+An Act can have multiple purposes. The 1991 ◊em{Broadcasting Act}, for
+instance, created the substantive structure and content of today's
+◊em{Broadcasting Act} and also made amendments to related Acts.
+
+Unless you supplement your statutory research with secondary sources
+and Hansard, you may miss large parts of the picture: e.g. the
+CRTC◊note{The Canadian Radio and Television Commission.} that existed
+before today's CRTC.◊note{The Canadian Radio-television and
+Telecommunications Commission.}
+
+◊heading{Part 3: Federal legislative history}
+
+In this next Part (coming soon), I will show you how to find the
+◊em{legislative history} of these amendments. What did members or
+Senators say about why they were changing the size of the CRTC? What
+was presented in committee? Were there any amendments to the Bill as
+it worked its way through Parliament? Hansard and related records can
+help answer these questions.
