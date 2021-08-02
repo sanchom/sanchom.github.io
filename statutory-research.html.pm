@@ -136,15 +136,21 @@ content of that Act.
 
 ◊b{Revised Statutes}. Several times in Canada's history (1886, 1906,
 1927, 1952, 1970, 1985), Parliament has passed what are called
-◊em{Revised Statutes}. These are when Parliament brings together all
-amendments that have occurred to all the existing Acts over time and
-enacts an updated version of each of those Acts. These updated
-versions incorporate directly into their text the most up-to-date
-amended language. They are not intended to be new law. They are only
-meant to consolidate and declare anew "the law as contained in the
-Acts... for which the Revised Statutes are substituted." The Revised
-Statutes have hundreds of chapters, one for each Act that was in force
-at the time.
+◊em{Revised Statutes}.◊note{An [explanatory
+note](assets/RSC-1985-Explanatory-note.pdf) included in the Revised
+Statutes of Canada, 1985, gives some helpful background to the
+process. No revision process or output is identical. The Statute
+Revision Commission has flexibility and discretion in how it
+approaches its task. In a later Part, I will present in more detail
+how to understand the 1985 revision and its supplements.} These are
+when Parliament brings together all amendments that have occurred to
+all the existing Acts over time and enacts an updated version of each
+of those Acts. These updated versions incorporate directly into their
+text the most up-to-date amended language. They are not intended to be
+new law. They are only meant to consolidate and declare anew "the law
+as contained in the Acts... for which the Revised Statutes are
+substituted." The Revised Statutes have hundreds of chapters, one for
+each Act that was in force at the time.
 
 ◊fig[#:src "assets/RSC-1985-TOC.png"]{The first page of the table of
 contents of the 1985 Revised Statutes of Canada. Each Act that was in
@@ -287,8 +293,8 @@ link](https://heinonline-org.ezproxy.library.ubc.ca/HOL/Index?collection=caotp)
 for those at UBC. If you do not have online access, most universities
 also have the print volumes available.
 
-◊em{Revised Statutes of Canada, 1985} and its supplements can be found
-in PDF form ◊a[#:href
+Revised Statutes of Canada, 1985, and its supplements can be found in
+PDF form ◊a[#:href
 "https://publications.gc.ca/site/eng/search/search.html?st=1&ssti=1&_ssti=on&ast=Revised+Statutes+of+Canada+1985&cnst=&_e=on&_f=on&adof=true&_adof=on&hpp=10&psi=1&rq.ssp=-5)"]{here,
 on the Government of Canada's publication site}.
 
