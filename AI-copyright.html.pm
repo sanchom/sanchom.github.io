@@ -30,9 +30,9 @@ the time being. I also share an abstract below. If you have WestLaw
 access, I encourage you to read the final version; I think it was
 quite improved through the review and editing process.
 
-This draft version does not include some of the acknowledgements and
-important references that made it into the final version, so I include
-those below.
+The draft version on SSRN does not include some of the
+acknowledgements and important references that made it into the final
+version, so I include those below.
 
 ◊sub-heading{Abstract}
 
