@@ -4,10 +4,19 @@
 ◊define-meta[short-title]{AI Copyright}
 ◊define-meta[snippet]{An article I wrote about copyright in the inputs, intermediate products, and final output of AI programs.}
 ◊define-meta[original-date]{2021-07-27}
+◊define-meta[edited-date]{2021-08-06}
 
 ◊declare-work[#:id "McCann" #:type "article" #:author "Sancho McCann"
 #:title "Copyright Throughout a Creative AI Pipeline" #:journal "Can
 JL & Tech" #:year "2021" #:volume "19" #:first-page "109"]
+
+◊fig[#:src "assets/cortes-wheat.jpg"]{This is an image I created using
+the AI tool, ◊em{[Deep Dream
+Generator](https://deepdreamgenerator.com)}. I used it to apply the
+style of Van Gogh's ◊em{[A Wheatfield with
+Cypresses](https://en.wikipedia.org/wiki/Wheat_Field_with_Cypresses)}
+to a photo that I took of a bay at Cortes Island. That website does
+not claim ownership of the AI output.}
 
 My article, "Copyright Throughout a Creative AI
 Pipeline,"◊note-cite["McCann"] was just published by the Canadian
@@ -118,7 +127,6 @@ pragmatic conception of creativity and art. It keeps the focus on
 human expression and allows for free distribution of the material
 needed for more people to have more practice with creative tools while
 preserving protection for original expression.
-
 
 ◊sub-heading{Acknowledgements}
 
