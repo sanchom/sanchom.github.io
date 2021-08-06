@@ -64,7 +64,7 @@
 <article>
 
 ◊when/splice[(not am-home)]{<h1>◊(->html title)</h1><div class="byline">By Sancho McCann · <span class="date">
-◊when/splice[original-date]{<time datetime="◊|original-date|">◊|original-date|</time>}◊when/splice[edited-date]{, edited: <time datetime="◊|edited-date|">◊|edited-date|</time>}
+◊when/splice[original-date]{<time datetime="◊|original-date|">◊|original-date|</time>}◊when/splice[edited-date]{, <a href="https://github.com/sanchom/sanchom.github.io/commits/master-source/◊|here|.pm">edited</a>: <time datetime="◊|edited-date|">◊|edited-date|</time>}
 </span></div>}
     ◊(->html doc)
 </article>
