@@ -2,7 +2,7 @@
 
 ◊define-meta[page-title]{Abstentions at Vancouver City Council: Follow-up}
 ◊define-meta[short-title]{Abstentions}
-◊define-meta[featured-image-url]{assets/voting-chart.png}
+◊define-meta[featured-image-url]{assets/Vancouver-by-law-32-s-16.png}
 ◊define-meta[original-date]{2021-07-23}
 ◊define-meta[edited-date]{2021-08-10}
 ◊define-meta[snippet]{A correction, and some additional details about abstentions, history, and context.}
