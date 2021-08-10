@@ -408,8 +408,26 @@ than the rule in BC. In BC, abstentions are ◊em{deemed} affirmative
 votes. In AB, abstaining when you are required to vote gets you kicked
 off council!
 
-In any case, this rule goes back at least twenty-eight years in
-Vancouver and sixty-four years in British Columbia. I would very much
-appreciate pointers to even earlier appearances of this rule, its use
-in procedure by-laws prior to being required by provincial statute, or
-any information about the context in which it was introduced.
+In Saskatchewan, if a councillor who is not required to abstain
+abstains, their vote is deemed a negative vote. In Manitoba, I cannot
+find any rule governing this scenario in provincial legislation or the
+Winnipeg Procedure By-law. In Ontario, non-votes are deemed negative
+votes. In Quebec, every councillor is "bound to vote, under penalty of
+a fine of $10." In Nova Scotia, failure or refusal to vote is deemed a
+negative vote. In Prince Edward Island, failure or refusal to vote is
+deemed a vote in favour. In New Brunswick, there is no provincial
+legislative direction, but Fredericton and St. John Procedure By-laws
+both deem non-votes to be affirmative votes. In Newfoundland and
+Labrador, abstentions are prohibited unless permitted by majority vote
+of the other councillors.
+
+Almost universally, in municipal councils in Canada, it is not
+possible to avoid casting a vote in one direction or the other (other
+than when in a conflict of interest).
+
+In summary, this rule has been prescribed by provincial legislation
+for at least twenty-eight years in Vancouver and sixty-four years in
+British Columbia. And as a Procedure By-law, it has existed in various
+forms since Vancouver's first Procedure By-law in 1887 (first, merely
+mandating that each councillor vote; then, deeming non-votes to be
+negative votes; then, deeming non-votes to be affirmative votes).
