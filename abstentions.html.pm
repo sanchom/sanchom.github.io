@@ -4,7 +4,7 @@
 ◊define-meta[short-title]{Abstentions}
 ◊define-meta[featured-image-url]{assets/voting-chart.png}
 ◊define-meta[original-date]{2021-07-23}
-◊define-meta[edited-date]{2021-07-27}
+◊define-meta[edited-date]{2021-08-10}
 ◊define-meta[snippet]{A correction, and some additional details about abstentions, history, and context.}
 
 In this blog post, I share some additional details about the
@@ -275,10 +275,7 @@ was consulted closely on the content of the amendments which implies
 that the addition of the abstention rule was not just imposed on
 Vancouver by the province.
 
-It is of course possible that this rule was part of Vancouver's
-procedure by-law prior to 1993. I have not been able to get a hold of
-historic versions of the procedure by-law to rule that out. Another
-possibility is that the ◊em{Vancouver Charter} incorporated by
+One possibility is that the ◊em{Vancouver Charter} incorporated by
 reference the rule from the ◊em{Municipal Act}. But the ◊em{Vancouver
 Charter} has been very selective about which portions of the
 ◊em{Municipal Act} it incorporates by reference and as far as I can
@@ -290,6 +287,80 @@ listed several specific sections of the ◊em{Municipal Act} that
 applied to Vancouver and said those and only those sections of the
 ◊em{Municipal Act} applied to Vancouver. The abstention rule was not
 one of those sections.}
+
+◊declare-work[#:id "BL 32" #:type "custom" #:custom-format "City of
+Vancouver, by-law no 32, *Procedure By-law* (5 December
+1887)[[pinpoint]]" #:short-form "*Procedure By-law* (1887)"]
+
+◊declare-work[#:id "BL 516" #:type "custom" #:custom-format "City of
+Vancouver, by-law no 516, *Procedure By-law* (2 October
+1905)[[pinpoint]]" #:short-form "*Procedure By-law* (1905)"]
+
+◊declare-work[#:id "BL 960" #:type "custom" #:custom-format "City of
+Vancouver, by-law no 960, *Procedure By-law* (21 October
+1912)[[pinpoint]]" #:short-form "*Procedure By-law* (1912)"]
+
+◊declare-work[#:id "BL 4705" #:type "custom" #:custom-format "City of
+Vancouver, by-law no 4705, *A By-law to amend By-law No. 3792, being
+the Procedure By-law* (19 June 1973)[[pinpoint]]" #:short-form
+"*Procedure By-law Amendment* (1973)"]
+
+◊declare-work[#:id "BL 8554" #:type "custom" #:custom-format "City of
+Vancouver, by-law no 8554, *Procedure By-law* (8 October
+2002)[[pinpoint]]" #:short-form "*Procedure By-law* (2002)"]
+
+However, long before provincial legislation dictated the abstention
+rule for Vancouver in 1993, Vancouver had established its own
+abstention rule as part of its Procedure By-laws. The very first
+Procedure By-law, passed in 1887, said:
+
+◊q{
+
+Every member who should be
+present in the Council Chamber when a question is put shall vote
+thereon, unless the Council shall excuse him, or unless he be
+personally interested in the question, provided such interest is
+resolvable into a personal pecuniary [illegible] or such as is
+peculiar to that member, and not in common with the interests of the
+citizens at-large, and in such case he shall not vote.◊note-cite["BL
+32" #:pinpoint "s 16"]
+
+}
+
+◊fig[#:src "assets/Vancouver-by-law-32-s-16.png"]{This is Section 16
+of 1887 Procedure By-law, the first such By-law passed by the City of
+Vancouver.}
+
+The Procedure By-law passed in 1905 says roughly the same thing. The
+rule was that "[e]very member present at a Council meeting when a
+question is put shall vote thereon unless the Council shall excuse him
+or unless he is prohibited by law from voting on such
+question."◊note-cite["BL 516" #:pinpoint "s 16"] The by-law did not
+say what would happen if a councillor insisted in not voting. This did
+not change until 1912, when a new Procedure By-law was passed. It said
+"if any member persists in refusing to vote for other than the reasons
+hereinbefore stated, he shall be recorded as voting in the negative on
+the question before Council."◊note{◊cite["BL 960" #:pinpoint "s 16"] I
+want to know what councillor's obstinance forced them to clarify this
+rule!}
+
+◊fig[#:src "assets/Vancouver-by-law-960-s-16.png"]{In 1912, Council
+clarified that non-votes were counted as negative votes.}
+
+This was the abstention rule until 1973, when Council replaced
+"negative" with "affirmative."◊note-cite["BL 4705" #:pinpoint "s
+5(b)"]
+
+◊fig[#:src "assets/Vancouver-by-law-4705-s-5.png"]{In 1973, Council
+adopted the abstention rule that had already been prescribed for other
+municipalities since 1957: non-votes are affirmative votes. For
+Vancouver, this would remain merely a Procedure By-law until 1993.}
+
+The abstention rule remained part of the Procedure By-laws until
+2002. By 2002, the abstention rule in the Procedure By-law had been
+made redundant because it was prescribed by provincial
+legislation. So, it was not renewed as part of the 2002 Procedure
+By-law.◊note-cite["BL 8554"]
 
 ◊declare-work[#:id "WA" #:type "book" #:title "Mayor & Councilmember
 Handbook" #:author-institutional "Association of Washington Cities and
