@@ -318,14 +318,13 @@ Procedure By-law, passed in 1887, said:
 
 ◊q{
 
-Every member who should be
-present in the Council Chamber when a question is put shall vote
-thereon, unless the Council shall excuse him, or unless he be
-personally interested in the question, provided such interest is
-resolvable into a personal pecuniary [illegible] or such as is
-peculiar to that member, and not in common with the interests of the
-citizens at-large, and in such case he shall not vote.◊note-cite["BL
-32" #:pinpoint "s 16"]
+Every member who should be present in the Council Chamber when a
+question is put shall vote thereon, unless the Council shall excuse
+him, or unless he be personally interested in the question, provided
+such interest is resolvable into a personal pecuniary profit or such
+as is peculiar to that member, and not in common with the interests of
+the citizens at-large, and in such case he shall not
+vote.◊note-cite["BL 32" #:pinpoint "s 16"]
 
 }
 
