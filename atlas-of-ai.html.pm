@@ -2,7 +2,7 @@
 
 ◊define-meta[page-title]{◊@{Book Review: ◊em{Atlas of AI}}}
 ◊define-meta[short-title]{◊@{◊em{Atlas of AI}}}
-◊define-meta[original-date]{2021-06-14}
+◊define-meta[original-date]{2021-08-22}
 ◊define-meta[snippet]{A book review of Kate Crawford's 'Atlas of AI': This book situates AI in the physical and social world. Crawford shows us the ways that AI exploits and changes our relationships with the Earth and with each other.}
 
 ◊declare-work[#:id "Crawford" #:type "book" #:author "Kate Crawford"
