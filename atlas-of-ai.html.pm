@@ -3,6 +3,7 @@
 ◊define-meta[page-title]{◊@{Book Review: ◊em{Atlas of AI}}}
 ◊define-meta[short-title]{◊@{◊em{Atlas of AI}}}
 ◊define-meta[original-date]{2021-08-22}
+◊define-meta[edited-date]{2021-08-25}
 ◊define-meta[snippet]{A book review of Kate Crawford's 'Atlas of AI': This book situates AI in the physical and social world. Crawford shows us the ways that AI exploits and changes our relationships with the Earth and with each other.}
 
 ◊declare-work[#:id "Crawford" #:type "book" #:author "Kate Crawford"
@@ -31,7 +32,7 @@ and with each other.}
 Crawford covers many of the canonical examples and issues flowing from
 AI. You will see many of the examples from this book also referenced
 in any current writing that views the field through a legal, social,
-or political lense. The latter chapters are an especially good
+or political lens. The latter chapters are an especially good
 presentation of AI as a tool of state power. While I found this to be
 a valuable, scope-defining work for people newly thinking about the
 consequences of AI use and development, I did find portions of it
@@ -261,8 +262,8 @@ time"◊note-cite["Crawford" #:pinpoint "16"] and of "controlling the
 political order."◊note-cite["Crawford" #:pinpoint "82"] Other examples
 that Crawford provides are compelling; this one is not.
 
-Again, these are minor points that can skimmed past or set aside while
-you read this work. The bigger picture is worth seeing.
+Again, these are minor points that can be skimmed past or set aside
+while you read this work. The bigger picture is worth seeing.
 
 ◊heading{Conclusion}
 
