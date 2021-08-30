@@ -137,9 +137,12 @@ for valuable feedback on an earlier draft.
 ◊sub-heading{Related work}
 
 There are several related works that contribute to and are cited in
-the final piece that are not included in the draft version that I've
-shared above. These were enlightening and make related arguments to
-mine, so I would like to share them here as well.
+the ◊a[#:href
+"https://nextcanada.westlaw.com/Document/I17a8222eea2711ebbea4f0dc9fb69570/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0)"]{final
+piece} that are not included in the [draft
+version](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3893972)
+that I've shared for now. These were enlightening and make related
+arguments to mine, so I share them here as well.
 
 ◊declare-work[#:id "IPQ" #:type "book" #:author "Margaret Llewelyn"
 #:editors? "yes" #:title "Intellectual Property Quarterly" #:publisher
