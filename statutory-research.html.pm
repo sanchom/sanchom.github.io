@@ -3,7 +3,7 @@
 ◊define-meta[page-title]{Statutory research series}
 ◊define-meta[short-title]{Statutory research}
 ◊define-meta[original-date]{2021-07-24}
-◊define-meta[edited-date]{2021-08-01}
+◊define-meta[edited-date]{2021-09-02}
 ◊define-meta[featured-image-url]{assets/1921-Bill-12.png}
 ◊define-meta[snippet]{How to research statutory and legislative history of Canadian statutory law.}
 
@@ -93,7 +93,10 @@ focus on the full internal process of what happens in Parliament, but
 [here is a good discussion between Professor Craig Forcese and
 Professor John Mark
 Keyes](https://www.youtube.com/watch?v=jRWyJddRIPU) on the legislative
-process.}
+process. See also ◊a[#:href
+"https://www.ourcommons.ca/About/ProcedureAndPractice3rdEdition/ch_16_5-e.html"]{◊em{House
+of Commons Procedure and Practice}}, 3rd ed (2017), Chapter 16: "The
+Legislative Process."}
 
 In Parliament, bills are labelled starting with a ◊em{C-} if they
 originate in the House of Commons and they are labelled starting with
@@ -516,9 +519,166 @@ Telecommunications Commission.}
 
 ◊heading{Part 3: Federal legislative history}
 
-In this next Part (coming soon), I will show you how to find the
-◊em{legislative history} of these amendments. What did members or
-Senators say about why they were changing the size of the CRTC? What
-was presented in committee? Were there any amendments to the Bill as
-it worked its way through Parliament? Hansard and related records can
-help answer these questions.
+In this Part I will show you how to find the ◊em{legislative history}
+of these amendments. What did members or Senators say about ◊em{why}
+they were changing the size of the CRTC? What was presented in
+committee? Were there any amendments to the bill as it worked its way
+through Parliament? Hansard and related records can help answer these
+questions. I'll show you how to do this work with a modern bill and
+then with a historic bill, as the resources available to do this
+research changes as you look back through time.
+
+◊itemize{
+
+Research into the legislative history of modern bills---from the 37th
+Parliament (2001) onward---is made fairly straightforward through the
+[LEGISinfo](https://www.parl.ca/legisinfo/Home.aspx) site. For modern
+bills from 2001 onward, the entire legislative history is organized on
+LEGISinfo with convenient links to the relevant Hansard and committee
+records.
+
+From 1994--2000, LEGISinfo provides much less information about each
+bill and doesn't link to the relevant Hansard and committee
+records. Nonetheless, through a mix of LEGISinfo and the separate
+Hansard and committee-record sites, material from 1994--2000 is still
+pretty well retrievable directly from Parliament: [House
+Hansard](https://www.ourcommons.ca/DocumentViewer/en/43-2/house/sitting-123/hansard),
+[House committees](https://www.ourcommons.ca/Committees/en/Home),
+[Senate Hansard](https://sencanada.ca/en/in-the-chamber/debates),
+[Senate committees](https://sencanada.ca/en/Committees/). It just
+takes a little more exploring on your part.
+
+For bills from before 1994, you will have to use the [Canadian
+Parliamentary Historical Resources](https://parl.canadiana.ca/), with
+bills, Hansard, and committee records going as far back as the first
+Parliament. These require a lot of manual searching through large
+PDFs.
+
+}
+
+The general steps are the same across all era, but the particular
+resources that you'll use change.
+
+Steps:
+
+◊ol{
+
+◊li{Identify the bill that led to the statute.}
+
+◊li{Use Hansard to locate the Bill's readings, referral to committee,
+committee records, and report(s).}
+
+}
+
+
+◊sub-heading{Historic (pre-1994) bills}
+
+Let's first do this the hard way. What did Parliament have to say
+about the 1991 change?◊note{As presented above, SC 1991, c 11, s 76
+amended the ◊em{CRTC Act} to convert four of the CRTC's part-time
+positions into full-time positions.}
+
+In this case, the table of contents of the Statutes of Canada 1991
+tells us that Chapter 11 went through Parliament as Bill C-40. It
+received Royal Assent on February 1, 1991. This information will help
+us to locate information about the Bill in Hansard.
+
+Use the [Canadian Parliamentary Historical
+Records](https://parl.canadiana.ca/browse?show=eng_c_debates) to
+browse to the House of Commons Debates for the time period associated
+with that particular Bill C-40. That would be the [34th Parliament,
+2nd Session (spanning April 3, 1989 to May 12,
+1991)](https://parl.canadiana.ca/browse/eng/c/debates/34-2). Then, go
+to the
+[index](https://parl.canadiana.ca/view/oop.debates_HOC3402_20/1?r=0&s=1)
+of those debates to gather the list of pages that you'll need to look
+at. [Here is page 94 of the
+index](https://parl.canadiana.ca/view/oop.debates_HOC3402_20/114?r=0&s=1),
+where it lists ◊b{Broadcasting Act (Bill C-40)} along with the pages
+for its first reading, second reading, referral to committee, report
+stage and associated motions, third reading, notification of Senate
+passage, and Royal Assent.
+
+◊fig[#:src
+"assets/hansard-34th-parl-2nd-sess-index-broadcasting-act.png" #:width "400px"]{A
+portion of the Hansard index that directs you to the relevant pages
+for Bill C-40.}
+
+I would first jump to pages 5546--65 and 7003--14. Second reading is
+the main debate over the general purpose of a bill. The bill's sponsor
+will present the motivations, people will speak for and against the
+general thrust and implications of the bill. Clause-by-clause
+criticism isn't a main focus at this stage, but it is still a very
+important stage of a bill's journey through Parliament.
+
+The [House debates for this
+session](https://parl.canadiana.ca/browse/eng/c/debates/34-2) are
+split across fourteen volumes. You can poke around by trial-and-error
+to determine which of the volumes contains the pages of interest, or
+you can look to the index, which reports the pages contained in each
+volume. Once you've located the appropriate volume, you can use the
+web viewer to browse page-by-page or use the search function. You can
+also download the full PDF if you prefer to use your own PDF software.
+
+At Second Reading, I did not find anything directly discussing change
+in composition of the CRTC, but [at page
+5564](https://parl.canadiana.ca/view/oop.debates_HOC3402_04/1272?r=0&s=1),
+Jim Edwards (Parliamentary Secretary to Minister of Communications)
+says that the bill "strengthens the ability of the [CRTC] to regulate
+and supervise the broadcasting system" and that it will make "the CRTC
+more efficient, more responsive to Canadians."
+
+To see whether the change in composition was considered in committee,
+we need to determine which committee this bill was referred to. [At
+page 7014 of the House
+Hansard](https://parl.canadiana.ca/view/oop.debates_HOC3402_05/1258?r=0&s=1),
+it merely tells us that the House agreed to the motion to read the
+bill a second time and to refer it to "a legislative committee"
+(rather than naming a standing committee). This suggests that there
+was a committee created specifically to consider this one bill. You
+can [browse the committee
+records](https://parl.canadiana.ca/browse?show=eng_c_committees_34)
+and locate the records from the [Legislative Commitee on Bill
+C-40](https://parl.canadiana.ca/view/oop.com_HOC_3402_10_1/1?r=0&s=1).
+
+This is a massive volume, including evidence submitted to the
+committee by interested parties across Canada, debates among committee
+members, line-by-line consideration of the bill, etc. I used the
+search function to search for the term ◊em{"full-time"} (in quotes).
+
+◊itemize{
+
+On January 2, 1990, the Alliance of Canadian Cinema, Television and
+Radio Artists presented to the committee a report that said "the
+increase in the number of full-time commissioners [◊ellipsis should] assist
+the CRTC to make efficient decisions."
+
+On February 14, 1990, David C. Coville (Senior Director, Department of
+Transportation and Communications, Province of Nova Scotia) said, "we
+with to reiterate our support for the provisions in the legislation
+allowing for the appointment of full-time commissioners who would
+reside in the regions they represent, increasing the number of
+full-time commissioners from 9 to 13 ◊ellipsis the cumulative effect of
+these provisions will be a more efficient, effective, and regionally
+sensitive commission."
+
+}
+
+I would go further if I were doing this research for real, but that is
+the kind of information you can find out of the committee
+reports. These statements don't necessarily reflect legislative
+intent, but do reveal context that was available to Parliament. The
+clause that changed the composition of the CRTC was not amended by the
+committee nor discussed at the report stage. I would complete this
+research by repeating all of the above for the Senate records.
+
+◊sub-heading{Modern (post-1994) bills}
+
+This only gets easier as you move towards the present-day. Instead of
+searching through text extracted from PDF scans, you get to seach
+directly in the raw text of the materials, and the Parliament websites
+organize and link the material together in a much more helpful way.
+
+On my next update of this post, I will present a short example of how
+to do this research on a modern bill. That will complete this Part on
+federal legislative history.

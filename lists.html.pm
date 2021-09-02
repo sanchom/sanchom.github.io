@@ -12,11 +12,18 @@ people.
 [Borderlines](https://borderlines.ca/) (Canadian immigration law and
 policy)
 
+[Cambie Report](https://www.cambiereport.ca/) (Vancouver politics)
+
 [The Docket](http://www.michaelspratt.com/poadcast-legal-matters)
 (Canadian law, often criminal law)
 
 [Electon Profit Makers](http://www.electionprofitmakers.com/) (I will
 not try to describe this work of art)
+
+[In All
+Fairness](https://ciaj-icaj.ca/en/podcasts/in-all-fairness/?ci=21)
+(Canadian legal podcast focusing on the judiciary, public law, and the
+administration of justice)
 
 [Intrepid](https://www.intrepidpodcast.com/podcast) (Canadian national
 security law and policy)
@@ -32,6 +39,9 @@ Hodgman](https://maximumfun.org/podcasts/judge-john-hodgman/)
 Us](https://www.stitcher.com/podcast/stitcher/just-between-us-stitcher)
 (Alison Raskin and Gaby Dunn chat, conduct interviews, and answer
 questions)
+
+[Law Bytes](https://www.michaelgeist.ca/category/podcasts-2/) (Michael
+Geist and guests on Canadian technology law)
 
 [The Lawfare
 Podcast](https://www.lawfareblog.com/topic/lawfare-podcast) (US
