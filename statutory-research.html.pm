@@ -3,18 +3,49 @@
 ◊define-meta[page-title]{Statutory research series}
 ◊define-meta[short-title]{Statutory research}
 ◊define-meta[original-date]{2021-07-24}
-◊define-meta[edited-date]{2021-09-02}
+◊define-meta[edited-date]{2021-09-03}
 ◊define-meta[featured-image-url]{assets/1921-Bill-12.png}
-◊define-meta[snippet]{How to research statutory and legislative history of Canadian statutory law.}
+◊define-meta[snippet]{How to research statutory evolution and legislative history of Canadian statutory law.}
+
+◊declare-work[#:id "Barker" #:type "article" #:author "Susan Barker"
+#:author2-given "Erica" #:author2-family "Anderson" #:title
+"Cinderella at the Ball: Legislative Intent in Canadian Courts"
+#:journal "Can Parl Rev" #:year "2015" #:volume "38" #:issue "2"
+#:first-page "15" #:url
+"http://www.revparlcan.ca/en/vol38-no2-cinderella-at-the-ball-legislative-intent-in-canadian-courts-2/"]
+
+◊declare-work[#:id "Sullivan" #:type "book" #:author "Ruth Sullivan"
+#:title "Sullivan on the Construction of Statutes" #:edition "5th"
+#:publisher "LexisNexis" #:publisher-location "Markham, ON" #:year
+"2008"]
+
+◊declare-work[#:id "Agraira" #:type "legal-case" #:title "Agraira v. Canada
+(Public Safety and Emergency Preparedness)" #:citation "2013 SCC 36"
+#:url
+"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/13137/index.do"
+#:short-form "*Agraira*"]
+
+◊declare-work[#:id "Safarzadeh-Markhali" #:type "legal-case" #:title
+"R v Safarzadeh-Markhali" #:citation "2016 SCC 14" #:url
+"https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/15860/index.do"]
 
 Welcome to this short series on statutory research. I want to help you
-research statutory and legislative history of Canadian statutory
-law.◊note{By ◊em{statutory history}, I mean the evolution of an Act
-over time. By ◊em{legislative history}, I mean the record of the
-legislative process that leads to an enacted statute. And for the
-meaning of ◊em{Act} and ◊em{statute}, read on!} This will allow you to
-understand the content of an Act at any point in time and to find out
-what legislators said about bills prior to their passage into law.
+research statutory evolution and legislative history of Canadian
+statutory law.◊note{By ◊em{statutory evolution}, I mean the evolution
+of an Act over time. Others call this ◊em{legislative evolution} (see
+◊cite["Barker" #:terminal ""], citing ◊cite["Sullivan" #:pinpoint
+"577" #:terminal ""]). By ◊em{legislative history}, I mean the record
+of the legislative process that leads to an enacted statute. Beware
+that other sources, including Canada's Supreme Court do not use these
+terms consistently. ◊see-eg["Agraira" #:pinpoint "paras 66ff"
+#:parenthetical "using the term “legislative history” to refer to how
+a section of an act was amended over decades" #:terminal ";"]
+◊cite["Safarzadeh-Markhali" #:pinpoint "para 36" #:parenthetical
+"stating that they had “little evidence of the legislative evolution
+of the challenged provision”"] And for the meaning of ◊em{Act} and
+◊em{statute}, read on!} This will allow you to understand the content
+of an Act at any point in time and to find out what legislators said
+about bills prior to their passage into law.
 
 By the end of this series, you should be able to do the following.
 
@@ -273,7 +304,7 @@ That is what I will share with you in the following Parts: how to
 actually ◊em{find} these materials and various methods of research
 that are effective across different eras.
 
-◊heading{Part 2: Federal statutory history}
+◊heading{Part 2: Federal statutory evolution}
 
 In this Part, I will show you how to use specific online resources to
 discover the statutory material that has contributed to a federal Act.
@@ -524,9 +555,9 @@ of these amendments. What did members or Senators say about ◊em{why}
 they were changing the size of the CRTC? What was presented in
 committee? Were there any amendments to the bill as it worked its way
 through Parliament? Hansard and related records can help answer these
-questions. I'll show you how to do this work with a modern bill and
-then with a historic bill, as the resources available to do this
-research changes as you look back through time.
+questions. I'll show you how to do this work with a historic bill and
+then with a modern bill, as the resources available to do this
+research change over time.
 
 ◊itemize{
 
