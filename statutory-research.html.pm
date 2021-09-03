@@ -694,7 +694,7 @@ the CRTC to make efficient decisions."
 
 On February 14, 1990, David C. Coville (Senior Director, Department of
 Transportation and Communications, Province of Nova Scotia) said, "we
-with to reiterate our support for the provisions in the legislation
+wish to reiterate our support for the provisions in the legislation
 allowing for the appointment of full-time commissioners who would
 reside in the regions they represent, increasing the number of
 full-time commissioners from 9 to 13 ◊ellipsis the cumulative effect of
