@@ -29,6 +29,11 @@
 "R v Safarzadeh-Markhali" #:citation "2016 SCC 14" #:url
 "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/15860/index.do"]
 
+◊declare-work[#:id "Swift Current" #:type "legal-case" #:title "Gary L
+Redhead Holdings Ltd v Swift Current (Rural Municipality)" #:citation
+"2017 SKCA 47" #:url
+"https://www.canlii.org/en/sk/skca/doc/2017/2017skca47/2017skca47.html"]
+
 Welcome to this short series on statutory research. I want to help you
 research statutory evolution and legislative history of Canadian
 statutory law.◊note{By ◊em{statutory evolution}, I mean the evolution
@@ -42,10 +47,13 @@ terms consistently. ◊see-eg["Agraira" #:pinpoint "paras 66ff"
 a section of an act was amended over decades" #:terminal ";"]
 ◊cite["Safarzadeh-Markhali" #:pinpoint "para 36" #:parenthetical
 "stating that they had “little evidence of the legislative evolution
-of the challenged provision”"] And for the meaning of ◊em{Act} and
-◊em{statute}, read on!} This will allow you to understand the content
-of an Act at any point in time and to find out what legislators said
-about bills prior to their passage into law.
+of the challenged provision”"] ◊see-also["Swift Current" #:pinpoint
+"paras 53--55" #:parenthetical "discussing the inconsistent usage of
+the terms and a defence of distinguishing between the two"] And for
+the meaning of ◊em{Act} and ◊em{statute}, read on!} This will allow
+you to understand the content of an Act at any point in time and to
+find out what legislators said about bills prior to their passage into
+law.
 
 By the end of this series, you should be able to do the following.
 
