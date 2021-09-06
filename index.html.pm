@@ -2,12 +2,17 @@
 
 ◊define-meta[page-title]{Home}
 
-Welcome! I am a computer scientist trained in law.◊note{I will not be
-a lawyer for several years yet.} I want to help demystify the law and
-give us more confidence in the outcomes of the legal system and
-government decision-making. I am interested in the many overlaps of
-law and technology, especially algorithmic decision-making and
-copyright.
+Welcome! I am a computer scientist trained in law.◊note{PhD (Computer
+Science), 2014, University of British Columbia; JD, 2021, Peter
+A. Allard School of Law.} I want to help demystify the law and give us
+more confidence in the outcomes of the legal system and government
+decision-making. I am also interested in the many overlaps of law and
+technology, especially algorithmic decision-making and copyright.
+
+In law school, I spent a term at the Indigenous Community Legal
+Clinic, was Senior Editor for the Canadian Journal of Family Law,
+convened a reading group on algorithms and the rule of law, and was a
+member of the 2020 Gale Moot team.
 
 As a computer scientist, I've focused on visual object recognition,
 machine learning, and applications of deep neural networks. I stay up
