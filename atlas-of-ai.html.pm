@@ -120,7 +120,7 @@ The classification chapter highlights the circularity and cycle
 of feedback between data generation, training, classification, and
 back to data generation. Classification risks replicating in the
 future the biases exhibited in the past and this is tied up both with
-the data used to train an AI and the systems srounding an AI.
+the data used to train an AI and the systems surrounding an AI.
 
 ◊q{ Making these choices about which information feeds AI systems to
 produce new classifications is a powerful moment of decision making:
@@ -195,7 +195,7 @@ that we might someday create ◊em{real} intelligence, many people doubt
 that this is possible, and nobody today suggests that we have done
 so. This is why it is called ◊em{artificial} intelligence. The term
 ◊em{artificial} is used not to imply that there are no real artifacts
-or effects of AI, but merely to indicate that they truly
+or effects of AI, but merely to indicate that they are not truly
 intelligent. They are ◊em{artifaces} of intelligence. They are also
 "artificial" in another sense: that they are created by us, rather
 than occuring naturally. I think this is wholly consistent with the
@@ -248,7 +248,7 @@ servers. This is presented in a chapter devoted to highlighting the
 ways in which AI relies on and enables exploitative labour
 practices. It is hard for me to see the argument that TrueTime does
 this. TrueTime is used to consistently create timestamps for events
-that occur across multiple serves and datacenters, separated by
+that occur across multiple servers and datacenters, separated by
 thousands of kilometres. This kind of consistency is critical to
 programs that deal with any sort of accounting of resources: e.g. bank
 accounts, selling concert tickets. Many people might be attempting to
