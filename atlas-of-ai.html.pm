@@ -196,7 +196,7 @@ that this is possible, and nobody today suggests that we have done
 so. This is why it is called ◊em{artificial} intelligence. The term
 ◊em{artificial} is used not to imply that there are no real artifacts
 or effects of AI, but merely to indicate that they are not truly
-intelligent. They are ◊em{artifaces} of intelligence. They are also
+intelligent. They are ◊em{artifices} of intelligence. They are also
 "artificial" in another sense: that they are created by us, rather
 than occuring naturally. I think this is wholly consistent with the
 point that Crawford is trying to make with this aphorism but without
