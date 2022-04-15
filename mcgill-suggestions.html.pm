@@ -21,7 +21,7 @@ Citation: Beyond the McGill Guide" #:author "Louis Mirando" #:url
 Job: Engaging with Indigenous Legal Traditions through Stories"
 #:author "Val Napoleon" #:author2-given "Hadley" #:author2-family
 "Friedland" #:year "2016" #:journal "McGill LJ" #:volume "61" #:issue
-"4" #:first-page "725" #:url "id.erudit.org/iderudit/1038487ar"]
+"4" #:first-page "725" #:url "https://id.erudit.org/iderudit/1038487ar"]
 
 ◊declare-work[#:id "cmos" #:type "book" #:short-form "CMOS" #:title
 "The Chicago Manual of Style" #:edition "17th" #:publisher "University

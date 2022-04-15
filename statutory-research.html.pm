@@ -259,7 +259,7 @@ all the parts together into a single Act.} It was published in the
 annual volume ◊em{11--12 George V} in 1921,◊note{At this time, the
 annual statutes were titled using the [regnal
 year](https://en.wikipedia.org/wiki/Regnal_year).} and you can read it
-[here](assets/SC-1921-c-24).
+[here](assets/SC-1921-c-24.pdf).
 
 ◊b{1985 official revised version}
 
