@@ -3,6 +3,7 @@
 ◊define-meta[page-title]{◊@{Statutory History of Eligibility for Registration (Status) under the ◊em{Indian Act}}}
 ◊define-meta[short-title]{◊@{◊em{Indian Act} Status (History)}}
 ◊define-meta[original-date]{2021-05-02}
+◊define-meta[edited-date]{2022-10-28}
 ◊define-meta[snippet]{Amendments to the Indian Act’s registration (status) rules since 1951.}
 
 ◊declare-work[#:id "Hele" #:type "legal-case" #:title "Hele v Attorney
@@ -36,24 +37,23 @@ with Indian Status, Part 1: So Who Gets Status Anyway?" #:author
 Corporation" #:url
 "https://jfklaw.ca/the-problem-with-indian-status-part-1-so-who-gets-status-anyway/"]
 
-On this page, I link to versions of and amendments to the ◊em{Indian
-Act}’s registration rules◊note{◊cite["Indian Act" #:pinpoint "ss 6,
-7"] In this short post, I cannot fully convey the harmful effects the
-◊em{Indian Act} has had on Indigenous peoples in Canada. The
-◊em{Indian Act} has been used as a tool of "aggressive assimilation"
-(◊cite["TRC1" #:pinpoint "97" #:terminal ""]). It was a "central
-element to the Canadian government's colonial policy" (◊cite["TRC1"
-#:pinpoint "106" #:terminal ""]) and was used to "undermine First
-Nations' self-government" (◊cite["TRC1" #:pinpoint "107" #:terminal
-""]). It has played a role in the trauma disproportionally experienced
-by "Indigenous women, girls and 2SLGBTQIAA people" (see generally
-◊cite["MMIWG1" #:pinpoint "249ff" #:terminal ""]). Nevertheless,
-status has important practical implications and is important to
-individuals for different reasons (see ◊cite["JFK" #:terminal ""]). I
-wrote this post to help people new to this area of law to do the
-research they might need to do to understand the eligibility rules.}
-(colloquially referred to as ◊em{status}) from 1951 onward. I do not
-attempt to explain what the rules are or the details of any particular
+At the end of this post, I provide links to versions of the ◊em{Indian
+Act}’s registration rules since 1951.◊note{◊cite["Indian Act"
+#:pinpoint "ss 6, 7"] In this short post, I cannot fully convey the
+harmful effects the ◊em{Indian Act} has had on Indigenous peoples in
+Canada. The ◊em{Indian Act} has been used as a tool of "aggressive
+assimilation" (◊cite["TRC1" #:pinpoint "97" #:terminal ""]). It was a
+"central element to the Canadian government's colonial policy"
+(◊cite["TRC1" #:pinpoint "106" #:terminal ""]) and was used to
+"undermine First Nations' self-government" (◊cite["TRC1" #:pinpoint
+"107" #:terminal ""]). It has played a role in the trauma
+disproportionally experienced by "Indigenous women, girls and
+2SLGBTQIAA people" (see generally ◊cite["MMIWG1" #:pinpoint "249ff"
+#:terminal ""]). Nevertheless, status has important practical
+implications and is important to individuals for different reasons
+(see ◊cite["JFK" #:terminal ""]).} Other than working through one
+example to show the relevance of these rules, I do not attempt to
+explain what the rules are or the details of any particular
 amendment. I am still learning that myself. But I hope these statutory
 references are a helpful starting point for others.
 
