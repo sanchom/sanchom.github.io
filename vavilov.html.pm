@@ -3,6 +3,7 @@
 ◊define-meta[page-title]{◊@{Early impressions from ◊em{Canada v Vavilov}}}
 ◊define-meta[short-title]{◊@{◊em{Canada v Vavilov}}}
 ◊define-meta[original-date]{2019-12-19}
+◊define-meta[edited-date]{2022-11-10}
 ◊define-meta[featured-image-url]{assets/vavilov-flowchart.png}
 ◊define-meta[snippet]{Some early impressions of the Vavilov framework}
 
@@ -23,8 +24,17 @@ New Brunswick" #:citation "2008 SCC 9" #:short-form "*Dunsmuir*"]
 #:citation "[1998] 1 SCR 982" #:parallel-citation "160 DLR (4th) 193"
 #:short-form "*Pushpanathan*"]
 
+◊declare-work[#:id "Society of Composers" #:type "legal-case" #:title
+"Society of Composers, Authors and Music Publishers of Canada
+v. Entertainment Software Association" #:citation "2022 SCC 30" #:url
+"https://decisions.scc-csc.ca/scc-csc/scc-csc/en/item/19441/index.do"
+#:short-form "*Society of Composers*"]
+
 ◊fig[#:src "assets/vavilov-flowchart.png"]{The ◊em{Vavilov} framework
-for determining the standard of review.}
+for determining the standard of review. In 2022, the Supreme Court of
+Canada recognized a sixth category of correctness review (when courts
+and administrative bodies have concurrent first-instance
+jurisdiction), not reflected in this diagram.◊note-see["Society of Composers"]}
 
 Here are some early thoughts◊note[#:expanded "yes"]{I've been helped by various Twitter
 threads I've encountered throughout the day: [Mary
@@ -105,6 +115,11 @@ would attract correctness review.◊note-see["Vavilov" #:pinpoint "paras
 disagreement within a tribunal does not warrant correctness
 review.◊note{◊see["Vavilov" #:pinpoint "paras 71--72"]
 ◊see-also["Vavilov" #:pinpoint "para 132"]}
+
+In 2022, the Court added a sixth category warranting correctness
+review: when courts and an administrative body share concurrent
+first-instance jurisdiction over a question of law.◊note-cite["Society
+of Composers"]
 
 ◊sub-heading{Robust reasonableness}
 
