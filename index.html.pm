@@ -49,11 +49,12 @@ here](https://tinyletter.com/sanchom)}.
 
 Here's where you can find me elsewhere online: ◊div[#:class
 "external-link-logos"]{ ◊little-logo[#:href
+"https://mastodon.social/@sanchom" #:img "assets/mastodon-icon.webp"]
+◊little-logo[#:href "https://twitter.com/sanchom" #:img
+"assets/tw_ico.png"] ◊little-logo[#:href
 "https://sanchom.wordpress.com" #:img
 "assets/wordpress-logo-notext-rgb.png"] ◊little-logo[#:href
-"https://twitter.com/sanchom" #:img "assets/tw_ico.png"]
-◊little-logo[#:href "mailto:sanchom@gmail.com" #:img
-"assets/email.png"] }
+"mailto:sanchom@gmail.com" #:img "assets/email.png"] }
 
 ◊heading{Selected publications}
 
