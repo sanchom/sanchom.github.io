@@ -58,10 +58,10 @@ Here's where you can find me elsewhere online: ◊div[#:class
 
 ◊heading{Selected publications}
 
-◊format-work[#:type "article" #:author "Sancho McCann"
-#:title "Discretion in the Automated Administrative State" #:journal
-"Can JL & Jur" #:forthcoming "2022" #:url
-"assets/McCann-Discretion-in-the-Automated-Administrative-State-2022.pdf"]
+◊format-work[#:type "article" #:author "Sancho McCann" #:title
+"Discretion in the Automated Administrative State" #:journal
+"Can JL & Jur" #:year "2023" #:url
+"https://www.doi.org/10.1017/cjlj.2022.25"]
 
 ◊format-work[#:type "article" #:author-given "Sancho" #:author-family
 "McCann" #:title "Copyright Throughout a Creative AI Pipeline" #:year
