@@ -4,20 +4,14 @@
 ◊define-meta[short-title]{Automated discretion}
 ◊define-meta[snippet]{An article about the effects of algorithms on the relationships within the administrative state.}
 ◊define-meta[original-date]{2022-04-13}
+◊define-meta[edited-date]{2023-01-11}
 
 ◊declare-work[#:id "McCann" #:type "article" #:author "Sancho McCann"
 #:title "Discretion in the Automated Administrative State" #:journal
-"Can JL & Jur" #:forthcoming "2022" #:url
-"assets/McCann-Discretion-in-the-Automated-Administrative-State-2022.pdf"]
+"Can JL & Jur" #:year "2023" #:url
+"https://www.doi.org/10.1017/cjlj.2022.25"]
 
-◊cite["McCann"]◊note{That link takes you to the final draft as
-accepted for publication but prior to final edits and
-formatting. Please consult the published version for the version of
-record and accurate pagination: [Canadian Journal of Law and
-Jurisprudence](https://www.cambridge.org/core/journals/canadian-journal-of-law-and-jurisprudence).}
-
-◊a[#:href "assets/McCann-Discretion-in-the-Automated-Administrative-State-2022.pdf"]{
-◊fig[#:src "assets/discretion-snippet.png" #:width "300px"]}
+◊cite["McCann"]
 
 ◊sub-heading{Abstract}
 
