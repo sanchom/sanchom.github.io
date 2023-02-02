@@ -4,18 +4,18 @@
 ◊define-meta[short-title]{Reading (etc.) list}
 ◊define-meta[snippet]{Books, articles, cases, etc. that have helped me understand the effects of colonialism.}
 ◊define-meta[original-date]{2019-06-03}
-◊define-meta[edited-date]{2021-06-15}
+◊define-meta[edited-date]{2023-02-02}
 
 In this reading list, I've included much that I've read (or listened
 to, or watched) that has helped develop my understanding of
-colonialism and its effects on Indigenous people in Canada. I have
-also just generally included perspectives from Indigenous people that
-have influenced my thinking today.◊note{I'm maintaining this page in
-response to the [Calls for Justice from the National Inquiry into
-Missing and Murdered Indigenous Women and
-Girls](https://www.mmiwg-ffada.ca/), specifically Call for Justice
-6.1: "We call upon all media, news corporations and outlets, and, in
-particular, ◊ellipsis bloggers ◊ellipsis, to take decolonizing
+colonialism and its effects on Indigenous people in Canada, as well as
+visions for the future. I have also just generally included
+perspectives from Indigenous people that have influenced my thinking
+today.◊note{I'm maintaining this page in response to the [Calls for
+Justice from the National Inquiry into Missing and Murdered Indigenous
+Women and Girls](https://www.mmiwg-ffada.ca/), specifically Call for
+Justice 6.1: "We call upon all media, news corporations and outlets,
+and, in particular, ◊ellipsis bloggers ◊ellipsis, to take decolonizing
 approaches to their work and publications in order to educate all
 Canadians about Indigenous women, girls, and 2SLGBTQQIA people" and to
 "[s]upport Indigenous people sharing their stories, from their
@@ -50,6 +50,12 @@ women, Métis}]
 "Toronto" #:url
 "https://houseofanansi.com/products/this-accident-of-being-lost"]
 [◊em{poetry, narrative, science fiction, relationships}]
+
+◊format-work[#:type "book" #:author-given "Katłıà" #:author-family ""
+#:title "Land-Water-Sky / Ndè-Tı-Yat’a" #:url
+"https://fernwoodpublishing.ca/book/land-water-sky-nde-t1-yata"
+#:publisher "Roseway" #:publisher-location "Halifax & Winnipeg" #:year
+"2020"] [◊em{fiction, North}]
 
 ◊format-work[#:type "chapter" #:author "Glen Coulthard" #:in-book
 "Emancipatory Politics" #:first-page "147" #:title "Place Against
@@ -130,6 +136,13 @@ Métis}]
 law}◊note{Indigenous law is distinct from Aboriginal law. Aboriginal
 law is the law of Canada that relates to Indigenous people. Indigenous
 law is the legal practices of Indigenous people.}]
+
+◊format-work[#:type "book" #:title "The Wetiko Legal Principles: Cree
+and Anishinabek Responses to Violence and Victimization"
+#:author-given "Hadley Louise" #:author-family "Friedland" #:url
+"https://utorontopress.com/9781487515577/the-wetiko-legal-principles/"
+#:publisher "University of Toronto Press" #:year "2018"]
+[◊em{Indigenous law, oral histories}]
 
 ◊format-work[#:type "book" #:title "Resurgence and Reconciliation:
 Indigenous--Settler Relations and Earth Teachings" #:author "Michael
