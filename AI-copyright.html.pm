@@ -4,7 +4,7 @@
 ◊define-meta[short-title]{AI Copyright}
 ◊define-meta[snippet]{An article I wrote about copyright in the inputs, intermediate products, and final output of AI programs.}
 ◊define-meta[original-date]{2021-07-27}
-◊define-meta[edited-date]{2023-02-01}
+◊define-meta[edited-date]{2023-03-26}
 
 ◊declare-work[#:id "McCann" #:type "article" #:author "Sancho McCann"
 #:title "Copyright Throughout a Creative AI Pipeline" #:journal "Can
@@ -23,6 +23,18 @@ My article, "Copyright Throughout a Creative AI
 Pipeline,"◊note-cite["McCann"] was just published by the Canadian
 Journal of Law & Technology. It is available open-access
 [here](https://digitalcommons.schulichlaw.dal.ca/cjlt/vol19/iss1/5/).
+
+This work is increasingly relevant as AI tools such as Dall-E, Stable
+Diffusion, ChatGPT (and other large-language models---LLMs) are
+producing arguably novel outputs. And the question of who owns the
+copyright to the model weights or parameters has become relevant given
+the [leak of the model parameters behind one instance of Facebook's
+LLaMa](https://www.vice.com/en/article/xgwqgw/facebooks-powerful-large-language-model-leaks-online-4chan-llama)
+(Large Language Model Meta AI). One [Twitter user
+asks](https://twitter.com/d_feldman/status/1631761126219292672), "Is
+redistributing the LLaMa weights [] even legal? Can copyright cover a
+big table of machine generated numbers?" I hope this paper provides a
+starting point for thinking about these problems.
 
 ◊sub-heading{Abstract}
 
