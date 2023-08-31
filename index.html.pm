@@ -6,12 +6,18 @@ Welcome! I am a computer scientist trained in law.◊note{PhD (Computer
 Science), 2014, University of British Columbia; JD, 2021, Peter
 A. Allard School of Law.} I want to help demystify the law and give us
 more confidence in the outcomes of the legal system and government
-decision-making. I am also interested in the many overlaps of law and
-technology, especially algorithmic decision-making and copyright.
+decision-making. I am interested in the many overlaps of law and
+technology, especially algorithmic decision-making and copyright, but also administrative law
+
+The views expressed on this blog are my own personal perspective and
+do not represent those of the Department of Justice or the Government
+of Canada.
 
 In law school, I spent a term at the Indigenous Community Legal
 Clinic, was Senior Editor for the Canadian Journal of Family Law, and
-convened a reading group on algorithms and the rule of law.
+convened a reading group on algorithms and the rule of law. After, I
+clerked at the Court of Appeal for British Columbia and the Supreme
+Court of Canada.
 
 As a computer scientist, I've focused on visual object recognition,
 machine learning, and applications of deep neural networks. I stay up
@@ -59,8 +65,8 @@ Here's where you can find me elsewhere online: ◊div[#:class
 
 ◊format-work[#:type "article" #:author "Sancho McCann" #:title
 "Discretion in the Automated Administrative State" #:journal
-"Can JL & Jur" #:year "2023" #:url
-"https://www.doi.org/10.1017/cjlj.2022.25"]
+"Can JL & Jur" #:volume "36" #:issue "1" #:first-page "171" #:year
+"2023" #:url "https://www.doi.org/10.1017/cjlj.2022.25"]
 
 ◊format-work[#:type "article" #:author-given "Sancho" #:author-family
 "McCann" #:title "Copyright Throughout a Creative AI Pipeline" #:year

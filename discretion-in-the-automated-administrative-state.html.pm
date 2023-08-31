@@ -7,9 +7,9 @@
 ◊define-meta[edited-date]{2023-01-11}
 
 ◊declare-work[#:id "McCann" #:type "article" #:author "Sancho McCann"
-#:title "Discretion in the Automated Administrative State" #:journal
-"Can JL & Jur" #:year "2023" #:url
-"https://www.doi.org/10.1017/cjlj.2022.25"]
+#:title "Discretion in the Automated Administrative State" #:volume
+"36" #:issue "1" #:first-page "171" #:journal "Can JL & Jur" #:year
+"2023" #:url "https://www.doi.org/10.1017/cjlj.2022.25"]
 
 ◊cite["McCann"]
 
