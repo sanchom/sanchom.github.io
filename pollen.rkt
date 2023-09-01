@@ -206,11 +206,14 @@
                  "-"
                  original))
 
-(define (prepend-to-keywords kws kw-args)
-  (if (member '#:in-book kws)
-      (list-set (list-set kw-args (index-of kws '#:id) (prepend-stuff (list-ref kw-args (index-of kws '#:id))))
-                (index-of kws '#:in-book) (prepend-stuff (list-ref kw-args (index-of kws '#:in-book))))
-      (list-set kw-args (index-of kws '#:id) (prepend-stuff (list-ref kw-args (index-of kws '#:id))))))
+(define (prepend-to-args kws kw-args keys-to-alter)
+  (if (empty? keys-to-alter)
+      kw-args
+      (if (member (first keys-to-alter) kws)
+          (prepend-to-args kws
+                           (list-set kw-args (index-of kws (first keys-to-alter)) (prepend-stuff (list-ref kw-args (index-of kws (first keys-to-alter)))))
+                           (rest keys-to-alter))
+          (prepend-to-args kws kw-args (rest keys-to-alter)))))
 
 (define cite
   (make-keyword-procedure (lambda (kws kw-args . rest)
@@ -222,7 +225,7 @@
                             (keyword-apply
                              mcgill-declare-work
                              kws
-                             (prepend-to-keywords kws kw-args)
+                             (prepend-to-args kws kw-args '(#:id #:in-book))
                              '()))))
 
 (define format-work
@@ -230,9 +233,7 @@
                             (keyword-apply
                              mcgill-format
                              kws
-                             (if (member '#:in-book kws)
-                                 (list-set kw-args (index-of kws '#:in-book) (prepend-stuff (list-ref kw-args (index-of kws '#:in-book))))
-                                 kw-args)
+                             (prepend-to-args kws kw-args '(#:id #:in-book))
                              '()))))
 
 ; Aliases to simplify citations that use signals.
