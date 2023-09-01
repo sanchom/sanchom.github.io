@@ -7,11 +7,7 @@ Science), 2014, University of British Columbia; JD, 2021, Peter
 A. Allard School of Law.} I want to help demystify the law and give us
 more confidence in the outcomes of the legal system and government
 decision-making. I am interested in the many overlaps of law and
-technology, especially algorithmic decision-making and copyright, but also administrative law
-
-The views expressed on this blog are my own personal perspective and
-do not represent those of the Department of Justice or the Government
-of Canada.
+technology, especially algorithmic decision-making and copyright.
 
 In law school, I spent a term at the Indigenous Community Legal
 Clinic, was Senior Editor for the Canadian Journal of Family Law, and
@@ -51,6 +47,9 @@ during a hiking trip through the South Chilcotins.}
 If you'd like to get updates from me whenever I write something,
 ◊outline{[sign up for my tinyletter
 here](https://tinyletter.com/sanchom)}.
+
+◊red{The views expressed on this blog are my own and do not represent
+those of the Department of Justice or the Government of Canada.}
 
 Here's where you can find me elsewhere online: ◊div[#:class
 "external-link-logos"]{ ◊little-logo[#:href
