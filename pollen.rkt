@@ -3,6 +3,7 @@
 (require racket/path)
 (require racket/string)
 (require pollen/core)
+(require pollen/file)
 (require pollen/tag)
 (require pollen/decode)
 (require pollen/pagetree)
@@ -10,7 +11,10 @@
 (require pollen/setup)
 (require (for-syntax racket/syntax))
 (require (submod hyphenate safe))
-(require pollen/citations-mcgill)
+(require (rename-in pollen/citations-mcgill
+                    (format-work mcgill-format)
+                    (cite mcgill-cite)
+                    (declare-work mcgill-declare-work)))
 (require gregor)
 
 (require "util.rkt")
@@ -23,7 +27,7 @@
 
 ; Some globals for managing footnotes/sidenotes.
 (define note-mode "sidenotes")
-(define footnote-list empty)
+(define footnote-lists (make-hash))
 (define margin-note-number 0)
 
 (define (use-footnotes)
@@ -192,6 +196,45 @@
 ; Interaction with the citation system in citation-system.rkt
 ; ------------------------------------------------------------
 
+; Wrappers around the mcgill-cite and mcgill-declare-work functions,
+; in order to avoid duplicate IDs.
+;
+; Prepends (select-from-metas 'here-path (current-metas)) to the id
+
+(define (prepend-stuff original)
+  (string-append (path->string (file-name-from-path (select-from-metas 'here-path (current-metas))))
+                 "-"
+                 original))
+
+(define (prepend-to-keywords kws kw-args)
+  (if (member '#:in-book kws)
+      (list-set (list-set kw-args (index-of kws '#:id) (prepend-stuff (list-ref kw-args (index-of kws '#:id))))
+                (index-of kws '#:in-book) (prepend-stuff (list-ref kw-args (index-of kws '#:in-book))))
+      (list-set kw-args (index-of kws '#:id) (prepend-stuff (list-ref kw-args (index-of kws '#:id))))))
+
+(define cite
+  (make-keyword-procedure (lambda (kws kw-args . rest)
+                            (keyword-apply mcgill-cite kws kw-args
+                                           (list (prepend-stuff (first rest)))))))
+
+(define declare-work
+  (make-keyword-procedure (lambda (kws kw-args . rest)
+                            (keyword-apply
+                             mcgill-declare-work
+                             kws
+                             (prepend-to-keywords kws kw-args)
+                             '()))))
+
+(define format-work
+  (make-keyword-procedure (lambda (kws kw-args . rest)
+                            (keyword-apply
+                             mcgill-format
+                             kws
+                             (if (member '#:in-book kws)
+                                 (list-set kw-args (index-of kws '#:in-book) (prepend-stuff (list-ref kw-args (index-of kws '#:in-book))))
+                                 kw-args)
+                             '()))))
+
 ; Aliases to simplify citations that use signals.
 ; The "cite" call is this system's interaction with the citation system.
 ; Don't mess around with what is returned by "cite". The citation system
@@ -220,15 +263,16 @@
 ; Defines a little sidenote or footnote (depending on the mode), numbered, and by default collapsed
 ; to a small height. In print, these are all footnotes.
 (define (note #:expanded [expanded #f] . content)
-  (define footnote-number (+ 1 (length footnote-list)))
+  (define disambiguating-id (path->string (file-name-from-path (select-from-metas 'here-path (current-metas)))))
+  (define footnote-number (+ 1 (length (hash-ref footnote-lists disambiguating-id '()))))
 
   ; Letting the citation system do its thing.
   (define transformed-content
     (decode-elements content
                      #:txexpr-proc (λ (x) (transform-cite-in-a-note x footnote-number))))
 
-  (set! footnote-list
-        (append footnote-list (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
+  (hash-set! footnote-lists disambiguating-id
+        (append (hash-ref footnote-lists disambiguating-id '()) (list `(p ([class "footnote"] [id ,(format "fn-~a" footnote-number)])
                                         ,(format "~a. " footnote-number) (a [[href ,(format "#fn-source-~a" footnote-number)] [class "backlink undecorated"]] " ↑ ") ,@transformed-content))))
   (define refid (format "fn-~a" footnote-number))
   (define subrefid (format "fn-~a-expand" footnote-number))
@@ -314,9 +358,10 @@
                                     (loop (append result (list x)) (cdr elements))))))))))))
 
 (define (add-html-footnotes tx)
+  (define disambiguating-id (path->string (file-name-from-path (select-from-metas 'here-path (current-metas)))))
   (define footnote-class
     (if (equal? note-mode "sidenotes") "endnotes print-only" "endnotes"))
-  (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? footnote-list)) (heading "Notes")) ,@footnote-list))))
+  (txexpr (get-tag tx) (get-attrs tx) `(,@(get-elements tx) (div ((class ,footnote-class)) ,(when/splice (not (empty? (hash-ref footnote-lists disambiguating-id '()))) (heading "Notes")) ,@(hash-ref footnote-lists disambiguating-id '())))))
 
 ; Only the simplest markdown links are handled this way.
 ; More complex links (that have formatting within the text,
