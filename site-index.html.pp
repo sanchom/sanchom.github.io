@@ -7,7 +7,7 @@
 
 ◊(define pagelist (pagetree->list (get-pagetree "index.ptree")))
 
-<html>
+<html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBTLXWG3QD"></script>

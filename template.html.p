@@ -18,7 +18,7 @@
 ◊(define include-disqus (not (or (eq? here 'index.html)
                                  (eq? here 'colophon.html))))
 
-<html>
+<html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBTLXWG3QD"></script>
