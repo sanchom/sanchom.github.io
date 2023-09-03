@@ -37,6 +37,7 @@
     <meta name="twitter:site" content="@sanchom" />
     <meta property="og:title" content="◊(simplified-title here)" />
     ◊when/splice[snippet]{<meta property="og:description" content="◊|snippet|" />}
+    ◊when/splice[snippet]{<meta name="description" content="◊|snippet|" />}
     ◊when/splice[featured-image-url]{<meta property="og:image" content="◊|site-root|/◊|featured-image-url|" />}
 
     <meta charset="UTF-8">
@@ -58,7 +59,7 @@
     </div>
   </nav>
   <div style="clear: both;"></div>
-  ◊when/splice[am-home]{<h1 class="center">Sancho McCann</h1><p class="subtitle center">Law, tech, writing, art.</h3>}
+  ◊when/splice[am-home]{<h1 class="center">Sancho McCann</h1><p class="subtitle center">Law, tech, writing, art.</p>}
 </header>
 <div style="clear: both;"></div>
 <article>
