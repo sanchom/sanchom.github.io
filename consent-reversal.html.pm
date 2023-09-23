@@ -293,9 +293,3 @@ that is appropriate in the circumstances of each case." It cannot be
 that litigants and judges are free to ignore this reasoning just
 because the ultimate judgment was set aside by a s. 70 consent
 reversal.
-
-In my view, the reasons of a Court of Appeal judgment that has been
-reversed on consent should continue to be considered binding precedent
-through the ordinary principles of vertical ◊em{stare decisis}, unless
-the Supreme Court of Canada expressly or implicitly disavows the
-reasoning.
