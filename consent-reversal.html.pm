@@ -29,13 +29,20 @@ and Exchequer Courts Act" #:volume "R.S.C." #:year "1886" #:chapter
 establish a Supreme Court, and a Court of Exchequer, for the Dominion
 of Canada" #:volume "38 Vic" #:year "(1875)" #:chapter "11"]
 
+◊declare-work[#:id "1857" #:type "statute" #:title "An Act to amend
+the Laws in Upper Canada, respecting Appeals, and to alter the
+Constitution of the Court of Error and Appeal" #:volume "20 Vic"
+#:year "(1857)" #:chapter "5" #:url
+"https://www.canadiana.ca/view/oocihm.9_00925_5/13"]
+
 The ◊em{Supreme Court Act}, s. 70 says:◊note{◊cite["SCA" #:pinpoint "s
 70"] Previously, until December 12, 1988, this was at ◊cite["SCA-1970"
 #:pinpoint "s. 75"] Before that, see ◊cite["SCA-1952" #:pinpoint
 "s. 75" #:terminal ";"] ◊cite["SCA-1927" #:pinpoint "s 76" #:terminal
 ";"] ◊cite["SCA-1906" #:pinpoint "s 81" #:terminal ";"]
 ◊cite["SCA-1886" #:pinpoint "s 52"] It was originally introduced in
-◊cite["SCA-1875" #:pinpoint "s 40"]}
+◊cite["SCA-1875" #:pinpoint "s 40"] It appeared in slightly altered
+form in ◊cite["1857" #:pinpoint "s 9"]}
 
 ◊q{ A respondent may consent to the reversal of the judgment appealed
 against by giving to the appellant a notice entitled in the Court and
@@ -172,10 +179,9 @@ A good example is ◊em{R. v. Garcha}.◊note-cite["GarchaCA"
 #:parenthetical "the reversal is not found in CanLII"] In ◊em{Garcha},
 the appellant was convicted of a number of offences, including the use
 of an imitation firearm while committing a robbery. The appellant's
-appeal to the Court of Appeal was unsuccessful, and the formal order
-dismissing the appeal was entered on March 20, 2000. ◊em{After} the
-formal order was entered, the Crown advised the Court of Appeal that
-the imitation-firearm offence was not yet in force on the date of the
+appeal to the Court of Appeal was unsuccessful. ◊em{After} the formal
+order was entered, the Crown advised the Court of Appeal that the
+imitation-firearm offence was not yet in force on the date of the
 offence: the appellant should not have been convicted of that
 count. The Court of Appeal said it did not have jurisdiction to
 re-open the appeal but noted that the appellant could use s. 70 of the
@@ -250,19 +256,19 @@ through the ordinary principles of ◊em{stare decisis}, unless
 the Supreme Court of Canada rejects the
 reasoning.
 
-I acknowledge there is ambiguity or conflation of
-terminology, but the Supreme Court of Canada has occasionally
-distinguished "judgment" and "reasons for judgment."◊note-cite["RA"]
-In the context of the ◊em{Supreme Court Act}, ◊em{judgment} is roughly
-synonymous with ◊em{order}.◊note{The ◊em{Supreme Court Act} defines
-judgment to ◊em{include} order. There are other settings in which the
-distinction may matter. See e.g. ◊cite["CIBC" #:parenthetical
-"distinguishing between order and judgment but conflating neither with
-the reasons"]} Appeals are from orders (judgments) and the disposition
-of an appeal turns on what the reviewing court does to the order
-(judgment). A reviewing court can completely disagree with a lower
-court's reasoning, yet dismiss an appeal if the reviewing court leaves
-in place the lower court's order (judgment) on other grounds. Or a
+I acknowledge there is ambiguity or conflation of terminology, but the
+Supreme Court of Canada has occasionally distinguished "judgment" and
+"reasons for judgment."◊note-cite["RA"] In the context of the
+◊em{Supreme Court Act}, ◊em{judgment} is roughly synonymous with
+◊em{order}.◊note{The ◊em{Supreme Court Act} defines judgment to
+◊em{include} order. There are other settings in which the distinction
+may matter. See e.g. ◊cite["CIBC" #:parenthetical "distinguishing
+between order and judgment but conflating neither with the reasons"]}
+Appeals are from orders (judgments) and the disposition of an appeal
+turns on what the reviewing court does to the order (judgment). A
+reviewing court can completely disagree with a lower court's
+reasoning, yet dismiss an appeal if the reviewing court leaves in
+place the lower court's order (judgment) on other grounds. Or a
 reviewing court may not even have turned its mind to the reasoning,
 yet reverse a judgment, as the Supreme Court of Canada does in a s. 70
 consent reversal.
