@@ -221,9 +221,9 @@ Under s. 70, the Supreme Court of Canada has:
 
 allowed partial reversal of a judgment;◊note-cite["GarchaSCC"]
 
-imposed alternative orders that might have been given its place,
-including an order for a new trial◊note-cite["Reddick2"] and an order
-of acquittal;◊note-cite["GarchaSCC"] and
+substituted alternative orders in its place, including an order for a
+new trial◊note-cite["Reddick2"] and an order of acquittal on a subset
+of the counts;◊note-cite["GarchaSCC"] and
 
 simply restored the order of the trial court.◊note-cite["CNR"]
 
