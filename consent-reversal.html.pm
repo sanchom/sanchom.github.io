@@ -244,8 +244,14 @@ Sullivan" #:citation "2022 SCC 19" #:url
 Imperial Bank of Commerce v Bury" #:citation "103 DLR (3d) 560" #:year
 "1979" #:jurisdiction "Alta. Q.B."]
 
-First, I acknowledge there is ambiguity or conflation of
-terminology. But, the Supreme Court of Canada has occasionally
+In my view, the reasons of a Court of Appeal judgment that has been
+reversed on consent should continue to be considered binding precedent
+through the ordinary principles of ◊em{stare decisis}, unless
+the Supreme Court of Canada rejects the
+reasoning.
+
+I acknowledge there is ambiguity or conflation of
+terminology, but the Supreme Court of Canada has occasionally
 distinguished "judgment" and "reasons for judgment."◊note-cite["RA"]
 In the context of the ◊em{Supreme Court Act}, ◊em{judgment} is roughly
 synonymous with ◊em{order}.◊note{The ◊em{Supreme Court Act} defines
