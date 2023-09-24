@@ -307,21 +307,25 @@ ultimate judgment may have been reversed "on other grounds." A consent
 reversal is just a special case of this more general occurrence. In
 fact, this is exactly how the Ontario Superior Court has treated
 ◊em{ALR}.◊note{◊see["Dutt" #:pinpoint "para 54" #:terminal ""], citing
-◊cite["ALR-CA" #:terminal ""] and noting that it had been reversed "on
-a different basis."}
+◊cite["ALR-CA"]} It cited the Court of Appeal judgment in
+◊em{ALR}◊note-cite["ALR-CA"] and noted that it had been reversed "on a
+different basis." In that usage, the Ontario Superior Court was
+looking to another jurisdiction (Manitoba), so the Court of Appeal
+judgment was only persuasive authority, but it is a good demonstration
+nonetheless.
 
 ◊declare-work[#:id "Sweet" #:type "legal-case" #:title "Sweet
 Productions Inc et al v Licensing LP International SÀRL et al"
 #:citation "2022 FCA 111" #:url "https://canlii.ca/t/jprg3"
 #:short-form "Sweet Productions"]
 
-For example, the Federal Court of Appeal, in ◊em{Sweet Productions
-Inc.},◊note-cite["Sweet" #:parenthetical "reversed by consent, 21
-September 2023"] rejected the Federal Court's interpretation that Rule
-167 of the ◊em{Federal Court Rules} creates a presumption of dismissal
-when undue delay is found. Instead, the Federal Court of Appeal held
-that Rule 167 "grants the Court a wide discretion to craft the remedy
-that is appropriate in the circumstances of each case." It cannot be
-that litigants and judges are free to ignore this reasoning just
-because the ultimate judgment was set aside by a s. 70 consent
-reversal.
+In ◊em{Sweet Productions Inc.}, the judgment reversed this past
+week,◊note-cite["Sweet" #:parenthetical "reversed by consent, 21
+September 2023"] the Federal Court of Appeal rejected the Federal
+Court's interpretation that Rule 167 of the ◊em{Federal Court Rules}
+creates a presumption of dismissal when undue delay is found. Instead,
+the Federal Court of Appeal held that Rule 167 "grants the Court a
+wide discretion to craft the remedy that is appropriate in the
+circumstances of each case." It cannot be that litigants and judges
+are free to ignore this reasoning just because the ultimate judgment
+was set aside by a s. 70 consent reversal.
