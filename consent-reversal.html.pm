@@ -100,8 +100,10 @@ Canada Database](https://supremecourtdatabase.com/) until now.
 
 Searching CanLII for ◊a[#:href
 "https://www.canlii.org/en/#search/type=decision&startDate=1988-01-01&endDate=2023-12-31&sort=decisionDateAsc&text=%22Supreme%20Court%20Act%E2%80%9D%20%2Fs%20%E2%80%9Cs.%2070%22"]{◊tt{"Supreme
-Court Act" /s "s. 70"} since 1988} reveals four instances (other than
-the one from this week):
+Court Act" /s "s. 70"} since 1988} and reviewing the
+[Bulletins](https://decisions.scc-csc.ca/scc-csc/bulletins/en/nav_date.do?site_preference=normal)◊note{Thanks
+to Alison Clark for automating the downloads of the Bulletins so that
+I could do a text search on them.} revealed five s. 70 reversals:
 
 ◊declare-work[#:id "Reddick1" #:type "legal-case" #:title "R v Reddick"
 #:citation "[1991] 1 SCR 297" #:url "https://canlii.ca/t/1fsl2" #:short-form "*Reddick* 1"]
@@ -118,9 +120,16 @@ Shorting" #:year "1996" #:citation "110 CCC (3d) 383" #:url
 "https://canlii.ca/t/gbgr2" #:short-form "Shorting"]
 
 ◊declare-work[#:id "RAL" #:type "legal-case" #:title "R v ALR" #:year
-"2001" #:citation "[2001] 11 WWR 413" #:jurisdiction "SCC"
-#:parallel-citation "Bulletin of Proceedings of the Supreme Court of
-Canada, March 2, 2001" #:url "https://canlii.ca/t/gbtnr"]
+"2001" #:citation "[2001] 11 WWR 413" #:parallel-citation "Bulletin of
+Proceedings of the Supreme Court of Canada (2 March 2001)" #:url
+"https://canlii.ca/t/gbtnr"]
+
+◊declare-work[#:id "GarchaSCC" #:type "legal-case" #:title "R v
+Garcha" #:citation "Bulletin of Proceedings of the Supreme Court of
+Canada (16 February 2001)" #:year "2001" #:url
+"https://decisions.scc-csc.ca/scc-csc/bulletins/en/298/1/document.do"
+#:short-form "*Garcha* SCC"]
+
 
 ◊itemize{
 
@@ -130,13 +139,16 @@ Canada, March 2, 2001" #:url "https://canlii.ca/t/gbtnr"]
 
 ◊cite["Shorting"]
 
+◊cite["GarchaSCC"]
+
 ◊cite["RAL"]
 
 }
 
 And searching CanLII for ◊a[#:href
 "https://www.canlii.org/en/#search/type=decision&startDate=1952-01-01&endDate=1988-12-31&sort=decisionDateAsc&text=%22Supreme%20Court%20Act%E2%80%9D%20%2Fs%20%E2%80%9Cs.%2075%22"]{◊tt{"Supreme
-Court Act" /s "s. 75"} between 1952 and 1988} reveals two instances:
+Court Act" /s "s. 75"} between 1952 and 1988} revealed two s. 70
+reversals:
 
 ◊declare-work[#:id "Jackson" #:type "legal-case" #:title "Jackson v
 The Queen" #:citation "[1979] 2 SCR 707" #:url
@@ -155,9 +167,10 @@ Ltd v Drumheller (City)" #:citation "[1988] 1 SCR 1901" #:url
 }
 
 
-However, it is clear there are more of these reversals than appear in
-CanLII's dataset. For instance, in ◊em{Reddick}, Justice Sopinka noted
-that "[a] similar order granting a judgment of reversal was given by
+Do not take the above as exhaustive. There are more of these reversals
+than appear in CanLII's dataset. The reversal in ◊em{Garcha} is not
+indexed by CanLII. And in ◊em{Reddick}, Justice Sopinka noted that
+"[a] similar order granting a judgment of reversal was given by
 McLachlin J. in ◊em{R. v. McCaul}, Bulletin of Proceedings of the
 Supreme Court of Canada, September 27, 1991, at p. 1995 (judgment
 rendered October 1, 1990)." You can see that the Court made the s. 70
@@ -166,12 +179,6 @@ No. [21634](https://scc-csc.ca/case-dossier/info/dock-regi-eng.aspx?cas=21634)).
 
 ◊declare-work[#:id "GarchaCA" #:type "legal-case" #:title "R v Garcha"
 #:citation "2000 BCCA 550" #:url "https://canlii.ca/t/1fngr" #:short-form "*Garcha* CA"]
-
-◊declare-work[#:id "GarchaSCC" #:type "magazine/news"
-#:title "Bulletin of Proceedings of the Supreme Court of Canada"
-#:date "16 February 2001" #:url
-"https://decisions.scc-csc.ca/scc-csc/bulletins/en/298/1/document.do"
-#:short-form "*Garcha* SCC"]
 
 ◊sub-heading{How are consent reversals used?}
 
