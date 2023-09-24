@@ -35,6 +35,12 @@ Constitution of the Court of Error and Appeal" #:volume "20 Vic"
 #:year "(1857)" #:chapter "5" #:url
 "https://www.canadiana.ca/view/oocihm.9_00925_5/13"]
 
+In this post, I explain the rare procedure by which the Supreme Court
+of Canada must reverse a lower court judgment upon the consent of the
+respondent. I also argue that the reasons of that reversed judgment
+should still receive precedential weight according to the ordinary
+operation of ◊em{stare decisis}.
+
 The ◊em{Supreme Court Act}, s. 70 says:◊note{◊cite["SCA" #:pinpoint "s
 70"] Previously, until December 12, 1988, this was at ◊cite["SCA-1970"
 #:pinpoint "s. 75"] Before that, see ◊cite["SCA-1952" #:pinpoint
