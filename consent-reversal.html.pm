@@ -4,6 +4,7 @@
 ◊define-meta[short-title]{Consent reversals}
 ◊define-meta[snippet]{Consenting to reverse under s. 70 of the Supreme Court Act. What does this mean for precedent?}
 ◊define-meta[original-date]{2023-09-23}
+◊define-meta[edited-date]{2023-09-24}
 
 ◊declare-work[#:id "SCA" #:type "statute" #:title "Supreme Court Act"
 #:volume "R.S.C." #:year "1985" #:chapter "S-26" #:url
@@ -122,8 +123,8 @@ I could do a text search on them.} revealed five s. 70 reversals:
 #:short-form "Mills"]
 
 ◊declare-work[#:id "Shorting" #:type "legal-case" #:title "R v
-Shorting" #:year "1996" #:citation "110 CCC (3d) 383" #:url
-"https://canlii.ca/t/gbgr2" #:short-form "Shorting"]
+Shorting" #:year "1996" #:citation "110 CCC (3d) 383" #:jurisdiction
+"SCC" #:url "https://canlii.ca/t/gbgr2" #:short-form "Shorting"]
 
 ◊declare-work[#:id "RAL" #:type "legal-case" #:title "R v ALR" #:year
 "2001" #:citation "[2001] 11 WWR 413" #:parallel-citation "Bulletin of
@@ -293,9 +294,21 @@ actual case under appeal: a person might be acquitted or receive a new
 trial. But the ◊em{reasons} are often left unimpugned by a consent
 reversal. Those reasons speak beyond the particular case.
 
+◊declare-work[#:id "Dutt" #:type "legal-case" #:title "R v Dutt"
+#:citation "2011 ONSC 3329" #:url "https://canlii.ca/t/flqc4"
+#:short-form "Dutt"]
+
+◊declare-work[#:id "ALR-CA" #:type "legal-case" #:title "R v ALR"
+#:citation "141 CCC (4d) 151" #:jurisdiction "Man. C.A." #:year "1999"
+#:url "https://canlii.ca/t/1flcv"]
+
 Courts frequently rely on reasons for points of law, even though the
 ultimate judgment may have been reversed "on other grounds." A consent
-reversal is just a special case of this more general occurrence.
+reversal is just a special case of this more general occurrence. In
+fact, this is exactly how the Ontario Superior Court has treated
+◊em{ALR}.◊note{◊see["Dutt" #:pinpoint "para 54" #:terminal ""], citing
+◊cite["ALR-CA" #:terminal ""] and noting that it had been reversed "on
+a different basis."}
 
 ◊declare-work[#:id "Sweet" #:type "legal-case" #:title "Sweet
 Productions Inc et al v Licensing LP International SÀRL et al"
