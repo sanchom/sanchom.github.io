@@ -4,7 +4,7 @@
 ◊define-meta[short-title]{Consent reversals}
 ◊define-meta[snippet]{Consenting to reverse under s. 70 of the Supreme Court Act. What does this mean for precedent?}
 ◊define-meta[original-date]{2023-09-23}
-◊define-meta[edited-date]{2023-09-24}
+◊define-meta[edited-date]{2023-10-03}
 
 ◊declare-work[#:id "SCA" #:type "statute" #:title "Supreme Court Act"
 #:volume "R.S.C." #:year "1985" #:chapter "S-26" #:url
@@ -270,6 +270,11 @@ through the ordinary principles of ◊em{stare decisis}, unless
 the Supreme Court of Canada rejects the
 reasoning.
 
+◊declare-work[#:id "Canadian Express" #:type "legal-case" #:title
+"Canadian Express Ltd. v. Blair" #:citation "6 OR (3d) 212" #:year
+"1991" #:url "https://canlii.ca/t/g1cmw" #:jurisdiction
+"Ont. Sup. Ct. (Gen. Div.)" #:short-form "Canadian Express"]
+
 I acknowledge there is ambiguity or conflation of terminology, but the
 Supreme Court of Canada has occasionally distinguished "judgment" and
 "reasons for judgment."◊note-cite["RA"] In the context of the
@@ -279,13 +284,17 @@ Supreme Court of Canada has occasionally distinguished "judgment" and
 may matter. See e.g. ◊cite["CIBC" #:parenthetical "distinguishing
 between order and judgment but conflating neither with the reasons"]}
 Appeals are from orders (judgments) and the disposition of an appeal
-turns on what the reviewing court does to the order (judgment). A
-reviewing court can completely disagree with a lower court's
-reasoning, yet dismiss an appeal if the reviewing court leaves in
-place the lower court's order (judgment) on other grounds. Or a
-reviewing court may not even have turned its mind to the reasoning,
-yet reverse a judgment, as the Supreme Court of Canada does in a s. 70
-consent reversal.
+turns on what the reviewing court does to the order
+(judgment).◊note{◊see-also["Canadian Express" #:terminal ""] ("Reasons
+for judgment do not constitute the judgment of the court. An appeal is
+not taken from the reasons for judgment but from the judgment
+itself... the reasons may by wrong but the order right.")} A reviewing
+court can completely disagree with a lower court's reasoning, yet
+dismiss an appeal if the reviewing court leaves in place the lower
+court's order (judgment) on other grounds. Or a reviewing court may
+not even have turned its mind to the reasoning, yet reverse a
+judgment, as the Supreme Court of Canada does in a s. 70 consent
+reversal.
 
 ◊em{Stare decisis} "pertains to the reasons given by a
 court."◊note-cite["Sullivan" #:pinpoint "para. 56"] Certainly,
