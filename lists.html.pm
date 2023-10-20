@@ -47,6 +47,8 @@ Geist and guests on Canadian technology law)
 Podcast](https://www.lawfareblog.com/topic/lawfare-podcast) (US
 national security law and policy)
 
+[Media Indigena](https://mediaindigena.com/) (Indigenous issues in Canada)
+
 [On the Media](https://www.wnycstudios.org/podcasts/otm) (American
 weekly radio show from WNYC, covering anything touching journalism,
 tech, and expression)
@@ -104,6 +106,10 @@ creating legislation)
 Craig Forcese, "[Administrative
 Law](https://www.craigforcese.com/administrative-law)" (how courts
 review executive acts; includes updates from ◊em{Vavilov})
+
+The David Asper Centre for Constitutional Rights, "[Charter: A
+Course"](https://aspercentre.ca/charter-a-course/) (podcast about
+Canadian Constitutional Law & Litigation)
 
 Intrepid podcast's "[Muskoka Chair
 Chats](https://www.intrepidpodcast.com/podcast)" episodes 126,

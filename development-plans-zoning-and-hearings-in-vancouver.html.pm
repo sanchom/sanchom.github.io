@@ -3,7 +3,7 @@
 ◊define-meta[page-title]{Development plans, zoning, and public hearings in Vancouver}
 ◊define-meta[short-title]{Public hearings in Vancouver}
 ◊define-meta[original-date]{2021-05-31}
-◊define-meta[snippet]{Why Vancouver Council can't waive rezoning hearings like other municipalities can}
+◊define-meta[snippet]{Why Vancouver Council can't avoid public hearings for rezonings like other municipalities can}
 
 ◊declare-work[#:id "Scenescapes" #:type "book" #:author-given "Daniel
 Aaron" #:author-family "Silver" #:author2-given "Terry Nichols"
@@ -71,12 +71,12 @@ entertainment activities, other commercial activities, and intense
 public activities").
 
 If this were any other municipality in British Columbia, these plans
-would streamline rezoning: they would allow Council to waive the
-requirement for a public hearing when the rezoning is consistent with
-an ODP for the area. But Vancouver does not get this benefit from its
-ODPs. In this blog post, I present how this difference came to be and
-argue that the province should consider bringing the ◊em{Vancouver
-Charter} in line with the ◊em{Local Government Act} on this point.
+would streamline rezoning: they would remove the requirement for a
+public hearing when the rezoning is consistent with an ODP for the
+area. But Vancouver does not get this benefit from its ODPs. In this
+blog post, I present how this difference came to be and argue that the
+province should consider bringing the ◊em{Vancouver Charter} in line
+with the ◊em{Local Government Act} on this point.
 
 ◊heading{Zoning and public hearings}
 
@@ -168,8 +168,9 @@ works undertaken by a council ◊ellipsis after the adoption of
 ◊ellipsis an official community plan ◊ellipsis must be consistent with
 the relevant plan."◊note-cite["LGA" #:pinpoint "s 478(2)"] However, a
 council also gains some efficiency if it develops consistenly with the
-OCP: council may ◊em{waive} the public hearing for zoning bylaws that
-are consistent with the OCP.◊note-see["LGA" #:pinpoint "464(2)"]
+OCP: council "is not required to hold a public hearing on a proposed
+zoning bylaw" that is "consistent with the OCP."◊note-see["LGA"
+#:pinpoint "464(2)"]
 
 Vancouver's official ◊em{development} plans similarly constrain
 Council. However, there are two major differences. First, the
@@ -182,14 +183,14 @@ conservation area... the Council must hold a public hearing”"]
 ◊see-also["CPR" #:pinpoint "para 40" #:parenthetical "“[t]he Vancouver
 Charter imposes no statutory requirement to hold a public hearing
 before adopting an ODP”"]} Second, even when a proposed zoning bylaw
-is consistent with an existing ODP, Council cannot waive the public
+is consistent with an existing ODP, Council cannot avoid the public
 hearing requirement for the zoning bylaw.
 
 Again, the ◊em{Local Government Act} (applying to all municipalities
-other than Vancouver) says that "[a] local government may waive the
-holding of a public hearing on a proposed zoning bylaw if (a) an
-official community plan is in effect for the area that is subject to
-the bylaw, and (b) the bylaw is consistent with the official community
+other than Vancouver) says that "[a] local government is not required
+to hold a public hearing on a proposed zoning bylaw if (a) an official
+community plan is in effect for the area that is subject to the bylaw,
+and (b) the bylaw is consistent with the official community
 plan."◊note-cite["LGA" #:pinpoint "s 464(2)"] There just is no
 equivalent in the ◊em{Vancouver Charter}.◊note{The ◊em{Vancouver
 Charter} does incorporate several portions of the ◊em{Local Government
@@ -262,9 +263,9 @@ Council and the province should deliberately consider whether this
 distinction between the ◊em{Local Government Act} and the
 ◊em{Vancouver Charter} continues to make sense. If Vancouver Council
 is going to use a public hearing process for its ODPs, it should get
-the same efficiency reward that other municipalities get (the ability
-to waive the public hearing for rezonings consistent with the
+the same efficiency reward that other municipalities get (that a
+public hearing is not required for rezonings consistent with the
 ODP).◊note{And if Vancouver Council wants to retain flexibility, the
-public-hearing waiver (for rezonings that are consistent with the ODP)
-could be conditioned on the ODP having been subject to a public
-hearing.}
+avoidance of a public hearing (for rezonings that are consistent with
+the ODP) could be conditioned on the ODP itself having been subject to
+a public hearing.}
