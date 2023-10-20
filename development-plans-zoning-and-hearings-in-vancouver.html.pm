@@ -3,6 +3,7 @@
 ◊define-meta[page-title]{Development plans, zoning, and public hearings in Vancouver}
 ◊define-meta[short-title]{Public hearings in Vancouver}
 ◊define-meta[original-date]{2021-05-31}
+◊define-meta[edited-date]{2023-10-20}
 ◊define-meta[snippet]{Why Vancouver Council can't avoid public hearings for rezonings like other municipalities can}
 
 ◊declare-work[#:id "Scenescapes" #:type "book" #:author-given "Daniel
@@ -56,6 +57,21 @@ Pacific Railway Co v Vancouver (City)" #:citation "2004 BCCA 192"
 
 ◊declare-work[#:id "MAA" #:type "statute" #:title "Municipal Amendment
 Act, 1985" #:volume "SBC" #:year "1985" #:chapter "79"]
+
+◊declare-work[#:id "MASA2" #:type "statute" #:title "Municipal Affairs
+Statutes Amendment Act (No. 2)" #:volume "SBC" #:year "2021" #:chapter
+"30" #:url
+"https://www.bclaws.gov.bc.ca/civix/document/id/hstats/hstats/100630976"]
+
+◊margin-note{I updated this article in October 2023, to reflect the
+◊cite["MASA2"], which made the public hearing requirement even
+◊em{less} onerous for municipalities other than Vancouver. Prior to
+this amendment, municipalities other than Vancouver could ◊em{waive}
+public hearings for propozed rezoning bylaws where the rezoning was
+consistent with an existing official community plan. Now,
+municipalities other than Vancouver simply ◊em{are not required} to
+hold such a hearing; there is no need for council to expressly waive
+the requirement.}
 
 Vancouver has several ◊em{[official development
 plans](https://vancouver.ca/home-property-development/zoning-and-land-use-policies-document-library.aspx#regulation-development-plans)}
