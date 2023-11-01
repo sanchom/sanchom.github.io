@@ -3,7 +3,7 @@
 ◊define-meta[page-title]{Development plans, zoning, and public hearings in Vancouver}
 ◊define-meta[short-title]{Public hearings in Vancouver}
 ◊define-meta[original-date]{2021-05-31}
-◊define-meta[edited-date]{2023-10-20}
+◊define-meta[edited-date]{2023-11-01}
 ◊define-meta[snippet]{Why Vancouver Council can't avoid public hearings for rezonings like other municipalities can}
 
 ◊declare-work[#:id "Scenescapes" #:type "book" #:author-given "Daniel
@@ -285,3 +285,30 @@ ODP).◊note{And if Vancouver Council wants to retain flexibility, the
 avoidance of a public hearing (for rezonings that are consistent with
 the ODP) could be conditioned on the ODP itself having been subject to
 a public hearing.}
+
+◊heading{A concrete proposal}
+
+In my view, the above suggestion could be implemented by deleting
+s.◊nbsp{}566(1) of the ◊em{Vancouver Charter} and inserting:
+
+◊q{
+
+(1) Subject to subsection (1.01), the Council must not make, amend, or
+repeal a zoning bylaw without holding a public hearing on the bylaw,
+and an application for rezoning shall be treated as an application to
+amend a zoning bylaw.
+
+(1.01) The Council is not required to hold a public hearing on a
+proposed zoning bylaw if
+
+◊nbsp{}◊nbsp{}◊nbsp{}(a) an official development plan is in effect for the area that is the
+subject of the zoning bylaw,
+
+◊nbsp{}◊nbsp{}◊nbsp{}(b) the official development plan was passed after a public hearing
+for the purpose of allowing the public to make representations to the
+Council respecting matters contained in the official development plan,
+and
+
+◊nbsp{}◊nbsp{}◊nbsp{}(c) the zoning bylaw is consistent with the official development plan.
+
+}
