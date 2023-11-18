@@ -97,33 +97,7 @@ img { max-width: 100%; border-radius: 10px; }
 .vid-wrapper { margin-left: auto; margin-right: auto; max-width: 100%; }
 video { border-radius: 10px; }
 
-◊; Taken from Tufte-css. Plain, underlined links without cutting
-◊; through descenders.
 a:link, a:visited { color: inherit; }
-
-a:link {
-text-decoration: none;
-background: -webkit-linear-gradient(◊|background-color|, ◊|background-color|), -webkit-linear-gradient(◊|background-color|, ◊|background-color|), -webkit-linear-gradient(#333, #333);
-background: linear-gradient(◊|background-color|, ◊|background-color|), linear-gradient(◊|background-color|, ◊|background-color|), linear-gradient(#333, #333);
--webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
--moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-background-repeat: no-repeat, no-repeat, repeat-x;
-text-shadow: 0.03em 0 ◊|background-color|, -0.03em 0 ◊|background-color|, 0 0.03em ◊|background-color|, 0 -0.03em ◊|background-color|, 0.06em 0 ◊|background-color|, -0.06em 0 ◊|background-color|, 0.09em 0 ◊|background-color|, -0.09em 0 ◊|background-color|, 0.12em 0 ◊|background-color|, -0.12em 0 ◊|background-color|, 0.15em 0 ◊|background-color|, -0.15em 0 ◊|background-color|;
-background-position: 0% 93%, 100% 93%, 0% 93%;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) { a:link { background-position-y: 87%, 87%, 87%; } }
-
-a:link::selection {
-text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-background: #b4d5fe;
-}
-
-a:link::-moz-selection {
-text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-background: #b4d5fe;
-}
 
 ◊; Core styles for commonly used elements.
 p, li, blockquote {line-height: 1.5;}
