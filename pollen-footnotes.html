@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.
+-->
+
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBTLXWG3QD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZBTLXWG3QD');
+    </script>
+    <meta name="google-site-verification" content="ApapaNT3CEd0OdSE-X9Xy4xF3r_gjtWDR05XS6FANu4" />
+    <meta name="msvalidate.01" content="E6A615B4A274D4C956DDF0ED5959BD59" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sanchom" />
+    <meta property="og:title" content="A footnote tag for Pollen" />
+    <meta property="og:description" content="How I implemented a footnote tag for Pollen." />
+    <meta name="description" content="How I implemented a footnote tag for Pollen." />
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sancho McCann—A footnote tag for Pollen</title>
+    <link rel="stylesheet" type="text/css" href="../site-style.css" />
+    <link rel="canonical" href="https://sanchom.github.io/pollen-footnotes.html" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+</head>
+  <body >
+<header>
+  <nav>
+    <div class="header">
+      <div class="left-header">◄ <a href="trees-of-dog-mountain.html">The trees of Dog Mountain</a></div>
+      <div class="center-header"><a href="index.html">Home</a> · <a href="site-index.html">Index</a></div>
+      <div class="right-header"><a href="a-hunger-artist.html">A Hunger Artist</a> ►</div>
+    </div>
+  </nav>
+  <div style="clear: both;"></div>
+
+</header>
+<div style="clear: both;"></div>
+<article>
+
+<h1>A footnote tag for Pollen</h1><div class="byline">By Sancho McCann · <span class="date">
+<time datetime="2018-02-17">2018-02-17</time>, <a href="https://github.com/sanchom/sanchom.github.io/commits/master-source/pollen-footnotes.html.pm">edited</a>: <time datetime="2018-03-07">2018-03-07</time>
+</span></div>
+    <root><p>In un­spe­cial­ized <a href="https://docs.racket-lang.org/pollen/third-tutorial.html">Pollen markup</a>, tags are con­vert­ed di­rect­ly into as­so­ci­at­ed html el­e­ments. Most au­thors will end up adding to this de­fault be­hav­iour by im­ple­ment­ing cus­tom tags that do more. I’ve start­ed to add fea­tures as I need them, and I’ve en­joyed think­ing about how to keep my cus­tomiza­tions sim­ple.</p><p>Here’s how I im­ple­ment­ed foot­notes.<span class="sidenote-wrapper"><span><label for="fn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-1" class="margin-toggle"/><input type="checkbox" id="fn-1-expand" class="margin-expand"/><label for="fn-1-expand" class="sidenote expanded" hyphens="none">You can look at the full source code at <a href="https://github.com/sanchom/sanchom.github.io">github.com</a>. It has probably changed since I wrote this, so to browse the source at the time of this writing, see <a href="https://github.com/sanchom/sanchom.github.io/tree/fb2836e38fb781b1c827478b085788de3beb51d9">this git ref</a>.</label></span></span></p><h2 hyphens="none">What I want</h2><p>I like how some jour­nals ren­der foot­notes as side­notes in the web ver­sions of their ar­ti­cles. This keeps the notes as close as pos­si­ble to the re­lat­ed main text. I want to be able to choose whether a par­tic­u­lar ar­ti­cle should use side­notes or foot­notes.</p><p>I also want the print view to use foot­notes even if the web view used side­notes. Sidenotes cram the lim­it­ed width that is avail­able on a print­ed page. And, side­notes can be quite long. Unless they are col­lapseable, like they are in the web view, they will push sub­se­quent side­notes far from their an­chor in the main text.</p><p>I want side­notes to look nice on small screens. They can’t just stay in the mar­gin; there just isn’t enough width.</p><p>I want foot­notes, if dis­played, to have links back to their an­chors in the main text.</p><h2 hyphens="none">Influences</h2><ul><li><a href="https://harvardlawreview.org/2018/01/robins-v-spokeo-inc/">Harvard Law Review</a> uses ex­pand­able side­notes.</li><li>I took a lot of the style for this site from <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a>. For side­notes, though, I es­pe­cial­ly ap­pre­ci­at­ed their ex­am­ples of linked la­bels and check­box­es, and hid­ing side­notes on small screens.</li><li>Wikipedia’s <a href="https://en.wikipedia.org/wiki/Michael_Jordan#References">ref­er­ences</a> in­clude back-links from the end­note to the an­chor in the main text.</li></ul><h2 hyphens="none">Solution</h2><p>I im­ple­ment­ed a cus­tom tag: <span class="code">◊note</span>. Here’s its im­ple­men­ta­tion in <span class="code">pollen.rkt</span>.</p><blockquote class="code"><pre class="code">(define (note #:ex­pand­ed [ex­pand­ed #f] . con­tent)
+  (define foot­note-num­ber (+ 1 (length foot­note-list)))
+  (set! foot­note-list
+        (ap­pend foot­note-list (list `(p ([class "foot­note"] [id ,(for­mat "fn-~a" foot­note-num­ber)])
+                                        ,(for­mat "~a. " foot­note-num­ber) (a [[href ,(for­mat "#fn-source-~a" foot­note-num­ber)] [class "back­link un­dec­o­rat­ed"]] " ⌃ ") ,@con­tent))))
+  (define refid (for­mat "fn-~a" foot­note-num­ber))
+  (define subrefid (for­mat "fn-~a-ex­pand" foot­note-num­ber))
+  (if (equal? note-mode "side­notes")
+    `(span (la­bel [[for ,refid] [class "mar­gin-tog­gle side­note-num­ber"]])
+           (in­put [[type "check­box"] [id ,refid] [class "mar­gin-tog­gle"]])
+           (in­put [[type "check­box"] [id ,subrefid] [class "mar­gin-ex­pand"]])
+           (la­bel [[for ,subrefid] [class ,(if ex­pand­ed "side­note ex­pand­ed" "side­note")] [hy­phens "none"]] ,@con­tent))
+    `(a [[href ,(for­mat "#fn-~a" foot­note-num­ber)] [class "un­dec­o­rat­ed"]] (span [[class "side­note-num­ber"] [id ,(for­mat "fn-source-~a" foot­note-num­ber)]]))))</pre></blockquote><p>This adds a <span class="code">tx­ex­pr</span> to a foot­note list that is built up through each suc­ces­sive en­counter with a <span class="code">◊note</span> tag. They will all be in­clud­ed dur­ing a final de­cod­ing pass, but they are not in­sert­ed at the lo­ca­tion of the orig­i­nal <span class="code">◊note</span> tag. What <em>does</em> get in­sert­ed in place of the <span class="code">◊note</span> tag de­pends on whether the ar­ti­cle is be­ing ren­dered in foot­note mode or side­note mode.</p><h3 hyphens="none">Sidenote mode</h3><p>In side­note mode, I in­sert a group of la­bels and hid­den check­box­es, all grouped with­in a <span class="code">span</span>.<span class="sidenote-wrapper"><span><label for="fn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-2" class="margin-toggle"/><input type="checkbox" id="fn-2-expand" class="margin-expand"/><label for="fn-2-expand" class="sidenote expanded" hyphens="none">This introduces a limitation that my notes can’t have any block elements as children, but that’s alright. If I’m inserting block elements into a note, it probably shouldn’t be a note.</label></span></span> Here’s what the ren­dered html ends up look­ing like:</p><blockquote class="code"><pre class="code">&lt;span&gt;
+  &lt;la­bel for="fn-1" class="mar­gin-tog­gle side­note-num­ber"&gt;&lt;/la­bel&gt;
+  &lt;in­put type="check­box" id="fn-1" class="mar­gin-tog­gle"/&gt;
+  &lt;in­put type="check­box" id="fn-1-ex­pand" class="mar­gin-ex­pand"/&gt;
+  &lt;la­bel for="fn-1-ex­pand" class="side­note ex­pand­ed" hy­phens="none"&gt;
+    This in­tro­duces a lim­i­ta­tion that my notes can’t have any block
+    el­e­ments as chil­dren, but that’s al­right. If I’m in­sert­ing block
+    el­e­ments into a note, it prob­a­bly shouldn’t be a note.
+  &lt;/la­bel&gt;
+&lt;/span&gt;</pre></blockquote><p>CSS con­trols how these are all dis­played. On a wide screen, the note is ren­dered in the right mar­gin. On a nar­row screen, the main con­tent takes the full width of the screen and the note get’s hid­den. It can be dis­played be­tween lines of the main text by click­ing the note’s num­ber.<span class="sidenote-wrapper"><span><label for="fn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-3" class="margin-toggle"/><input type="checkbox" id="fn-3-expand" class="margin-expand"/><label for="fn-3-expand" class="sidenote" hyphens="none">If you’re not already reading this on a small screen, you can preview this behaviour by narrowing this browser window.</label></span></span> Long notes are trun­cat­ed un­til they are clicked on. The note text it­self acts as a check­box that trig­gers some CSS se­lec­tors that tog­gle whether the con­tent is trun­cat­ed.<span class="sidenote-wrapper"><span><label for="fn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-4" class="margin-toggle"/><input type="checkbox" id="fn-4-expand" class="margin-expand"/><label for="fn-4-expand" class="sidenote" hyphens="none">When you have many sidenotes in quick succession, if they aren’t truncated, the later sidenotes end up being placed far from their anchors.</label></span></span> I can dis­able trun­ca­tion for in­di­vid­ual foot­notes like this: <span class="code">◊note[#:ex­pand­ed #t]{This side­note con­tent will nev­er be trun­cat­ed.}</span> I did that for side­note 2 up there.</p><p>What about that list of foot­notes that I built up? After the <span class="code">de­code</span> of the <span class="code">root</span> el­e­ment, the list of foot­notes is in­sert­ed the end of the doc­u­ment:</p><blockquote class="code"><pre class="code">(define (add-foot­notes tx)
+  (define foot­note-class
+    (if (equal? note-mode "side­notes") "end­notes print-only" "end­notes"))
+  (tx­ex­pr (get-tag tx) (get-at­trs tx) `(,@(get-el­e­ments tx) (div ((class ,foot­note-class)) ,(when/splice (not (emp­ty? foot­note-list)) (head­ing "Notes")) ,@foot­note-list))))</pre></blockquote><blockquote class="code"><pre class="code">(define (root . el­e­ments)
+  (add-foot­notes
+   (de­code (tx­ex­pr 'root emp­ty el­e­ments)
+           #:ex­clude-tags '(pre)
+           #:tx­ex­pr-proc cus­tom-hy­phen­ation
+           #:tx­ex­pr-el­e­ments-proc de­code-dou­ble-breaks-into-paras
+           #:string-proc (com­pose1 smart-quotes smart-dash­es))))</pre></blockquote><p>CSS ren­ders these in­vis­i­ble ex­cept dur­ing print­ing. When the doc­u­ment is print­ed, I use CSS se­lec­tors to hide all side­notes and in­stead dis­play the foot­notes.</p><h3 hyphens="none">Footnote mode</h3><p>In foot­note mode, the <span class="code">◊note</span> tag in­serts less stuff at the point of in­ser­tion: just a link that jumps to the foot­note at the bot­tom of the ar­ti­cle. And the <span class="code">id</span> in the <span class="code">span</span> gives the foot­note a ref­er­ence to link back to.</p><blockquote class="code"><pre class="code">&lt;a href="#fn-1" class="un­dec­o­rat­ed"&gt;
+  &lt;span class="side­note-num­ber" id="fn-source-1"&gt;&lt;/span&gt;
+&lt;/a&gt;</pre></blockquote><p>In foot­note mode, the foot­note ac­tu­al­ly gets dis­played. It has a lit­tle back-link that jumps up to the foot­note’s an­chor in the main text. That back-link is hid­den in the print view.</p><h3 hyphens="none">Choosing the mode</h3><p>My Pollen set­up de­faults to side­note mode, but as an au­thor, I can make an ar­ti­cle use foot­note mode by call­ing <span class="code">◊use-foot­notes[]</span> be­fore the first <span class="code">◊note</span> tag.</p><h2 hyphens="none">The CSS</h2><p>Pollen is re­spon­si­ble for ren­der­ing the nec­es­sary tags, class­es, and IDs, but the CSS is also do­ing a lot of work.</p><blockquote class="code"><pre class="code">.side­note {
+  text-align: left;
+  col­or: #555;
+  float: right;
+  clear: right;
+  mar­gin-right: -40%;
+  width: 30%;
+  mar­gin-top: 0;
+  mar­gin-bot­tom: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  ver­ti­cal-align: base­line;
+  po­si­tion: rel­a­tive;
+  text-overflow: el­lip­sis;
+  overflow: hid­den;
+  dis­play: -we­bkit-box;
+  -we­bkit-line-clamp: 3;
+  -we­bkit-box-ori­ent: ver­ti­cal;
+}
+
+.foot­note {
+  text-align: left;
+  col­or: #111;
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+.side­note.ex­pand­ed { -we­bkit-line-clamp: 300; }
+
+.side­note-num­ber { counter-in­cre­ment: side­note-counter; }
+
+.side­note-num­ber:af­ter, .side­note:be­fore {
+  font-fam­i­ly: et-book-ro­man-old-style;
+  po­si­tion: rel­a­tive;
+  ver­ti­cal-align: base­line;
+}
+
+.side­note-num­ber:af­ter {
+  con­tent: counter(side­note-counter);
+  font-size: 0.7rem;
+  top: -0.5rem;
+  left: 0.1rem;
+}
+
+.side­note:be­fore { con­tent: counter(side­note-counter) ". "; top: 0rem; }
+
+in­put.mar­gin-tog­gle { dis­play: none; }
+in­put.mar­gin-ex­pand { dis­play: none; }
+la­bel.side­note-num­ber { dis­play: in­line; }
+
+.mar­gin-ex­pand:checked + .side­note {
+  text-overflow: el­lip­sis;
+  overflow: hid­den;
+  dis­play: -we­bkit-box;
+  -we­bkit-line-clamp: 300;
+  -we­bkit-box-ori­ent: ver­ti­cal;
+}
+
+@me­dia all {
+  .print-only { dis­play: none; }
+}
+
+@me­dia print {
+  .side­note, .back­link, .head­er { dis­play: none; }
+  .end­notes { dis­play: block; }
+}
+
+@me­dia screen and (max-width:720px) {
+  .side­note { dis­play: none; }
+
+  .mar­gin-tog­gle:checked ~ .side­note {
+    col­or: #111;
+    font-size: 0.8rem;
+    dis­play: block;
+    float: left;
+    left: 0rem;
+    clear: both;
+    width: 85%;
+    mar­gin: 1rem 7.5%;
+    ver­ti­cal-align: base­line;
+    po­si­tion: rel­a­tive;
+  }
+
+  la­bel { cur­sor: point­er; }
+}</pre></blockquote><h2 hyphens="none">Commas</h2><p>I also want­ed to have Pollen au­to­mat­i­cal­ly de­tect se­ries of con­sec­u­tive <span class="code">◊note</span> tags and in­sert com­mas in be­tween them.<span class="sidenote-wrapper"><span><label for="fn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-5" class="margin-toggle"/><input type="checkbox" id="fn-5-expand" class="margin-expand"/><label for="fn-5-expand" class="sidenote" hyphens="none">Like</label></span></span><span class="sidenote-comma">,</span><span class="sidenote-wrapper"><span><label for="fn-6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-6" class="margin-toggle"/><input type="checkbox" id="fn-6-expand" class="margin-expand"/><label for="fn-6-expand" class="sidenote" hyphens="none">this.</label></span></span> My so­lu­tion was to wrap the en­tire set of tags that get in­sert­ed due to a <span class="code">◊note</span> tag with a <span class="code">&lt;span class=“side­note-wrap­per”&gt;[…]&lt;/span&gt;</span>. So, whether it’s a link to a foot­note, or a quadru­ple of el­e­ments that en­able the side­note be­hav­iour, it gets wrapped with that tag. This gives the Pollen de­coder some­thing to look for—some­thing to in­sert com­mas be­tween.</p><p>I im­ple­ment­ed this as a <span class="code">tx­ex­pr-proc</span> that runs dur­ing the de­code of the root el­e­ment.</p><blockquote class="code"><pre class="code">(define (in­sert-side­note-com­mas tx) ; Will run on every tx­ex­pr.
+  ; Just defining some helper func­tions.
+  (define (is-trig­ger-triple? x y z)
+    (and (is-side­note-wrap­per? x)
+         (string? y)
+         (equal? (string-trim y) "")
+         (is-side­note-wrap­per? z)))
+  (define (is-trig­ger-dou­ble? x y)
+    (and (is-side­note-wrap­per? x)
+                        (is-side­note-wrap­per? y)))
+  (define (is-side­note-wrap­per? tx)
+    (and (tx­ex­pr? tx)
+         (at­trs-have-key? tx 'class)
+         (equal? (attr-ref tx 'class) "side­note-wrap­per")))
+  ; The func­tion will pass over the el­e­ments (chil­dren)
+  ; of the tx­ex­pr, look­ing for suc­ces­sive side­note el­e­ments
+  ; be­tween which to put a com­ma.
+  (define el­e­ments (get-el­e­ments tx))
+  (tx­ex­pr (get-tag tx) (get-at­trs tx)
+          (let loop ([re­sult emp­ty]
+                     [el­e­ments el­e­ments])
+            (if (emp­ty? el­e­ments) ; If only zero items.
+                re­sult
+                (if (emp­ty? (cdr el­e­ments)) ; If only one item in el­e­ments.
+                    (ap­pend re­sult el­e­ments)
+                    (let ([x (car el­e­ments)]
+                          [y (cadr el­e­ments)])
+                      (if (emp­ty? (cddr el­e­ments)) ; If only two items in el­e­ments.
+                          ; If they're both span.side­note-wrap­per, put the first one plus a com­ma into
+                          ; re­sults, then re­curse, oth­er­wise, just put the first one into re­sults and
+                          ; re­curse.
+                          (if (is-trig­ger-dou­ble? x y)
+                              (loop (ap­pend re­sult (list x '(span [[class "side­note-com­ma"]] ","))) (cdr el­e­ments))
+                              (loop (ap­pend re­sult (list x)) (cdr el­e­ments)))
+                          ; Otherwise, there are at least three items in el­e­ments; check whether the first two
+                          ; are suc­ces­sive side­notes, or whether the three to­geth­er are a se­quence like:
+                          ; (side­note white­space side­note).
+                          (let ([z (cad­dr el­e­ments)])
+                            (if (is-trig­ger-dou­ble? x y)
+                                (loop (ap­pend re­sult (list x '(span [[class "side­note-com­ma"]] ","))) (cdr el­e­ments))
+                                (if (is-trig­ger-triple? x y z)
+                                    (loop (ap­pend re­sult (list x '(span [[class "side­note-com­ma"]] ","))) (cddr el­e­ments))
+                                    (loop (ap­pend re­sult (list x)) (cdr el­e­ments))))))))))))</pre></blockquote><p>The nest­ing got a lit­tle crazy there, but this was fun to think about and write. The <a href="https://docs.racket-lang.org/guide/let.html#%28part._.Named_let%29"><span class="code">named-let</span></a> is a way to do tail-re­cur­sion.</p><h2 hyphens="none">Not done yet</h2><p>This will prob­a­bly nev­er be done, but next, I want to make bet­ter use of HTML5’s se­man­tic tags, like <span class="code">aside</span> and <span class="code">cite</span>.</p><h2 hyphens="none">Other approaches</h2><p>It’s al­ways in­ter­est­ing to see so­lu­tions that oth­ers have come up with. A <a href="https://groups.google.com/forum/#!topic/pollenpub/laWL4SWx0Zc">post by Joel Dueck</a> on the <a href="https://groups.google.com/forum/#!forum/pollenpub">pol­len­pub Google group</a> is ac­tu­al­ly what prompt­ed me to write this. I’ll try to keep a lit­tle list here of al­ter­na­tive ap­proach­es.</p><div class="endnotes print-only"><p><h2 hyphens="none">Notes</h2></p><p class="footnote" id="fn-1">1. <a href="#fn-source-1" class="backlink undecorated"> ↑ </a>You can look at the full source code at <a href="https://github.com/sanchom/sanchom.github.io">github.com</a>. It has prob­a­bly changed since I wrote this, so to browse the source at the time of this writ­ing, see <a href="https://github.com/sanchom/sanchom.github.io/tree/fb2836e38fb781b1c827478b085788de3beb51d9">this git ref</a>.</p><p class="footnote" id="fn-2">2. <a href="#fn-source-2" class="backlink undecorated"> ↑ </a>This in­tro­duces a lim­i­ta­tion that my notes can’t have any block el­e­ments as chil­dren, but that’s al­right. If I’m in­sert­ing block el­e­ments into a note, it prob­a­bly shouldn’t be a note.</p><p class="footnote" id="fn-3">3. <a href="#fn-source-3" class="backlink undecorated"> ↑ </a>If you’re not al­ready read­ing this on a small screen, you can pre­view this be­hav­iour by nar­row­ing this brows­er win­dow.</p><p class="footnote" id="fn-4">4. <a href="#fn-source-4" class="backlink undecorated"> ↑ </a>When you have many side­notes in quick suc­ces­sion, if they aren’t trun­cat­ed, the lat­er side­notes end up be­ing placed far from their an­chors.</p><p class="footnote" id="fn-5">5. <a href="#fn-source-5" class="backlink undecorated"> ↑ </a>Like</p><p class="footnote" id="fn-6">6. <a href="#fn-source-6" class="backlink undecorated"> ↑ </a>this.</p></div></root>
+</article>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+var disqus_config = function () {
+this.page.url = "https://sanchom.github.io/pollen-footnotes.html"
+this.page.identifier = "pollen-footnotes.html"
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sanchom.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </body>
+</html>

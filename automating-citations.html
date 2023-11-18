@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+This file was rendered by Pollen. Don't edit this file directly. It will be overwritten when Pollen re-renders.
+-->
+
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBTLXWG3QD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZBTLXWG3QD');
+    </script>
+    <meta name="google-site-verification" content="ApapaNT3CEd0OdSE-X9Xy4xF3r_gjtWDR05XS6FANu4" />
+    <meta name="msvalidate.01" content="E6A615B4A274D4C956DDF0ED5959BD59" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sanchom" />
+    <meta property="og:title" content="Automating citations" />
+    <meta property="og:description" content="No one should be spending time laying out citations. Here's a description of some legal tech (or just writing tech) that's made this easier for me." />
+    <meta name="description" content="No one should be spending time laying out citations. Here's a description of some legal tech (or just writing tech) that's made this easier for me." />
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sancho McCann—Automating citations</title>
+    <link rel="stylesheet" type="text/css" href="../site-style.css" />
+    <link rel="canonical" href="https://sanchom.github.io/automating-citations.html" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+</head>
+  <body >
+<header>
+  <nav>
+    <div class="header">
+      <div class="left-header">◄ <a href="interveners-2009-2018.html">Interveners revisited</a></div>
+      <div class="center-header"><a href="index.html">Home</a> · <a href="site-index.html">Index</a></div>
+      <div class="right-header"><a href="anti-slapp.html">BC’s anti-SLAPP legislation</a> ►</div>
+    </div>
+  </nav>
+  <div style="clear: both;"></div>
+
+</header>
+<div style="clear: both;"></div>
+<article>
+
+<h1>Automating citations</h1><div class="byline">By Sancho McCann · <span class="date">
+<time datetime="2019-05-05">2019-05-05</time>, <a href="https://github.com/sanchom/sanchom.github.io/commits/master-source/automating-citations.html.pm">edited</a>: <time datetime="2019-07-20">2019-07-20</time>
+</span></div>
+    <root><p>I wrote the code that con­trols how this web­site ap­pears to you. This is of course built on top of the work of oth­ers, like the <a href="https://docs.racket-lang.org/pollen/">pollen pub­lish­ing sys­tem</a>. I want to share how I’ve cus­tomized and au­to­mat­ed the ci­ta­tion sys­tem for this site. I know that foot­notes are not com­mon nor nec­es­sary in a blog for­mat and I al­most al­ways in­clude a link that you can just click to get to a source. But I do write some ma­te­r­i­al that may be im­proved, at least for some of my au­di­ence, by in­clud­ing tra­di­tion­al ci­ta­tions. And if I don’t have to do much ex­tra work to pro­vide these, why not?</p><p>I also en­vi­sion blogs as a medi­um for aca­d­e­m­ic ex­change of ideas. Not every­thing has to be a pa­per in or­der to get feed­back from peers. But if I’m ever go­ing to use this plat­form for that, I don’t want to be held back by ci­ta­tions.</p><h2 hyphens="none">First attempt</h2><p>I pre­sent­ed my first at­tempt at a foot­note sys­tem <a href="pollen-footnotes.html">here</a>. That was most­ly about get­ting their mere ap­pear­ance as foot­notes cor­rect (that they ac­tu­al­ly show up, with the right num­bers, ei­ther along­side their re­lat­ed text or at the bot­tom of the page with link-backs, etc.). I still had to lay them out in my source text.<span class="sidenote-wrapper"><span><label for="fn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-1" class="margin-toggle"/><input type="checkbox" id="fn-1-expand" class="margin-expand"/><label for="fn-1-expand" class="sidenote" hyphens="none">Throughout this, I refer to “source text” or just “source”. That’s the text that I write on my computer. Pollen, combined with my customizations, turns that source text into what you’re seeing here. The source text is a mix of plain text and helper tags.</label></span></span></p><blockquote class="code"><pre class="code">
+I'd have to write a foot­note like this.&loz;note{See Angela
+Fernandez, "&loz;a[#:href
+"https://www.js­tor.org/sta­ble/27641649"]{The Lost Record of Pierson
+v. Post, the Famous Fox Case}," &loz;em{Law and History Review}
+27, no. 1 (2009): 149–78.}
+</pre></blockquote><p>That would get turned into a foot­note like this.<span class="sidenote-wrapper"><span><label for="fn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-2" class="margin-toggle"/><input type="checkbox" id="fn-2-expand" class="margin-expand"/><label for="fn-2-expand" class="sidenote" hyphens="none">See Angela Fernandez, "<a href="https://www.jstor.org/stable/27641649">The Lost Record of Pierson v. Post, the Famous Fox Case</a>,” <em>Law and History Review</em> 27, no. 1 (2009): 149–78.</label></span></span> (I was us­ing the Chicago Manual of Style at the time.) Note that in the source, I had to ex­plic­it­ly cre­ate the link (the <span class="code">&loz;a[#:href ...]</span>) and spec­i­fy which text need­ed to be ital­i­cized (us­ing <span class="code">&loz;em</span>).</p><p>This was in­ad­e­quate in three ways:</p><ul><li>When cit­ing that same work a sec­ond time, I’d have to re­peat all of that again.</li><li>A lot of what I was typ­ing was in­struc­tions for lay­out. This is er­ror-prone and I don’t want to think about this while writ­ing.</li><li>If I want­ed to change from Chicago Manual of Style to an­oth­er ci­ta­tion style (which I even­tu­al­ly did), I’d have to man­u­al­ly edit every sin­gle one of my ci­ta­tions.</li></ul><h2 hyphens="none">Second attempt</h2><p>My sec­ond ap­proach dealt with the last two is­sues by au­tomat­ing the lay­out of an in­di­vid­ual ci­ta­tion. I used some ci­ta­tion tem­plates that gath­ered the ci­ta­tion data and au­to­mat­i­cal­ly for­mat­ted the ci­ta­tion ac­cord­ing to the Chicago Manual of Style.</p><blockquote class="code"><pre class="code">
+That let me write a ci­ta­tion like
+this.&loz;note{&loz;cite-ar­ti­cle[#:ti­tle "The Lost Record of
+Pierson v. Post, the Famous Fox Case" #:au­thor "Angela Fernandez"
+#:year "2009" #:jour­nal "Law and History Review" #:vol­ume "27" #:is­sue
+"1" #:pages "149--78" #:url "https://www.js­tor.org/sta­ble/27641649"]}
+</pre></blockquote><p>This called some code that au­to­mat­i­cal­ly laid out the ci­ta­tion ac­cord­ing to the style guide. That auto-lay­out code (which would be called when­ev­er I wrote <span class="code">&loz;cite-ar­ti­cle[...]</span> looked like this:</p><blockquote class="code"><pre class="code">
+(define (cite-ar­ti­cle #:au­thor [au­thor #f] #:ti­tle [ti­tle #f] #:jour­nal [jour­nal #f] #:year [year #f] #:vol­ume [vol­ume #f] #:is­sue [is­sue #f] #:pages [pages #f] #:url [url #f])
+  ; Chicago Manual of Style, bib­li­og­ra­phy form.
+`(span [[class "bib­li­og­ra­phy-en­try"]] ,au­thor ", “" ,(if url `(a [[href ,url]] ,ti­tle) ti­tle) ",” " (em ,jour­nal) " " ,vol­ume ,(when/splice is­sue ", no. " is­sue) " (" ,year "): " ,pages "."))
+</pre></blockquote><p>This isn’t pret­ty code, but you can see that it knows to list the au­thor first, then list the ti­tle in quotes, op­tion­al­ly link­ing to a URL if one was pro­vid­ed, etc. This au­toma­tion re­moved a com­mon source of er­ror. And if I want­ed to up­date the ci­ta­tion style, I’d just have to change what my <span class="code">cite-ar­ti­cle</span> func­tion did, in one place, and all of my ci­ta­tions across the site would be up­dat­ed.</p><p>There was still one large source of rep­e­ti­tion and er­ror: cit­ing the same work mul­ti­ple times in an ar­ti­cle. I’d ei­ther need to copy-and-paste that ci­ta­tion tem­plate or man­u­al­ly write ci­ta­tion back-ref­er­ences like <em>“ibid”</em> and <em>“supra”</em>.</p><h2 hyphens="none">Third attempt</h2><p>My third at­tempt takes an ap­proach sim­i­lar to that of <a href="https://en.wikipedia.org/wiki/LaTeX">LaTex</a> and my <a href="https://github.com/sanchom/allard-writing-tools">fac­tum/pa­per au­thor­ing tool</a>.</p><p>First, I sep­a­rate the de­c­la­ra­tion of a work from its dis­play:</p><blockquote class="code"><pre class="code">&loz;de­clare-work[#:type "le­gal-case" #:id "se­ces­sion"
+#:ti­tle "Reference re Secession of Quebec"
+#:ci­ta­tion "[1998] 2 SCR 217"
+#:url "https://scc-csc.lex­um.com/scc-csc/scc-csc/en/item/1643/in­dex.do"
+#:short-form "Secession ref­er­ence"]</pre></blockquote><p><span class="code">&loz;de­clare-work[...]</span> doesn’t do any­thing ex­cept tell the ren­der­ing sys­tem about the work. In or­der to ac­tu­al­ly dis­play that ci­ta­tion to you, I have to call <span class="code">&loz;note-cite[“se­ces­sion”]</span>.</p><p>So, if I write this:</p><blockquote class="code"><pre class="code">
+You see a note that cites the se­ces­sion ref­er­ence.&loz;note-cite["se­ces­sion"]
+</pre></blockquote><p>You see a note that cites the se­ces­sion ref­er­ence.<span class="sidenote-wrapper"><span><label for="fn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-3" class="margin-toggle"/><input type="checkbox" id="fn-3-expand" class="margin-expand"/><label for="fn-3-expand" class="sidenote" hyphens="none"><span class="bibliography-entry full-form-citation" data-citation-id="automating-citations.html.pm-secession" data-citation-pinpoint="false" data-citation-parenthetical="false" data-citation-judge="false" data-citation-speaker="false" data-citation-signal="false" data-citation-terminal="."><em><a href="https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/1643/index.do">Reference re Secession of Quebec</a></em>, [1998] 2 SCR 217<span data-short-form-placeholder="automating-citations.html.pm-secession"> [<em>Secession Reference</em>]</span>.</span></label></span></span></p><p>And if I write this:</p><blockquote class="code"><pre class="code">
+You see a sec­ond ci­ta­tion to the se­ces­sion ref­er­ence, this one with a
+pin­point.&loz;note-cite["se­ces­sion" #:pin­point "para­graph 49"]
+</pre></blockquote><p>You see a sec­ond ci­ta­tion to the se­ces­sion ref­er­ence, this one with a pin­point.<span class="sidenote-wrapper"><span><label for="fn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-4" class="margin-toggle"/><input type="checkbox" id="fn-4-expand" class="margin-expand"/><label for="fn-4-expand" class="sidenote" hyphens="none"><span class="bibliography-entry" data-citation-id="automating-citations.html.pm-secession"><em>Ibid</em> at para 49.</span></label></span></span> It isn’t a mis­take that the source calls for a pin­point to “para­graph 49” but what you’re see­ing in the foot­note is “para 49”. The sys­tem knows that para­graphs are prop­er­ly pin­point­ed us­ing “para” in McGill style.</p><p>If there is an in­ter­ven­ing foot­note,<span class="sidenote-wrapper"><span><label for="fn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-5" class="margin-toggle"/><input type="checkbox" id="fn-5-expand" class="margin-expand"/><label for="fn-5-expand" class="sidenote" hyphens="none">Intervening footnote.</label></span></span> then the sub­se­quent ci­ta­tion to the se­ces­sion ref­er­ence will use the short-form that was first de­clared in <span class="code">&loz;de­clare-work</span> and it will also re­fer back to the ini­tial foot­note in which it was first used.<span class="sidenote-wrapper"><span><label for="fn-6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-6" class="margin-toggle"/><input type="checkbox" id="fn-6-expand" class="margin-expand"/><label for="fn-6-expand" class="sidenote" hyphens="none"><span class="bibliography-entry" data-citation-id="automating-citations.html.pm-secession"><em>Secession Reference</em>, <em>supra</em> note 3.</span></label></span></span></p><h2 hyphens="none">No one should be spending time laying out citations</h2><figure><div class="vid-wrapper" style="width: 450px;"><video id="player" playsinline="" controls="" width="100%"><source src="assets/500-times.mp4" type="video/mp4"></source></video></div><figcaption>How many times did you check your ci­ta­tions?</figcaption></figure><p>This is one of the biggest wastes of time in law school. It is cer­tain­ly im­por­tant to be able to find the source a ci­ta­tion refers to, to know what needs to be cit­ed, to un­der­stand what works or cas­es are au­thor­i­ta­tive for par­tic­u­lar propo­si­tions, etc. But we gain noth­ing by re­mem­ber­ing that you say “at 419” and not “at page 419” or that you put a com­ma af­ter the ti­tle of a jour­nal ar­ti­cle but not af­ter the ti­tle of a mag­a­zine or news ar­ti­cle. We spend hours on each pa­per check­ing and cor­rect­ing ci­ta­tions for ad­her­ence to the McGill Guide. And if you move one ref­er­ence, you have to make sure all the back-ref­er­ences are up­dat­ed. This is all work that a com­put­er is per­fect for.</p><p>But sys­tems like LaTeX which are ad­e­quate for com­put­er sci­ence ci­ta­tions are in­ad­e­quate for ci­ta­tion lay­out for le­gal writ­ing. Even confining the task to just pa­per-writ­ing, a foot­note in a law pa­per can con­tain mul­ti­ple ci­ta­tions and re­lat­ed tex­tu­al in­for­ma­tion.<span class="sidenote-wrapper"><span><label for="fn-7" class="margin-toggle sidenote-number"></label><input type="checkbox" id="fn-7" class="margin-toggle"/><input type="checkbox" id="fn-7-expand" class="margin-expand"/><label for="fn-7-expand" class="sidenote" hyphens="none">See <span class="bibliography-entry full-form-citation" data-citation-id="unidentified-work-0" data-citation-pinpoint="false" data-citation-parenthetical="false" data-citation-judge="false" data-citation-speaker="false" data-citation-signal="false" data-citation-terminal=".">“<a href="https://tex.stackexchange.com/questions/71306/bluebook-support-in-latex">Bluebook sup­port in Latex?</a>”, <em>Tex Stack­Exchange</em> (12 September 2012)<span data-short-form-placeholder="unidentified-work-0"></span>.</span> This question and answer highlight the complexity of implementing a legal citation style in Latex/BibTex.</label></span></span> And fac­tums and mem­o­ran­da have to­tal­ly different lay­out rules than pa­pers. The McGill Guide’s fac­tum style is un­like any­thing in any oth­er field of writ­ing.</p><p>I’ve used LaTex for over a decade and now I’ve writ­ten two foot­note/ci­ta­tion au­toma­tion sys­tems: my fac­tum/pa­per au­thor­ing tool, and this web­site’s ren­der­ing sys­tem. I think it would be pos­si­ble to get them both to a state where I nev­er have to think about ci­ta­tion lay­out again. I wrote a mem­o­ran­dum, two pa­pers, and my moot fac­tum this year all us­ing my fac­tum/pa­per au­thor­ing tool. One bar­ri­er to com­plete re­liance on an au­to­mat­ed sys­tem is col­lab­o­rat­ing with oth­ers. Most (maybe all?) jour­nals use Microsoft Word for sub­mis­sions and edit­ing. So, af­ter writ­ing my jour­nal pa­per us­ing my own au­thor­ing tool, I had to ex­port it to Word in or­der to sub­mit it to the jour­nal, and had to man­u­al­ly edit the ci­ta­tions in Word through­out the edit­ing process.</p><p>Another bar­ri­er is the com­plex­i­ty and un­ex­pect­ed vari­a­tion in le­gal ci­ta­tions. It just isn’t pos­si­ble to take care of every lit­tle edge case. I know I just said that no one should spend <em>any</em> time on this, but even a com­plete sys­tem will have to al­low the au­thor to en­ter a cus­tomized ci­ta­tion, in a for­mat that doesn’t match any pre-defined lay­out, with­out throw­ing off the rest of the ci­ta­tions that are be­ing man­aged au­to­mat­i­cal­ly.</p><h2 hyphens="none">Code</h2><p>These are all in var­i­ous stages of readi­ness, but take a look at them, use them or use ideas from them, and let me know how they could be bet­ter:</p><ul><li><a href="https://github.com/sanchom/allard-writing-tools">My first fac­tum/pa­per au­thor­ing tool</a> (dep­re­cat­ed: I didn’t like how this turned out)</li><li><a href="https://github.com/sanchom/associate">as­so­ciate</a>, my cur­rent work-in-progress on a fac­tum/pa­per au­thor­ing tool.</li><li><a href="https://github.com/sanchom/sanchom.github.io/blob/master-source/pollen.rkt">The code that ren­ders this web­site</a></li><li><a href="https://github.com/sanchom/pollen-citations-mcgill">pollen-ci­ta­tions-mcgill</a>, the com­mon code un­der­ly­ing the ci­ta­tion lay­out for this web­site and for my fac­tum/pa­per au­thor­ing tool</li></ul><p>Related projects:</p><ul><li><a href="https://docs.racket-lang.org/pollen/">Pollen, the sys­tem that my code re­lies on</a></li><li><a href="https://en.wikipedia.org/wiki/BibTeX">Wikipedia: BibTeX</a></li><li><a href="https://pandoc.org/">Pandoc</a> and <a href="https://github.com/jgm/pandoc-citeproc">pan­doc-citeproc</a></li></ul><div class="endnotes print-only"><p><h2 hyphens="none">Notes</h2></p><p class="footnote" id="fn-1">1. <a href="#fn-source-1" class="backlink undecorated"> ↑ </a>Throughout this, I re­fer to “source text” or just “source”. That’s the text that I write on my com­put­er. Pollen, com­bined with my cus­tomiza­tions, turns that source text into what you’re see­ing here. The source text is a mix of plain text and helper tags.</p><p class="footnote" id="fn-2">2. <a href="#fn-source-2" class="backlink undecorated"> ↑ </a>See Angela Fernandez, "<a href="https://www.jstor.org/stable/27641649">The Lost Record of Pierson v. Post, the Famous Fox Case</a>,” <em>Law and History Review</em> 27, no. 1 (2009): 149–78.</p><p class="footnote" id="fn-3">3. <a href="#fn-source-3" class="backlink undecorated"> ↑ </a><span class="bibliography-entry full-form-citation" data-citation-id="automating-citations.html.pm-secession" data-citation-pinpoint="false" data-citation-parenthetical="false" data-citation-judge="false" data-citation-speaker="false" data-citation-signal="false" data-citation-terminal="."><em><a href="https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/1643/index.do">Reference re Secession of Quebec</a></em>, [1998] 2 SCR 217<span data-short-form-placeholder="automating-citations.html.pm-secession"> [<em>Secession Reference</em>]</span>.</span></p><p class="footnote" id="fn-4">4. <a href="#fn-source-4" class="backlink undecorated"> ↑ </a><span class="bibliography-entry" data-citation-id="automating-citations.html.pm-secession"><em>Ibid</em> at para 49.</span></p><p class="footnote" id="fn-5">5. <a href="#fn-source-5" class="backlink undecorated"> ↑ </a>Intervening foot­note.</p><p class="footnote" id="fn-6">6. <a href="#fn-source-6" class="backlink undecorated"> ↑ </a><span class="bibliography-entry" data-citation-id="automating-citations.html.pm-secession"><em>Secession Reference</em>, <em>supra</em> note 3.</span></p><p class="footnote" id="fn-7">7. <a href="#fn-source-7" class="backlink undecorated"> ↑ </a>See <span class="bibliography-entry full-form-citation" data-citation-id="unidentified-work-0" data-citation-pinpoint="false" data-citation-parenthetical="false" data-citation-judge="false" data-citation-speaker="false" data-citation-signal="false" data-citation-terminal=".">“<a href="https://tex.stackexchange.com/questions/71306/bluebook-support-in-latex">Bluebook sup­port in Latex?</a>”, <em>Tex Stack­Exchange</em> (12 September 2012)<span data-short-form-placeholder="unidentified-work-0"></span>.</span> This ques­tion and an­swer high­light the com­plex­i­ty of im­ple­ment­ing a le­gal ci­ta­tion style in Latex/BibTex.</p></div></root>
+</article>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+var disqus_config = function () {
+this.page.url = "https://sanchom.github.io/automating-citations.html"
+this.page.identifier = "automating-citations.html"
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sanchom.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </body>
+</html>
