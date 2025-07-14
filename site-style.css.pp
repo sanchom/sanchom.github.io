@@ -110,7 +110,7 @@ background-color: ◊|blockquote-background-color|; padding-right: 1em;
 
 blockquote { border-left: 5px solid ◊|blockquote-border-color|; padding-left: 1em; margin-right: 3em; }
 .code { font-family: "Source Code Pro", "Liberation Mono", Menlo, Courier, monospace; }
-span.code {font-size: 0.8rem;}
+span.code {font-size: 0.8em;}
 span.outline {outline: 1px dotted ◊|blockquote-border-color|;}
 blockquote.code {
 border-top: 1px solid ◊|blockquote-border-color|;

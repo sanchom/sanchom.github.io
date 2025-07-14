@@ -44,9 +44,10 @@ during a hiking trip through the South Chilcotins.}
 
 ◊recent-updates[]
 
-If you'd like to get updates from me whenever I write something,
-◊outline{[sign up for my tinyletter
-here](https://tinyletter.com/sanchom)}.
+I used to have a tinyletter that I would use to email occasional
+updates, but it was [shut down in
+2024](https://www.theverge.com/24085737/tinyletter-mailchimp-shut-down-email-newsletters). I'm
+considering alternatives.
 
 ◊red{The views expressed on this blog are my own and do not represent
 those of the Department of Justice or the Government of Canada.}
