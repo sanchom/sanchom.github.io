@@ -54,6 +54,8 @@ those of the Department of Justice or the Government of Canada.}
 
 Here's where you can find me elsewhere online: ◊div[#:class
 "external-link-logos"]{ ◊little-logo[#:href
+"https://bsky.app/profile/sanchom.bsky.social" #:img
+"assets/bluesky.png"] ◊little-logo[#:href
 "https://mastodon.social/@sanchom" #:img "assets/mastodon-icon.webp"]
 ◊little-logo[#:href "https://twitter.com/sanchom" #:img
 "assets/tw_ico.png"] ◊little-logo[#:href
